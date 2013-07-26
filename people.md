@@ -3,4 +3,6 @@
 - [Mark Dredze](http://www.cs.jhu.edu/~mdredze/)
 - [Jacob Eisenstein](http://www.cc.gatech.edu/~jeisenst/)
 - [Debs Ghosh](http://www.geography.uconn.edu/people/ghosh.html)
+- [David Lazer](http://www.hks.harvard.edu/davidlazer/html/)
+- [Mor Naaman](http://comminfo.rutgers.edu/~mor/)
 - [Daniel Neill](http://www.cs.cmu.edu/~neill/)
