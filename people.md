@@ -4,5 +4,6 @@
 - [Jacob Eisenstein](http://www.cc.gatech.edu/~jeisenst/)
 - [Debs Ghosh](http://www.geography.uconn.edu/people/ghosh.html)
 - [David Lazer](http://www.hks.harvard.edu/davidlazer/html/)
+- [Jure Leskovec](http://cs.stanford.edu/~jure/)
 - [Mor Naaman](http://comminfo.rutgers.edu/~mor/)
 - [Daniel Neill](http://www.cs.cmu.edu/~neill/)
