@@ -1,1 +1,3 @@
+- [Mark Dredze](http://www.cs.jhu.edu/~mdredze/)
+- [Jacob Eisenstein](http://www.cc.gatech.edu/~jeisenst/)
 - [Daniel Neill](http://www.cs.cmu.edu/~neill/)
