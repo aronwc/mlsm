@@ -1,3 +1,6 @@
+- [M. Keith Chen](http://faculty.som.yale.edu/keithchen/)
+- [Cristian Danescu-Niculescu-Mizil](http://www.mpi-sws.org/~cristian/)
 - [Mark Dredze](http://www.cs.jhu.edu/~mdredze/)
 - [Jacob Eisenstein](http://www.cc.gatech.edu/~jeisenst/)
+- [Debs Ghosh](http://www.geography.uconn.edu/people/ghosh.html)
 - [Daniel Neill](http://www.cs.cmu.edu/~neill/)
