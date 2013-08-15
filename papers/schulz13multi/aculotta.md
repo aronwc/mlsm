@@ -1,11 +1,23 @@
 ####Overview####
-Write a short paragraph summarizing the content of the paper.
+This paper proposes an algorithm to estimate the geographical coordinates of a tweet based on evidence from the message text and user profile.
 
 ####Algorithm####
-List the hypotheses the authors test in the paper (note that these are not always explicitly stated).
+A number of indicators are used to locate a tweet, including:
+- They use DBPedia to map words in the text to places with known geocoordinates (e.g., Fedex Field)
+- They follow links to services such as Foursquare and Flickr, which provide exact geocoordinates
+- They lookup words in the location field of the profile in a list of known locations
+- For general web addresses, they consider the top-level domain and the IP address, which is mapped to a location using IPinfoDB
+- The time zone from the profile
+
+Each indicator above is mapped to polygon depending on the source. For example, web domains are mapped to country polygons.
+
+To predict the location of a new tweet, the indicators above are combined by stacking each polygon. The center of polygon with the highest overlap is returned as the predicted location.
+
+As part of this stacking, a weight is attached to each indicator. This weight is optimized on a held-out set of tweets to minimize error using the downhill simplex method.
 
 ####Hypothesis####
-List the hypotheses the authors test in the paper (note that these are not always explicitly stated).
+- The general hypothesis is that tweets can be accurately located based on these indicators
+- A more specific hypothesis is that the optimization method described above significantly improves accuracy.
 
 ####Data####
 Describe the data used in the experiments
