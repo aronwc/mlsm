@@ -20,19 +20,31 @@ As part of this stacking, a weight is attached to each indicator. This weight is
 - A more specific hypothesis is that the optimization method described above significantly improves accuracy.
 
 ####Data####
-Describe the data used in the experiments
+- They collect 80 million tweets from the Spritzer Twitter stream from September 2011 to February 2012.
+- Of these, they keep the 1.03 million which carry exact geocoordinates (from smartphones).
+- Of these, they reserve 10% for optimizing the indicator weights. The remaining (103K) are used for testing the accuracy.
 
 ####Experimentals####
-Briefly describe how are the experiments are organized.
+- For each of the 103K tweets in the test set, the predicted location is computed using the methods above.
+- Three metrics are computed:
+  - AED: Average error distance. 
+  - MED: Median error distance.
+  - MSE: Mean squared error
+  - Recall: the percentage of tweets for which some prediction was made.
+- The experiments compare each indicator in isolation, then compare them all together. Additionally, comparison is made between the optimize versus unoptimized method.
 
 ####Results####
-Describe the results and their significance.
+- The best approach uses all indicators except for two (IP address and geoname lookup for individual words). This results in an average error of 1,400 km, with a recall of 92%.
+- Optimizing the weights results in a big improvement in accruacy (average error of 1408km vs 1931km)
+- The best individual indicator by far is the one based on location services (Foursquare, Flickr), which has an average error of 15km and a recall of 18%.
 
 ####Assumptions####
 List some of the important assumptions the authors make in their work.
 
 ####Questions####
-List 2-3 questions you have about the paper.
-
+- What is the result without using the location service indicator? This seems to be a very important indicator, but seems to be an artifact of this data source. This will probably not generalize to geolocating other text sources.
+- Is there a bias introduced by not splitting the data chronologically?
+- What is the accuracy if the system is forced to predict every message (instead of the 92% they report)?
+ 
 ####Related Papers####
 List 2-3 papers that are most similar to this paper. For each, briefly list how this paper is different.
