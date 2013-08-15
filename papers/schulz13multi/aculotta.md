@@ -49,3 +49,5 @@ Since the accuracy measures are only computed on tweets that carry geocoordinate
 ####Related Papers####
 - Hale, S., and Gaffney, D. 2012. Where in the world are you? Geolocation and language identification in Twitter. In Proceedings of ICWSM’12, 518–521.
   - The present paper combines many more indicators besides simply evidence from the location field. 
+- Cheng, Z.; Caverlee, J.; and Lee, K. 2010. You Are Where You Tweet : A Content-Based Approach to Geo-locating Twitter Users. In Proceedings of CIKM ’10, 759–768.
+  - The present paper does not use only the text of the tweet. 
