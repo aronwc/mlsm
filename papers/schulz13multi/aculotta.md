@@ -39,7 +39,7 @@ As part of this stacking, a weight is attached to each indicator. This weight is
 - The best individual indicator by far is the one based on location services (Foursquare, Flickr), which has an average error of 15km and a recall of 18%.
 
 ####Assumptions####
-List some of the important assumptions the authors make in their work.
+Since the accuracy measures are only computed on tweets that carry geocoordinates, one important assumption is that tweets that carry geocoordinates are not systematically different from other tweets. 
 
 ####Questions####
 - What is the result without using the location service indicator? This seems to be a very important indicator, but seems to be an artifact of this data source. This will probably not generalize to geolocating other text sources.
@@ -47,4 +47,5 @@ List some of the important assumptions the authors make in their work.
 - What is the accuracy if the system is forced to predict every message (instead of the 92% they report)?
  
 ####Related Papers####
-List 2-3 papers that are most similar to this paper. For each, briefly list how this paper is different.
+- Hale, S., and Gaffney, D. 2012. Where in the world are you? Geolocation and language identification in Twitter. In Proceedings of ICWSM’12, 518–521.
+  - The present paper combines many more indicators besides simply evidence from the location field. 
