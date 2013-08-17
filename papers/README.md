@@ -1,1 +1,1 @@
-The summaries for each paper are stored here chronologically.
+The summaries for each paper are stored here.
