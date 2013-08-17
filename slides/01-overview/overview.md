@@ -106,15 +106,11 @@ Is there anything useful in this chatter...**other than marketing**?
 
 ---
 
-**How does this**
-
-![tweets](images/tweets.png)
+**How does this** ![tweets](images/tweets.png)
 
 ---
 
-**How does this**
-
-![tweets](images/tweets.png) **become useful?**
+**How does this** ![tweets](images/tweets.png) **become useful?**
 
 ---
 
