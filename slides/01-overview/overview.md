@@ -138,7 +138,7 @@ Is there anything useful in this chatter...**other than marketing**?
 - Core tasks:
   - Community detection
   - Link prediction
-  - Spread of influnce
+  - Spread of influence
 
 ---
 
