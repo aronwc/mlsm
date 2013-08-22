@@ -41,10 +41,11 @@ As part of this stacking, a weight is attached to each indicator. This weight is
 ####Assumptions####
 Since the accuracy measures are only computed on tweets that carry geocoordinates, one important assumption is that tweets that carry geocoordinates are not systematically different from other tweets. 
 
-####Questions####
-- What is the result without using the location service indicator? This seems to be a very important indicator, but seems to be an artifact of this data source. This will probably not generalize to geolocating other text sources.
-- Is there a bias introduced by not splitting the data chronologically?
+####Synthesis###
+- An additional experiment would be to compute accuracy result without using the location service indicator? This seems to be a very important indicator, but seems to be an artifact of this data source. This will probably not generalize to geolocating other text sources.
+- Is there a bias introduced by not splitting the data chronologically? This can be tested.
 - What is the accuracy if the system is forced to predict every message (instead of the 92% they report)?
+- My next steps would be to incoprorate this approach within a health surveillance system to see if greater knowledge of location it improves monitoring capabilities.
  
 ####Related Papers####
 - Hale, S., and Gaffney, D. 2012. [Where in the world are you? Geolocation and language identification in Twitter](http://www.geospace.co.uk/files/icwsm_paper2.pdf). In Proceedings of ICWSM’12, 518–521.
