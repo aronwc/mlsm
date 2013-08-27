@@ -231,6 +231,7 @@ def predict(x):
 
 <img src='images/knn.png' width='80%'/>
 
+<http://www.scholarpedia.org/article/K-nearest_neighbor>
 
 ---
 
@@ -280,7 +281,7 @@ How many times can I do this?
 
 ---
 
-## Engineering Design
+## Experimental Design
 
 1. Collect data
 2. Build model
@@ -290,7 +291,7 @@ How many times can I do this?
 
 ---
 
-## Engineering Design
+## Experimental Design
 
 1. Collect data
 2. Build model
@@ -332,6 +333,14 @@ How many times can I do this?
 - What is bias? variance?
 
 ---
+
+<img src='images/biasvariance.png' width='70%'/>
+
+<http://scott.fortmann-roe.com/docs/BiasVariance.html>
+
+---
+
+
 
 ## Discussion Questions
 
