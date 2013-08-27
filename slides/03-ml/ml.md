@@ -205,10 +205,10 @@ f = dict()
 
 def train(X, Y):
 	for x, y in zip(X, Y):
-	  f(x) = y
+	  f[x] = y
 
 def predict(x):
-	return f(x)
+	return f[x]
 ```
 
 ---
@@ -220,11 +220,11 @@ f = dict()
 
 def train(X, Y):
 	for x, y in zip(X, Y):
-	  f(x) = y
+	  f[x] = y
 
 def predict(x):
 	x_closest = find_most_similar(x)
-	return f(x_closest)
+	return f[x_closest]
 ```
 
 ---

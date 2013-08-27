@@ -276,10 +276,10 @@ credit: 0
 
 def train(X, Y):
     for x, y in zip(X, Y):
-      f(x) = y
+      f[x] = y
 
 def predict(x):
-    return f(x)
+    return f[x]
 </code></pre></div>
       <div class='step' >
     
@@ -288,11 +288,11 @@ def predict(x):
 
 def train(X, Y):
     for x, y in zip(X, Y):
-      f(x) = y
+      f[x] = y
 
 def predict(x):
     x_closest = find_most_similar(x)
-    return f(x_closest)
+    return f[x_closest]
 </code></pre></div>
       <div class='step' >
     
