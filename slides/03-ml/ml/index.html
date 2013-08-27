@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS595 - Reading Research</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="css/favicon.png" />
+    <link rel="apple-touch-icon" href="css/apple-touch-icon.png" />
+    <!-- Code Prettifier: -->
+<link href="css/highlight.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}});
+        </script>
+        <script type="text/javascript"
+          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+      
+    <link href="css/style.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800' rel='stylesheet' type='text/css'>    
+
+
+  </head>
+
+  <body>
+  <div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+    <div id="impress">
+    <div class='step' >
+    
+<h2>CS595</h2>
+
+<h2>Machine Learning and Social Media</h2>
+
+<h3><strong>Lecture 3: Machine Learning Overview</strong></h3>
+
+<p><br></p>
+
+<h4>Aron Culotta</h4>
+
+<h4>Assistant Professor</h4>
+
+<h4>Computer Science</h4>
+
+<h4>Illinois Institute of Technology</h4>
+</div>
+      <div class='step' >
+    
+<ul>
+<li>Dietterich: &quot;Machine Learning&quot;</li>
+<li>Domingos: &quot;A few useful things to know about machine learning&quot;</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>What is machine learning?</h2>
+</div>
+      <div class='step' >
+    
+<h2>What is machine learning?</h2>
+
+<p>&quot;Study of methods for programming computers to learn.&quot; </p>
+
+<p>-- Dietterich</p>
+</div>
+      <div class='step' >
+    
+<h2>What machine learning?</h2>
+
+<p>Study of systems that &quot;automatically learn programs from data&quot; </p>
+
+<p>-- Domingos</p>
+</div>
+      <div class='step' >
+    
+<h2>What is machine learning?</h2>
+
+<p>A problem-solving technique that solves future problem instances based on
+patterns found in past problem instances</p>
+</div>
+      <div class='step' >
+    
+<h2>What is machine learning?</h2>
+
+<p>Often relies on <em>Big Data</em> and statistics</p>
+</div>
+      <div class='step' >
+    
+<h2>Examples</h2>
+</div>
+      <div class='step' >
+    
+<p><img src="images/spam.png" alt="spam"></p>
+</div>
+      <div class='step' >
+    
+<p><img src='images/search.png' width='50%'/></p>
+</div>
+      <div class='step' >
+    
+<p><img src='images/netflix.png', width='70%'/></p>
+</div>
+      <div class='step' >
+    
+<p><img src='images/bw.png' width='50%'/></p>
+</div>
+      <div class='step' >
+    
+<p><img src='images/chopper.png' width='70%'></p>
+</div>
+      <div class='step' >
+    
+<p><img src='images/car.jpg' width='70%'/></p>
+</div>
+      <div class='step' >
+    
+<p><img src="images/money.png" alt="money"></p>
+</div>
+      <div class='step' >
+    
+<p><img src='images/doc.png' width='40%'/></p>
+</div>
+      <div class='step' >
+    
+<p><img src='images/siri.png' width='40%'/></p>
+</div>
+      <div class='step' >
+    
+<p><img src='images/watson.png' width='70%'/></p>
+</div>
+      <div class='step' >
+    
+<h2>Notation</h2>
+
+<ul>
+<li>$\vec{x} \in \mathcal{X}$ &nbsp;&nbsp;&nbsp;&nbsp; <em>instance</em>, <em>example</em>, <em>input</em>
+
+<ul>
+<li>e.g., an email</li>
+</ul></li>
+<li>$y \in \mathcal{Y}$ &nbsp;&nbsp;&nbsp;&nbsp; <em>target</em>, <em>class</em>, <em>label</em>, <em>output</em>
+
+<ul>
+<li>e.g., $y=1$: spam ; $y=0$: not spam</li>
+</ul></li>
+<li>$f: \mathcal{X} \mapsto \mathcal{Y}$ &nbsp;&nbsp;&nbsp;&nbsp; <em>hypothesis</em>, <em>learner</em>, <em>model</em>, <em>classifier</em>
+
+<ul>
+<li>e.g., if $x$ contain the word <em>free</em>, $y$ is $1$.</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Problem types</h2>
+
+<ul>
+<li><strong>Classification</strong>
+
+<ul>
+<li>$\vec{x}$: image of a person ;  $y$: gender</li>
+</ul></li>
+<li><strong>Regression</strong>
+
+<ul>
+<li>$\vec{x}$: image of a person ; $y$: age</li>
+</ul></li>
+<li><strong>Clustering</strong>
+
+<ul>
+<li>$\vec{x}$: images of people ; $y$: cluster id of people that look similar</li>
+</ul></li>
+<li><strong>Structured classification</strong>
+
+<ul>
+<li>$\vec{x}$: image of a person ; $\vec{y}$: location of their eyes and ears</li>
+<li>$X$: sequence of images of people ; $Y$: subsequences containing people running</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Workflow</h2>
+
+<ol>
+<li><strong>Collect</strong> raw data: emails</li>
+<li>Manually <strong>categorize</strong> them:  spam or not</li>
+<li><strong>Vectorize</strong>: email -> word counts [<strong>features</strong>]</li>
+<li><strong>Train</strong> / <strong>Fit</strong>: create $f(x)$</li>
+<li><strong>Collect</strong> new raw data</li>
+<li><strong>Predict</strong>: compute $f(x)$ for new $x$</li>
+</ol>
+</div>
+      <div class='step' >
+    
+<h2>Example: Spam Classification</h2>
+</div>
+      <div class='step' >
+    
+<p><strong>Steps 1 &amp; 2: Collect and categorize</strong></p>
+
+<p><strong>Spam:</strong></p>
+
+<blockquote>
+<p>Free credit report!</p>
+
+<p>Free money!</p>
+</blockquote>
+
+<p><strong>Not spam:</strong></p>
+
+<blockquote>
+<p>Are you free tonight?</p>
+
+<p>How are you?</p>
+</blockquote>
+</div>
+      <div class='step' >
+    
+<p><strong>Step 3: Vectorize</strong></p>
+
+<blockquote>
+<p>&#39;Free money!&#39;</p>
+</blockquote>
+
+<p>becomes</p>
+<pre><code class='prettyprint '>free: 1
+money: 1
+!: 1
+?: 0
+credit: 0
+...
+</code></pre>
+<p><strong>Representation</strong>: &quot;Feature engineering is the key&quot; -- Domingos</p>
+</div>
+      <div class='step' >
+    
+<p><strong>Step 4: Train/Fit</strong></p>
+
+<p>Which model to use?</p>
+
+<ul>
+<li>Naive Bayes</li>
+<li>Logistic Regression</li>
+<li>Decision Tree</li>
+<li>K-Nearest Neighbors</li>
+<li>Support Vector Machines</li>
+<li>... many many more</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<p><strong>Steps 5-6: Predict on new data</strong></p>
+
+<blockquote>
+<p>Free vacation!</p>
+</blockquote>
+
+<p><strong>Spam</strong></p>
+</div>
+      <div class='step' >
+    
+<p>How do you know if it works?</p>
+</div>
+      <div class='step' >
+    
+<p>Simplest machine learning algorithm:</p>
+<pre><code class='prettyprint '>f = dict()
+
+def train(X, Y):
+    for x, y in zip(X, Y):
+      f(x) = y
+
+def predict(x):
+    return f(x)
+</code></pre></div>
+      <div class='step' >
+    
+<p>Second simplest machine learning algorithm:</p>
+<pre><code class='prettyprint '>f = dict()
+
+def train(X, Y):
+    for x, y in zip(X, Y):
+      f(x) = y
+
+def predict(x):
+    x_closest = find_most_similar(x)
+    return f(x_closest)
+</code></pre></div>
+      <div class='step' >
+    
+<p><img src='images/knn.png' width='80%'/></p>
+</div>
+      <div class='step' >
+    
+<h2>Generalization</h2>
+
+<p>How accurate will I be on a new, unobserved example?</p>
+</div>
+      <div class='step' >
+    
+<p>How do you know if it works?</p>
+
+<ol>
+<li>Train on data ${\mathcal D_1}$</li>
+<li>Predict on data ${\mathcal D_2}$</li>
+<li>Compute accuracy on ${\mathcal D_2}$.
+
+<ul>
+<li>Why not ${\mathcal D_1}$?</li>
+</ul></li>
+</ol>
+</div>
+      <div class='step' >
+    
+<p>How do you know if it works?</p>
+
+<ol>
+<li>Train on data ${\mathcal D_1}$</li>
+<li>Predict on data ${\mathcal D_2}$</li>
+<li>Compute accuracy on ${\mathcal D_2}$.</li>
+<li>Tweak algorithm / representation</li>
+<li>Repeat</li>
+</ol>
+</div>
+      <div class='step' >
+    
+<p>How do you know if it works?</p>
+
+<ol>
+<li>Train on data ${\mathcal D_1}$</li>
+<li>Predict on data ${\mathcal D_2}$</li>
+<li>Compute accuracy on ${\mathcal D_2}$.</li>
+<li>Tweak algorithm / representation</li>
+<li>Repeat</li>
+</ol>
+
+<p>How many times can I do this?</p>
+</div>
+      <div class='step' >
+    
+<h2>Measuring Generalization</h2>
+
+<ul>
+<li>Cross-validation
+
+<ul>
+<li>train on 90%, test on 10%, repeat 10 x&#39;s</li>
+<li>each example appears only once in test set</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Engineering Design</h2>
+
+<ol>
+<li>Collect data</li>
+<li>Build model</li>
+<li>Compute cross-validation accuracy</li>
+<li>Tune model</li>
+<li>Repeat</li>
+</ol>
+</div>
+      <div class='step' >
+    
+<h2>Engineering Design</h2>
+
+<ol>
+<li>Collect data</li>
+<li>Build model</li>
+<li>Compute cross-validation accuracy</li>
+<li>Tune model</li>
+<li>Repeat</li>
+<li><strong>Report accuracy on new data</strong></li>
+</ol>
+</div>
+      <div class='step' >
+    
+<h2>Discussion Questions</h2>
+
+<ul>
+<li>What is the difference between machine learning and statistics?</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Discussion Questions</h2>
+
+<ul>
+<li>What is the impact of making an i.i.d. assumption among examples?
+
+<ul>
+<li><em>independent and identically distributed</em></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Discussion Questions</h2>
+
+<ul>
+<li>What is overfitting? How do you know it is happening? How do you fix?</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Discussion Questions</h2>
+
+<ul>
+<li>What is the hypothesis space and why does its size matter?</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Discussion Questions</h2>
+
+<ul>
+<li>What is bias? variance?</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Discussion Questions</h2>
+
+<ul>
+<li>What is curse of dimensionality?</li>
+</ul>
+
+      </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
+    
