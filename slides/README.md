@@ -6,4 +6,4 @@ E.g.:
 The results are stored in GitHub pages, e.g., 
 <http://aronwc.github.io/mlsm/01-overview>
 
-The code for that webpages is available on the `gh-pages` branch of this repo.
+The code for those webpages is available on the `gh-pages` branch of this repo.
