@@ -30,7 +30,7 @@ title: CS595 - Reading Research
 
 ---
 
-## What machine learning?
+## What is machine learning?
 
 Study of systems that "automatically learn programs from data" 
 
