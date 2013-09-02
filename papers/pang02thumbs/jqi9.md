@@ -52,16 +52,16 @@ To know the attitude for a certain event or topic is very useful to retailers or
 
 ####Related Papers####
 Machine learning in automated text categorization, 
--Fabrizio Sebastiani	Consiglio Nazionale delle Ricerche, Pisa, Italy
--ACM Computing Surveys (CSUR) Volume 34 Issue 1, March 2002 
+Fabrizio Sebastiani	Consiglio Nazionale delle Ricerche, Pisa, Italy 
+ACM Computing Surveys (CSUR) Volume 34 Issue 1, March 2002 
 Pages 1-47
--This paper talks about almost all the methods about text categorization.
+- This paper talks about almost all the methods about text categorization.
 
 
 Sentiment classification of online reviews to travel destinations by supervised machine learning approaches,
--Qiang Ye, Ziqiong Zhang, Rob Law
--Expert Systems with Applications, Volume 36, Issue 3, Part 2, April 2009, Pages 6527–6535
--Use character based N-gram model instead of ME.
+Qiang Ye, Ziqiong Zhang, Rob Law, 
+Expert Systems with Applications, Volume 36, Issue 3, Part 2, April 2009, Pages 6527–6535
+- Use character based N-gram model instead of ME.
 
 A machine learning approach to sentiment analysis in multilingual Web texts,
 -Erik Boiy, Marie-Francine Moens
