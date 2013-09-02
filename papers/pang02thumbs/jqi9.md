@@ -47,22 +47,22 @@ Position: some people would like to point out the defects first, then advantages
 The authors think the supervised learning method will be more efficient and accurate than the unsupervised learning methods.
 Some kinds of reviews will turn to be really hard for machine learning technique to distinguish by algorithms mentioned before, for example there are some nonsenses in it, author think next step for more accurate classification will be identify which sentences are on-topic.
 
-####Synthesis#### 
+####Synthesis####
 To know the attitude for a certain event or topic is very useful to retailers or politicians, maybe next step we should try to predict people’s attitude from a former predicted result of a similar topic or event, it will help people to know the effect of their decision.
 
 ####Related Papers####
 Machine learning in automated text categorization, 
-Fabrizio Sebastiani	Consiglio Nazionale delle Ricerche, Pisa, Italy
-ACM Computing Surveys (CSUR) Volume 34 Issue 1, March 2002 
+-Fabrizio Sebastiani	Consiglio Nazionale delle Ricerche, Pisa, Italy
+-ACM Computing Surveys (CSUR) Volume 34 Issue 1, March 2002 
 Pages 1-47
 -This paper talks about almost all the methods about text categorization.
 
 
-Sentiment classification of online reviews to travel destinations by supervised machine learning approaches
-Qiang Ye, Ziqiong Zhang, Rob Law
-Expert Systems with Applications, Volume 36, Issue 3, Part 2, April 2009, Pages 6527–6535
+Sentiment classification of online reviews to travel destinations by supervised machine learning approaches,
+-Qiang Ye, Ziqiong Zhang, Rob Law
+-Expert Systems with Applications, Volume 36, Issue 3, Part 2, April 2009, Pages 6527–6535
 -Use character based N-gram model instead of ME.
 
-A machine learning approach to sentiment analysis in multilingual Web texts
-Erik Boiy, Marie-Francine Moens
+A machine learning approach to sentiment analysis in multilingual Web texts,
+-Erik Boiy, Marie-Francine Moens
 -Mixed several algorithms to perform the prediction, got relatively high accuracy.
