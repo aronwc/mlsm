@@ -64,5 +64,5 @@ Expert Systems with Applications, Volume 36, Issue 3, Part 2, April 2009, Pages 
 - Use character based N-gram model instead of ME.
 
 A machine learning approach to sentiment analysis in multilingual Web texts,
--Erik Boiy, Marie-Francine Moens
--Mixed several algorithms to perform the prediction, got relatively high accuracy.
+Erik Boiy, Marie-Francine Moens,
+- Mixed several algorithms to perform the prediction, got relatively high accuracy.
