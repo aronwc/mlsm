@@ -5,10 +5,12 @@ This paper compares the efficiency of 3 machine learning algorithms in sentiment
 ####Algorithm####
 
 Each document is represented as a vector of the number of time its features occur in it.
+
 3 machine learning algorithms are tested in this paper:
 - Naive Bayes
 - Maximum Entropy
 - Support Vector Machines
+
 These algorithms are usually used in topic-based categorization.
 
 ####Hypothesis####
@@ -25,9 +27,9 @@ These algorithms are usually used in topic-based categorization.
 
 ####Experimentals####
 
-- As a preliminary experiment, two graduate students have chosen a list of indicator words to describe positive and negative sentiment. It was to test the hypothesis that a list of words could describe a sentiment. 
+- As a preliminary experiment, two graduate students have chosen a list of indicator words to describe positive and negative sentiments. It was to test the hypothesis that a list of words could describe a sentiment. 
 - A dataset is made of 700 positive-sentiment and 700 negative-sentiment documents randomly chosen in the data.
-- The 3 algorithms (Naive Bayes, Maximum entropy and Support Vector Machines) are launched on the dataset to evaluate the effectiveness of certain parameters to consider (presence, frequency, unigrams, bigrams, parts of speech and position).
+- The 3 algorithms (Naive Bayes, Maximum entropy and Support Vector Machines) are launched on a dataset to evaluate the effectiveness of certain parameters to consider (presence, frequency, unigrams, bigrams, parts of speech and position).
 - Authors focused on features based on unigrams and bigrams. Only 16165 unigrams appearing four times and 16165 bigrams appearing seven times are considered.
 
 
@@ -49,15 +51,15 @@ These algorithms are usually used in topic-based categorization.
 
 ####Synthesis####
 
-- We can assign different weights to different keyword for sentiment classification, particularly for those which express stronger sentiment.
+- We can assign different weights to different keywords for sentiment classification, particularly for those which express stronger sentiments.
 - We can try these 3 algorithms on different databases like travel and hotel reviews or food reviews.
-- Expectations or previous assumption before watching the film from the reviewers should be ignore because they are not on-topic. 
+- Expectations or previous assumptions before watching the film from the reviewers should be ignore because they are not on-topic. 
 
 
 ####Related Papers####
 
 - Machine learning : a review of classification and combining techniques, S.B. Kotsiankis, I.D. Zaharakis, P.E. Pintelas (2007)
 - Machine Learning Approaches to sentiment Analysis using the Dutch Netlog Corpus, Sarah Schrauwen (2010)
-- Sentiment Classification on Customer Feedback Data : Noisy Data, Large FeatureVectors and the Role of Linguistic Analysis, Gamon, M. (2004)
+- Sentiment Classification on Customer Feedback Data : Noisy Data, Large Feature Vectors and the Role of Linguistic Analysis, Gamon, M. (2004)
 
 	
