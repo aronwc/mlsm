@@ -1,0 +1,73 @@
+Overview
+This paper aimed at the classification of sentiments. Instead to do the traditional topic classification, it suggest to category the sentimental based on the words appear in certain documents. The challenge would be differential the traditional topic classification and the sentimental classification, which is more subtle.  
+
+Algorithm
+• Naive Bayes classification
+• Maximum entropy classification
+• Support vector machines (All three of them are aiming at examining whether it suffices to treat sentiment classification simply as a special case of topic-based categorization or whether special sentiment- categorization need to be developed)
+
+These are the three major algorithm they used in the paper. These three are very tradition machine learning algorithm. However, they aimed at use these three algorithm to compare the sentimental classification to the topic classification. 
+They cross search the unigram, bigram, POS and etc., which is linguistic features appears in the documents, against the three basic algorithm to do the sentimental classification. 
+
+
+Hypothesis
+• Certain words people tend to use to express strong sentiments, so that it might suffice to simply produce a list of such words by introspection and rely on them alone to classify the texts. 
+• Using the corpus-based technic to find out the indicator of positive and negative movie review.
+• The most important hypothesis is compare the accuracy of traditional  topic classification and the sentimental classification (doesn't seem to be a hypothesis, but it is definitely the major purpose of this paper)
+
+
+Data
+• Work on non-topic-based text categorization.
+• They Chose to work with online movie reviews. Internet Movie database. 
+• They selected only reviews where  the author rating was expressed either with star or some numerical value. Concentrate on discriminating between positive and negative sentiment. 
+
+
+
+
+
+
+Experimental
+• To test the first hypothesis, they asked two graduate students to choose good indicator words (positive) and negative sentiments in movie review. Then count the positive and negative words from the movie review into a document. 
+• Similar process as the first experiment, only using the corpus-based technic to find the indicator.
+• The experiment under is aiming at the three algorithm mentioned before.
+	• Using the movie-review corpus date mentioned before. 
+	• Using the three algorithm on two features (unigram with negation tag and bigram) of the text that abstract from the movie-review. 
+	• They also include the binaries document vectors in order to test directly incorporation feature frequency. 
+	• Bigrams: They look specifically for negation words in the context word. 
+	• They also set up experiment on appending POS tag to serve as a crude form of word sense disambiguation. 
+	• Solely test on the adjective words.
+	• The position: the position of a word appear in the text.
+
+
+Results
+• The first experiment for the human-based classifiers were 58% and 64%. However, the tie rate, percentage of documents where the two sentiments were rate equally like, indicate the human based classification isn't reliable. 
+• The result of second experiment turns up accuracy tp 69% and down the tie rate into 16%.
+• Initial unigram results the machine learning algorithms clearly surpass the random-choice baseline of 50%. It also beat the two human-selected-unigram baselines of 58% and 64%. Furthermore, perform well in comparison to the 69% baseline achieved via limited access to the test-data statistics. 
+• The other result about topic based classification indicate sentiment categorization is more difficult than topic classification. 
+• The result from binaries document search indeed rise the accuracy, however, it remains to be verified in detail. 
+• Bigram information does not improve performance beyond that of unigram presence. Bigram presence is as equally useful feature as unigram presence. 
+• The POS' result is just slightly higher than the others. 
+• The result from adjectives (since a lot of human-produced list include a lot of adjectives) is not outstanding.
+• The accuracy of the position of a word in the context is not differ from others. 
+
+
+Assumptions
+The most important assumption between the algorithm and the linguistic feature (unigram; bigram) is that all the features used in the algorithm are conditional independent. That means the key words appears in the document are independent from each other, which hasn't been proved systematically.  
+
+Synthesis
+• The improvement result from binaries document search is obvious. But how to set up experiment to verify it? 
+• There are certain conditioned haven't been included yet. Like "thewarted expectations" (the review start with "the movie should be brilliant").
+• Why after all these experiment the result from sentimental classification still not as good as traditional topic classification? Do they need work on the data?   
+
+
+
+Related Papers
+	• Naive Bayes classifier From <http://en.wikipedia.org/wiki/Naive_Bayes_classifier> 
+	• Principle of maximum entropy From <http://en.wikipedia.org/wiki/Principle_of_maximum_entropy> 
+	• Support vector machine From <http://en.wikipedia.org/wiki/Support_vector_machine> 
+	• John, Blitzer, Mark Dredze, Fernando Pereira, 2007. Biographies, Bollywood, Boom-boxes and Blenders: Domain Adaptation for Sentiment Classiﬁcation.
+	• Hang Cui, Vibhu Mittal, Mayur Datar, 2006. Comparative Experiments on Sentiment Classiﬁcation for Online Product Reviews.
+	• A Shlomo Argamon-Engelson, Moshe Koppel, and Galit Avneri. 1998. Style-based text categorization: What newspaper am I reading? In Proc. Of the AAAI Workshop on Text Categorization, pages
+
+	
+	
