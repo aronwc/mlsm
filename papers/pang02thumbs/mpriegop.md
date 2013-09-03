@@ -12,7 +12,6 @@ The author proposes three algorithms previously used in topic categorization:
 ####Hypothesis####
 - Keywords can determine if a review is positive or negative.
 - It is useful to apply corpus-based techniques for picking up the keywords.
-- Movie reviews are good enough to check the effectiveness of this machine learning techniques.
 
 ####Data####
 - The main data source are reviews with stars or numerical value from IMDb. 2053 reviews were evaluated, 1301 positive and 752 negative.
@@ -26,17 +25,28 @@ Then, they applied the three algortihms to these experiments:
 - Unigram keywords, based on the presence of a keyword.
 - Bigram keywords, based on the presence of a keyword.
 - Unigrams and bigrams
-- Unigrams and POS
-- Adjectives
+- Unigrams and POS with negative tags.
+- Just selecting adjectives keywords.
 - unigrams and the position in the review of the keyword.
 
 ####Results####
-
+- All the results perform over the 50% baseline.
+- Machine learning results were far better than humans results. The humans obtained no more than 64% accuracy versus an average of 79% for machine learning techniques.
+- From all of these experiments the one with best percentage of success was unigram based on the presence of a keyword using SVM. 82.9%
+- The algorithm that performs better was SVM.
+- The adjectives measure obtained the worst results.
 
 ####Assumptions####
-
+- The result of the experiment with the data of two students represents all humans performance. As these results are worse than machine learning's then it is better using machine learning algorithms.
+- Those three algorithms are the most suitable for sentiment classification.
+- If in unigram, frequency results were worse than presence ones, then for the other experiments too.
+- Sentiment classification is more difficult than topic-based classification.
+- Movie reviews are good enough to check the effectiveness of this machine learning techniques.
 
 ####Synthesis###
+- I would have took neutral reviews too. A real situation include neutral reviews. What happen if you use these techniques with a neutral review? Which output would we obtain? In a real situation we would have more neutral reviews than possitive or negatives, so we are skipping a big part of the picture.
+- Also I would try to filter the sentences in which the word 'wish' or thought appears like 'I wish this film would have been amazing and outstanding' or 'I thought that the movie was going to be awful and boring' because it can provide fake information.
+- My next step would be trying this algorithms with food reviews where adjectives are very important. For example, 'The salad was too salty' or 'the meat was undercooked'.
 
- 
 ####Related Papers####
+
