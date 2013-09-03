@@ -50,7 +50,7 @@ Then, they applied the three algortihms to these experiments:
 
 ####Related Papers####
 - Turney, P. D. (2002, July). [Thumbs up or thumbs down?: semantic orientation applied to unsupervised classification of reviews.](http://dl.acm.org/citation.cfm?id=1073153) In Proceedings of the 40th annual meeting on association for computational linguistics (pp. 417-424). Association for Computational Linguistics.
-  - This paper has a bigger vision as they apply the algortihm to movie reviews, banks and automobiles. Also it considers the semantic of the sentences and explain the procedure for the machine learning technique better.
+  - This paper has a bigger vision as they apply the algortihm to movie reviews, banks and automobiles. Also it considers the semantic of the sentences and explains the procedure for the machine learning technique better.
 - Kotsiantis, S. B., Zaharakis, I. D., & Pintelas, P. E. (2007). [Supervised machine learning: A review of classification techniques](http://books.google.com/books?hl=es&lr=&id=vLiTXDHr_sYC&oi=fnd&pg=PA3&dq=classification+review+machine+learning&ots=CWrzuz3Elq&sig=6GRWkQBofMlfv8hvJfH3cASAT4A#v=onepage&q=classification%20review%20machine%20learning&f=false)
   - The present paper provides a good background about machine learning and clasiffication procedures. Instead of directly talking about some algorithm it explains how from some keywords you can apply probability for making a balance.
 
