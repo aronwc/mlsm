@@ -1,0 +1,49 @@
+Overview: 
+This paper is trying to analyze the application and difficulties in applying machine learning methods to identify sentiments of a given online document. 
+
+Algorithm: 
+This paper tries to fit in three machine learning algorithms into the problem.
+1. Naive Bayes classification
+2. Maximum entropy classification
+3. support vector machines.
+
+
+Hypothesis: List the hypotheses the authors test in the paper (note that these are not always explicitly stated).
+in the given problem domain of categorizing the sentiment of an online document, an idea that the authors propose as a hypotheses is to identify strong words corresponding to a sentiment to identify the document. 
+This hypothesis is put to experiment by two human subjects, who are given a sample set of documents to pull out words that help identify the sentiment. 
+The identifiable sentiments are reduced to just positive and negative. Accuracy of this test by the human testers were at 58% and 64%. By testing these words on the set of data and rerunning the process on the words, increased the percentage of chances to 69%. More importantly, the tie results of this hypotheses was improved to 16% from previous values of 75% and 39%.
+
+Data: 
+The data set used is a bunch of movie reviews written by authors on IMDB.com 
+A total of 1400 reviews are selected with no more than 20 reviews from a reviewer. 
+Also 700 are kept positive and 700 are negative.
+
+Experiments:
+No more than 20 reviews per author are taken into consideration. All considered reviews have a rating available to be used as a test result. 
+2 Human testers run through the set of papers with two sets of keywords to identify the sentiments.
+The results are noted, tested not he set of 1400 documents.
+The keyword is corrected to an extent and rerun with an efficiency of 69%. 
+
+The ratings are stripped out for the process and the three machine learning algorithms are run on the text to identify the sentiment of the review. 
+The three algorithms are fed with different set of features and the results are noted in the results and discussion section.
+
+
+Results: 
+The results shown in the paper are to agree with the idea that machine learning techniques faired better than the human results that fell between 58% and 69%.
+using unigrams to identify the sentiment yielded best results in the set of experiments conducted. 
+The vector method that used all the available features to identify a sentiment seemed to fair better.   
+
+Assumptions: List some of the important assumptions the authors make in their work.
+
+I did not get the time to process the data set and would like to give it some more time to sink  in to understand how a total of 16165 unigrams were identified from 1400 documents. Also, using this on an much higher data set seemed like a big task to scale and analyze a document out of the starting set. 
+
+Synthesis: Are there claims you disagree with? What would you do differently? What would you do next?
+They start with the idea of comparing the machine learning process to a very slim and simple human test.  
+They use 2 human beings chose two keywords sets and the results are not as extensive as the machine learning algorithms input of 15,000+ feature set.
+
+The idea of humans being able to identify keyword is put across. But all human beings do not necessary have the same capability of identifying key words. The credibility could have ben explained slightly better.
+
+Conducting the experiment only on more than one language would be interesting.
+
+Related Papers:
+This is my first paper to be anlysed in this field.
