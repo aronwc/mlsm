@@ -1,0 +1,55 @@
+Overview
+This paper exams the effectiveness of the application of three machine learning algorithms to the sentiment classification problem and different features that have impact on those algorithms.
+Algorithm
+•	Each movie review is represented by a feature vector of unigrams (with negation tagging) or bigrams
+•	Each feature is the feature frequency or the feature presence
+•	Naive Bayes
+•	Maximum Entropy
+•	Support vector machines (SVMs)
+Hypothesis
+The hypothesis is that sentiment classification is more challenging than the topic-based classification for machine learning techniques, and the sentiment is not easily identified by keywords alone. 
+Data
+•	Their data source is the Internet Movie Database (IMDb) archive of the rec.arts.movies.reviews newsgroup. 
+•	They selected only reviews where the author rating was expressed either with stars or some numerical value.
+•	They imposed a limit of fewer than 20 reviews per author per sentiment category,  which yielded  752 negative and 1301 positive reviews, with a total of 144 reviewers represented.
+
+Experiments
+•	They first asked two students to independently choose good indicator words for positive and negative sentiments. They then converted their responses into simple decision procedures that count the number of the positive and negative words.
+•	They randomly selected 700 positive-sentiment and 700 negative-sentiment documents.
+•	They limited consideration to 16165 unigrams appearing at least four times in the document corpus.
+•	They added the tag NOT to every word between a negation word and the first punctuation mark following the negation word.
+•	They considered the 16165 bigrams occurring at least seven times.
+•	The feature vector is represented by the presence or absence of a feature
+•	The feature vector is represented by the feature frequency.
+•	The feature vector is represented by adjectives alone.
+•	They tagged each word according to whether it appeared in the first quarter, last quarter, or middle half of the document.
+
+Results
+	Proposed word lists	Accuracy 	Ties
+Human 1	positive: dazzling, brilliant, phenomenal, excellent, fantastic 
+negative: suck, terrible, awful, unwatchable, hideous	58% 	75%
+Human 2	positive: gripping, mesmerizing, riveting, spectacular, cool, awesome, thrilling, badass, excellent, moving, exciting
+negative: bad, cliched, sucks, boring, stupid, slow	64% 
+	39%
+
+Features  	# of  features 	frequency or presence?	NB	ME	SVM
+unigrams  	16165	freq	78.7	N/A	72.8
+unigrams 	”	pres	81.0	80.4	82.9
+unigrams+bigrams  	32330	pres	80.6	80.8	82.7
+bigrams 	16165	pres	77.3	77.4	77.1
+unigrams+POS 	16695	pres	81.5	80.4	81.9
+adjectives 	2633	pres	77.0	77.7	75.1
+top 2633 unigrams 	2633	pres	80.3	81.0	81.4
+unigrams+position 	22430	pres	81.0	80.1	81.6
+
+Assumptions
+•	One important assumption is that the rating indictor: the number and stars can reflect the user’s sentiment and it is consistent with the true sentiment.
+Synthesis
+•	Besides those basic machine learning algorithms, how do other algorithms perform on the dataset?
+•	Other dataset can also be used to evaluate the algorithms, i.e. reviews on Amazon, ebay, yelp.
+•	We can try to assign different weight to different keywords since some keywords can be strong sentiment indicator and play more important roles in the classification problem.
+Related papers
+•	Peter D. Turney, Thumbs up or thumbs down?: semantic orientation applied to unsupervised classification of reviews, Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, July 07-12, 2002, Philadelphia, Pennsylvania  
+•	Michael Gamon, Sentiment classification on customer feedback data: noisy data, large feature vectors, and the role of linguistic analysis, Proceedings of the 20th international conference on Computational Linguistics, p.841-es, August 23-27, 2004, Geneva, Switzerland
+•	Cui, H., Mittal, V., and Datar, M. Comparative experiments on sentiment classification for online product reviews. In Proceedings of the Twenty-First National Conference on Artificial Intelligence (AAAI-2006) (2006)
+
