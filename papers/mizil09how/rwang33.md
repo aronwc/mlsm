@@ -6,8 +6,11 @@ In this paper, the authors try to understand and model how opinions are evaluate
 Algorithm:
 
 Deviation from the mean.
+
 Variance and individual bias. 
+
 Controlling for text: Taking advantage of “plagiarism”. 
+
 
 
 Hypothesis:
