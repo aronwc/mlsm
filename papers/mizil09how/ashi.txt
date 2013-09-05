@@ -1,0 +1,40 @@
+Paper Summary
+An Shi
+Title
+How Opinions are Received by Online Communities: A Case Study on Amazon.com Helpfulness Votes
+By Cristian Danescu-Niculescu-Mizil, Gueorgi Kossinets, Jon Kleinberg and Lillian Lee
+Overview
+This paper uses statistical and mathematical models to study the helpfulness of reviews on amazon.
+Algorithm
+Statistics and mathematical methods were used to analyze the data, no machine learning was involved in the paper.
+Hypothesis
+There are four hypothesis in this paper:
+• The conformity hypothesis, which suggests that reviews are more helpful when the stars of the review are more close to the average.
+• The individual-bias hypothesis, which suggests that reviews are more helpful when the stars of the review are more close to the reviewer’s own opinion.
+• The brilliant-but-cruel hypothesis, which suggests that reviews are more helpful when the stars of the review are lower than the average.
+• The quality-only straw-man hypothesis, which means that the helpfulness may only be related to the textual quality.
+Data
+• The author selected data from over 4 million Amazon.com book reviews, which is about 675,000 books.
+• Of all the reviews, the author selected more than 1 million reviews that have at least 10 helpfulness votes.
+• The same experiment was carried out on four different data sets from four countries, US, UK, Germany and Japan.
+Experiments
+The experiments was carried out to test the four hypothesis listed above.
+• Study the relationship between helpfulness ratio and absolute deviation of star ratings of review.
+• Study the relationship between helpfulness ratio and signed deviation of stars ratings review.
+• Study the relationship between helpfulness ratio and signed deviation of stars ratings of review for different groups of data set, each data set has the same variance of the star ratings.
+• Study pairs of “plagiarized” reviews to test if the text quality is the (only) factor to determine helpfulness.
+Results
+• The helpfulness ratio decreases when absolute deviation of star ratings of review increases, suggesting the conformity hypothesis is valid.
+• The helpfulness ratio has a “Christmas-tree” relationship with signed deviation of stars ratings review, but the mean of the positive star ratings compared to the average is higher than the negative ones with the same deviation, which contradicts the brilliant-but-cruel hypothesis.
+• Assuming the helpfulness ratio is a combination of two distributions, one is those evaluator who are positive toward the product and the other is those who are negative. The model agrees with the relationship between helpfulness ratio and signed deviation of stars for different groups of data set.
+• The study of “plagiarized” reviews shows text quality is not the (only) factor to determine helpfulness.
+Assumptions
+• The helpfulness ratio is a combination of two distributions, one is those evaluator who are positive toward the product and the other is those who are negative.
+• The data from the four different countries are independent.
+Synthesis
+• Additional experiments can be carried out on other websites or products other than books to see if they have similar relationship.
+• If possible, study those who write a review and also rate other’s review as helpful to see if there’s a relationship between the two ratings.
+Related papers
+• J. A. Chevalier and D. Mayzlin. The effect of word of mouth on sales: Online book reviews. Journal of Marketing Research, 43(3):345–354, August 2006.
+• N. Hu, P. A. Pavlou, and J. Zhang. Can online reviews reveal a product’s true quality? Empirical findings and analytical modeling of online word-of-mouth communication. In Proc. Electronic Commerce (EC), pages 324–330, 2006.
+• F. Wu and B. A. Huberman. How public opinion forms. In Proc. Wksp. on Internet and Network Economics (WINE), 2008. Short paper.
