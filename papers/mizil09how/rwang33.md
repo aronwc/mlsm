@@ -52,5 +52,6 @@ A review’s perceived helpfulness depends not just on its content, but also the
 
 
 Assumptions:
+
 Helpfulness evaluators can some from two different distributions: positive group and negative group.
 Both positive and negative evaluators have one-dimensional opinion drawn from(possibly different) distributions with density functions.
