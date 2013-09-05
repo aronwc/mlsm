@@ -27,9 +27,11 @@ Perceived helpfulness of a review depends not just on its content but also in su
 
 Assumptions
 1.	The model assumes that helpfulness evaluators can come from two parts: positive disposition & negative disposition.
-2.	The reviews from different national Amazon sites were produced independently by four separate population of reviewers.
+2.	The reviews from different national Amazon sites were produced independently by four separate populations of reviewers.
 
 Synthesis
 I think the helpfulness ratio may influenced by social media. If lots of ads and positive assessments about one book shown on Facebook and Twitter, the positive reviews’ votes of this book may increase a lot.
-Related Papers
 
+Related Papers
+Yun Wan, Makoto Nakayama. Are Amazon.com Online Review Helpfulness Ratings Biased or Not? 10th Workshop on E-Business, WEB 2011, Shanghai, China, December 4, 2011, Revised Selected Papers, Part I, pp 46-54, 2012
+Yun Wan. The Matthew Effect in Online Review Helpfulness /15th International Conference on Electronic Commerce,ICEC 2013, Turku, Finland, August 13-15, 2013. Proceedings, pp 38-49, 2013
