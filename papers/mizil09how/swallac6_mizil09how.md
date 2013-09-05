@@ -1,10 +1,4 @@
-% CS 595 Paper Summary\
-  How Opinions are Received by Online Communities: A Case Study on
-  Amazon.com Helpfulness Votes
-% Sean Wallace
-% September 4, 2013
-
-Overview {.unnumbered}
+Overview
 ========
 
 The paper proposes a framework for understanding and modeling how
@@ -14,10 +8,10 @@ on the evaluation of the opinions themselves as perceived by other
 members of the public. To this end, the authors attempt to quantify the
 “helpfulness" of opinions in on-line communities.
 
-Algorithm {.unnumbered}
+Algorithm
 =========
 
-Hypothesis {.unnumbered}
+Hypothesis
 ==========
 
 The authors list concretely 3 hypotheses as well as a fourth so-called
@@ -39,7 +33,7 @@ group’s reaction to an opinion:
     hypothesis is that there are a seemingly random assortment of
     factors that contribute to reviews being considered more helpful.
 
-Data {.unnumbered}
+Data
 ====
 
 The data used in the experiments is a dataset consisting of 4,043,103
@@ -55,7 +49,7 @@ obtainable from AWS is 100, the authors found that 99.3% of all books
 had 100 or fewer reviews. The authors however focused primarily on the
 1,008,466 reviews that had at least 10 “helpfulness" votes.
 
-Experiments {.unnumbered}
+Experiments
 ===========
 
 Generally speaking, the authors performed analysis for each of the four
@@ -73,7 +67,7 @@ hypotheses given.
     answer to this was to focus on reviews which were 70% or more nearly
     duplicate.
 
-Results {.unnumbered}
+Results
 =======
 
 -   As far as the conformity hypothesis is concerned, the results from
@@ -90,14 +84,14 @@ Results {.unnumbered}
 -   When quantifying the number of plagiarized reviews, the authors
     found that 8,313 pairs of reviews were plagiarized.
 
-Assumptions {.unnumbered}
+Assumptions
 ===========
 
 -   The authors assume that reviews from different versions of the same
     product should be aggregated because the difference between the
     products is merely presentation.
 
-Synthesis {.unnumbered}
+Synthesis
 =========
 
 I certainly wouldn’t consider multiple versions of the same product the
@@ -111,7 +105,7 @@ What’s more, to consider an audio book the same as printed word versions
 seems incorrect as well. Maybe helpful reviews for that product are that
 the accent of the person reading the book is hard to understand.
 
-Related Papers {.unnumbered}
+Related Papers
 ==============
 
 There are a number of related works which also focused on helpfulness
