@@ -1,0 +1,68 @@
+Overview
+
+This paper delivered a case study on Amazon.com helpfulness votes, developing a framework on this case, which help us understand and model that how opinions are received and evaluated by online communities.
+
+Algorithm
+
+• Deviation from the mean for assessing conformity hypothesis and brilliant-but-cruel hypothesis
+• Variance and individual bias for evaluating the individual-bias hypothesis
+• “Plagiarism” for quality control of text in order to assess the quality-only straw-man hypothesis
+• A model based on individual bias and mixture distribution
+
+Generally speaking, the authors first rule out the influence of the quality-only straw-man hypothesis by employing “Plagiarism”, then assess their remaining three hypotheses by using statistical methodology, such as analyzing deviation and variance. 
+
+Hypothesis
+
+(i)	The conformity hypothesis.
+(ii)	The individual-bias hypothesis.
+(iii)	The brilliant-but-cruel hypothesis.
+(iv)	The quality-only straw-man hypothesis.
+
+The main idea of the first three hypotheses is to attempt to establish the correlation between the score of helpfulness of the review and other scores. In other words, the three hypotheses try to reveal that non-textual factors play important roles in users’ opinion on whether the review is helpful.
+
+
+Data
+
+• Step1: perform queries for all 3855 categories three levels deep in Amazon browse-node hierarchy, for creating initial list of books, resulted in 3,301,940 books
+• Step2: perform a book-filtering step to deal with “cross-posting” of reviews across versions, only retaining one of the set of alternate versions for each book
+• After executing above steps, 674,018 books remains on the list, which totally have over 4 million Amazon.com book reviews, of which more than 1 million received at least 10 helpful votes each
+
+
+
+Experimental
+
+• Experiment on the condition of “plagiarism”, which rules out the quality-only straw-man hypothesis
+• Deviation experiment aiming at evaluating three hypotheses aforementioned, which is the conformity hypothesis, the individual-bias hypothesis and the brilliant-but-cruel hypothesis
+• The experiment finally confirm that text quality is not the only explanatory factor by analyzing the mean difference in helpfulness ratio between “plagiarized” copies
+
+
+Results
+• A model based on individual bias and mixtures of distributions that could help predict the helpfulness of the review
+• A review’s perceived helpfulness depends not just on its content, but also the relation of its score to other scores. 
+
+
+Assumptions
+
+• Assume the timestamps on helpfulness votes is not a key factor on influencing the users’ opinion on the review, when carrying out experiment.
+
+• Assume the experiment is free of the difference of text quality when carrying out deviation experiments. 
+
+• Assume both positive and negative evaluators have one-dimensional opinion drawn form distributions with density functions when establishing the model.
+
+Synthesis
+
+A user’s opinion on helpfulness of the review is influenced by other users, although the factor of text quality although and individual bias also play roles. This discovery might help us find out a better strategy to alleviate the product sales via employing these hypotheses to marketing. 
+
+Related Papers
+	
+Opinion mining in social media: Modeling, simulating, and forecasting political opinions in the web  (Sobkowicz, Pawel): 
+
+Three building blocks of online opinion tracking and simulation are described in this artical: (1) automated topic, emotion and opinion detection in real-time, (2) information flow modeling and agent-based simulation, and (3) modeling of opinion networks, including special social and psychological circumstances, such as the influence of emotions, media and leaders, changing social networks etc.
+
+Collective Emotions Online and Their Influence on Community Life (Sienkiewicz, Julian Thelwall, Mike Paltoglou, Georgios Buckley, Kevan Kappas, Arvid Holyst, Janusz A.)  :
+
+Their studies prove that collective emotional states can be created and modulated via Internet communication and that emotional expressiveness is the fuel that sustains some e-communities.
+
+The spreading of opposite opinions on online social networks with authoritative nodes (Tang, Shaoting Pei, Sen Jiang, Shijin Zhang, Xiao Ding, Wenrui Zheng, Zhiming):
+
+With analysis of the relationship among positive opinion proportion, opinion strength and the density of authoritative nodes in networks with different topologies, this article demonstrate that the positive opinion proportion grows with the density of authoritative nodes until the positive opinion prevails in the entire network. 
