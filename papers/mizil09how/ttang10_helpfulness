@@ -17,3 +17,8 @@ They performed queries for all 3855 categories resulted in the initial set of 3,
 They ended up with 4,043,103 reviews and focused on the 1,008,466 reviews that had at least 10 helpfulness votes each.
 
 Experiment
+They investigated the relationship between a review's star rating and the mean star rating of the all reviews for the product. Then they associated with each product the variance of the star ratings assigned to it by all its reviews and came up three pricinples. Afterwards, they took advantage of "plagiarism" and duplication to find experitments addressing the quality-only straw man hypothesis.
+After defining the average, they studied the relationship of variance and helpfulness ratio and compared the result with the first three hypothesis.
+To take actual text into consideration, they tried to identify "plagiarism". And finally they found a two-ditribution individual-bias model to match the data.
+
+Results
