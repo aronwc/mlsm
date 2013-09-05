@@ -1,0 +1,55 @@
+Overview
+
+This paper delivered a case study on Amazon.com helpfulness votes, developing a framework on this case, which help us understand and model that how opinions are received and evaluated by online communities.
+
+ 
+
+Algorithm
+
+ 
+
+• Deviation from the mean for assessing conformity hypothesis and brilliant-but-cruel hypothesis
+
+• Variance and individual bias for evaluating the individual-bias hypothesis
+
+• “Plagiarism” for quality control of text in order to assess the quality-only straw-man hypothesis
+
+• A model based on individual bias and mixture distribution
+
+ 
+
+Generally speaking, the authors first rule out the influence of the quality-only straw-man hypothesis by employing “Plagiarism”, then assess their remaining three hypotheses by using statistical methodology, such as analyzing deviation and variance.
+
+ 
+
+Hypothesis
+
+ 
+
+(i)     The conformity hypothesis.
+
+(ii)   The individual-bias hypothesis.
+
+(iii)  The brilliant-but-cruel hypothesis.
+
+(iv)   The quality-only straw-man hypothesis.
+
+ 
+
+The main idea of the first three hypotheses is to attempt to establish the correlation between the score of helpfulness of the review and other scores. In other words, the three hypotheses try to reveal that non-textual factors play important roles in users’ opinion on whether the review is helpful.
+
+ 
+
+ 
+
+Data
+
+ 
+
+• Step1: perform queries for all 3855 categories three levels deep in Amazon browse-node hierarchy, for creating initial list of books, resulted in 3,301,940 books
+
+• Step2: perform a book-filtering step to deal with “cross-posting” of reviews across versions, only retaining one of the set of alternate versions for each book
+
+• After executing above steps, 674,018 books remains on the list, which totally have over 4 million Amazon.com book reviews, of which more than 1 million received at least 10 helpful votes each
+
+ 
