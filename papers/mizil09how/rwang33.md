@@ -4,8 +4,9 @@ In this paper, the authors try to understand and model how opinions are evaluate
 
 
 Algorithm:
-
-
+Deviation from the mean.
+Variance and individual bias. 
+Controlling for text: Taking advantage of “plagiarism”. 
 
 
 Hypothesis:
@@ -46,3 +47,7 @@ As a final experiment, the authors try to prove that the quality-only strawman h
 
 Results:
 
+A review’s perceived helpfulness depends not just on its content, but also the relation of its score to other scores.
+
+
+Assumptions:
