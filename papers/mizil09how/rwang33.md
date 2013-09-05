@@ -2,7 +2,9 @@ Overview:
 
 In this paper, the authors try to understand and model how opinions are evaluated within online communities. For example, on Amazon.com, the users not only write product reviews, but also provide us with an indication of the helpfulness of the reviews ("26 of 32 people found the following review helpful"). Previous work have shown that helpfulness votes of reviews on Amazon.com are not necessarily strongly correlated with certain measures of review quality. Rather, various complex social feedback mechanisms tend to affect how Amazon users evaluate each others' reviews in practice.
 
+
 Algorithm:
+
 
 
 
@@ -20,9 +22,11 @@ negative reviewers are perceived as more intelligent, competent and expert than 
 The quality-only straw-man hypothesis: 
 the helpfulness of the review is being evaluated, purely based on the textual content of the reviews.
 
+
 Data:
 
 The authors try to investigate how data on star ratings and helpfulness votes can support or contradict these hypotheses, using a dataset consisting of over four million reviews of roughly 675,000 books on Amazon's US site as well as smaller but comparably sized corpora from Amazon's UK, Germany and Japan sites.
+
 
 Experiments:
 
@@ -38,4 +42,7 @@ It turns out that these findings are consistent with a simple model of individua
 
 Controlling for text: Taking advantage of “plagiarism”:
 As a final experiment, the authors try to prove that the quality-only strawman hypothesis does not actually hold. To do this, the author took advantage of the rampant plagiarism and duplication of reviews on Amazon.com. The authors found that very often, the two members of a “plagiarized” pair are associated with different products with different averages and variances and have very different star ratings. They found that within a “plagiarized” pair, the copy of the review that is closer to the average has the higher helpfulness ratio. Thus even for reviews with the same textual content, the scores differ based on its relation to other scores and to the mean score.
+
+
+Results:
 
