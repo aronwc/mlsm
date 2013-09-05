@@ -8,7 +8,18 @@ Algorithm:
 
 Hypothesis:
 
-The conformity hypothesis: a review is evaluated as helpful when its star rating is closer to the consensus (or average) star rating for the product.
-The individual-bias hypothesis: a user will rate a review more highly if it expresses an opinion that he or she agrees with. Notice that if a diverse range of users apply this rule, then the overall helpfulness evaluation would be hard to distinguish from one based on conformity.
-The brilliant-but-cruel hypothesis: negative reviewers are perceived as more intelligent, competent and expert than positive reviewers.
-The quality-only straw-man hypothesis: the helpfulness of the review is being evaluated, purely based on the textual content of the reviews.
+The conformity hypothesis: 
+
+a review is evaluated as helpful when its star rating is closer to the consensus (or average) star rating for the product.
+
+The individual-bias hypothesis: 
+
+a user will rate a review more highly if it expresses an opinion that he or she agrees with. Notice that if a diverse range of users apply this rule, then the overall helpfulness evaluation would be hard to distinguish from one based on conformity.
+
+The brilliant-but-cruel hypothesis: 
+
+negative reviewers are perceived as more intelligent, competent and expert than positive reviewers.
+
+The quality-only straw-man hypothesis: 
+
+the helpfulness of the review is being evaluated, purely based on the textual content of the reviews.
