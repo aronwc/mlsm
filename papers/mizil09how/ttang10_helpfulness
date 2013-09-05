@@ -22,3 +22,9 @@ After defining the average, they studied the relationship of variance and helpfu
 To take actual text into consideration, they tried to identify "plagiarism". And finally they found a two-ditribution individual-bias model to match the data.
 
 Results
+A review’s perceived helpfulness depends on both its content and the relathion of its score and other scores for the product.
+
+Assumptions
+The model assumes that helpfulness evaluators can come from two different distributions: postive one and negative one.
+Also, the experiments assumes by default that reviews except "plagiarism" and duplication are all independent.
+
