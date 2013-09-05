@@ -28,3 +28,7 @@ Assumptions
 The model assumes that helpfulness evaluators can come from two different distributions: postive one and negative one.
 Also, the experiments assumes by default that reviews except "plagiarism" and duplication are all independent.
 
+Synthesis:
+I think the helpfulness ratio may have some relation with the text length. I will classify the reviews into different classes with quantity of sentences and keep other factors (star ratings and content) balanced. Then analyze the differences in statistics mesures in distinct classes.
+
+Related Papers:
