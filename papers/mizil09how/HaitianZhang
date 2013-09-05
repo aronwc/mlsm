@@ -1,1 +1,45 @@
-Overview
+Overview:
+This paper talks about the author trying to find the factors that would influence the helpfulness of the opinions. He points out some hypothesis and uses some several methods to test it with the data from amazon.com. 
+
+Algorithm:
+Deviation from the mean
+Variance and individual bias
+Identifying “plagiarism”
+Finding a model based on individual bias and mixtures of distributions
+
+Hypothesis:
+The conformity hypothesis;
+The individual-bias hypothesis;
+The brilliant-but-cruel hypothesis;
+The quality-only straw-man hypothesis.
+
+Data:
+Original data from amazon.com include over 4 million Amazon.com book reviews (corresponding to roughly 675,000 books), of which more than 1 million received at least 10 helpfulness votes each by using Amazon Associate Web service API to collect the data.
+Finally get 1008466 reviews that had at least 10 helpfulness vote each and all of the reviews meet that no more than 100 from the same book.
+
+Experiment:
+1.	Count the average product star rating of each product.
+2.	Check the helpfulness ratio and find the relationship between the absolute deviation and signed deviation.
+3.	Doing the same thing under the review have different variance.
+4.	Test the hypothesis above.
+5.	Identify “plagiarism” to take actual text into consideration. 
+6.	Finding a two-distribution individual-bias model to match the data.
+
+Result:
+A review’s perceived helpfulness depends on 2 factors, its content and the relation of its score to other scores. 
+
+Assumptions:
+1.	The model assumes that helpfulness evaluators can come from two different distributions: the positive one and the negative one.
+2.	All the reviews were produced independently by four separate populations of reviewers 
+
+Synthesis:
+I agree with the claims that the review’s perceive would influenced by the relation of its score to other scores rather than its content or whether it fits his own view. If I have chance to do the experiment, I would do this on other products like cars or shoes to see whether such hypothesis only right under book reviews. If it is true to all products, it may be used in the advertisement such as hire someone to write high rating to the product to improve the average rating of the products and the custom would more likely to agree such opinions. 
+
+Related Papers:
+	
+1.	Christy M.K. Cheung,, Matthew K.O. Lee, Neil Rabjohn. The impact of electronic word-of-mouth: The adoption of online opinions in online customer communities. 
+They examine the extent to which opinion seekers are willing to accept and adopt online consumer reviews and which factors encourage adoption.
+
+2.	Jingjing Liu, Yunbo Cao, Chin-Yew Lin, Yalou Huang, Ming Zhou. Low-Quality Product Review Detection in Opinion Summarization. 
+They are more focus on finding low-quality products. And they use a two stage framework to enhance the opinion summarization – discriminates low-quality reviews from high quality ones and enhances the task of opinion summarization by detecting and filtering low-quality reviews.
+
