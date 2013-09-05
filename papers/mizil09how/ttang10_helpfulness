@@ -1,0 +1,39 @@
+Overview
+
+This paper analyzed the opinio evaluator mechanism's behaviour via using Amazon.com helpfulness votes as an example. They found how helpfulness of a review depend on other star ratings of the respective product. This dependence contrasts with theories from social psychology. They have discovered the important effects of variance on meta-opinions. They proposed a simple mathematical model that can account for this apparently complex dependence. By taking advantage of plagiarism they proved that helpfulness evaluation does not only depends on the text, but also depends directly on non-textual factors.
+
+Algorithm
+A model based on idividual bias and mixture of distributions.
+
+Hypothesis
+The conformity hypothesis;
+The individual-bias hypothesis;
+The brilliant-but-cruel hypothesis;
+The quality-only straw-man hypothesis.
+
+Data
+The experiments employed a dataset of over 4 million Amazon.com book reviews (corresponding to roughly 675,000 books), of which more than 1 million received at least 10 helpfulness votes each.
+They performed queries for all 3855 categories resulted in the initial set of 3,301,940 books.
+They ended up with 4,043,103 reviews and focused on the 1,008,466 reviews that had at least 10 helpfulness votes each.
+
+Experiment
+They investigated the relationship between a review's star rating and the mean star rating of the all reviews for the product. Then they associated with each product the variance of the star ratings assigned to it by all its reviews and came up three pricinples. Afterwards, they took advantage of "plagiarism" and duplication to find experitments addressing the quality-only straw man hypothesis.
+After defining the average, they studied the relationship of variance and helpfulness ratio and compared the result with the first three hypothesis.
+To take actual text into consideration, they tried to identify "plagiarism". And finally they found a two-ditribution individual-bias model to match the data.
+
+Results
+A review’s perceived helpfulness depends on both its content and the relathion of its score and other scores for the product.
+
+Assumptions
+The model assumes that helpfulness evaluators can come from two different distributions: postive one and negative one.
+Also, the experiments assumes by default that reviews except "plagiarism" and duplication are all independent.
+
+Synthesis:
+I think the helpfulness ratio may have some relation with the text length. I will classify the reviews into different classes with quantity of sentences and keep other factors (star ratings and content) balanced. Then analyze the differences in statistics mesures in distinct classes.
+
+Related Papers:
+Finding high-quality content in social media (E. Agichtein, C. Castillo, D. Donato, A. Gionis, and G. Mishne): they developed a comprehensive graph-based model of contributor relationships and combined it with content and usage-based feature to identify the high qulity item in a web-scale community question answering portal. They nvestigated the contributions of the diÆerent sources of quality evidence, and have shown that some of the sources are complementary. But they didn't do anlysis for relation between opinion and meta-opinion.
+
+Estimating the Helpfulness and Economic Impact of Product Reviews: Mining Text and Reviewer Characteristics (Anindya Ghose, Panagiotis G. Ipeirotis, Member, IEEE,): they looked at how subjectivity levels, readability and spelling errors in the text of reviews affect product sales and the perceived helpfulness of these reviews. They even built a model to predict the impact of reviews on sales and their perceived usefulness.
+
+Detecting product review spammers using rating behaviors (Ee-Peng Lim, Viet-An Nguyen, Nitin Jindal, Bing Liu, Hady Wirawan Lauw): they proposed a behavioral approach to detect review spammers who try to manipulate review ratings on some target products or product groups. They derived an aggregated behavior scoring methods to rank reviewers according to the degree they demonstrate spamming behaviors. They also used the rating behaviors, but their goal is to identify the spammers automatically.

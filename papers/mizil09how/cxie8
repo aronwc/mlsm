@@ -1,0 +1,49 @@
+Overview:
+This paper introduces that the authors develop a framework for analyzing and modeling opinion evaluation, using a large-scale collection of Amazon book reviews as a dataset. 
+
+Algorithm:
+·Deviation from the mean
+·Variance and individual bias
+·Identifying “plagiarism” 
+·a model based on individual bias and mixtures of distributions
+
+Hypothesis:
+·The conformity hypothesis
+·The individual hypothesis
+·The brilliant-but-cruel hypothesis
+·The quality-only straw-man hypothesis
+
+Data:
+The experiments employed a dataset of over 4 million Amazon.com book reviews (corresponding to roughly 675,000 books), of which more than 1 million received at least 10 helpfulness votes each. 
+They took particular measures to avoid sample bias:
+·queries for all 3855 categories three levels deep
+·a book-filtering step to deal with “cross-posting” of reviews across versions
+·reconstruct the information available to the extend possible
+
+Experiments:
+·compute over all reviews of that product in the dataset to be the average star rating
+· get the absolute value of the difference between the review’s star rating and the computed product-average star rating, which is called the review’s deviation
+·use machine learning to train an algorithm to automatically determine the degree of helpfulness of each review.
+· identify those pairs of reviews of different products that have highly similar text, get a statistically significant difference between the helpfulness ratio of such pairs
+·use a model based on individual bias and mixtures of distributions
+·evaluate the robustness of the observed social-effects phenomena by comparing reviews data from three additional different national Amazon sites
+
+Results:
+·Helpfulness ratio declines with the absolute of a review’s deviation from the computed star average; this behavior is predicted by the conformity hypothesis but not ruled out by the other hypothesis.
+·The dependence of helpfulness ratio on a review’s signed deviation from average is inconsistent with both the brilliant-but-cruel and, because of the asymmetry, the conformity hypothesis.
+·As the variance of the star ratings of reviews for a particular product increases, the median helpfulness ratio curve becomes two-humped and the helpfulness ratio at signed deviation 0 no longer represents the unique global maximum.
+·”Plagiarized” reviews with a lower absolute deviation tend to have larger helpfulness ratios than duplicates with higher absolute deviations.
+·The perceived helpfulness depends not just on its content, but also the relation of its score(the expressed evaluation) to other scores(other evaluation).
+
+Assumptions:
+·Helpfulness evaluators can some from two different distributions: positive group and negative group.
+·Both positive and negative evaluators have one-dimensional opinion drawn from(possibly different) distributions with density functions.
+·These reviews were produced independently by four separate populations of reviewers.
+
+Synthesis:
+·I would create the list of books by the sales volume and do some research about the relationship between helpfulness ratio and sales volume. I think the results may be against from the brilliant-but-cruel hypothesis. 
+
+Related Papers:
+·Cao Q, Duan W, Gan Q. Exploring determinants of voting for the “helpfulness” of online user reviews: A text mining approach[J]. Decision Support Systems, 2011, 50(2): 511-521.
+·Lim E P, Nguyen V A, Jindal N, et al. Detecting product review spammers using rating behaviors[C]//Proceedings of the 19th ACM international conference on Information and knowledge management. ACM, 2010: 939-948.
+·Nakayama M, Wan Y. An Exploratory Study:“Blind-Testing” Consumers How They Rate Helpfulness of Online Reviews[J]. 2012.
