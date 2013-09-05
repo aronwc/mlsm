@@ -5,23 +5,23 @@ In this paper, the authors try to understand and model how opinions are evaluate
 
 Algorithm:
 
-Deviation from the mean.
-Variance and individual bias. 
-Controlling for text: Taking advantage of “plagiarism”. 
+•Deviation from the mean.
+•Variance and individual bias. 
+•Controlling for text: Taking advantage of “plagiarism”. 
 
 
 Hypothesis:
 
-The conformity hypothesis: 
+•The conformity hypothesis: 
 a review is evaluated as helpful when its star rating is closer to the consensus (or average) star rating for the product.
 
-The individual-bias hypothesis: 
+•The individual-bias hypothesis: 
 a user will rate a review more highly if it expresses an opinion that he or she agrees with. Notice that if a diverse range of users apply this rule, then the overall helpfulness evaluation would be hard to distinguish from one based on conformity.
 
-The brilliant-but-cruel hypothesis: 
+•The brilliant-but-cruel hypothesis: 
 negative reviewers are perceived as more intelligent, competent and expert than positive reviewers.
 
-The quality-only straw-man hypothesis: 
+•The quality-only straw-man hypothesis: 
 the helpfulness of the review is being evaluated, purely based on the textual content of the reviews.
 
 
@@ -53,5 +53,5 @@ A review’s perceived helpfulness depends not just on its content, but also the
 
 Assumptions:
 
-Helpfulness evaluators can some from two different distributions: positive group and negative group.
-Both positive and negative evaluators have one-dimensional opinion drawn from(possibly different) distributions with density functions.
+•Helpfulness evaluators can some from two different distributions: positive group and negative group.
+•Both positive and negative evaluators have one-dimensional opinion drawn from(possibly different) distributions with density functions.
