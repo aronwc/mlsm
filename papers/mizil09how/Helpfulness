@@ -1,0 +1,19 @@
+Overview
+
+This paper analyzed the opinio evaluator mechanism's behaviour via using Amazon.com helpfulness votes as an example. They found how helpfulness of a review depend on other star ratings of the respective product. This dependence contrasts with theories from social psychology. They have discovered the important effects of variance on meta-opinions. They proposed a simple mathematical model that can account for this apparently complex dependence. By taking advantage of plagiarism they proved that helpfulness evaluation does not only depends on the text, but also depends directly on non-textual factors.
+
+Algorithm
+A model based on idividual bias and mixture of distributions.
+
+Hypothesis
+The conformity hypothesis;
+The individual-bias hypothesis;
+The brilliant-but-cruel hypothesis;
+The quality-only straw-man hypothesis.
+
+Data
+The experiments employed a dataset of over 4 million Amazon.com book reviews (corresponding to roughly 675,000 books), of which more than 1 million received at least 10 helpfulness votes each.
+They performed queries for all 3855 categories resulted in the initial set of 3,301,940 books.
+They ended up with 4,043,103 reviews and focused on the 1,008,466 reviews that had at least 10 helpfulness votes each.
+
+Experiment
