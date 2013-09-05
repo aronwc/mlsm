@@ -22,9 +22,9 @@ They took particular measures to avoid sample bias:
 
 Experiments:
 ·compute over all reviews of that product in the dataset to be the average star rating
-· get the absolute value of the difference between the review’s star rating and the computed product-average star rating, which is called the review’s deviation
+·get the absolute value of the difference between the review’s star rating and the computed product-average star rating, which is called the review’s deviation
 ·use machine learning to train an algorithm to automatically determine the degree of helpfulness of each review.
-· identify those pairs of reviews of different products that have highly similar text, get a statistically significant difference between the helpfulness ratio of such pairs
+·identify those pairs of reviews of different products that have highly similar text, get a statistically significant difference between the helpfulness ratio of such pairs
 ·use a model based on individual bias and mixtures of distributions
 ·evaluate the robustness of the observed social-effects phenomena by comparing reviews data from three additional different national Amazon sites
 
