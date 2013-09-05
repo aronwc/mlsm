@@ -1,0 +1,35 @@
+Overview
+This paper is talking about how people’s opinions are received and evaluated using a large-scale collection of Amazon book reviews as the dataset. They also provide a simple model consistent with the method that using review “plagiarism” to control for the effects of text in opinion evaluation. It can help us to discover differences of opinion-evaluation behavior between different countries.
+
+Algorithm
+•	Deviation from the mean
+•	Variance and individual bias
+•	Controlling for text: Taking advantage of “plagiarism”
+
+Hypothesis
+•	The conformity hypothesis
+•	The individual-bias hypothesis
+•	The brilliant-but-cruel hypothesis
+•	The quality-only straw-man hypothesis
+
+Data
+Authors use the AWS (Associates Web Service) API to collect the data which include almost 4 million book reviews from about 675,000 books. To avoid “crossposting” and mechanically-duplicated reviews, they performed a book-filtering. Then get a list of 674,108 books. Finally, they focused on 1 million reviews with at least 10 helpfulness votes each.
+
+Experiment
+•	Defining the average star rating by computed product-average star rating.
+•	Using the first three hypotheses checking 3 Figures.
+•	They try to use machine learning to train an algorithm to account the text of reviews.
+•	Identify “plagiarism”. Those pairs of reviews of different book have highly similar text, may be just replaced by one word.
+•	Make a simple model based on individual bias and mixtures of distributions to match the data.
+
+Result
+Perceived helpfulness of a review depends not just on its content but also in subtle ways on how the expressed evaluation relates to other’s evaluation.
+
+Assumptions
+1.	The model assumes that helpfulness evaluators can come from two parts: positive disposition & negative disposition.
+2.	The reviews from different national Amazon sites were produced independently by four separate population of reviewers.
+
+Synthesis
+I think the helpfulness ratio may influenced by social media. If lots of ads and positive assessments about one book shown on Facebook and Twitter, the positive reviews’ votes of this book may increase a lot.
+Related Papers
+
