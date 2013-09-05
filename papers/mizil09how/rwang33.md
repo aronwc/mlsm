@@ -5,23 +5,23 @@ In this paper, the authors try to understand and model how opinions are evaluate
 
 Algorithm:
 
-•Deviation from the mean.
-•Variance and individual bias. 
-•Controlling for text: Taking advantage of “plagiarism”. 
+Deviation from the mean.
+Variance and individual bias. 
+Controlling for text: Taking advantage of “plagiarism”. 
 
 
 Hypothesis:
 
-•The conformity hypothesis: 
+The conformity hypothesis: 
 a review is evaluated as helpful when its star rating is closer to the consensus (or average) star rating for the product.
 
-•The individual-bias hypothesis: 
+The individual-bias hypothesis: 
 a user will rate a review more highly if it expresses an opinion that he or she agrees with. Notice that if a diverse range of users apply this rule, then the overall helpfulness evaluation would be hard to distinguish from one based on conformity.
 
-•The brilliant-but-cruel hypothesis: 
+The brilliant-but-cruel hypothesis: 
 negative reviewers are perceived as more intelligent, competent and expert than positive reviewers.
 
-•The quality-only straw-man hypothesis: 
+The quality-only straw-man hypothesis: 
 the helpfulness of the review is being evaluated, purely based on the textual content of the reviews.
 
 
@@ -53,5 +53,17 @@ A review’s perceived helpfulness depends not just on its content, but also the
 
 Assumptions:
 
-•Helpfulness evaluators can some from two different distributions: positive group and negative group.
-•Both positive and negative evaluators have one-dimensional opinion drawn from(possibly different) distributions with density functions.
+Helpfulness evaluators can some from two different distributions: positive group and negative group.
+Both positive and negative evaluators have one-dimensional opinion drawn from(possibly different) distributions with density functions.
+
+
+Synthesis:
+
+After going through this paper, helpfulness ratio and sales volume catch my eyes. I will focus on these two areas to do some research.
+
+
+Related Papers:
+
+Yue Lu , Panayiotis Tsaparas , Alexandros Ntoulas , Livia Polanyi, Exploiting social context for review quality prediction, Proceedings of the 19th international conference on World wide web, April 26-30, 2010, Raleigh, North Carolina, USA
+
+Automatic review quality prediction can be very useful to sift through spam and bogus reviews in sites like Yelp.com or Amazon.com. Most automatic review quality predictors make use of the review text to predict the review quality. In this paper, the authors describe a method of incorporating social context information in a text-based review quality predictor.
