@@ -66,4 +66,4 @@ Related Papers:
 
 Yue Lu , Panayiotis Tsaparas , Alexandros Ntoulas , Livia Polanyi, Exploiting social context for review quality prediction, Proceedings of the 19th international conference on World wide web, April 26-30, 2010, Raleigh, North Carolina, USA
 
-      Automatic review quality prediction can be very useful to sift through spam and bogus reviews in sites like Yelp.com or Amazon.com. Most automatic review quality predictors make use of the review text to predict the review quality. In this paper, the authors describe a method of incorporating social context information in a text-based review quality predictor.
+Automatic review quality prediction can be very useful to sift through spam and bogus reviews in sites like Yelp.com or Amazon.com. Most automatic review quality predictors make use of the review text to predict the review quality. In this paper, the authors describe a method of incorporating social context information in a text-based review quality predictor.
