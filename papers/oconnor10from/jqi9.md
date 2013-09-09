@@ -25,18 +25,18 @@ They use 1billion Twitter messages posted from 2008 to 2009. But not all the mes
 They chose several different reports from different provider for consumer confidence and political opinion. Such as CCI, ICS and Gallup for consumer confidence, Gallup’s daily tracking and 2008 presidential elections polling data from Pollster.com.
 
 
-####Experimental#### 
+####Experimental
 Basically they used the time series analysis method, they count the positive and negative words in the text stream for certain topic during a certain time, then calculate the sentiment score for the period then draw a char to show the whole view of the sentiment trend, at the end they compare their char with the standard chart which provide by the polling organizations. After this, they can tell how accurate their char is. 
 
 ####Results ####
 
 After several comparisons, they found that the data show the same thing with their hypothesis, to analyze the real-time text stream on a social media will get the similar polling result with the traditional polling methods, and it is faster and cheap. But the problem is how to build a appropriate lexicon for both negative and positive words, it should not be so big, but can provide enough support to the analyze model.
 
-####Assumption #### 
+####Assumption
 
 The most important assumption should be that as the populations of people that who use the twitter everyday grow to bigger and bigger, the result would be more and more closer to the truth.
 
-####Synthesis #### 
+####Synthesis
 
 First, I doubt about the accuracy about their opinion estimation, that is too simple, people always like to use irony to show their wisdom.
 
