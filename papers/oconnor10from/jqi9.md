@@ -5,21 +5,21 @@ This paper try to use certain algorithm to prove that the text sentiment is link
 ####Algorithm####
 
 Four main algorithms have been implemented in this paper, the author use them for message retrieval, opinion estimation, correlation analysis and forecasting analysis.
--1.	Message retrieval
---The algorithm for message retrieval is super easy, just use keyword filter to locate certain message talking about the certain topic.
--2.	Opinion estimation
---For opinion estimation, they defined a lexicon from opinionFinder which contains about 1600 and 1200 words marked as positive and negative. Then, they count positive and negative through all the data in one day or during certain period, the sentiment score means the ratio of positive versus negative messages on the topic during the certain period.
--3.	Correlation analysis
---For correlation analysis, to earn more accuracy, they set two new parameter L and k to control the differences of data that brought by their different report circle (day to day or monthly). L is a lag hyperparameter and k is a fixed hyperparameter, these two parameters may reduce the effect of different report circle by smoothing. That makes it easier to find the links between data.
--4.	Forecasting analysis
---They trained the model only on target historical data through day t-1, then predict the t+L date’s trend, then repeat and repeat, at the end when they finished the process of training, the model will cover most of their test dataset, then use the mature model to predict the real t+L date’s trend.
+- 1.Message retrieval
+-- The algorithm for message retrieval is super easy, just use keyword filter to locate certain message talking about the certain topic.
+- 2.Opinion estimation
+-- For opinion estimation, they defined a lexicon from opinionFinder which contains about 1600 and 1200 words marked as positive and negative. Then, they count positive and negative through all the data in one day or during certain period, the sentiment score means the ratio of positive versus negative messages on the topic during the certain period.
+- 3.Correlation analysis
+-- For correlation analysis, to earn more accuracy, they set two new parameter L and k to control the differences of data that brought by their different report circle (day to day or monthly). L is a lag hyperparameter and k is a fixed hyperparameter, these two parameters may reduce the effect of different report circle by smoothing. That makes it easier to find the links between data.
+- 4.Forecasting analysis
+-- They trained the model only on target historical data through day t-1, then predict the t+L date’s trend, then repeat and repeat, at the end when they finished the process of training, the model will cover most of their test dataset, then use the mature model to predict the real t+L date’s trend.
 ####Hypothesis####
-1.	They think the analysis of text stream will substitute the traditional polling activities. Since the quality tend to be the same but cost less and more efficient.
-2.	Test stream’s sentiment has a link with the public opinion at the certain topic during the certain period.
+- 1.They think the analysis of text stream will substitute the traditional polling activities. Since the quality tend to be the same but cost less and more efficient.
+- 2.Test stream’s sentiment has a link with the public opinion at the certain topic during the certain period.
 ####Data####
--Twitter Corpus
+- Twitter Corpus
 They use 1billion Twitter messages posted from 2008 to 2009. But not all the messages around the world, they ignored other non-English language messages. 
--Public Opinion Polls
+- Public Opinion Polls
 They chose several different reports from different provider for consumer confidence and political opinion. Such as CCI, ICS and Gallup for consumer confidence, Gallup’s daily tracking and 2008 presidential elections polling data from Pollster.com.
 
 ####Experimental#### 
@@ -42,10 +42,10 @@ It is a really good method to find public opinion’s trend, especially for busi
 
 ####Related paper####
 
--Data Mining and Analysis on Twitter, Pulkit Goyal, Sapan Diwakar
+- Data Mining and Analysis on Twitter, Pulkit Goyal, Sapan Diwakar
 This report focus on how the twitter change people’s communication style, and how to use it to make certain information move faster then before.
 
 
--Detecting Sentiment Change in Twitter Streaming Data
+- Detecting Sentiment Change in Twitter Streaming Data
 Albert Bifet ,Bernhard Pfahringer ,Ricard Gavald,LARCA Research Group,UPC-Barcelona Tech, Catalonia
 They use a tool call MOA (Massive Online Analysis) to read real time data from twitter and monitor the sentiment on twitter by their algorithm
