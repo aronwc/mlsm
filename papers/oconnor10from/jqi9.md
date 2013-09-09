@@ -14,8 +14,8 @@ Four main algorithms have been implemented in this paper, the author use them fo
 -4.	Forecasting analysis
 --They trained the model only on target historical data through day t-1, then predict the t+L date’s trend, then repeat and repeat, at the end when they finished the process of training, the model will cover most of their test dataset, then use the mature model to predict the real t+L date’s trend.
 ####Hypothesis####
--1.	They think the analysis of text stream will substitute the traditional polling activities. Since the quality tend to be the same but cost less and more efficient.
--2.	Test stream’s sentiment has a link with the public opinion at the certain topic during the certain period.
+1.	They think the analysis of text stream will substitute the traditional polling activities. Since the quality tend to be the same but cost less and more efficient.
+2.	Test stream’s sentiment has a link with the public opinion at the certain topic during the certain period.
 ####Data####
 -Twitter Corpus
 They use 1billion Twitter messages posted from 2008 to 2009. But not all the messages around the world, they ignored other non-English language messages. 
