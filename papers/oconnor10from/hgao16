@@ -1,0 +1,83 @@
+Overview
+Since more and more people broadcast their ideas toward variety topics, the author of the paper want to analyze the publicly available data and infer population attitudes in the same manner that public opinion from freely available text content. 
+Data: Connecting public opinion derived from polls with sentiment measured from analysis of text from TWITTER .
+Process: explicit textual sentiment --> compared with contemporaneous polling data --> Summary statistics from extremely simple text analysis tech --> demonstrate the correlation with polling data 
+ Result: Temporal smoothing is a critically important issue to support a successful model. 
+
+Algorithm
+• Assessing population's aggregate opinion
+	• Message retrieval: identify message relating to the topic. 
+	• Opinion estimation: determine whether these messages express positive or negative opinions or news about the topic.
+• They retrieval the data and find out the message contain keyword, like Obama or economy based on the linguistic knowledge.  
+• Due to the volatile ratio of the day-to-day sentiment ratio, the paper used the moving average method to smooth the aggregate sentiment. 
+
+Hypothesis
+• Through billions text tweets they can subtract  the popular opinion towards economy and politic issues, which is corresponding to the Public Opinion Polls. 
+• The data they have is asymmetric, which means they aren't topic-sentiment of documents that are jointly inferred. So they use a opt based on prior linguistic knowledge: counting instances of positive-sentiment and negative-sentiment words in the context of a topic keyword. (Only use the data containing a topic keyword)
+• A message is defined as positive if it contains any positive word, and negative if it contains negative word. 
+	• Score xt = countt (pos.word∧topic word)/countt (neg.word∧topic word) 
+	= p(pos.word|topic word,t)/p(net.word|topic word,t)
+• If there are high error rate, it is indicate that the sentiment detector is a noisy measurement instrument, since the paper is focused on the aggregation sentiment rather not individual sentiment which appeared in a context of a personal document.  
+• Since they used the moving average method, the smoothing result from the raw data will have some delay.  
+• Text-poll correlation reported is the goodness-of-fit metric for fitting slope and bias parameters a,b in a one variable linear least-squares. 
+
+Introduce a lag hyperparameter L into the model, so the poll is compared against the text window ending L days before the poll outcome.
+ 
+
+
+
+Data
+• One billion Twitter message posted over the years from 2008 to 2009 (and archiving "Gardenhose" real-time stream). User are identified as living-in-US. 
+• Economic index: Collecting public opinion polls by random-digit dialing, aiming at consumer confidence towards health of economy. Use the Index of Consumer Sentiment and Gallup Organization's "Economic Confidence" index. 
+• Political Index: Gallup's daily tracking poll and asking potential voter during 2008 presidential election about their opinion towards Obama or John McCain. 
+
+
+
+
+Experimental
+	• First they worked out the changing scores toward the keyword "job" (after apply the moving average on the raw data). Then compare it with two major poll, ICS and Gallup. 
+	• Then they test the correlation between the text sentiment with the poll, using the assumption that they are linear least-square relation. 
+	• Introduce the hyper parameter L to compare the poll against text window ending L days before the poll outcome.  
+	• Experiment with sentiment ratios for the terms job and economy. 
+	• Test the model in a rolling forecast setting, by testing how well the text-based model can predict future vale of the poll. 
+
+
+Results
+• After smoothing down the raw data, the 15-day-frequency sentimental ratio captures the broad trends in the survey data.   
+• Therefore, we would expect both daily measures, Gallup and text sentiment, to always lead ICS, since it measures phenomena occurring over the previous month.
+
+The regions corresponding to text preceding or following the poll are marked. Correlation is higher for text leading the poll and not the other way around, so text seems to be a leading indicator.
+• More smoothing increases the correlation. 
+• The experiment with sentiment ratios for terms job and economy, which both correlate very poorly iwht the Gallup poll. 
+• In the forecasting analysis, forecast for one month in the future achieve 77.5% correlation, which is slightly worse than a baseline to predict the poll from its lagged self.
+• 
+•  In 2008 and early 2009, text sentiment is a poor predictor of consumer confidence, which is possible since the poll’s most recent values are absorbed into the bias term of the text-only model. However, starting in mid-2009, text sentiment becomes a much better predictor. From the perspective of time series modeling, future work should investigate techniques for deciding the importance of different historical signals and time periods, such as vector autoregressions 
+• 
+
+Assumptions
+• Like what is written in the paper "We performed casual inspection of the detected messages and found many examples of falsely detected sentiment. For example, the lexicon has the noun will as a weak positive word, but since we do not use a part-of-speech tagger, this causes thousands of false positives when it matches the verb sense of will". It is heavily relayed on the knowledge of linguistic and subtract the method that they need to build up the model.
+• The reason for the paper is to test whether people's tweets messages sentimental classification has high correlation with the two major polls' result. The assume the sentimental key words and the topic keywords could reflect the people's opinion towards certain issue, which has also been relected by the polls.   
+
+
+Synthesis
+• Only use the keyword, like jobs. What if it is Steve Jobs. The more important question is how much does words like this would affect the result. Especially when the keywords related tweets fractions are small. 
+• As a chain result from last question, if the fractions are small, how the moving average window affect the result. 
+• "Recall is certainly very low, since the lexicon is designed for well-written standard English, but many messages on Twitter are written in an informal social media dialect of English, with different and alternately spelled words, and emoticons as potentially useful signals." Nowadays, more and more poster use none formal written English to post their opinion. How many of them are taking part in giving out opinion towards the topic in this paper? Is there any important data that have been intentionally ignored? 
+• The result of the sentiment Ratio and the Gallup almost have a same trend in general. However, if the sample frequency be brought up to twice, the difference between the poll and the sentimental ratio seems to be more different. Why? How does the the sample frequency affect the result? Why 15 is better? 
+• Similar to the last question, there are two major poll they use, however, the correlation vary differently within these two poll. Why they are different when they change the lag L. 
+• Why the sentiment ratios for the terms job and economy experiments have such a poor relationship? 
+• The two poll's questions are carefully chosen and then they randomly call people to ask these questions. The method the paper use is just to recognize the key words related to topic and sentimental key words. Can these two facts be directly linked up? 
+
+
+
+Related Papers
+	• Antweiler, W., and Frank, M. Z. 2004. Is all that talk just noise? the information content of internet stock message boards. Journal of Finance 59(3):1259–1294.
+	•  Chang, L. C., and Krosnick, J. A. 2003. National surveys via RDD telephone interviewing vs. the internet: Comparing sample representativeness and response quality. Unpublished manuscript.
+	• Das, S. R., and Chen, M. Y. 2007. Yahoo! for Amazon: Sentiment extraction from small talk on the web. Management Science 53(9):1375–1388.
+	• Dodds, P. S., and Danforth, C. M. 2009. Measuring the happiness of Large-Scale written expression: Songs, blogs, and presidents. Journal of Happiness Studies 116.
+	• Characterizing debate performance via aggregated twitter sentiment From <http://dl.acm.org/citation.cfm?id=1753504> Nicholas A. Diakopoulos David A. Shamma
+	• Target-dependent Twitter Sentiment Classification, Long Jiang1 Mo Yu2 Ming Zhou1 Xiaohua Liu1 Tiejun Zhao2,  http://www.aclweb.org/anthology/P/P11/P11-1016.pdf
+			
+	
+	
+	
