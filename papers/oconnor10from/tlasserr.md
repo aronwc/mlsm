@@ -51,9 +51,9 @@ It can be noticed that Gallup’s polls are reported as three-day rolling averag
 
 - Experiment 1 shows that the correlation between the two analysis is 73.1%.
 - Experiment 2 shows that correlation is higher for text leading the poll. Text sentiment is a leading indicator.
--  Text sentiment information is better than polls to determine long-term trends.
+- Text sentiment information is better than polls to determine long-term trends.
 - The larger the smoothing window is, the better the correlation is. 
--  Forecasts for one month in future achieve 77.5% correlation.
+- Text analysis predicts polls for one month in future with 77.5% correlation which is a little worse than predict the poll by its past (80.4%).
 - For experiment 4, topic frequencies correlate much more with polls than the sentimental scores.
 - Text analysis is a faster and less expensive substitute for traditional polling.
 
