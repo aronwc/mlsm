@@ -67,6 +67,7 @@ It can be noticed that Gallup’s polls are reported as three-day rolling averag
 - It would be good for me to distinguish two groups: opinion-makers and opinions-holders
 - Twitter messages, which are “retweetted”, deserve more important weight because they show a larger opinion.
 - It would be interesting to know if twitter messages predicted Obama's victory the day of the election.
+- Applying machine learning techniques to identify sentiments on twitter messages would be more efficient than positive or negative keywords.
 
 
 ####Related Papers####
