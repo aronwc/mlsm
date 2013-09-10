@@ -5,9 +5,9 @@ This paper connects traditional measures of public opinion from polls with senti
 ####Algorithm####
 
 -	Message retrieval: To identify with keywords the topic of a message. 
-- Opinion Estimation: Messages are referenced as positive or negative with the ration of positive words over negative words in the message. These positive and negative words are defined by the lexicon OpinionFinder. The ration can be also smoothed.
+- Opinion Estimation: Messages are referenced as positive or negative with the ratio of positive words over negative words in the message. These positive and negative words are defined by the lexicon OpinionFinder. The ratio can be also smoothed.
 - Correlation Analysis: the text-poll correlation is the goodness-of-fit metric for fitting slope and bias parameters. The aim of this algorithm is to measure the correlation of the poll and a text window ending L days before the poll outcome.
-- Forecasting Analysis: It consists to train a model until a day to predict the evolution the L next days.
+- Forecasting Analysis: It consists to train a model until a day to predict the evolution of the L next days.
 
 
 ####Hypothesis####
@@ -20,7 +20,7 @@ To experiment sentiment measured from text, text data come from the microbloggin
 - It is made of 1 billion Twitter messages posted over the year 2008-2009, which represent 100,000 to 7 million messages per day.
 - The analysis will ignore non-English messages.
 
-To compare the sentiment measured from text to public opinion measured, public opinion surveys from multiple polling organizations are used. 
+To compare the measures of sentiment measured from text to public opinion measured, public opinion surveys from multiple polling organizations are used. 
 3 polls are used for consumer confidence:
 
 
@@ -34,6 +34,7 @@ To compare the sentiment measured from text to public opinion measured, public o
 
 - Gallup’s daily tracking poll for the presidential job approval rating for Barack Obama over the course of 2009.
 - A compilation of 491 data points from 46 different tracking polls during the 2008 U.S. presidential election cycle provided by Pollster.com
+
 It can be noticed that Gallup’s polls are reported as three-day rolling averages.
 
 ####Experimental####
@@ -42,9 +43,9 @@ It can be noticed that Gallup’s polls are reported as three-day rolling averag
 - The author of the article uses the 2 first algorithms to obtain the text analysis of Twitter messages.
 - (1) “jobs” sentiment ratio is compared to the two measures of consumer confidence.
 - (2) Correlation analysis algorithm is applied to know which data is the leading indicator.
-- (3) Forecasting analysis is also applied to measure if text analysis can predict poll.
+- (3) Forecasting analysis is also applied to measure if text analysis can predict polls.
 - (4) The sentiment ration for “Obama” is analyzed and compared to two series of polls, presidential job approval in 2009 and presidential election polls in 2008.
-- These experiments are repeated with different smoothing.
+- These experiments are repeated with different smoothings.
 
 ####Results####
 
@@ -59,12 +60,13 @@ It can be noticed that Gallup’s polls are reported as three-day rolling averag
 ####Assumptions####
 
 - Keywords are sufficient to distinguish topics.
-- Polls are the gold standards.
+- Polls are the gold standards because they reflect public opinion.
 
 ####Synthesis####
 
 - It would be good for me to distinguish two groups: opinion-makers and opinions-holders
--  Twitter messages which are “retweetted” deserves more important weight because they show a larger opinion.
+- Twitter messages, which are “retweetted”, deserve more important weight because they show a larger opinion.
+- It would be interesting to know if twitter messages predicted Obama's victory the day of the election.
 
 
 ####Related Papers####
