@@ -24,9 +24,9 @@ To measure the sentiment expressed by a message, researchers use a lexicon from 
 
 They are not making distinction between strong and weak word, and because they are not using a part-of-speech (POS) tagger they find some errors in their text analysis.
 
-Once each message is classified as positive or negative, they compute a daily sentiment $x_t$ score which is the number of positive on-topic messages over the number of negative on-topic messages. 
+Once each message is classified as positive or negative, they compute a daily sentiment **x_t** score which is the number of positive on-topic messages over the number of negative on-topic messages. 
 
-To finish, they smooth the obtained results saying that the sentiment score on day $t$ is equal to the average of every sentiment score on the $k$ days before where $k$ can be easily changed.
+To finish, they smooth the obtained results saying that the sentiment score on day **t** is equal to the average of every sentiment score on the **k** days before where **k** can be easily changed.
 
 
 ####Hypothesis####
@@ -54,17 +54,17 @@ For their second topic - politics - they use :
 
 
 ####Experimentals####
-- They begin by comparing the *jobs* sentiment score with two measures of consumer confidence. $(E1)$
-- To go further, they integrate a new parameter into their correlation equation : $L$ is an offset value allowing to compare the sentiment score computed via text analysis for the day $t$ with the poll value from day $t+L$. This way, it should be possible to see if Twitter messages are a lead indicator for polls. For this experimentation, they make the $k$ value (the smoothing window) vary between 7, 15, 30 and 60 and $L$ varies in the $[-90, 90]$ interval. $(E2)$
-- They also test how accurate is the text analysis in predicting poll's values. To do so, they train the model on data through day $t-1$ and predict the value for day $t$. $(E3)$
-- At the end, they compute the sentiment score for political topics with *obama* and *mccain* keywords. $(E4)$
+- They begin by comparing the *jobs* sentiment score with two measures of consumer confidence. **(E1)**
+- To go further, they integrate a new parameter into their correlation equation : **L** is an offset value allowing to compare the sentiment score computed via text analysis for the day **t** with the poll value from day **t+L**. This way, it should be possible to see if Twitter messages are a lead indicator for polls. For this experimentation, they make the **k** value (the smoothing window) vary between 7, 15, 30 and 60 and **L** varies in the **[-90, 90]** interval. **(E2)**
+- They also test how accurate is the text analysis in predicting poll's values. To do so, they train the model on data through day **t-1** and predict the value for day **t**. **(E3)**
+- At the end, they compute the sentiment score for political topics with *obama* and *mccain* keywords. **(E4)**
 
 ####Results####
-- The first experience $(E1)$ shows that the Twitter messages analysis is correlated at 73.1% with the Gallup poll. However, it seems that this method gets high false positive sometimes as it appears in the May-June 2008 trend.
+- The first experience **(E1)** shows that the Twitter messages analysis is correlated at 73.1% with the Gallup poll. However, it seems that this method gets high false positive sometimes as it appears in the May-June 2008 trend.
 - For the second experiment, the text analysis method is correlated with both Gallup and ICS polls.
-	- For Gallup : the correlation is 71.6% for a 7-day smoothing window ($k$), 76.3% for a 15-day $k$ and 79.4% for a 30-day $k$. Moreover, the correlation results seem to demonstrate that text is be a leading indicator for polls.
+	- For Gallup : the correlation is 71.6% for a 7-day smoothing window (**k**), 76.3% for a 15-day **k** and 79.4% for a 30-day **k**. Moreover, the correlation results seem to demonstrate that text is be a leading indicator for polls.
 	- For ICS, the 60-day smoothing window gives a better correlation than the 30-day one. This shows that the text sentiment is unstable, thus it has to be used to study a long-term trends.<br><br>
-	During $(E2)$, researchers also compute the correlation of Gallup and ICS showing a best result of 86.4% when the offset value $L$ is set to $20$. This result reveals that Gallup is a leading indicator for ICS.
+	During **(E2)**, researchers also compute the correlation of Gallup and ICS showing a best result of 86.4% when the offset value **L** is set to 20. This result reveals that Gallup is a leading indicator for ICS.
 	Eventually, they also compute the sentiment scores for the keywords *job* and *economy* which are poorly correlated with Gallup : 10% and 7% respectively.
 - Predictions with text sentiment score achieve a 77.5% correlation which is worse than predicting the poll with its past self (80.4% correlation). Moreover, it demonstrates that the text sentiment is a volatile predictor as the first half of the predictions is wrong but the second half seems to be in relation with the actual data.
 - The results for the fourth experience are not convincing as neither the correlation with the poll on Obama job approval nor the correlation with the poll on 2008 elections return high values.
