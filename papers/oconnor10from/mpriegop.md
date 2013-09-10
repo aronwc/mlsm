@@ -44,7 +44,7 @@ Experiments performed:
 
 # Synthesis
  - For performing these experiments, as Twitter has improved, I would definitely use hashtags instead of keywords. In this case maybe we can obtained a better results for the election correlation.
- - I would restrict the location of tweets for more accuracy of the data corralation. I would make polls location similar to tweets location
+ - I would restrict the location of tweets for more correlation accuracy. I would make polls location similar to tweets location
 
 # Related papers
 - Tumasjan, A., Sprenger, T. O., Sandner, P. G., & Welpe, I. M. (2010). [Predicting Elections with Twitter: What 140 Characters Reveal about Political Sentiment.](http://www.aaai.org/ocs/index.php/ICWSM/ICWSM10/paper/viewFile/1441/1852) ICWSM, 10, 178-185.
