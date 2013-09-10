@@ -1,0 +1,58 @@
+
+Overview: 
+The paper tries to analyze large cluster of singular inputs and form a sentiment analysis over the general population
+They try to identify trends in consumer opinion and political opinions.
+
+Algorithm:
+To start with Text analysis and Opinion Aggregation.
+Since the data is huge and real time and the signal to noise is quite high a set of words are chosen to retrieve the messages that are to be considered for the experiment purposes.
+a.consumer confidence -> economy, job, and jobs.
+b.presidential job satisfaction -> obama.
+c.elections sentiments -> obama and mccain.
+
+For Opinion aggregation they attach a sentiment score to every chosen tweet and try to find an aggregate for required frequencies.
+They use the help of Wilson, Wiebe, and Hoff- mann 2005 for the list of words ~3000 words to use in the calculation of the sentiment analysis.
+
+Once the frequency of day to day behavior is set, they smoothen the curve to not reflect sudden change by using a moving average for k number of days.
+
+For Correlation analysis they set parameters L and k to control the data. They try to match the day to data reports and monthly reports with their k values and try to see if the analysis is able to precede the event of disturbance.
+k is the frequency parameter and L being the lag parameter. 
+
+For forecasting, they train the same set of with only previous data. L is the future that they try to predict and the algorithm learns only from data till t-1 days at the most.
+
+Hypothesis:
+Understand and analyze public sentiments using real time clustered twitter data.
+Like the paper shows, they expect it to be a low cost alternate to the general pre poll analysis and other public opinions.
+
+Data:
+Real time twitter data over the monitoring period. About a billion tweets in total.
+The time period is between 2008 and 2009.
+All non - English speaking tweets are not considered.
+Geography, even if available in the API, is not considered.
+
+For the data to be matched along side, they use third part data, retrieved from trusted and mentioned sources.
+To measure the sentiments around consumer satisfaction etc. they use
+1.Index of Consumer Sentiment by Reuters/University of Michigan Surveys of Consumers.
+2.Gallup Organization’s “Eco- nomic Confidence” index.
+
+For the political affairs tracking, the paper uses two sources as benchmark indexes. 
+1.Gallup’s daily tracking poll for the presidential job approval.
+2.A compilation provided by Pollster.com
+
+Experiments: 
+Once the data is collected, various possible analysis is done as described in the algorithms.
+The paper briefly describes the choices made while describing the algorithm.
+as many matches to the standard reports are being mentioned as the paper progresses. 
+
+Results:
+They did match most of their analysis to the hypothesis. 
+There are quite a few charts they draw up by altering the data. 
+For the most part they are fine while trying to match text analysis to the sentiments.
+They show this by matching it to the standard outputs they already have and trying to forecast a possible trend for the next short period of time.
+
+Assumptions:
+a. Geography of user. and relevance of user. All twitter users, thought are from america, cannot be a good assumption to start with.
+b. an extension of the first assumption, also noted by the authors, twitter user base increased over the specified time. It could have been a more accurate research if the sample size from who tweets were collected was fixed.
+ 
+Synthesis: Are there claims you disagree with? What would you do differently? What would you do next?
+Yes. Given the ideas, I would want to see if i could plant a specific event/sentiment and see if i can  predict the growth of the the story.
