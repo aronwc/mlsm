@@ -47,8 +47,8 @@ For me personally, I'd like to do some experiment to test what's the distributio
 Related Papers
 This paper almost mentioned every paper before related in this area. So I will focus on the later ones.
 
-1. Political polarization and popularity in online participatory media: an integrated approach: they analyzed the collective emotions and "virality" of political videos. The results shed light on the different mechanisms of emotional interaction and political information diffusion in online communitie.
+1. Political polarization and popularity in online participatory media: an integrated approach: they analyzed the collective emotions and "virality" of political videos. The results shed light on the different mechanisms of emotional interaction and political information diffusion in online communitie. This is another interesting study on different online social community.
 
-2. A new measure of party identification in Twitter. evidence from Spain: he tried to explore a way using a Bayesian Item-Response model to scale Twitter users on a common ideological dimension based on who they "follow" aiming to predict their political propensity.
+2. A new measure of party identification in Twitter. evidence from Spain: he tried to explore a way using a Bayesian Item-Response model to scale Twitter users on a common ideological dimension based on who they "follow" aiming to predict their political propensity. It may help with the background investigation for users.
 
 3. Knowing the Tweeters: Deriving Sociologically Relevant Demographics from Twitter: they demonstrated a range of techniques for collecting or estimating demographics from Twitter data including analysing gender, language and location. They showed that rich demographics can be derived from Twitter user profiles and tweets that are not explicitly stated in either of these sources. This paper is kinda a solution to the demographic problem the author mentioned.
