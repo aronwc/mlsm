@@ -41,7 +41,13 @@ Recommendations
 8. Pay attention to the majority who are not talking.
 
 Synthesis
-I generally agree with the author. However, in some situations, it's really critical to consider the "silent majority" or the demographic representativeness. Because they may involve some other experiments with tons of other assumptions, mistakes and theories, which may contribute to a more complex and opaque model. So we want to simplify the problem in specific situations and focus on the only variable we study on.
+I generally agree with the author. However, in some situations, it's really critical to consider the "silent majority" or the demographic representativeness. Because they may involve some other experiments with tons of other assumptions, mistakes and theories, which may contribute to a more complex and opaque model. So we want to simplify the problem in a specific situation and focus on the very variable we study on.
 
 Related Papers
-This paper almost mentioned every paper related in this area.
+This paper almost mentioned every paper before related in this area. So I will focus on the later ones.
+
+1. Political polarization and popularity in online participatory media: an integrated approach: they analyzed the collective emotions and "virality" of political videos. The results shed light on the different mechanisms of emotional interaction and political information diffusion in online communitie.
+
+2. A new measure of party identification in Twitter. evidence from Spain: he tried to explore a way using a Bayesian Item-Response model to scale Twitter users on a common ideological dimension based on who they "follow" aiming to predict their political propensity.
+
+3. Knowing the Tweeters: Deriving Sociologically Relevant Demographics from Twitter: they demonstrated a range of techniques for collecting or estimating demographics from Twitter data including analysing gender, language and location. They showed that rich demographics can be derived from Twitter user profiles and tweets that are not explicitly stated in either of these sources.
