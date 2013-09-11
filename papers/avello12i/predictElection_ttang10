@@ -1,0 +1,27 @@
+Overview
+Recent years, lots of researchers are into predicting elections within data from Twitter. But there are plenty of flaws and potential mistakes neglected in papers. This paper comment every paper relevant to this matter and give a general summary and some recommendations on the problems.
+
+Algorithms
+No algorithms.
+
+Hypothesis
+No hypothesis.
+
+Data
+No data.
+
+Experiments
+No experiment.
+
+Results
+No result.
+
+Assumptions
+No assumption.
+
+Comments
+The author did not agree with most of the papers related to prediction for elections via using Twitter data. He came up with eight common flaws:
+1. No predictive evidence in any paper at all.
+2. Most paper didn't take the advantage of imcumbency into consideration while setting up the baseline.
+3. No standard for how to "count" votes, or saying calculating scores from data.
+4. No commonly accepted way to intepret so-called "reality", which implies the true figure in the real world.
