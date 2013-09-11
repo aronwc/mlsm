@@ -42,6 +42,7 @@ Recommendations
 
 Synthesis
 I generally agree with the author. However, in some situations, it's really critical to consider the "silent majority" or the demographic representativeness. Because they may involve some other experiments with tons of other assumptions, mistakes and theories, which may contribute to a more complex and opaque model. So we want to simplify the problem in a specific situation and focus on the very variable we study on.
+For me personally, I'd like to do some experiment to test what's the distribution of comments on active users and the others and how's that affect the result.
 
 Related Papers
 This paper almost mentioned every paper before related in this area. So I will focus on the later ones.
@@ -50,4 +51,4 @@ This paper almost mentioned every paper before related in this area. So I will f
 
 2. A new measure of party identification in Twitter. evidence from Spain: he tried to explore a way using a Bayesian Item-Response model to scale Twitter users on a common ideological dimension based on who they "follow" aiming to predict their political propensity.
 
-3. Knowing the Tweeters: Deriving Sociologically Relevant Demographics from Twitter: they demonstrated a range of techniques for collecting or estimating demographics from Twitter data including analysing gender, language and location. They showed that rich demographics can be derived from Twitter user profiles and tweets that are not explicitly stated in either of these sources.
+3. Knowing the Tweeters: Deriving Sociologically Relevant Demographics from Twitter: they demonstrated a range of techniques for collecting or estimating demographics from Twitter data including analysing gender, language and location. They showed that rich demographics can be derived from Twitter user profiles and tweets that are not explicitly stated in either of these sources. This paper is kinda a solution to the demographic problem the author mentioned.
