@@ -27,7 +27,7 @@ Flaws in current research
 5.	Sentiment analysis is too naïve to improve the responsibility of the result.
 6.	Sample of tweets do not be filtered, so lots of misleading information affect the result.
 7.	Demographics are overlooked.
-8.	The data of those researches only collect from politically active.
+8.	The data of those researches is only collected from politically active.
 
 Recommendations
 1.	Those who claim a prediction method should predict an election in the future.
