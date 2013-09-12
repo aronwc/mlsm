@@ -1,0 +1,49 @@
+Overview
+Recently, more and more people trying to do research and prove that we could predict something from twitter. However, it is not as easy as we think. In this paper, the author gives a lot of flaws exist in current researches and gives some recommendations to the further research. 
+
+Algorithm
+Null
+
+Hypothesis
+Null
+
+Data
+Null
+
+Experiment
+Null
+
+Result
+Flaw in current research:
+1.	No one gives real prediction.
+2.	Chance cannot be a valid baseline. 
+3.	Current researchers use many flavors of sentiment analysis.
+4.	No commonly accepted way of interpreting reality.
+5.	Most sentiment analysis is applied as black-box.
+6.	Cannot claim that all the tweets are trustworthy.
+7.	Do not consider the profile of the users in twitter.
+8.	Cannot ignore the self-section bias. 
+Recommendations for further research
+1.	Give prediction!
+2.	Baseline should be predicting the incumbent. 
+3.	Give a definition about which a vote is and give argument to support it. 
+4.	Give a definition about how it interpreting reality. 
+5.	We should use a proper method to do the sentiment analysis.
+6.	Check the data before they are used.
+7.	Consider the different profile of different users.
+8.	Consider about people who are not participate in the discussion on twitter.
+
+Assumption
+Null
+
+Synthesis
+I agree with author that we cannot get prediction from twitter because the environment in twitter is too complex. I have done a research about the twitter marketing (how to use twitter to benefit your company) last year, and I found the tweets would be influenced a lot by the twitter marketing and cannot represent the real situation. For example, some company would give you coupons, gifts or even cash if you write some positive tweets about their products and recommend it to your friends, some company would hire people to write some funny or moving story to subtly praise the products and attract people to forward it. Such tweets cannot be used to reflect the real quality of the products. But the important is such tweets are very difficult and sometimes impossible to recognize. Moreover, twitter marketing could also influence the tweets on election or voting. Some party would pay to famous people like super stars to let them write the positive comments about the party. And then crazy fans would forward whatever their star says. Therefore, I think it is unreliable to get any conclusion or prediction only based on twitter with current methods. 
+If I have time to do the experiment, I would more focus on how to find the valid or true tweets. I think that’s one of the most important key. 
+
+Related papers
+Information Credibility on Twitter Castillo, C ., Mendoza, M., and Poblete, B. 2011. In proceeding of WWW 2011.
+This paper gives a method to tell the credible tweets from the incredible tweets and they claim that their method is more efficient than other methods. 
+
+Tweeting is Believing? Understanding Microblog Credibility Percep-tions Morris, M.R., Counts, S., Roseway, A., Hoff, A., and Schwarz,J. 2012. In Proceedings of CSCW 2012
+The author conducted a survey to find the features that make users to perceive a tweet as credible. Content alone is not enough to judge whether a tweets is trustful or not. 
+
