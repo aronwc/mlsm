@@ -1,0 +1,39 @@
+An Shi Summary
+
+Overview
+This paper summaries many other papers which uses Twitter to predict election results and provide suggestions for further research.
+Hypothesis
+It is hard to say what the hypothesis is because it is a survey.
+Data
+The data for this survey should be all the previous papers on Twitter predicting election.
+Results
+Flaws in current research
+•	The research are done after the election results, so it’s not actually prediction.
+•	Incumbency may be important in most of the elections.
+•	The way of interpreting tweets are not uniform.
+•	Sentiment analysis is not really helpful.
+•	The credibility of tweets are not always trustworthy.
+•	Demographics are not considered.
+•	Self-selection bias is also neglected.
+Recommendation for future research
+•	Predict the election before the results come out.
+•	Check the degree of influence incumbency to make sure the method does not give anything but baseline.
+•	Use a proper data mining method to analyze the huge amount of tweets.
+•	Analyze the sentiment accurately for those political tweets.
+•	Detect propaganda and disinformation.
+•	Consider demographics and adjust the results according to this.
+•	Study self-selction bias, because it will make a big difference.
+Assumption
+•	It is hard to say what the assumption is because it is a survey.
+Synthesis
+•	The paper should also think about why we need to invest such big amount of time and effort to predict elections using Twitter. What is the advantage over polls? Is there a better way to do that?
+•	People should also study the sentiment of tweets along time, so the trend may tell something about the final results.
+
+Related papers
+Asur, S., and Huberman, B.A. 2010. Predicting the Future With Social Media. In Proceedings of the 2010 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology – Volume 01.
+• Conover, M.D., Ratkiewicz, J., Francisco, M., Gonçalves, B., Flammini, A., and Menczer, F. 2011. Political Polarization on Twitter. In Proceedings of the Fifth International AAAI Conference on Weblogs and Social Media.
+• Golbeck, J., Hansen, D.L. 2011. Computing Political Preference among Twitter Followers. In Proceedings of the 2011 annual conference on Human factors in computing systems.
+• Conover. M.D., Gonçalves, B., Ratkiewicz, J., Flammini, A., andMenczer, F. 2011. Predicting the Political Alignment of Twitter Users. In Proceedings of 3rd IEEE Conference on Social Computing SocialCom.
+• Jürgens, P., Jungherr, A., and Schoen, H. 2011. Small Worlds with a Difference: New Gatekeepers and the Filtering of Political Information on Twitter. In Proceedings of the 3rd ACM International Conference on Web Science.
+• Yu, S., and Kak, S. 2012. A Survey of Prediction Using Social Media. Arxiv paper: arXiv:1203.1647v1.
+
