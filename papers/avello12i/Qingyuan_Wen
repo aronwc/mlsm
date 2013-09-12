@@ -17,7 +17,7 @@ Results
 “No, you cannot predict elections with Twitter”.
 
 Assumptions
-I think the assumption of this paper is that the rate of political active people on Twitter of all the people is as same as the rate of political active people on Twitter of voter. So, he thought political active people on Twitter only take a small part of all voters and they are over-represented. However, in my opinion, those people have higher possibility than others to vote.
+I think the assumption of this paper is that the rate of politically active people on Twitter of all the people is as same as the rate of politically active people on Twitter of voter. So, he thought politically active people on Twitter only take a small part of all voters and they are over-represented. However, in my opinion, those people have higher possibility than others to vote.
 
 Flaws in current research
 1.	No paper predicting a future result.
@@ -41,10 +41,9 @@ Recommendations
 9.	Not everybody use Twitter, so demographic bias should prediction corrected on its basis.
 10.	Tweets about politics are only taking a small part of all tweets.
 
-
 Synthesis
 I basically agree with the author. Moreover, I’d like to do some other experiments.
-1.	Comparing approval rate in different time. Because the closer to election the more tweets about political would be produced. The sample is always changing. So, we should count the approval rates in different period of time and compare them in the same period of time.
+1.	Comparing approval rate in different period of time. Because the closer to election the more tweets about political would be produced. The sample is always changing. So, we should count the approval rates in different period of time and compare them in the same period of time.
 2.	I would like to count the approval rate in different strata or age at the same time. People of diverse strata or age will change differently for same reason. For instance, if president announces that he would provide more vacation, workers may vote for this but the employers may be going to change their decision from support to against at the same time. According to this, we can figure out how different people change to predict future elections.
 3.	Count the number either of firm supporter or infirm supporter. Firm supporters mean the people only support a certain candidate or party and hardly change. Infirm supporters refer to the people change their decision frequently. I think the firm supporters should take high weight in future electoral predictions.
 
