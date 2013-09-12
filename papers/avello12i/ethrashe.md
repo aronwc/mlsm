@@ -3,14 +3,17 @@ Overview
 This paper argues that several current papers advocating the use of Twitter as a predictive model for elections are biased toward their hypothesis and overlook key features. The author proceeds to provide a survey of several papers, from what is proclaimed to be the first paper dealing with mood analysis on Twitter data to papers published the same year as this work.
 
 
+
 Survey
 
 The paper provides summaries and short evaluations regarding the viability of the results of seventeen papers on topics relating to Twitter data analysis and predictions. These papers are presented chronologically to provide some context, and paper responses are directly mentioned as being linked.
 
 
+
 Assumptions
 
 The main assumption of this work is that there is not a paper published at the time of writing hat is able to satisfy, or at least address, all the author’s suggestions for improvement presented in the introduction.
+
 
 
 Synthesis
@@ -20,6 +23,7 @@ It seems off-putting for a survey writer to have such a strong, negative opinion
 The description of the papers seems to deal more with the general purpose of the paper and the relationship between other future and previous works. As such, the majority of the survey is useful, but there are some particularly uninformed and biased phrases (“the arguments…are not compelling enough”) that throw doubt on the validity of the analysis and selection even without the leading introduction. 
 
 The points that are mentioned in the introduction are rarely mentioned in the analysis of the surveyed works, so that there is little indication as to whether the original work’s author mentioned and attempted to address the survey writer’s issues. This might have some correlation that several of the papers are only related to the task at hand (gender identification from tweets, information credibility, Truthy project, etc). Even in those papers, it would be beneficial to note something to the effect of which papers mentioned afterward, if any, cite this tangentially related work as reference.
+
 
 
 Related Papers
