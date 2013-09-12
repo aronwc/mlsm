@@ -1,6 +1,8 @@
 Overview
 ========
 
+The author of this paper discusses a number of peer reviewed papers all related to election prediction. The author also provides a number of flaws common to most of these papers as well as potential solutions to those flaws.
+
 Algorithm
 =========
 
