@@ -52,3 +52,12 @@ shared faster but republican ones are remembered longer inside the community.
 
 [barbera_epsa2012](https://files.nyu.edu/pba220/public/barbera_epsa2012.pdf)      
       
+In this paper the author explores whether the structure of the social networks in which they are embedded has the
+potential to become a source of information about policy positions.      
+
+[socialcom12_vallina](https://www.cl.cam.ac.uk/~cm542/papers/socialcom12_vallina.pdf)     
+   
+In this work the authors study an extensive set of millions of tweets themed around the 2011 regional and local elections in Spain
+and their accompanying civil unrest. Their analysis shows that mainstream political entities were overshadowed on Twitter by
+grassroots movements discussing alternative points of view, at both regional and national levels.    
+
