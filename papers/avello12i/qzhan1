@@ -1,0 +1,24 @@
+•	Overview: 
+The author finds many current papers are blindly optimistic about the employment of social media, such as tweeter, to predict the result of election. After scrutinizing these papers, the author decides to present a balanced survey to us, casting doubt upon the prediction of election using tweeter data, by introducing these papers that have strong impact in this field in the chronological order. Furthermore, the author sheds some light on the future research work.
+•	Algorithm: 
+Not available
+•	Hypothesis: 
+Not available
+•	Data: 
+Not available
+•	Experiments: 
+Not available
+•	Results: 
+The 4 points that the author concludes from the previous literature are as following:
+1.	Social media, such as tweeter, is biased. Tweeter is not a representative and unbiased sample of the voting population.
+2.	Self-selection bias exists because of the minority of users responsible for most of the political chatter.
+3.	A substantial amount of data on tweeter is untrustworthy.
+4.	Due to the nature of political discourse, which is plagued with humor, double entendres and sarcasm, simplistic sentiment analysis methods perform very badly.
+The author suggests that anyone who has ambition to conduct serious research on prediction of election using tweeter data should keep above 4 points in mind.
+•	Assumptions:
+Not available
+•	Synthesis: 
+First of all, I agree with the author that the tweeter is incapable of being a representative and unbiased sample of the voting population. Actually, the folks who use tweeter for political chatter might be just a little fraction of the whole voting population. To address this issue, I suggest that the impact factor of tweeter user might be introduced into the research. Consider the fact some guys who are enthusiastic about tweeting for political chatter might be invisible by the most voting population. On the other hand, some tweeters, such as some celebrities or journalists, have huge influence on voting population. These two kinds of tweeters should not weigh the same. Meanwhile, I believe the impact factor can help reduce the self-selection bias. Regarding point 3, “a substantial amount of data on tweeter is untrustworthy”, the author already sheds light upon it. We should discriminate different tweeter data. The algorithm is supposed to be designed to distinguish the credible tweeters from the incredible tweeters. Finally, when it comes to the bad performance of simplistic sentiment classification, I believe the classification can be more precise with the development of research on natural language process. 
+ 
+•	Related Papers: 
+
