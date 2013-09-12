@@ -38,17 +38,9 @@ Synthesis
 
 I quite agree with the author's standpoint. Needless to say, generalization is always the key obstacle we should overconme. As I went through these machine learning papers so far, I think the most difficult thing is to deal with the data.
 People always choose profitable data to support their algorithms or methods. The post-hoc analysis mean nothing to me. Most authors like to claim positive results. And with the data they provide, the accuracy can even be up to 90%.
-I wonder even can I restore their experiment. If I use the data they provide, what results can I get? If I do not use their data but other data such as Facebook, what results can I get then? Most of the methods just can handle one kind of data even only one database.
+I wonder even can I restore their experiment. If I use the data they provide, what results can I get? If I do not use their data but other data such as Facebook, what results can I get then? Most of the methods just can handle one kind of data even only one database. Maybe this method is high efficient to the Twitter data in March. But if I substitute the data in April, can I still get a satisfactory results? Most possible answer to my questions may be no. I wonder whether Twitter is really a good database for prediction. I mean it can be used as an example to test methods, but can not stand as the key factor to generate algorithms or methods.
 
-
-
-
-
-
-
-
-
-
-
+Related Papers
+--------------
 
 
