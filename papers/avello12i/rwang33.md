@@ -22,11 +22,11 @@ Results
 -------
 
 Even there are amounts of useful information on Twitter, using the data of Twitter as the key factor to predict election is still inadvisable.
-The author mentions the future research should take the flaws below into consideration:
-1. Not everybody is using Twitter.
-2. Not everyone twitterer is tweeting about politics.
-3. Just because it is on Twitter does not mean it is true.
-4. Naive is not bliss.
+The author mentions the future research should take the flaws below into consideration:      
+1. Not everybody is using Twitter.      
+2. Not everyone twitterer is tweeting about politics.      
+3. Just because it is on Twitter does not mean it is true.      
+4. Naive is not bliss.      
 
 Assumptions
 -----------
