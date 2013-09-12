@@ -38,9 +38,17 @@ Synthesis
 
 I quite agree with the author's standpoint. Needless to say, generalization is always the key obstacle we should overconme. As I went through these machine learning papers so far, I think the most difficult thing is to deal with the data.
 People always choose profitable data to support their algorithms or methods. The post-hoc analysis mean nothing to me. Most authors like to claim positive results. And with the data they provide, the accuracy can even be up to 90%.
-I wonder even can I restore their experiment. If I use the data they provide, what results can I get? If I do not use their data but other data such as Facebook, what results can I get then? Most of the methods just can handle one kind of data even only one database. Maybe this method is high efficient to the Twitter data in March. But if I substitute the data in April, can I still get a satisfactory results? Most possible answer to my questions may be no. I wonder whether Twitter is really a good database for prediction. I mean it can be used as an example to test methods, but can not stand as the key factor to generate algorithms or methods.
+I wonder even can I restore their experiment. If I use the dataset they provide, what results can I get? If I do not use their dataset but other dataset such as Facebook, what results can I get then? Most of the methods just can handle one kind of data even only one database. Maybe this method is high efficient to the Twitter data in March. But if I substitute the data in April, can I still get a satisfactory results? Most possible answer to my questions may be no. I wonder whether Twitter is really a good database for prediction. I mean it can be used as an example to test methods, but can not stand as the key factor to generate algorithms or methods.
 
 Related Papers
 --------------
 
-[plead1202-Garcia](http://www.sg.ethz.ch/media/talk_slides/plead1202-Garcia.pdf)
+[plead1202-Garcia](http://www.sg.ethz.ch/media/talk_slides/plead1202-Garcia.pdf)      
+      
+Dealing with the view statistics and comments for the videos of the U.S. presidential campaigns from Youtube and using
+sentiment analysis, they quantify the collective emotions expressed and measure virality of the videos of each campaign,
+ﬁnding that democrat campaigns elicited more positive collective emotions than republican campaigns and democrat videos are
+shared faster but republican ones are remembered longer inside the community.         
+
+[barbera_epsa2012](https://files.nyu.edu/pba220/public/barbera_epsa2012.pdf)      
+      
