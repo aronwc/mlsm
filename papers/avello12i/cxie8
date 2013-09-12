@@ -11,9 +11,10 @@ Data：
 Papers related to electoral prediction using Twitter data
 
 Experiments：
-To provide an annotated bibliography in a chronological order
+No
 
 Results:
+The author mentions some flaws in current research regarding electoral predictions using Twitter data, then provides core lines of future research and an annotated bibliography in a chronological order.
 From the previous literature review it can be concluded:
 1. Not everyone is using Twitter.
 2. Not every twitterer is tweeting about politics.
@@ -29,5 +30,10 @@ I will focus on the twitters who are interested in politics (we need to set a st
 
 Related Papers: 
 1. Gayo-Avello, D. (2012). A meta-analysis of state-of-the-art electoral prediction from Twitter data. arXiv preprint arXiv:1206.5851.
+This is the first meta-analysis of the whole body of research regarding electoral prediction from Twitter data. It reveals that its presumed predictive power regarding electoral prediction has been rather exaggerated: although social media may provide a glimpse on electoral outcomes current research does not provide strong evidence to support it can replace traditional polls. This paper aims to (1) provide a balanced and critical review of the state of the art; (2) cast light on the presume predictive power of Twitter data; and (3) depict a roadmap to push forward the field.
+
 2. Franch, F. (2013). (Wisdom of the Crowds) 2: 2010 UK election prediction with social media. Journal of Information Technology & Politics, 10(1), 57-71.
+The auto regressive integrated moving average (ARIMA) model performs predictions for the Labour Party, Liberal-Democrats, and Conservatives that are respectively only 0.48, 0.83, and 0.19 percentage points off the real vote share, thus well exceeding the predictive power of more traditional and expensive polls.
+
 3. Schoen, H., Gayo-Avello, D., Metaxas, P. T., Mustafaraj, E., Strohmaier, M., & Gloor, P. (2013). The power of prediction with social media. Internet Research, 23(5), 1-1.
+A taxonomy of prediction models is introduced, along with their relative advantages and the particular scenarios where they have been applied to. The main areas of prediction that have attracted research so far are described, and the main contributions made by the papers in this special issue are summarized. Finally, it is argued that statistical models seem to be the most fruitful approach to apply to make predictions from social media data.
