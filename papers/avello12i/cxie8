@@ -1,0 +1,33 @@
+Overview：
+After reading many papers claiming positive results in electoral prediction, the author decides to write this paper to refute them. In this paper, every study relevant to the matter of electoral prediction using social media is commented. By such a survey, the author draws the conclusion that the predictive power of Twitter regarding elections has been greatly exaggerated, and he provides some recommendations about the research problems ahead.
+
+Algorithm：
+No
+
+Hypothesis：
+No
+
+Data：
+Papers related to electoral prediction using Twitter data
+
+Experiments：
+To provide an annotated bibliography in a chronological order
+
+Results:
+From the previous literature review it can be concluded:
+1. Not everyone is using Twitter.
+2. Not every twitterer is tweeting about politics.
+3. Just because it is on Twitter does not mean it is true.
+4. Naivete is not bliss.
+Therefore, if someone who want to do serious research in this area should take into account all of that, follow the research lines the author has outlined, and remember that Twitter cannot consistently predict elections.
+
+Assumptions:
+No
+
+Synthesis:
+I will focus on the twitters who are interested in politics (we need to set a standard about them). I will have a study on their attitudes during the election, whether they insist on supporting one candidate and the proportion of them. Maybe there will be correlation between the proportion and the electoral prediction.
+
+Related Papers: 
+1. Gayo-Avello, D. (2012). A meta-analysis of state-of-the-art electoral prediction from Twitter data. arXiv preprint arXiv:1206.5851.
+2. Franch, F. (2013). (Wisdom of the Crowds) 2: 2010 UK election prediction with social media. Journal of Information Technology & Politics, 10(1), 57-71.
+3. Schoen, H., Gayo-Avello, D., Metaxas, P. T., Mustafaraj, E., Strohmaier, M., & Gloor, P. (2013). The power of prediction with social media. Internet Research, 23(5), 1-1.
