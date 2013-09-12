@@ -43,4 +43,4 @@ I wonder even can I restore their experiment. If I use the data they provide, wh
 Related Papers
 --------------
 
-
+[plead1202-Garcia](http://www.sg.ethz.ch/media/talk_slides/plead1202-Garcia.pdf)
