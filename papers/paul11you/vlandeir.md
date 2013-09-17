@@ -7,7 +7,7 @@ The main goal of this paper is to show that Twitter is an effective tool to anal
 
 The main algorithm of this paper is based on Ailment Topic Aspect Model (ATAM).
 
-#####ATAM#####
+######ATAM######
 ATAM models how users express their illnesses and ailments in tweets. To do so, it assumes that each health related tweet refers to a health topic, i.e. an ailment. Each ailment *a* maintains a distribution over words, and one over symptoms and treatments. This way, it is possible to know by what kind of message (general, symptom or treatments) a word is generated.
 
 To extend this model, researchers introduce prior knowledge using articles written about diseases. They select 20 articles and pair each one of them to an ailment to get a model they call ATAM+.
