@@ -1,0 +1,62 @@
+Overview
+This paper want to analysis user messages in social media to broad the range of public health applications and to incorporate prior tracking illnesses overtime. Using millions of tweets to reveal and track the influenza rate of certain disease over national wide. The paper proves the model using prior knowledge and reports results for several new applications: geographic syndrome surveillance for multiple ailments (sounds awesome.. ) and include quantitative correlations with government data as well as qualitative evaluations of model output. 
+
+Algorithm
+• Aliment Topic Aspect Model (ATAM), the most important model in this paper.. And they improve it a little bit later on. 
+• Latent Dirichlet allocation (LDA). This one primarily in charge of all the words analysis. Words in a tweet can depend either on a LDA-style model or a message specific conversation. 
+• The paper paired each article with an ATAM ailment and placed a prior distribution over the ailment's words based on the article. 
+The Dirichlet distribution can be defined with two parameters, a mean m which can be thought of as the most likely multinomial to be drawn from this Dirichlet, and a precision s, which controls how mech a sample multinomial vector can deviate form the mean. They optimize s to maximize data likelihood using the fixed-point iteration derived by Minka to update the precision given a fixed mean. After this and adjust the parameter, they called this new model ATAM+
+
+Hypothesis
+• Based on the LDA, the paper assumes (actually, this is the assumption of ATAM, however, their hypothesis is based on this). For each health related tweet reflects a latent ailment α. 
+• Similar to  a topic, an ailment α indexes are a dstribution over word Φα 
+• An ailment maintains a distribution over symptoms and treatments (similar to the Topic Aspect Model). The latent variable  y∈{1,2,3}  determines which aspect generates each word.   
+• The paper set the Dirichlet mean mα as the distribution over words in the articles for the ailemnt α
+
+Data
+• Follow Paul and Dredze and use a list of key phrases to automatically identify possible symptoms.
+• The paper selected 20 disease articles likely to appear in Twitter data, 
+• 2 billion tweets collected from May 2009 to October 2010.
+
+
+
+
+
+
+Experimental
+• They use ATAM model, to select health related tweets for ATAM training. 
+• Aliment output was annotated by two people not involved in running the models. Each person labeled the 20 ailments with disease names of their own choosing.
+• In order to evaluate the output interpretability, they compared the output to public health articles. Each article was paired with its corresponding ailment in the model output, as labeled by the annotators. Ranking quality was measured as the percentage of articles/ailments such that the highest ranked alignment was the correct alignment. 
+• The compared the data with CDC and Google Flu. Both of the results indicates the ATAM+ is a better model than ATAM. 
+• Geographic behavioral risk factors: in this experiment, they compared ATAM and ATAM+ model to collects health statistics for chronic diseases or risk factors. Then Compare to the result from CDC.
+• Based on the formal work, they use the new model to form a public health information both over time and by geographic region. 
+• The final experiment-- Analyzing symptoms and medications. This one is for those milder, acute illness, which sufferers often do not visit their doctor. They manage the illness on their own. They evaluate the treatment that patient used. To evaluate treatment, they selected two common groups of medications: pain relief and allergy medication. Then compare several common medications within these groups. 
+
+Results
+• Human annotation VS ATAM+. Each person labeled the 20 ailments with disease names of their own choosing on the top 20 words for the general, symptom, and treatment distributions. For the 20 ailments, annotators agreed on labels for 17 ATAM ailments. ATAM+ produced all coherent ailments. 
+• The result from the comparison between public health articles and their data output looks good. ATAM+ outperforms ATAM in many level. 
+• In the geographic behavioral risk factor experiment, the ATAM+ is overcoming ATAM. The correlations of certain risk factors towards ailments are measured more correct in ATAM+ model. 
+• Based on the formal work, they use the new model to form a public health information both over time and by geographic region. Also compared to CDC, the ATAM+ obtained a correlation of 0.66, which is higher than ATAM 0.23 (poor…)
+• The three strongest medications, codeine, morphine and Vicodin, are all used for more serious ailments, including dental problems and infections. Basically they find out what kind of medicines patient used when the ailments are milder or acute. 
+
+
+Assumptions
+• In the LDA model, it assumes that documents are distribution over topics, and topics are distributions over words. 
+• They compared the output of ATAM and ATAM+ towards many standards, like CDC, Google flu, etc. They assume these standards are actually correct standard. 
+
+Synthesis
+• The paper focused on population level metrics, however, whether we could up level it to individual ailment tracking? 
+• There are some low tweeting region, which make the paper fail to analysis the geographic syndrome surveillance. What do we do about those region?  
+• A related question to the last one. The user to tweeter tend to be younger. How could we track down the elder people's health condition? 
+• Who am I kidding… this is a great paper. I can barely followed what is going on.. 
+
+
+Related Papers
+	• Carleen Hawn,Business writer based in San Francisco, California , Take Two Aspirin And Tweet Me In The Morning: How Twitter, Facebook, And Other Social Media Are Reshaping Health Care. 
+	• Jennifer Fisher DNP, APRN-BC, Margaret Clayton PhD, APRN-BC, Who Gives a Tweet: Assessing Patients’ Interest in the Use of Social Media for Health Care. 
+	• Quincey, E., and Kostkova, P. 2010. Early warning and outbreak detection using social networking websites: The potential of twitter. In Electronic Healthcare. Springer Berlin Heidelberg.
+	• Ritter, A.; Cherry, C.; and Dolan, B. 2010. Unsupervised Modeling of Twitter Conversations. In NAACL.
+	
+	
+	
+	
