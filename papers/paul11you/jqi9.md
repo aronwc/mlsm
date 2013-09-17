@@ -23,6 +23,9 @@ The data that author extract from tweets have high correlation rates with report
 
 ####Assumptions####
 - They assume other use of their research method, they think that twitter clearly contains many different types of information of value to public health research on many different ailments.
+
+
+
 ####Synthesis####
 -	To think about the main user of twitter are relatively young and full of energy, the analysis result may be not very accurate for certain disease, for example heart attack.
 -	What I really want to do with this method is using the result to help local hospitals to get prepared for burst of certain disease, how to implement rolling forecast is another problem. 
