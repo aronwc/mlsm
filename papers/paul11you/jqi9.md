@@ -32,6 +32,7 @@ The data that author extract from tweets have high correlation rates with report
 -	What I really want to do with this method is using the result to help local hospitals to get prepared for burst of certain disease, how to implement rolling forecast is another problem. 
 - Or officer of public health can monitor epidemic disease's treatment of normal people, then provide best practice or redress people's method timely.
 - Set some alert mechanism on twitter, since it will be more faster than get reports from local medical organization, quicker is always better.
+
 ####Related Papers####
 - The Use of Twitter to Track Levels of Disease Activity and Public Concern in the U.S. during the Influenza A H1N1 Pandemic
 Alessio Signorini, Alberto Maria Segre, Philip M. Polgreen mail
