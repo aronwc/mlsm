@@ -36,8 +36,10 @@ The data that author extract from tweets have high correlation rates with report
 ####Related Papers####
 - The Use of Twitter to Track Levels of Disease Activity and Public Concern in the U.S. during the Influenza A H1N1 Pandemic
 Alessio Signorini, Alberto Maria Segre, Philip M. Polgreen mail
+
 This paper got a brand new concept called disease activity level, measure the Severity of certain disease and set appropriate priority to deal with burst diseases more than one.
 - Validating models for disease detection using twitter
 Marcel Salathé, Todd Bodnar
+
 This paper analyzed several methods related to disease surveillance, and do some improvements to the methods.
  
