@@ -1,0 +1,61 @@
+####Overview####
+
+This paper explores techniques for mining Twitter for public health. It introduces some extensions to previous techniques and analyzes the possible application such as syndromic surveillance, measuring behavioral risk factors, localizing illnesses by geographic region and analyzing symptoms and medication usage.
+
+####Algorithm####
+
+The first algorithm described in this paper is the Ailment Topic Aspect Model (ATAM). It models how users express their illnesses and ailments in tweets builds on the notion of topic:
+
+- An ailment a indexes a distribution over words Φa, and distribution over symptoms and treatments similar to the Topic Aspect Model.
+
+- The variable y determines if a word belong to general, symptoms or treatments topic.
+
+The second algorithm is an improved version of the ATAM with prior knowledge: each of the articles is paired with an ATAM ailment and a prior distribution over the ailment’s words based on the article is placed.
+
+Latent Dirichlet allocation (LDA) is also used.
+
+
+####Hypothesis####
+
+- Public health information can be learned from Twitter.
+- Using prior knowledge improves ATAM
+
+####Data####
+
+- The data set is made with 2 billions of tweets collected from May 2009 to October 2010.
+- From this data set, only health related tweets for ATAM training have been selected:
+	-By filtering tweets with keyword matching insufficient.
+	-By using a High precision SVM binary classifier.
+- 20 diseases articles from WebMD.com
+
+####Experimental####
+
+- The author runs the algorithms (ATAM and ATAM+- on the data set and compare the outputs with the output of the running of  the algorithms on articles of WebMD.com.
+- The author of the article measures the correlation between the probability of the flu ailment for each week between mid August 2009 to October 2010 with the influenza rate in the United States measured by the Center for Disease Control and prevention’s (CDC), and with Google Flu Trends.
+- After extracting geographically linked health statistics from Twitter, the third experiment measures the Pearson correlation between the ailments discovered in each US state with the state’s risk factor rate.
+- The two previous experiments are combined to track an ailment over time and geography, and it is also compared to CDC data.
+- For each treatments and symptoms that appear more than 50 times, a distribution over ailment using ATAM+ is computed. It allows to link symptoms and medications.
+
+####Results####
+
+-Prior knowledge improves ATAM.
+- Syndromic surveillance: around 95% of correlation with CDC data and Google Flu trends.
+
+####Assumptions####
+
+- Each article is paired with its corresponding ailment labeled by the annotator is the gold standard alignements. 
+- Documents are distribution over topics, and topics are distribution over words.
+
+####Synthesis####
+
+- If twitter can help to know what treatment take a person for one symptom, maybe we can create a tool which analyzes these data and can tell to a person if she takes the wrong treatment for the symptom and can do suggestions. It would enforce self-medication.
+-  As twitter users tend to be younger, we can doubt that Twitter trends reflect public health.
+- As future work, we can try to predict public health trends by using Twitter data and evaluate this. Maybe it would be a good indicator for doctors and laboratories. 
+
+####Related Papers####
+- Culotta, Aron. "Towards detecting influenza epidemics by analyzing Twitter messages." Proceedings of the first workshop on social media analytics. ACM, 2010.
+	- This paper analyzes correlation between CDC influenza statistics and Twitter data. It also proposes and compares regression techniques to correlate these data with CDC statistics.
+- Identifying Health-Related Topics on Twitter, An Exploration of Tobacco-Related Tweets as a Test Topic, Kyle W. Prier, Matthew S. Smith, Christophe Giraud-Carrier, and Carl L. Hanson
+	- This paper examines how to model and and discover public health topics and themes in tweets, especially related to Tobacco for the example. 
+
+
