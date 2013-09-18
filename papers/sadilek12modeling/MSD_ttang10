@@ -1,0 +1,32 @@
+Overview
+The author using a support vector machine (SVM) model classifier tracked particular users of twitter and their tweets. They analyzed the effects of co-location and friendship with sick individuals. The result had a high precision as well as high recall of the target people.
+
+Algorithm
+Support Vector Machine (SVM)
+
+Hypothesis
+1. Social media (e.g. Twitter) can be used to mine useful information of specific individuals and to figure out what role they play in a contagion.
+2. The spread of an infectious disease is related to co-location feature with sick individuals.
+3. The spread of an infectious disease is realted to friendship with sick individuals.
+
+Data
+The data was collected via using Twitter API. It's from NYC within a geographic scope of 100 kilometers from the center and the period was a month long and started on May 18, 2010. At last they got nearly 160 millions of tweets from more than 630 thousand unique authors. And they focused on 6,237 geo-active users (accounts that posted more than 100 GPS-tagged tweets during the one-month data collection period).
+
+Experiments
+The used two different binary SVM classifier, one with high penalty on flase positive and the other one with high penalty on false negative. They eventually extract tweets with high confidence abouth sickness and "other" tweets with high probability and got one final classifier. They used unigram, bigram and trigram word token for features in training data. Then they toke advantage of the GPS tagged tweets to find the effect on co-location and leverage users' Twitter friendship to quantify the effect of social ties on disease transmission.
+
+Results
+The final classifier on a held-out test set of 700,000 tweets shows 0.98 precision and 0.97 recall. The correlation between the prevalence of infectious diseases predicted by their model and the predictions made by Google Flu Trends specifically for New York City is 0.73. And there is a obvious relationship between spread of infectious disease and co-location effect as well as friendship.
+
+Assumptions
+1. People claiming themselves sick on Twitter are honest.
+2. There is no significant conjunction between co-location effect and friendship accounts in data.
+3. The results from Google flu trends are credible.
+
+Synthesis
+I am kind of confused why the "friendship" on social network will actually affect people on infectious disease in real life. I mean as long as they keep distance from each other in real life, their infectious disease, if there is any, can not transmit to another. If they do encouter each other, that's the result of co-location rather than friendship.
+
+Related Papers
+A. Sadilek, H. Kautz, and V. Silenzio. Predicting disease transmission from geo-tagged micro-blog data. In Twenty-Sixth AAAI Conference on Artificial Intelligence, 2012: they constructed a model to predict not only if a specific individual will fall in ill but also when.
+
+Ritterman, J.; Osborne, M.; and Klein, E. 2009. Using prediction markets and Twitter to predict a swine flu pandemic. 1st International Workshop on Mining Social Media: they showed that noisy Twitter data is a valuable information channel for predicting public opinion regarding the likelihood of a pandemic. But they also explored the possiblity of mining marketing information from social media like Twitter.
