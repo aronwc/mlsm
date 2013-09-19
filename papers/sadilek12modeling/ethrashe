@@ -34,3 +34,9 @@ Synthesis
 	One could also expand the experiment to allow comparison with official CDC numbers.
 	
 Related Papers
+Sadilek, Adam, Henry A. Kautz, and Vincent Silenzio. "Predicting Disease Transmission from Geo-Tagged Micro-Blog Data." AAAI. 2012.
+	A similar paper by the same authors, but uses Conditional Random Fields (CRF) rather than Support Vector Machines (SVM). The results vary greatly from those presented in this paper as they are not as clearly beneficial.
+
+Krieck, Manuela, et al. "A new age of public health: Identifying disease outbreaks by analyzing tweets." Proceedings of Health Web-Science Workshop, ACM Web Science Conference. 2011.
+	A likely precursor to the current paper that focuses on early detection of disease rather than its transmission.
+
