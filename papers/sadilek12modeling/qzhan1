@@ -3,7 +3,8 @@ Instead of being concentrated on coarse-grained statistical analysis of populati
 
 
 Algorithm
-Support Vector Machine (SVM) for detecting illness message on Tweeter
+1. Support Vector Machine (SVM) for detecting illness message on Tweeter
+2. quantify the effect of social ties on disease transmission by leveraging users’ Twitter friendships.
 
 Hypothesis
 1.Social ties to infected, symptomatic people, as well as the intensity of recent co-location, sharply increase one’s likelihood of contracting the illness in the near future.
