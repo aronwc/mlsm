@@ -1,0 +1,50 @@
+Overview: Write a short paragraph summarizing the content of the paper.
+The intent of the paper seems to use combine human relations on a social network to a spread of a disease. 
+In this case, they take the example of a network on twitter formed based on geo tagged tweets in Ney York City area. 
+It tries to find how mentions of feeling sick spread and to model a to represent the spread of the sick / flu affected victims. 
+
+Algorithm: Describe in more detail the primary algorithm proposed or applied in the paper.
+They first get a detailed network with geo tagged details.This is a very large set of data(~16 million tweets)
+They pick a small sample set that would represent about 1:3000 people in NYC area.This is about 5000 tweets. 
+Then they run a semi supervised training model to fit into a Support Vector Machine. 
+This is done twice. Once when the false positives are penalized. The other when false negatives are penalized. 
+Both models just mark the tweets as either sick or other. 
+They combine both of these, identify a strict model to apply on the remaining data using only the features that appeared at least thrice in the sample set on both models.
+
+
+Hypothesis: List the hypotheses the authors test in the paper (note that these are not always explicitly stated).
+Marking and manning the flow of the data that comes through a social network along with location data, could be used to track and manage epidemic diseases. 
+They try to get closer to answer, who is the first patient who brought a disease to a community.
+
+Data: Describe the data used in the experiments
+Data that is used for this is based on geo tagged twitter data from NYC area.
+The data was collected for a  month long period. 
+It ended up with a total set of about 16 million tweets.Of which only 5 million were geo tagged.
+The users with geo tagged location are about 6000. and geo tagged users with signs of sickness were about 2000. 
+
+They try to track ~60,000 locations and try to track movement of users over time.
+
+Experiments: Briefly describe how are the experiments are organized.
+One of the experiments is to track the location of a user and identify the neighboring sick people. 
+Then, they try to predict the sickness in that person after a day(or a set time period).
+
+Results: Describe the results and their significance.
+They seem to propose that they got a efficient model working.
+There seems to be a relationship between the sick neighbors and you falling sick.
+The show that the more sick friends you have around you, the more you are probably going to fall sick. 
+
+Assumptions: List some of the important assumptions the authors make in their work.
+Friends on twitter are geographically closer.
+It is possible to track the movement of people accurately.
+
+Synthesis: Are there claims you disagree with? What would you do differently? What would you do next?
+The paper goes on the assumption that tracking is as easy as identifying geo tagged twitter data.
+Although, it is possible to track people and their whereabouts , the data required to work on is quite large. Twitter itself, could possibly do it in-house.
+(or may be the NSA could.)
+With a rate limit. Limiting to geotagged tweets, make it a very small sample set geo tagged people to general public.
+
+This being said, this is definitely not a bad thing to do. It can be used in a group to track movement in behavior.
+
+In one of the related works, they mention the ability to identify mental disorders and track sentiments.
+This is a very good area to take this forward. 
+finding dpi centers of specific ideas makes it very useful in tracking movement as such.
