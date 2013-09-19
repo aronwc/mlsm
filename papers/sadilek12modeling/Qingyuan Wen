@@ -10,7 +10,9 @@ Hypothesis
 2.	Human contact can be analyzed by co-location and Twitter friendships.
 
 Data
-Using the Twitter Search API, they collected a sample of public tweets that originated from the New York City metropolitan area. They have logged nearly 16 million tweets authored by more than 630 thousand unique users. Then, they concentrate on 6,237 accounts that posted more than 100 GPS-tagged tweets during the one-month data collection period.
+Using the Twitter Search API, they collected a sample of public tweets that originated from the New York City metropolitan area. 
+They have logged nearly 16 million tweets authored by more than 630 thousand unique users. 
+Then, they concentrate on 6,237 accounts that posted more than 100 GPS-tagged tweets during the one-month data collection period.
 
 Experiments
 1.	Trained the final SVM C_f test set of 700,000 tweets.
