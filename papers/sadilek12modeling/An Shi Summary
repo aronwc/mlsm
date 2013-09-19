@@ -1,0 +1,35 @@
+Overview
+•	This paper carried out a study on the roles that social ties and interactions between specific individuals play in the progress of a contagion, using Twitter data with fine-grained location information. The results show that both of co-location and friendship has an exponential relationship with the probability of being sick.
+Algorithm
+•	Detect illness related tweets which are less than 0.1% of the total tweets.
+•	Semi-supervised cascade-based learning process was carried out to learn a support vector machine (SVM) classifier.
+•	Two classifiers were used first, data were obtained to train the final classifier.
+Hypothesis
+•	Social ties and interactions between specific individuals are two important factors of contagion.
+Data
+•	Public tweets from New York metropolitan area collected starting on May 18, 2010 and lasts one month long.
+•	Nearly 16 million tweets were logged which were authored by more than 630,000 unique users.
+•	Focused on accounts which posted more than 100 GPS-tagged tweets during the one-month data collection period and there are totally 6,237 geo-active users.
+•	5,128 labeled tweets, either “sick” or “other” were used to train the two classifiers.
+•	Corpus of 1.6 million tweets was then machine labeled as “sick” or “other”.
+•	Random sample of 200 million tweets which were labeled as “other” were added to the final corpus, and a final corpus with over 700,000 “sick” messages and 3 million “other” tweets were obtained, which were used to train the final classifier.
+•	A total of 700,000 tweets were used to evaluate the final classifier.
+Experiments
+•	The final classifier was evaluated by testing 700,000 tweets and comparing the results with Google Flu Trend for NYC.
+•	The effect of co-location and friendship with infected people on a given day on one’s health the following day was studied both individually and jointly.
+Results
+•	The test of 700,000 tweets gives 0.98 precision and 0.97 recall. The correlation between the prevalence of infectious diseases predicted by the authors and the predictions made by Google Flu Trends for New York City is 0.73. 
+•	There’s an exponential relationship between probable physical encounters and the probability of  being sick.
+•	There’s an exponential relationship between the number of sick friends and the probability of being sick.
+•	For number of smaller than 6 friends, co-location has adds little to the impact of friendship.  However, for larger number of friends, the friendship effect plateaus, while co-location begins to dominate.
+Assumptions
+•	Latent events, such as dinning together, between friends of Twitter users are often among the activity of the sample of people one can observe.
+Synthesis
+•	“Other” tweets can also be used to predict the co-location and friendship effect for those geo-active users. For example, one person may tweet “I’m sick, not feeling good.” in one tweet, and “Having dinner with XX and XX now.” in another tweet within four hours. The later one cannot be labeled as “sick” tweet but it can tell something about where he has been who has met, which is also useful to predict the probability of one getting sick. So the “other” tweets from the same geo-active user who is sick can add more information to the co-location and friendship study.
+•	A possible area that might be interesting is to study the density of “sick” Twitter users geologically and see the change through time. This can give us a picture of how influenza-like illnesses spread among people. A possible result may be at day time, people are highly populated in downtown, and some people are infected by others. When after work, they go home at suburbs and their family and neighbors are then infected and they start to infect other people when they go to work the next day.
+Related papers
+•	Krieck, M.; Dreesman, J.; Otrusina, L.; and Denecke, K. 2011. A new age of public health: Identifying disease outbreaks by analyzing tweets. Proceedings of Health Web-Science Workshop, ACM Web Science Conference. The authors explored augmenting the traditional notification channels about a disease outbreak with data extracted from Twitter.
+•	Culotta, A. 2010. Towards detecting influenza epidemics by analyzing Twitter messages. In Proceedings of the First Workshop on Social Media Analytics, 115–122. ACM. The authors studied the overall trend of a disease outbreak by monitoring social media.
+•	Sadilek, A.; Kautz, H.; and Bigham, J. P. 2012. Finding your friends and following them to where you are. In Fifth ACM International Conference on Web Search and Data Mining. The authors studied how to accurately predict others’ location from their online behavior and interactions.
+
+
