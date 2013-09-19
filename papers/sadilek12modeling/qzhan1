@@ -28,6 +28,8 @@ Assumptions
 4. Friendship between tweeter users is recognizable.
 
 Synthesis
+Actually, I am convinced that the geographic proximity plays a much more important role than the friendship presumed by the paper via analyzing Tweeter data when it comes to predicting the trend of flu.
+Admittedly, there is a good chance that two friends meet in the real life, resulting in raising the possibility of one friend getting flu from the infected friend. However, the geographic factor still plays a role in this case. If the two presumable friends are even not in the same city, it is not very possible that they infect each other. Not to mention, the presumable friendship might be just a noise, which means it does not even exist. Thus, I argue it’s more useful to predict the trend of flu by only concentrating on the geographic information other than friendship, which distracts our focus.
 
 
 Related Papers
