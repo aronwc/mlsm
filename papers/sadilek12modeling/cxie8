@@ -1,0 +1,57 @@
+Overview
+This paper focuses on fine-grained modeling of the spread of infectious diseases throughout a real-world population. They focuses on self-symptoms that appear in people’s Twitter status updates, and show they can identify the messages with high precision as well as high recall.
+
+Algorithm
+·Formulated semi-supervised cascade-based approach to learning a robust support vector machine classifier with a large 
+area under the ROC curve.
+·Support vector machine(SVM)
+
+Hypothesis
+·Digital media is successfully used in public health monitoring.
+·Twitter friendships have a substantial overlap with offline friendships.
+·Health-related tweets are relatively scarce as compared to other types of messages 
+
+Data
+Nearly 16 million tweets in NYC metropolitan area during one month authored by more than 630 thousand unique users, 
+collected from the Twitter Search API by a number of machine with different IP addresses. The researchers concentrated 
+on the 6,237 geo-active users who posted more than 100 GPS-tagged tweets.
+
+Experiments
+They used two different binary SVM classifiers to distinguish sick tweets and all the other, then analyzed the impact of 
+co-location and friendship.
+
+Results
+The previous section on a held-out test set of 700,000 tweets shows 0.98 precision and 0.97 recall. This evaluation run 
+also allows us to choose an optimal threshold on the classification score that separates the normal tweets from the sick 
+tweets. The correlation between the prevalence of infectious diseases predicted by this model and the predictions made 
+by Google Flu Trends specifically for New York City is 0.73.
+
+Assumptions
+·Two individuals co-locate if they visit the same 100 by 100 meter cell within a time window of length T.
+·The tweets information is accurate and unbiased.
+
+Synthesis
+I wonder what we can learn from the model in the future. Known they collect the information from the users who have 
+symptoms, therefore I guess that maybe it can tell us about the people and area we should keep away from. And though the 
+correlation between this model and Google Flu Trends is strong, we have no idea whether the Google Flu Trends is 
+accurate.
+
+Related Papers
+1. Funk, S., & Jansen, V. A. (2013). The Talk of the Town: Modelling the Spread of Information and Changes in Behaviour. 
+In Modeling the Interplay Between Human Behavior and the Spread of Infectious Diseases (pp. 93-102). Springer New York.
+They describe a model in which awareness of the presence of a disease can spread in a population and influence the 
+spread of the disease itself through protective measures that people can take. We describe the dynamics of disease 
+spread, focusing, in particular, on the relation between awareness and proximity of disease in the network.
+
+2. Hill, A. L., Rand, D. G., Nowak, M. A., & Christakis, N. A. (2010). Emotions as infectious diseases in a large social 
+network: the SISa model. Proceedings of the Royal Society B: Biological Sciences, 277(1701), 3827-3835.
+They provides a theoretical framework for studying the interpersonal spread of any state that may also arise spontaneous
+ly, such as emotions, behaviors, health states, ideas or diseases with reservoirs. 
+
+3. Mathieu, J., Pfaff, M., Klein, G. L., Drury, J. L., Goedecke, M., James, J. H., ... & Bobashev, G. (2010, May). 
+Tactical Robust decision-making methodology: effect of disease spread model fidelity on option awareness. In 7th 
+International Conference on Information Systems for Crisis Response and Management.
+
+They show how simpler low fidelity, low precision models can be proved to be sufficient to support the decision maker. 
+This is a pioneering application of exploratory modeling to address the human-computer integration requirements of 
+tactical robust decision making.
