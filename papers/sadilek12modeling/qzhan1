@@ -1,0 +1,14 @@
+Overview
+Instead of being concentrated on coarse-grained statistical analysis of populations, this paper focuses on fine-grained modeling of the spread of infectious diseases throughout a large real-world social network, by means of data mining of Tweeter data related to health condition. Moreover, this paper provides some quantifiable estimates of the characteristics of disease transmission on a large scale without active user participation.
+
+
+Algorithm
+
+Support Vector Machine (SVM)
+
+Hypothesis
+
+1.	Social ties to infected, symptomatic people, as well as the intensity of recent co-location, sharply increase one’s likelihood of contracting the illness in the near future.
+2.	Algorithm SVM can efficiently extract information related to health condition from Tweeter data.
+3.	Furthermore, Our algorithm is capable of identifying friendship between two users, also recognizing the likelihood of the two hanging out recently.
+
