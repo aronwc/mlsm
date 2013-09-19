@@ -28,7 +28,7 @@ Step 3: Analyzing the interaction of these parameters, such as time, encounters,
 4. People really have physical encounters within the threshold of 100m.    
 
 ##Synthesis
-1. If this paper has focusec on prediction, why the whole paper almost talked about analysis.    
+1. If this paper has focuses on prediction, why the whole paper almost talked about analysis.    
 2. Most of the reaults are analysis. The results tell us that if someone have more sick friends or stay in the 'sick' area too long will be easily to get sick. Isn't it an conmmon sense?    
 3. In my opnion, the prediction should be like true or false. The probability like 60% is not convincing.    
 4. I still confused about what dose the model use of. To warn people some of their friends may get ill, or to warn people not to go in some unhealthy area?    
