@@ -13,4 +13,4 @@ The authors developed a SVM model using a semi-supervised cascade-based approach
 Using the Twitter Search API, they collected a sample of public tweets that originated from the New York City (NYC) metropolitan area. The collection period was one month long and started on May 18, 2010.
 
 ##Experiments
-#Step 1:
+  Step 1:
