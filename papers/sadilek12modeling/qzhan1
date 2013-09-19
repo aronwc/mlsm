@@ -35,3 +35,12 @@ Admittedly, there is a good chance that two friends meet in the real life, resul
 
 Related Papers
 
+1. Jalalpour, Mehdi.; Gel, Yulia.; Levin, Scott. ; Torcaso, Fred. ; Igusa, Takeru.; Rothman, Richard E. 2013 Influenza Forecasting with Google Flu Trends. In PLoS ONE Feb2013, Vol. 8 Issue 2, p1-7
+
+This paper introduced a practical influenza forecast model based on real-time, geographically focused, and easy to access data, designed to provide individual medical centers with advanced warning of the expected number of influenza cases, thus allowing for sufficient time to implement interventions.
+
+2. Pervaiz, Fahad. 2012 Early epidemic detection from Google flu trends. In Journal of Medical Internet Research Sep-Oct, 2012 Vol 14(5) Pages:-358
+
+This paper presents the detailed algorithmic analysis of how Google Flu Trends can be used as a basis for building a fully automated system for early warning of epidemics in advance of methods used by the CDC. Based on their work, the authors present a novel early epidemic detection system, called FluBreaks (dritte.org/flubreaks), based on Google Flu Trends data.
+
+
