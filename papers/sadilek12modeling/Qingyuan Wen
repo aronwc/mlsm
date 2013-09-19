@@ -1,0 +1,34 @@
+Overview
+This paper provides a fine-grained modeling of the spread of infectious diseases by using Twitter data. The authors present a framework that accurately identifies sick individuals from their tweets. By analyzing the social ties to infect and the intensity of recent co-location, they could predict the spread of infectious diseases with fine granularity.
+
+Algorithm
+Detecting Illness-Related Messages: support vector machine (SVM).
+Modeling the Spread of Disease: combine co-location with Twitter friendships.
+
+Hypothesis
+1.	Our quantifiable estimates of the characteristics of disease transmission on a large scale could be provided without active user participation.
+2.	Human contact can be analyzed by co-location and Twitter friendships.
+
+Data
+Using the Twitter Search API, they collected a sample of public tweets that originated from the New York City metropolitan area. They have logged nearly 16 million tweets authored by more than 630 thousand unique users. Then, they concentrate on 6,237 accounts that posted more than 100 GPS-tagged tweets during the one-month data collection period.
+
+Experiments
+1.	Trained the final SVM C_f test set of 700,000 tweets.
+2.	Analyze the impact of co-location and friendship with infected people on a given day on one’s health the following day.
+
+Result
+1.	The test of 700,000 tweets by SVM C_f shows 0.98 precision and 0.97 recall.
+2.	For co-location effect, the authors observe a definite exponential relationship between probable physical encounters and ensuing sickness.
+3.	The number of sick friends has an exponential effect on the probability of getting sick. By contrast, the number of friends in any health state has no impact on one’s health.
+
+Assumptions
+1.	People always tell the real condition of their health on Twitter.
+2.	The GPS-tagged tweets are credible.
+
+Synthesis
+I think this model provided by authors is a new method to predict spread of disease. However, demographics should be taken into consideration. For instance, a doctor may always talking health condition about himself or others. It may bring out bias result.
+
+Related Papers
+Achrekar, H.  Predicting Flu Trends using Twitter data. In this paper they test models with previous Centers for Disease Control and Prevention (CDC) data, with and without measures of Twitter data, showing that Twitter data can substantially improve the models prediction accuracy.
+Xiang Ji, Soon Ae Chun, James Geller. Epidemic Outbreak and Spread Detection System Based on Twitter Data. They have developed the Epidemics Outbreak and Spread Detection System (EOSDS) as a prototype that makes use of the rich information retrievable in real time from Twitter. The results of these visualizations in our experiments correlate well with relevant CDC official reports.
+
