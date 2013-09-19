@@ -1,0 +1,38 @@
+Overview
+The author trying to use SVM to classify the data in twitter into 2 classes, one related to sick and other. Then use the one related to the sick to study the role that social ties and interaction between specific individuals play in contagion. 
+
+Algorithms
+Use ROCArea SVM learning method to detect illness-related messages among the imbalanced twitter messages. (Much more normal message than illness-related messages).
+Consider two individuals co-located if they visit the same 100 by 100 meter cell within a time window if length T.
+Leverage user’s Twitter friendships to quantify the effect of social ties on disease transmission.
+
+Hypothesis
+Social ties and interactions between specific individuals would affect the progress of a contagion.
+Social media could be used to monitor the public health. 
+
+Data
+The author used twitter search API to collect tweets originated within 100 kilometers of NYC city center from May 18, 2010 to one month later. Then, from 16 million tweets and more than 630 thousand unique users, they concentrated on the accounts that posted more than 100 GPS-tagged tweets and finally got 6237 geo-active users and 2535706 tweets.
+
+Experiments
+Use their algorithms and methods to deal with the tweets and analysis the relationship between interactions between people and contagion. 
+
+Result
+On a held-out test set of 700000 tweets they got 0.98 precision and 0.97 recall for their classification. 
+There exists a definite exponential relationship between probable physical encounters and ensuing sickness which is f(x)=Ce^0.055x where C approximate to 0.011T.
+When you have more sick friends, you are more possible to getting sick and the relationship between them is f(x)=0.003e^0.413x.
+
+Assumption
+Twitter friendships have a substantial overlap with offline friendships. 
+Two people would have physical contact within a 100 x 100 meter square.
+People are really sick when they claim it in twitter. (Not because other situations such as let the boss read it and ask for a rest). 
+ 
+Synthesis
+I think using twitter to monitor the public health is pretty reliable, at least much more reliable than predicting the election. When using twitter to predicting election, there exists many noises and it is very hard to classify correctly. You need to first figure out which tweets related to election and then what’s their opinion. But when you using twitter to monitor the public health, you only need to classify whether it related to sick or not. Although there also exist some mislabeling or inveracious tweets, they won’t influence much. Only if when you get abnormal amount of the tweets labeling sick in one area, that’s means there happen something and need to be investigated. 
+
+Related Papers
+Predicting Disease Transmission from Geo-Tagged Micro-Blog Data. A Sadilek, HA Kautz, V Silenzio - AAAI, 2012 - aaai.org.
+This paper focuses on using machine learning methods and twitter data to monitor the influenza. This paper is written by the same author.  
+
+A new age of public health: Identifying disease outbreaks by analyzing tweets Manuela Krieck, Johannes Dreesman, Lubomir Otrusina, Kerstin Denecke 
+This paper proves that twitter message can be highly relevant for early detecting hints to public health threats. They first classified the data by the key words and then analysis it. Finally they got the result that headache has the highest relevant to the reality and fever has the least relevant. 
+
