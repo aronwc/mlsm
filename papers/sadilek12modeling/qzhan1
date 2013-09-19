@@ -6,9 +6,9 @@ Algorithm
 Support Vector Machine (SVM) for detecting illness message on Tweeter
 
 Hypothesis
-1.	Social ties to infected, symptomatic people, as well as the intensity of recent co-location, sharply increase one’s likelihood of contracting the illness in the near future.
-2.	Algorithm SVM can efficiently extract information related to health condition from Tweeter data.
-3.	Furthermore, activities on social media is sufficient for identifying friendship between two users, also recognizing the likelihood of the two hanging out recently.
+1.Social ties to infected, symptomatic people, as well as the intensity of recent co-location, sharply increase one’s likelihood of contracting the illness in the near future.
+2.Algorithm SVM can efficiently extract information related to health condition from Tweeter data.
+3.Furthermore, activities on social media is sufficient for identifying friendship between two users, also recognizing the likelihood of the two hanging out recently.
 
 
 Data
@@ -25,7 +25,7 @@ Assumptions
 1.Folks tweet about their health condition on tweeter.
 2.Geographic information of tweeter user is credible.
 3.The data bias is very small if the authors strictly focus on the geo-active individuals.
-4. Friendship between tweeter users is recognizable.
+4.Friendship in real life between tweeter users is recognizable.
 
 Synthesis
 Actually, I am convinced that the geographic proximity plays a much more important role than the friendship presumed by the paper via analyzing Tweeter data when it comes to predicting the trend of flu.
