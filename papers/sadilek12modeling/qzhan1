@@ -3,12 +3,32 @@ Instead of being concentrated on coarse-grained statistical analysis of populati
 
 
 Algorithm
-
 Support Vector Machine (SVM)
 
 Hypothesis
-
 1.	Social ties to infected, symptomatic people, as well as the intensity of recent co-location, sharply increase one’s likelihood of contracting the illness in the near future.
 2.	Algorithm SVM can efficiently extract information related to health condition from Tweeter data.
-3.	Furthermore, Our algorithm is capable of identifying friendship between two users, also recognizing the likelihood of the two hanging out recently.
+3.	Furthermore, activities on social media is sufficient for identifying friendship between two users, also recognizing the likelihood of the two hanging out recently.
+
+
+Data
+This paper concentrates on 6,237 accounts that posted more than 100 GPS-tagged tweets during the one-month data collection period starting from May 18, 2010, which are selected from a sample of public tweets within 100 kilometers of the NYC city center.
+
+Experiments
+The authors begin by training two different binary SVM classifier Cs, which is highly penalized for inducing false positives, and classifier Co, which is heavily penalized for creating false negatives. After applying threshold on the classification score to reduce the noise in the cascade, they get the final SVM classifier Cf. Furthermore, To overcome the class imbalance problem, where the number of tweets about an illness is much smaller than the number of other messages, the authors apply the ROCArea SVM learning method that directly optimizes the area under the ROC curve. Finally, The authors are capable of quantifying the effect of social ties on disease transmission, by leveraging users’ Twitter friendships.
+
+Results
+Evaluation of the final SVM Cf on a held-out test set of 700,000 tweets shows 0.98 precision and 0.97 recall. The correlation between the prevalence of infectious diseases predicted by the paper’s model and the predictions made by Google Flu Trends specifically for New York City is 0.73. The authors establish a definite exponential relationship between probable physical encounters and ensuing sickness by analyzing co-location effect.
+
+
+Assumptions
+1.Folks tweet about their health condition on tweeter.
+2.Geographic information of tweeter user is credible.
+3.The data bias is very small if the authors strictly focus on the geo-active individuals.
+4. Friendship between tweeter users is recognizable.
+
+Synthesis
+
+
+Related Papers
 
