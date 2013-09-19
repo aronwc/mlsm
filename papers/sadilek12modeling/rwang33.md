@@ -11,9 +11,9 @@ Social ties and interactions between specific individuals play in the progress o
 Using the Twitter Search API, they collected a sample of public tweets that originated from the New York City (NYC) metropolitan area. The collection period was one month long and started on May 18, 2010.
 
 ##Experiments
-Step 1: Manual training the classfiers and coming out the final SVM Cf;   
-Step 2: Using their algorithm and method to handle the data and generating the results of the functions with several parameteres;   
-Step 3: Analyzing the interaction of these parametersm, such as time, encounters,  number of sick friends and so on.   
+Step 1: Manual training the classifiers and coming out the final SVM Cf;   
+Step 2: Using their algorithm and method to handle the data and generating the results of the functions with several parameters;   
+Step 3: Analyzing the interaction of these parameters, such as time, encounters,  number of sick friends and so on.   
 
 ##Results
 1. Evaluation of the final SVM Cf got high accurate precision and recall.   
