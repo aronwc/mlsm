@@ -1,0 +1,36 @@
+Overview
+	This paper uses Twitter to determine how likely a user will become sick given the health statuses of his/her friends and other people in close proximity. 
+
+Algorithm
+	The subject of this work is broken up into two parts: finding “sick” users, and modeling their interactions. A user is marked as sick if he/she tweets a key word or phrase that indicates poor health or specific symptoms, and their interactions are monitored for up to two days after the tweet. Each person who is logged as visiting the same place as the user within those two days during some variable number of hours as/after the ill user, is marked as coming into contact with the user's illness and their likelihood of becoming ill and contagious increases.
+
+Hypothesis
+	If someone is sick, they will tweet about being ill or about their symptoms.
+
+Data
+	632,611 	unique users
+	6,237 		geo-active users (tweets are tagged with location)
+	15,944,084 	tweets total
+	4,405,961 	GPS-tagged tweets
+	2,535,706 	GPS-tagged tweets by geo-active users
+	2,047 		GPS-tagged tweets by geo-active users showing a symptom of an illness 
+	
+
+Experiments
+	The experiment is divided into two phases: detecting “sick” users, and modeling their subsequent interactions. Tweet classification is performed by a Support Vector Machine (SVM) which labels tweets as “sick” or “other”. These labels are learned by training two classifiers, one penalizing false positives and another penalizing false negatives, on 5,128 tweets labeled by multiple Amazon Mechanical Turk workers. The two classifiers then label a set of 1.6 million tweets to determine those which are illness-related with a high confidence level, and those which are “other” with high confidence. This produces over 700,000 “sick” and 3 million “other” messages that are then used to train the SVM with the unigrams, bigrams, and trigrams included. Another method is applied to the SVM to compensate for the unbalanced sample.
+	Once the data has been collected, users' movements are incorporated in an effort to represent human contact: if a user visits the same location as a “sick” user within some window of time, their likelihood of becoming sick is seen to increase and they are monitored for future tweets about symptoms. Twitter friendships are also included so that mutual follows are also seen to increase a user's chance of falling ill, even if no collocation is seen.
+
+Results
+	The SVM used in identifying has a particularly high precision (0.98) and recall (0.97), indicating that it is able to accurately identify relevant tweets and exclude those that are not. Thus the first part of the experiment can be considered adequately covered.
+	The correlation between this experiment's predictions and those of Google Flu Trends for the same location is 0.73. The official CDC numbers were not available for a single city, but have been shown to follow Google Flu Trends predictions.
+	Still there are sufficient results to indicate some connection visible between the movements of current “sick” users and users who soon fall ill, especially when said “sick” users are friends (mutual followers).
+	
+Assumptions
+	A user is marked as sick only after he/she has come in contact with a sick-labeled tweeter, or expresses symptoms him-/herself. This does not take into account an “incubation period” where the user is contagious but does not realize the symptoms of illness or feel ill.
+	The interactions and habits of residents of New York City are indicative of those from the entire world.
+
+Synthesis
+	An additional experiment could be to vary likelihood of contracting disease by symptoms present and the time since the symptoms appeared. A user who actively mentions sneezing and coughing is more likely to spread an illness than one with just a headache, and an illness is more likely to be spread when the sneezing and coughing occurs, then when the user has alleviated those symptoms. 
+	One could also expand the experiment to allow comparison with official CDC numbers.
+	
+Related Papers
