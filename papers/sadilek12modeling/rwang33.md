@@ -36,6 +36,7 @@ Step 3: Analyzing the interaction of these parametersm, such as time, encounters
     
 They considered the task of ﬁnegrained prediction of the health of speciﬁc people from noisy and incomplete data. They constructed a probabilistic model that can predict if and when an individual will fall ill with high precision and good recall on the basis of his social ties and co-locations with other people, as revealed by their Twitter posts.
    
-
-
+[Separating Fact from Fear: Tracking Flu Infections on Twitter](http://www.aclweb.org/anthology/N/N13/N13-1097.pdf)
+  
+They demonstrated signiﬁcant improvements on inﬂuenza surveillance using Twitter by discriminating ﬂu tweets that report infection with those that express concerned awareness of the ﬂu.
 
