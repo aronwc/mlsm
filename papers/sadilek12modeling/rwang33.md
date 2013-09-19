@@ -11,7 +11,7 @@ Social ties and interactions between specific individuals play in the progress o
 Using the Twitter Search API, they collected a sample of public tweets that originated from the New York City (NYC) metropolitan area. The collection period was one month long and started on May 18, 2010.
 
 ##Experiments
-Step 1: Manual traing the classfiers and coming out the final SVM Cf;
+Step 1: Manual training the classfiers and coming out the final SVM Cf;
 Step 2: Using their algorithm and method to handle the data and generating the results of the functions with several parameteres;
 Step 3: Analyzing the interaction of these parametersm, such as time, encounters,  number of sick friends and so on.
 
@@ -28,8 +28,12 @@ Step 3: Analyzing the interaction of these parametersm, such as time, encounters
 4. People really have physical encounters within the threshold of 100m.
 
 ##Synthesis
-
-
+1. If this paper has focusec on prediction, why the whole paper almost talked about analysis.
+2. Most of the reaults are analysis. The results tell us that if someone have more sick friends or stay in the 'sick' area too long will be easily to get sick. Isn't it an conmmon sense?
+3. In my opnion, the prediction should be like true or false. The probability like 60% is not convincing.
+4. I still confused about what dose the model use of. To warn people some of their friends may get ill, or to warn people not to go in some unhealthy area?
+5. As previous work, the genelization is still not captured. Since the method is well-performed in NYC, using another dataset can it work efficiently as well?
+6. I think it is also a post-hoc as using Twitter to predict election.
 
 #Related Papers
 [Predicting Disease Transmission from Geo-Tagged Micro-Blog Data](http://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/viewFile/4844/5130)
