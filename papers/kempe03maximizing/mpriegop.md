@@ -1,4 +1,4 @@
-####Overview#### 
+####Overview####
 They suggests a general approach for reasoning about the performance guarantees of algorithms for inﬂuence problems in social networks. They modeled this problem as finding a set of k seeds that maximizes the influence spread.
 
 ####Algorithm####
