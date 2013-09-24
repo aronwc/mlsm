@@ -18,6 +18,7 @@ But these algorithms involve an initial set of active node. And the authors anal
 ####Hypothesis####
 
 - The linear threshold and the Independent Cascade Models can determine the spread of an idea through a social network
+- A greedy strategy is better to find the top influential nodes.
 
 ####Data####
 
