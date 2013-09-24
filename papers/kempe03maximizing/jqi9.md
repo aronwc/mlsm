@@ -32,8 +32,10 @@
 ####Related Paper####
 - Social Contagion: An Empirical Study of Information Spread on Digg and Twitter Follower Graphs,
 Kristina Lerman, Rumi Ghosh, Tawan Surachawala
+
 This paper got same topic but more practical and related to social media.
 
 - Group Evolution Discovery in Social Networks, Piotr Bródka, Stanisław Saganowski, Przemysław Kazienko
+
 This paper will let you know social network better, also their theory may show a new way to analyze the spread of information among a social network.
 
