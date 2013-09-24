@@ -12,8 +12,8 @@
 - They use collaboration between physicists as a test data pool (papers in the high energy physics theory section of the e-print arXiv (www.arxiv.org).), treat it like a social network, which mean if you publish a paper with the other physicists, then an invisible link will be established between you and the other co-authors, also it means you are kind of supporter of their ideas or thesis. All the one author paper had been ignored.
 
 ####Experiment####
-    - They compared the algorithms in three different models of influence, linear threshold model, independent cascade model, weighted cascade model.
-    - To implement the greedy hill climbing algorithm, they simulate the process 10000 times for each targeted set, why not more? Since previous runs indicate that the quality of approximation after 10000 iterations is comparable to that after 300000 or more iterations.
+- They compared the algorithms in three different models of influence, linear threshold model, independent cascade model, weighted cascade model.
+- To implement the greedy hill climbing algorithm, they simulate the process 10000 times for each targeted set, why not more? Since previous runs indicate that the quality of approximation after 10000 iterations is comparable to that after 300000 or more iterations.
 
 ####Result####
 - 1. In the linear threshold model, The greedy algorithm outperforms the high-degree node heuristic by about 18%, and the central node heuristic by over 40%.
