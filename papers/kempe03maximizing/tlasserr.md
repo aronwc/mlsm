@@ -9,7 +9,7 @@ The authors compare use two basic diffusion models to represent the spread of an
 - The Independent Cascade Model: when a node become active, it has a single chance to activate each currently inactive neighbor with a probability p.
 
 
-But these algorithms involve an initial set of active node. And the authors analyze the results of 4 algorithms to resolve the influence maximization problem:
+But these algorithms involve an initial set of active node. And the authors analyze the results of 4 algorithms to resolve the influence maximization problem (to find the top influential nodes in the social network):
 - The greedy algorithm.
 - The high-degree heuristic consists to choose nodes in order of decreasing degrees.
 - The “distance centrality” consists to select nodes in order of increasing average distance to other nodes in the network.
