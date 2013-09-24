@@ -9,7 +9,7 @@ The authors compare use two basic diffusion models to represent the spread of an
 - The Independent Cascade Model: when a node become active, it has a single chance to activate each currently inactive neighbor with a probability p.
 
 
-But these algorithms involve an initial set of active node. And the authors analyze the result of 4 algorithms to resolve the influence maximization problem:
+But these algorithms involve an initial set of active node. And the authors analyze the results of 4 algorithms to resolve the influence maximization problem:
 - The greedy algorithm.
 - The high-degree heuristic consists to choose nodes in order of decreasing degrees.
 - The “distance centrality” consists to select nodes in order of increasing average distance to other nodes in the network.
@@ -28,7 +28,7 @@ A collaboration graph is used as dataset
 
 ####Experimental####
 
-This paper compares the algorithms (the greedy algorithm, the high-degree heuristic, central node heuristic, in three different models of influence:
+This paper compares the algorithms (the greedy algorithm, the high-degree heuristic, central node heuristic and the "random algorithm") in three different models of influence:
 - 1. In the linear threshold model where the multiplicity of edges is treated as weights.
 - In the independent cascade model where a uniform probability of p is assigned to each edge of the graphs with p between 1% and 10%.
 - In a special case of the Independent Cascade Model where each edge from node u to v is assigned probability 1/d of activating v.
@@ -52,6 +52,7 @@ This paper compares the algorithms (the greedy algorithm, the high-degree heuris
 - Maybe we could try other algorithms for the influence maximization problem.
 - The greedy algorithm seems good but what happens if the person represented by the node with the highest degree does not adhere to the idea? Maybe we can try to implement another method to use to broadcast the idea differently.
 - How to determine who is the most influential? Is it really the person with a lot of connection? She can be influenced. So I think we can doubt about this. 
+- We can take into account user preferences.
 
 ####Related Papers####
 - P. Domingos, M. Richardson. Mining the Network Value of Customers. Seventh International Conference on Knowledge Discovery and Data Mining, 2001.
@@ -59,4 +60,4 @@ This paper compares the algorithms (the greedy algorithm, the high-degree heuris
 - Yu Zhang, Zhaoqing Wang ; Chaolun Xia Dept. of Comput. Sci., Zhejiang Sci-Tech Univ., Hangzhou, China Identifying Key Users for Targeted Marketing by Mining Online Social Network
   - Like our paper, this paper compares different techniques on the real world social network to identify key users with great influence
 - Yunlong Zhang, Jingyu Zhou, and Jia Cheng, Preference-based Top-K Inﬂuential Nodes Mining in Social Networks 
-  - This paper propose to find the top influential nodes in social networks in taking into account user preferences. 
+  - This paper proposes to find the top influential nodes in social networks in taking into account user preferences. 
