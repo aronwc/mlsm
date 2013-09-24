@@ -1,0 +1,66 @@
+Overview
+If a company have a new product and the company want to release it to the market, how could they find out the most efficient way to advertising the product? Find out the most influential people among others and let those people use the company's product. After that, those people could affected other people to try the new product too. The paper want to find out who is those most influential people among others. 
+The hard core question here is how to find out those most influential people first. In the end, they provide a uniform market strategy. 
+
+Algorithm
+• All the algorithms mentioned in this paper are about find out the influential people and how to maximize the result of this influential effects. By influential people, the paper means those people could affect others to buy certain new products which they like. 
+• The optimization problem of selection the most influential nodes is NP-hard here, and they provide the first provable approximation guarantees for efficient algorithms . 
+• The two major models that are discussed in this paper:  Linear Threshold Model and Cascade Model. There are some derivative models latter on, they are all based on these two. These two are called the diffusion models, which mean to find out a way to spread of an idea. These two models are actually comes from NP-hard. So, sum up, the result is to find the optimal solution of NP-hard. 
+• Based on these models, there are three algorithms they used to compared the result of choosing the most influential nodes. They are high degree heuristic; greedy hill climbing; 
+• They have prof there are approximation guarantees in both the independent cascade and linear threshold models. 
+
+Hypothesis
+• The two basic models used in the paper are major discussed the spreading of idea in a progressive way, which means a person either could be activated or inactivated (want to buy the product or do not buy). Even though, later on, they proved the unprogressive cases can be submerge into progressive cases.
+• In order to find out the best solution set A for NP-hard, they want to test whether this question could be solved by using a fixed outcome. And they are right.. 
+• In order to find out the approximation guarantee for influence maximization in the independent cascade model, they claim A node x ends up active if and only if there is a path from some node in A to x consisting entirely of live edges. They proof this claim later in order to indicate that the approximation guarantee for influence maximization is an order-independent event. 
+• They offered a general framework for influence maximization, both general threshold model and cascade model. This one I don't think should be count into hypothesis, but I don't know where else to put this one. 
+• In the end , they provide a general marketing strategies. for one unit of budget, they can deterministically target any node v for activation. 
+
+
+
+Data
+• I'm not that sure what kind of data they have been used. It seems they only need vary kinds of maps with nodes, path between nodes and different weights on the path. " it is desirable to use a network data test that exhibits many of the structural feature of large-scale social networks." They employ a collaboration graph obtained from co-authorships in physics publications, with simple settings of the influence parameter. 
+
+
+
+
+
+Experimental
+• I don't think this should be included in the experimental part of the summary, but the paper did a lot of works on prove the correctness of the algorithm. So the following would be brief about how they approve their approximation algorithm. 
+	• the major job here to find out the initial set A, which has the best solution of NP-hard. 
+	• They offered a overall approach, which is a submodular function: the marginal gain from adding an element to a set S is at least as high as the marginal gain from adding the same element to a superset of S. Then find a k-element set S for which f(S) is maximized. This is a optimization problem. 
+	• By proving there is a linear relation between S and S*(the set that maximizes the value of f over all k-element sets), they indicate this question is solvable. 
+	• By solving this problem, they also find out how to determine how much an initial set A could influence others. 
+	• In order to find out the approximation guarantee for the influence maximization in the Independent Cascade model, they proved that the outcome is an order-independent outcome.
+	• Using similar idea, they have proof the correctness of the guarantee of the linear thresholds model. The result is: the influence maximization problem is NP-hard for the linear threshold model.
+• Here I write a lot about the mathematical provident of their models and algorithms is because the implementation of the algorithms is fairly simple. After all these proven of theorem and claims let to a foreseeable experiment results. The result from all the models and algorithm above are essentially similar to each other's. The only thing need to be mentioned during the experiment is that, in the linear threshold model, they treated the multiplicity of edges as weights. In the independent cascade model, they assigned a uniform probability of p to each edge of the graph, choosing p to be 1 % and 10% in separate trials.    
+• Baseline: the result of choosing nodes uniformly at random. 
+• They provide a general threshold model. A node v's decision become active can be based on an arbitrary monotone function of the set of the neighbors of v that are already active. 
+• They also provide a general threshold model. 
+• They consider the general threshold and cascade models are too broad to allow for non trivial approximation guarantees. So they give out a proof of extend approximability results: The triggering model. 
+• They also discussed the non-progressive processes. In progressive case, which node only go from inactivity to activity, but not vice versa. So, they  want to find out what happen with the vice versa. 
+
+Results
+• The greedy algorithm outperforms the high-degree node heuristic by 18% (central node heuristic by over 40%.) Why? the high degree and centrality heuristics ignore network effects. . In particular, neither of the heuristics incorporates the fact that many of the most central nodes may be clustered. 
+• the result from weighted cascade model are striking similar to the linear threshold model. However the scale is slightly different. The reason is each node is influenced by the same number  of other nodes in both models. 
+• Independent cascade model with probability 1% seems very similar to the previous two. However the scale is very different from the former two. ∴ the network effects in the independent cascade model with very small probilities are much weaker than in the other models. 
+	• After exceeding the probabilities in the independent cascade model, the result have been significantly improved. 
+• One interesting result from giving general cascade and linear threshold model is these two models are equivalent. Thus the give out an inapproximability result. In general, it is NP-hard to approximate the influence maximization problem to within a factor of  n^(1-ε), for any ε > 0. 
+• The non-progressive processes "vice versa" turns out could be convert into progressive processes. Problem solved. 
+
+
+Assumptions
+The only assumptions I can think of in this paper is the "random threshold" and the "random weight" between nodes. These two are probably the only things that have not been proved in this paper. However, this random threshold seems to be critical in this paper.
+Synthesis
+• This is a very strong theoretical paper, very strong. But, still, the most important thing seems missing. What is the individual's threshold? How to determine this threshold? Since only after we have known these threshold, we could find out the set A and gain best market efficient. This problem seems more related to psychological area or social media area. One could easily think of this set A could be some celebrities. But, if we only considered so far the paper seems pointless. So, if they could give out a more practical way to measure this threshold, this paper would be perfect. However, I don't think this is feasible now. Just like there were bunch of economists want to measure the customers margin utility function and get to nowhere, this could be a long way to go. 
+
+
+Related Papers
+	• M. Newman. The structure of scientific collaboration networks. Proc. Natl. Acad. Sci. 98(2001). 
+	• D. Peleg. Local Majority Voting, Small Coalitions, and Controlling Monopolies in Graphs: A Review. 3rd Colloq. on
+	Structural Information and Communication, 1996. 
+	M. Richardson, P. Domingos. Mining Knowledge-Sharing Sites for Viral Marketing. Eighth Intl. Conf. on Knowledge
+	Discovery and Data Mining, 2002. 
+	• E. Rogers. Diffusion of innovations Free Press, 1995. 
+	• T. Schelling. Micromotives and Macrobehavior. Norton, 1978.
+	• T. Valente. Network Models of the Diffusion of Innovations.Hampton Press, 1995.
