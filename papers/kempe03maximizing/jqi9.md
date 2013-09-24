@@ -3,6 +3,7 @@
 
 ####Algorithm####
 - The most important algorithm that the authors used is the greedy hill climbing algorithm, which means they attempted to find a better element to put in the model set time by time, until they got the best ones. And here better stand for more connection with other elements.
+
 ####Hypothesis####
     - The optimization problem cannot even be approximated to within a non-trivial factor.
 - Approximation algorithms for maximizing the spread of influence in these models can be developed in a general framework based on submodular functions.
