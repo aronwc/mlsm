@@ -30,9 +30,10 @@
 - This topic has been discussed for a long time, since it got great business value behind it, if you know something, who should you tell to make it reach the right person? Someone is always trying to control public opinion, they can use theory like this paper mentioned as a weapon.  But modern technology make things change much faster than before, people can get information from so many ways, it will be a relatively complicated problem to analyze.
 
 ####Related Paper####
-Social Contagion: An Empirical Study of Information Spread on Digg and Twitter Follower Graphs,
+- Social Contagion: An Empirical Study of Information Spread on Digg and Twitter Follower Graphs,
 Kristina Lerman, Rumi Ghosh, Tawan Surachawala
-- This paper got same topic but more practical and related to social media.
-Group Evolution Discovery in Social Networks, Piotr Bródka, Stanisław Saganowski, Przemysław Kazienko
-- This paper will let you know social network better, also their theory may show a new way to analyze the spread of information among a social network.
+This paper got same topic but more practical and related to social media.
+
+- Group Evolution Discovery in Social Networks, Piotr Bródka, Stanisław Saganowski, Przemysław Kazienko
+This paper will let you know social network better, also their theory may show a new way to analyze the spread of information among a social network.
 
