@@ -3,6 +3,7 @@
 
 ####Algorithm ####
 - For selecting the set of most influential nodes, a greedy hill-climbing that selecting the most influential node in current step is guaranteed to achieve (1-1/e) approximation.
+
 ####Hypothesis####
 - The general hypothesis is that the influence function is monotone and submodular.
 
@@ -18,8 +19,8 @@
 
 ####Assumption####
 - The nodes are only influenced by their neighbors inside the social network, so other influence sources are ignored. 
-####Synthesis####
 
+####Synthesis####
 - We can extend the model to incorporate the time delay during the process of influence spread with a deadline constraint.
 - We can design more efficient approximation algorithms to estimate the influence of a given target set. 
 - We can also consider the influence source outside the social network, such as the newspaper, TV and other media. 
