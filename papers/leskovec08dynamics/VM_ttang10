@@ -11,3 +11,18 @@ Hypothesis
 4. Too many recommendations form one person may weeken the infulence of his/her recommendations.
 5. Purchases and recommendations may show temporal features.
 
+Data
+The data was collected from June 5 2001 to May 16 2003, which consisted of 15,646,121 recommendations made among 3,943,084 distinct users on total 548,523 products. 99% of the products belonged to 4 main product groups: Books, DVDs, Music and Videos. Of the products in the data set, 5813 (1%) were discontinued (the retailer no longer provided any information about them).
+
+Experiments
+First the observed the cascade model and analyzed the network size diversification over time. They also tried to compare the average number of recommendations sent by users in different depth of the chain. Then they analyzed the distribution of both purchases and recommendations. They also compared the characteristics of products in different categories. Afterwards, they stablished how the recommendation network grows over time and how effective it is from the viewpoint of the sender and receiver of the recommendations.
+
+Results
+1. The growth of customer base on time is decreasing linear function.
+2. The deeper one user in the recommendation chain, the more recommendation he/she may sent.
+3. Customers reactions may vary to recommendations and purchases on products on different catogories and prices. High price and technical category or religious books may lead to a persuasive recommendation.
+4. The probability of infection decreases with repeated interaction between customers.
+5. The probability of purchasing a product increases with the number of recommendations received, but quickly saturates to a constant and relatively low probability. This means individuals are often impervious to the recommendations of their friends, and resist buying items that they do not want.
+6. There are limits to how influential high degree nodes are in the recommendation network. As a person sends out more and more recommendations past a certain number for a product, the success per recommendation declines.
+7. There is a general tendency of recommendation chains to terminate after just a short number of steps.
+8. Smaller and more tightly knit groups tend to be more conducive to viral marketing.
