@@ -26,3 +26,13 @@ Results
 6. There are limits to how influential high degree nodes are in the recommendation network. As a person sends out more and more recommendations past a certain number for a product, the success per recommendation declines.
 7. There is a general tendency of recommendation chains to terminate after just a short number of steps.
 8. Smaller and more tightly knit groups tend to be more conducive to viral marketing.
+
+Assumptions
+1. The model assumes that each recipient of a recommendation will forward it to others if its value exceeds an arbitrary threshold that the individual sets for herself/himself.
+2. They assume that all the affected customers will purchase the same product from the same retailer.
+3. They assume that the customer purchases one product after receiving recommendations because the recommendations rather than other reasons cuase it.
+
+Synthesis
+This is a remarkable work from all perspectives. It deeply explored dynamic spread of mouth advertising from several dimensions. I think if they had access to the demographic information of customers, it would be great to analyze the effectivenees of viral marketing from the view of different groups of customers. So that the marketing is able to aim at different crowds with different strategies.
+
+Related Papers
