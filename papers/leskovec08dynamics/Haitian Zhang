@@ -1,0 +1,46 @@
+Overview:
+This paper gives an analysis of a person-to-person recommendation network by using 4 million people and 16 million recommendations. Then the author trying figure out the factors that influence viral marketing. 
+
+Algorithm:
+Present a simple stochastic model to observe the propagation of recommendations and the cascade sizes.
+Present a model to find which product and pricing categories are more likely to be more effective in viral marketing. 
+
+Hypothesis:
+1.	Social network affects the choice of people purchasing products. 
+2.	Man is more interested in what his friend buys rather than anyone else, and more likely to trust the products.
+3.	Most of the recommendation chains do not grow very large.
+4.	The characteristics of recommendation networks influence the purchase patterns of their members. The like hood of buying a product increase when receiving recommendations and then decrease when receiving too much. 
+5.	Recommendations of expensive products interest to small well connected communities. 
+6.	Timing of recommendations and purchases correspond to times of day when people are likely to be shopping online or reading email. 
+
+Data:
+Based on the recommendation referral program run by a large retailer which contains 15646121 recommendations made among 3943084 distinct users. 
+All the data are collected from Jun 5 2001 to May 16 2003 and have 548523 products which most of them belonging to Books, DVDs, Music and Video. 
+5813 products were discontinued. 
+
+Experiment:
+The author first set the dataset includes product, product price, senderID, receiverID, the sent date and a buy-bit. Then process the data and use a simple model to explain how the wide variance they observed in the number of recommendations made by individuals can lead to power-laws in cascade sizes. Then they find the factors that influence the effectiveness of recommendations in the recommendation network. After that, they analysis how time would influence the recommendations and purchases. Then they evaluate the effectiveness of different book category to the recommendations. Finally, they build a model include all factors that would influence the successful of a recommendation. 
+
+Result:
+1.	The deeper a user is in the cascade, the greater number of people he would recommend to. 
+2.	Most of the products recommendation networks consist small disconnected components.  
+3.	The probability of purchasing would first increase then decrease with the increase of recommendation. 
+4.	If one recommended more than 2 or 3 products, he would start to lose effect.
+5.	Time would influence the process of recommendation, purchase and purchase with discount. 
+6.	Different category or review or price of a product would cause the different successful rate to the recommendations. 
+
+Assumptions:
+1.	The receiver of a recommendation would forward it if its value exceeds an arbitrary threshold. 
+2.	If one didn’t buy a product, he also didn’t buy it anywhere else. 
+3.	If one buy a product after receiving a recommendation, that’s because the effect of the recommendation. 
+
+Synthesis:
+This is a very good analysis to the viral marketing and shows bright future to the viral marketing. However, I think we should also know how to control before we use it. Not just to know how it works, but to know how to make it work. For example, the effectiveness of recommendation would decrease when a user gets too much recommendation, then how to control the recommendation that one could receive? A user would lost his effectiveness after recommendation several products, how to avoid it? We still need more experiment to do before actually using it. 
+
+Related Papers:
+	
+1.	De Bruyn A, Lilien G L. A multi-stage model of word-of-mouth influence through viral marketing[J]. International Journal of Research in Marketing, 2008, 25(3): 151-163.
+This paper points out that one of the key of virtual marketing is to create awareness, trigger interest message. They develop a model to help identify the role word-of-mouth plays during each stage of a viral marketing recipient’s decision-making process. Then collect the data to test the model. 
+2.	Cruz D, Fill C. Evaluating viral marketing: Isolating the key criteria[J]. Marketing Intelligence & Planning, 2008, 26(7): 743-758.
+This paper tries to determine the key criteria that would lead viral marketing to success. 
+
