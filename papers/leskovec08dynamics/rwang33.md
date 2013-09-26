@@ -36,8 +36,8 @@ Data
 Large online retailer (June 2001 to May 2003):    
 1. 15,646,121 recommendations    
 2. 3,943,084 distinct customers     
-3.548,523 products recommended     
-4.99% of them belonging 4 main product groups:   
+3. 548,523 products recommended     
+4. 99% of them belonging 4 main product groups:   
    - books    
    - DVDs     
    - music    
@@ -61,7 +61,8 @@ to a constant and relatively low probability.
 
 Assumptions
 -----------
-
+1. They assume that one will purchase from the same ratailer after getting recommendation.    
+2. They assume that the recommendation is the key factor leads to an purchase.
 
 Synthesis
 ---------
