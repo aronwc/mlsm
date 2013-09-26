@@ -14,3 +14,19 @@ The recommendation dataset consists of 15,646,121 recommendations made among 3,9
 
 Experiments
 First, the paper examines how the probability of purchasing changes as one gets more and more recommendations. Next, this paper analyzes how the effectiveness of recommendations changes as two persons exchange more and more recommendations. And then the authors look from the viewpoint of the sender. They also study the time lag between the recommendation and the purchase of different product groups, effectively how long it takes a person to both receive a recommendation, consider it, and act on it.
+
+Results
+1. The probability of infection decreases with repeated interaction. Marketers should take heed that providing excessive incentives for customers to recommend products could backfire by weakening the credibility of the very same links they are trying to take advantage of.
+2. The probability of purchasing a product increases with the number of recommendations received, but quickly saturates to a constant and relatively low probability.
+3. In network-based epidemic models, extremely highly connected individuals play a very important role. In other words, individuals have greater influence over one another in an organized context, for example through a professional contact or a religious one.
+4. The possibility of purchasing a product is related to the time.
+5. The characteristics of product reviews and effectiveness of recommendations vary by category and price, with more successful recommendations being made on technical or religious books, which presumably are placed in the social context of a school, workplace or place of worship.
+6. The smaller and more tightly knit groups tend to be more conducive to viral marketing.
+
+Assumptions
+1. This paper assumes a person who receives the recommendation will purchase the product through the same vendor, other than elsewhere to obtain the product.
+2. The model assumes that each recipient of a recommendation will forward it to others if its value exceeds an arbitrary threshold that the individual sets for herself.
+
+Synthesis
+
+Related Papers
