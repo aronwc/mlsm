@@ -6,9 +6,11 @@ Algorithm
 ---------
 Simple model of propagating recommendations
 
-1.Each individual will have p<sub>t</sub>, successful recommendations. We model p<sub>t</sub> as a random variable
-2.At time t+1, the total number of people in the cascade, N<sub>t+1</sub> = N<sub>t</sub> * (1+p<sub>t</sub>)
-3.Subtracting from both sides, and dividing by N<sub>t</sub>, we have
+1.Each individual will have p<sub>t</sub>, successful recommendations. We model p<sub>t</sub> as a random variable   
+2.At time t+1, the total number of people in the cascade, N<sub>t+1</sub> = N<sub>t</sub> * (1+p<sub>t</sub>)    
+3.Subtracting from both sides, and dividing by N<sub>t</sub>, we have    
+![image](C:\Users\DanDanBiu\Desktop\QQ图片20130926003810.jpg)
+
 
 Hypothesis
 ----------
