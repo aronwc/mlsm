@@ -14,7 +14,7 @@ Simple model of propagating recommendations
 6. Integrating both sides, we find that N is lognormally distributed.    
 7. The lognormal behaves like a power-law with exponent 1.     
 8. We observe fat tails in cascade sizes.    
-- All the formulas here are same to the paper.
+   - All the formulas here are same to the paper.
 
 Hypothesis
 ----------
