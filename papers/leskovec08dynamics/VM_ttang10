@@ -1,0 +1,40 @@
+Overview
+This paper presented an analysis of a person-to-person recommendation network, involving 4 million people and 16 million recommendations on half million products. They observed the propagation of recommendations and the cascade sizes, which they explained by a simple stochastic model. They also explored the relationship between time period and effectivenees from the view of both sender and receiver of the recommendations. At last, they presented the difference of effcetiveness of recommendations among different categories of products.
+
+Algorithm
+A simple stochastic model that allows for the presence of relatively large cascades for a few products, but reflects well the general tendency of recommendation chains to terminate after just a short number of steps.
+
+Hypothesis
+1. Users may reflect to the recommendation differently.
+2. For products of different groups, purchases and recommendations may present different characteristics.
+3. The number of recommendations from one person on one product may affect the influence of recommendations.
+4. Too many recommendations form one person may weeken the infulence of his/her recommendations.
+5. Purchases and recommendations may show temporal features.
+
+Data
+The data was collected from June 5 2001 to May 16 2003, which consisted of 15,646,121 recommendations made among 3,943,084 distinct users on total 548,523 products. 99% of the products belonged to 4 main product groups: Books, DVDs, Music and Videos. Of the products in the data set, 5813 (1%) were discontinued (the retailer no longer provided any information about them).
+
+Experiments
+First the observed the cascade model and analyzed the network size diversification over time. They also tried to compare the average number of recommendations sent by users in different depth of the chain. Then they analyzed the distribution of both purchases and recommendations. They also compared the characteristics of products in different categories. Afterwards, they stablished how the recommendation network grows over time and how effective it is from the viewpoint of the sender and receiver of the recommendations.
+
+Results
+1. The growth of customer base on time is decreasing linear function.
+2. The deeper one user in the recommendation chain, the more recommendation he/she may sent.
+3. Customers reactions may vary to recommendations and purchases on products on different catogories and prices. High price and technical category or religious books may lead to a persuasive recommendation.
+4. The probability of infection decreases with repeated interaction between customers.
+5. The probability of purchasing a product increases with the number of recommendations received, but quickly saturates to a constant and relatively low probability. This means individuals are often impervious to the recommendations of their friends, and resist buying items that they do not want.
+6. There are limits to how influential high degree nodes are in the recommendation network. As a person sends out more and more recommendations past a certain number for a product, the success per recommendation declines.
+7. There is a general tendency of recommendation chains to terminate after just a short number of steps.
+8. Smaller and more tightly knit groups tend to be more conducive to viral marketing.
+
+Assumptions
+1. The model assumes that each recipient of a recommendation will forward it to others if its value exceeds an arbitrary threshold that the individual sets for herself/himself.
+2. They assume that all the affected customers will purchase the same product from the same retailer.
+3. They assume that the customer purchases one product after receiving recommendations because the recommendations rather than other reasons cuase it.
+
+Synthesis
+This is a remarkable work from all perspectives. It deeply explored dynamic spread of mouth advertising from several dimensions. I think if they had access to the demographic information of customers, it would be great to analyze the effectivenees of viral marketing from the view of different groups of customers. So that the marketing is able to aim at different crowds with different strategies.
+
+Related Papers
+1. Backstrom, L., Huttenlocher, D., Kleinberg, J., & Lan, X. (2006). Group formation in large social networks: Membership, growth, and evolution. Proceedings of 12th International Conference on Knowledge Discovery in Data Mining: they studied how the evolution of online communities relates to properties such as the structure of the underlying social networks. They found that the propensity of individuals to join communities, and of communities to grow rapidly, depends in subtle ways on the underlying network structure.
+2. M. Cha, H. Haddadi, F. Benevenuto, and K. P. Gummad. Measuring user influence on twitter (2010): they presented an in-depth comparison of three measures of influence: indegree, retweets, and mentions. Based on these measures by using data from twitter. They investigated the dynamics of user influence across topics and time. Coparing to our paper, it's focun more on the users, especially the influential users.

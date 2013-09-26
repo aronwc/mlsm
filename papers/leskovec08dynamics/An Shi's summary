@@ -1,0 +1,39 @@
+Overview
+•         This paper carried out a study on effectiveness and dynamics of viral marketing based on a recommendation system on an online retailer. The results showed that on average recommendations are not very effective at inducing purchases and do not spread very far, but a stochastic model can successfully identify product and pricing categories for which viral marketing seems to be very effective.
+Algorithm
+•         The author use mathematical models and statistics to study the data from the recommendation network.
+Hypothesis
+•         This is no clear hypothesis in this paper, but since the author are studying dynamics of viral marketing, the hypothesis may be there are some patterns or rules behind the observed data on the recommendation system of the online retailers, and it is tested to be true.
+Data
+•         The recommendation data set are made of 15,646,121 recommendations by 3,943,084 different users.
+•         The were collected from June 5, 2001 to May 16, 2003.
+•         548,523 products were recommended, 99% of them are among four product groups: Books, DVDs, Music and Videos.
+•         The product categories, reviews and ratings for all products are also obtained by the authors.
+Experiments
+•         The authors created a network describing the purchase behavior and recommendations between users.
+•         They explored the fraction of people that purchase also decide to recommend forward.
+•         They studied the propagation of recommendations by tracking successful recommendations as they influence purchases and further recommendations. They also established a model of recommendation propagation.
+•         They examined how the relationship between the probability of purchasing and the number of incoming recommendations.
+•         They also analyzed the changing of effectiveness of recommendations while two persons exchange more and more recommendations.
+•         They studied the success rate of persuading people to buy by sending recommendations to them.
+•         They studied how long it takes a person to both receive a recommendation, consider it, and act on it for different product groups.
+•         They also carried out a study of recommendation effectiveness on different book categories.
+•         Finally, they build a model of recommendation success.
+Results
+•         The probability of people making a purchase as a result of recommendation decreases with repeated recommendation.
+•         People’s likelihood of purchasing a product initially increases as the number of recommendations becomes more, but a saturation point is quickly reached and it is a low probability.
+•         A person cannot be super-influential, they can be influential among a group of friends they know, but not all of them.
+•         The category and price of product is important. Recommendations of expensive products of interest to small and tightly connected group will result in a more often purchase.
+•         There are patterns in the timing of recommendations and purchases corresponding to times of day when people are likely to be shopping online or reading email.
+Assumptions
+•         The online recommendation networks shown by the retailer are reflective of the nature of word of mouth advertising.
+•         They assume that the buy-bits and buy-edges can represent  the total number of purchases through recommendations.
+•         The recommendation propagation model assumes that each person who receive a recommendation will forward it to others if its value exceeds an arbitrary threshold that the individual sets for herself.
+•         The recommendation propagation model also assumes that for long times the numerator (N(t+1) − Nt) is smaller than the denominator Nt.
+Synthesis
+•         The data set chosen by the authors may not be a good reflective of the nature of word of mouth advertising, which means the first assumption listed above may cause big problem to the results. If it is possible, I would like to choose a retailer that people recommend products to their friend not because they can get discount, just because they think this is a good product. And people don’t need to be the first person to make a purchase to be classified a successful recommendation. Also people can make recommendations after they use the product, not the time they are buying it. Thus, this data set will give us a more accurate estimation of actual viral marketing.
+•         Those hidden recommendation between people known each other may not be shown on the retailer’s website, but can be shown on other social media, like Twitter, Facebook. If we can get additional information about recommendation and purchasing of a product from those social media, together with what is shown in the retailer’s webstie, it will give us a stronger statement.
+Related papers
+•         J. Leskovec, A. Singh, and J. Kleinberg. Patterns of influence in a recommendation network. In Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), 2006. This is a detailed enumeration and analysis of observed topological cascade patterns for the data set used in the paper.
+•         P. Resnick and R. Zeckhauser. Trust among strangers in internet transactions: Empirical analysis of ebays reputation system. In The Economics of the Internet and E-Commerce. Elsevier Science, 2002. This paper studied the reputation system of ebay, which is similar to this paper, but the “recommendation” is among strangers.
+

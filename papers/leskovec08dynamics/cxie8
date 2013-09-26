@@ -1,0 +1,67 @@
+Overview
+The authors present an analysis of a person-to-person recommendation network, including 4 million people who made 16 
+million recommendations on half a million products. They use a simple stochastic model to explain the propagation of 
+recommendations and the cascade sizes.
+
+Algorithm
+·The recommendation propagation model
+·The recommendation success model
+
+Hypothesis
+·The recommendation networks are reflective of the nature of word of mouth advertising, and influence purchasing decisions.
+·The networks of different items are highly disconnected.
+·The recommendation service is not spreading epidemically.
+·There is certain saturation of the number of recommendations for inducing a new purchase.
+·People who made a purchase will recommend the product forward in proportion.
+·The one makes more recommendations also influence more purchases.
+
+Data
+The data comes from a recommendation referral program run by a large retailer. The dataset consists of 15,646,121 
+recommendations made among 3,943,084 distinct users from June 5 2001 to May 16 2003. 99% of all 548,523 products can be 
+separated to four main groups: Books, DVDs, Music and Videos.
+
+Experiments
+First, the authors finish the aggregate statistics of the recommendation network and run the recommendation propagation 
+model. Next, they analyze the probability of purchasing as one gets more and more recommendations. After that, they 
+measure recommendation effectiveness as two people exchange more and more recommendations, and they observe the 
+recommendation network from the perspective of the sender of the recommendation. Then, they focus on timing of recommend
+ations and purchases, recommendation effectiveness by book category. Lastly, they run the recommendation success model.
+
+Results
+·The probability of infection decreases with repeated interaction.
+·The probability of purchasing a product increases with the number of recommendations received, but quickly saturates to 
+a constant and relatively low probability.
+·There are limits to how influential high degree nodes, as they send more recommendation past a certain number for a 
+product, the success per recommendation declines.
+·The characteristics of product reviews and effectiveness of recommendations vary by category and price, with more 
+successful recommendations being made on technical or religious books.
+·Smaller and more tightly knit groups tend to be more conducive to viral marketing.
+
+Assumptions
+·They assume that every recipient will read the recommendation email.
+·They assume that after reading the recommendation, the one who decide to purchase will buy the product by the online 
+retailer of the recommendation program.
+
+Synthesis
+I think there are still some perspectives for us to do further research. First, we could consider that after the 
+recipient reads the recommendation information by email, however, he check the products of the online retailer and 
+decide to buy the similar product which is not in the recommendation for him. Such behavior will be a member of buy 
+edges in proportion or cause a number of recommendations of other products. Maybe we can set a relative investigation on 
+the purchase websites. And then, we can have a price research for other online retailers, check whether there are 
+products’ prices lower than the price from the recommendation program even if you have the discount. It might make 
+people who want to purchase the same product finally choose another retailer.
+
+Related Papers
+1. Chen, W., Wang, C., & Wang, Y. (2010, July). Scalable influence maximization for prevalent viral marketing in large
+-scale social networks. In Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 1029-1038). ACM.
+Their results from extensive simulations on several real-world and synthetic networks demonstrate that their algorithm 
+is currently the best scalable solution to the influence maximization problem: (a) their algorithm scales beyond million
+-sized graphs where the greedy algorithm becomes infeasible, and (b) in all size ranges, their algorithm performs 
+consistently well in influence spread --- it is always among the best algorithms, and in most cases it significantly 
+outperforms all other scalable heuristics to as much as 100%--260% increase in influence spread.
+
+2. Ho, J. Y., & Dempsey, M. (2010). Viral marketing: Motivations to forward online content. Journal of Business Research
+, 63(9), 1000-1006.
+They investigate if high trait curiosity can indirectly lead to more forwarding by increasing the amount of online 
+content consumed. Results show that Internet users, who are more individualistic and/or more altruistic, tend to forward 
+more online content than others.

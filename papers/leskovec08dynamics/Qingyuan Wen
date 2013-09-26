@@ -1,0 +1,37 @@
+Overview
+This paper present an analysis of a person-to-person recommendation work and a model that successfully identifies product and pricing categories for which viral marketing seems to be very effective.
+
+Algorithm
+The paper used a simple stochastic model that seems to explain the propagation of recommendations.
+They also propose models to identify products for which viral marketing is effective.
+
+Hypothesis
+1.	Person is more likely to buy a product if she gets more recommendations. On the other hand, one who hasn’t bought a product after a number of recommendations is not likely to change their minds after receiving even more of them.
+2.	A person who recommends only a few products will be paid more attention and have higher influence than who floods his friends with all sorts of recommendations.
+3.	If one is very selective and recommends to too few friends, then the chances of success are slim. On the other hand, recommending to everyone and spamming them with recommendations may have limited returns as well.
+
+Data
+1.	15,646,121 recommendations made among 3,943,084 distinct users.
+2.	548,523 products were recommended and 99% of them belonging to 4 main product groups: Book, DVDs, Music and Videos.
+3.	Of the products in the data set, 5813 (1%) were discontinued.
+
+Experiments
+1.	They examine how the probability of purchasing changes as one gets more and more recommendations.
+2.	They measure the effectiveness of recommendation as two people exchange more and more recommendation.
+3.	They observe the recommendation network from the perspective of the sender of recommendation.
+
+Results
+1.	Book recommendations are rarely followed. As more and more recommendations are received, their success even decreases. For DVDs they observe saturation around 10 incoming recommendations.
+2.	Recommendations start to lose effect after more than two or three are passed between two people.
+3.	For books, music, and videos the number of purchases soon saturates: it grows fast up to around 10 outgoing recommendations and then the trend either slows or starts to drop.
+
+Assumptions
+1.	The person who purchases the same item through the referral link in the email is only influenced by the sender.
+2.	Success recommendation only counts the receiver purchasing the product through the same vendor. 
+
+Synthesis
+I think demography should also be considered into analyzing dataset. Some people are likely to buy videos by received a recommendation email. And they would like to send recommendation emails to people having the same interest with them.
+
+Related papers
+1.		Matthew Richardson,  Pedro Domingos. Mining knowledge-sharing sites for viral marketing: Their research seeks to put it on a firmer footing by mining these networks from data, building probabilistic models of them, and using these models to choose the best viral marketing plan.
+2.	Sabrina Helm. Viral Marketing - Establishing Customer Relationships by 'Word-of-mouse': The aim of this article is to describe and explain common features of viral marketing strategies and to outline chances and risks associated with using Internet word-of-mouth in consumer settings.
