@@ -4,9 +4,9 @@ They presented an analysis of a person-to-person recommendation network, consist
 
 Algorithm
 ---------
-Simple model of propagating recommendations
+=Simple model of propagating recommendations
 
-1.Each individual will have p,,t,, successful recommendations. We model p,,t,, as a random variable
+1.Each individual will have p,,t,,, successful recommendations. We model pt as a random variable
 2.At time t+1, the total number of people in the cascade, Nt+1 = Nt * (1+pt)
 3.Subtracting from both sides, and dividing by Nt, we have
 
