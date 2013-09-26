@@ -6,14 +6,14 @@ Algorithm
 ---------
 Simple model of propagating recommendations
 
-1.Each individual will have p<sub>t</sub>, successful recommendations. We model p<sub>t</sub> as a random variable   
-2.At time t+1, the total number of people in the cascade, N<sub>t+1</sub> = N<sub>t</sub> * (1+p<sub>t</sub>)    
-3.Subtracting from both sides, and dividing by N<sub>t</sub>.     
+1. Each individual will have p<sub>t</sub>, successful recommendations. We model p<sub>t</sub> as a random variable   
+2. At time t+1, the total number of people in the cascade, N<sub>t+1</sub> = N<sub>t</sub> * (1+p<sub>t</sub>)    
+3. Subtracting from both sides, and dividing by N<sub>t</sub>.     
 4. Summing over long time periods.    
-5.The right hand side is a sum of random variables and hence normally distributed.    
-6.Integrating both sides, we find that N is lognormally distributed.    
+5. The right hand side is a sum of random variables and hence normally distributed.    
+6. Integrating both sides, we find that N is lognormally distributed.    
 7. The lognormal behaves like a power-law with exponent 1.     
-8.We observe fat tails in cascade sizes.    
+8. We observe fat tails in cascade sizes.    
 - All the formulas here are same to the paper.
 
 Hypothesis
@@ -37,11 +37,11 @@ Large online retailer (June 2001 to May 2003):
 1. 15,646,121 recommendations    
 2. 3,943,084 distinct customers     
 3.548,523 products recommended     
-4.99% of them belonging 4 main product groups:      
-  - books    
-  - DVDs     
-  - music    
-  - VHS     
+4.99% of them belonging 4 main product groups:   
+   - books    
+   - DVDs     
+   - music    
+   - VHS     
 
 Experiments
 -----------
