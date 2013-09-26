@@ -33,3 +33,8 @@ This paper is comprehensive about the shopping behavior online and how to advert
 Related Papers
 1. Shawndra, Hill., Foster, Provost., Chris, Volinsky. (2006). Network-Based Marketing: Identifying Likely Adopters via Consumer Networks. Statistical Science, Vol. 21, No. 2, A Special Issue on Statistical Challenges and Opportunities in Electronic Commerce Research pp. 256-276
 This paper presents an idea of “Network-based marketing" referring to a collection of marketing techniques that take advantage of links between consumers to increase sales. This paper concentrate on the consumer networks formed using direct interactions (e.g., communications) between consumers.
+
+
+2. Blanco-Fernandez, Yolanda. (2008). A flexible semantic inference methodology to reason about user preferences in knowledge-based recommender systems.  Knowledge-Based Systems May, 2008 Vol 21(4) Pages:-320
+This paper proposes a personalization strategy that overcomes the drawback that a lot of useful knowledge is missing during the recommendation process, by applying inference techniques borrowed from the Semantic Web. This paper’s approach reasons about the semantics of items and user preferences to discover complex associations between them. These semantic associations provide additional knowledge about the user preferences, and permit the recommender system to compare them with the available items in a more effective way.
+
