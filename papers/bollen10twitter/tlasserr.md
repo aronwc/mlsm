@@ -22,7 +22,7 @@ In this paper the author uses two algorithms to determine public mood:
 
 ####Experimental####
 
-- 1) To test if OF and GPOMS are able to capture public mood, the author applies these 2 algorithms on tweets from October 5, 2008 to December 5, 2008, corresponds to the US presidential election and Thanksgiving and compares their results to the expected emotional responses to these events.
+- 1) To test if OF and GPOMS are able to capture public mood, the author applies these 2 algorithms on tweets from October 5, 2008 to December 5, 2008, corresponding to the US presidential election and Thanksgiving, and compares their results to the expected emotional responses to these events.
 - 2) The author also computes the correlation between OF lexicon and the six dimensions of GPOMS using multiple regressions.
 - 3) The econometric technique of Granger causality analysis is applied to compare GPOMS and OF time series with the Down Jones Industrial Average (DJIA).
 - 4) The SOFNN is computed to better address non-linear effects and assess the contribution that public mood assessments can make in predictive models of DJIA.
@@ -42,7 +42,7 @@ In this paper the author uses two algorithms to determine public mood:
 ####Synthesis####
 
 - I think geographical location can be important because each country has its own public mood and so it would predict only the stock market of its own country.
-- We have to determine which Twitter users is useful to take into account. Maybe we can try to identify people working in finance and analyze their mood. It can be more appropriate than a teenager telling his life on Twitter.
+- We have to determine which Twitter users are useful to take into account. Maybe we can try to identify people working in finance and analyze their mood. It can be more appropriate than a teenager telling his life on Twitter.
 - The predictions with twitter data can not predict particular events like the financial crisis I think.
 - This method should be added to other prediction model to see if it improves in all the cases these models.
 
