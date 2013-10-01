@@ -21,14 +21,6 @@ Then, the researchers use several tools such as bivariate Granger Causality Anal
 - They collect a total of 9,853,498 tweets from 2.7M users. These tweets were recorded from February 28th to December 19th 2008. They remove stop-words and punctuation for each tweet.
 - From these tweets, they only keep those were the author clearly talks about his mood. They also remove spam tweets.
 
-
-####Assumptions###
-- Punctuation is not important when trying to evaluate the mood of users thanks to their tweets.
-- The number of collected tweets is sufficient to realize a machine learning study.
-- Because the POMS-bi has been correctly tested and has proved to output correct results then their extended version (GPOMS) has got the same characteristics.
-- Parameters of a SOFNN do not change when they add the public mood components.
-- Measure the direction accuracy is sufficient to show the efficiency of a SOFNN.
-
 ####Experimentals####
 
 Once they obtain the public mood time series from OF and GPOMS, the researchers run several experiments :
@@ -49,6 +41,13 @@ It seems like GPOMS' *Happy* dimension best approximates the OF mood trend.
 2. The results of correlation between OF and GPOMS show that OF is significantly correlated with *Sure*, *Vital* and *Happy* dimensions.
 3. The bivariate Granger causality analysis shows that the *Calm* dimension has the highest causality relation with DJIA for lags in 2 to 6 days.
 4. Their final experiment supports the hypothesis that adding the *Calm* dimension to the past 3 days of DJIA values allow them to obtain better results on the DJIA closing value predictions.
+
+####Assumptions###
+- Punctuation is not important when trying to evaluate the mood of users thanks to their tweets.
+- The number of collected tweets is sufficient to realize a machine learning study.
+- Because the POMS-bi has been correctly tested and has proved to output correct results then their extended version (GPOMS) has got the same characteristics.
+- Parameters of a SOFNN do not change when they add the public mood components.
+- Measure the direction accuracy is sufficient to show the efficiency of a SOFNN.
 
 ####Synthesis###
 - Relatively to Figure 1, why did they run the first phase (OF-GPOMS) on two months only while they trained the SOFNN on 9 months data? Moreover, it seems like they used 90% of their data for training and 10% for testing; weren't they able to run cross-validation? They also appear to choose the window of testing and training as it fits their model the best.
