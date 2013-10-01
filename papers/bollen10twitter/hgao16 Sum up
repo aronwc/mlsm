@@ -1,0 +1,87 @@
+The points here is how do we mimic their paper's processing and how deep we are about going to. 
+
+Anyway, We starting analyzing the paper's contents first.
+The every first cheerful words to me are "Google Profile of Mood" and "Opinion Finder". They seems very solid build and could give us great help. 
+	1. The opinion finder could help us to find out what are the people's opinion towards certain event. The shortage of this tool is that it only has polarized result, which is either positive or negative. 
+	2. GPOM could actually detect 6 basic mood of human-beings and the results of the paper  are heavily relied on this. However, I personally think this could actually increasing the amount of our analysis work. 
+
+Their results are beautiful, yet, need to be scrutinize. 
+
+	1. Introduction 
+	The only interesting thing need to be mentioned in the Introduction is that behavioral finance has provided further proof that financial decisions are significantly driven by emotion and mood. This is a fundamental good things to me. 
+
+	Other assumptions about the market are pretty old standard assumptions, like efficient market hypothesis and other assumptions are actually all build on this one. 
+	
+	Also, they picked up a very particular and unique time interval to do the research, that is Feb 28,2008 to Dec 19, 2008. The election of the President.  The problem with this particular time interval is that everything happened during that time become very correlated to each other, since the big event was about to happened. However, more generally speaking, events are not that tend to correlated towards each other, especially between different industrial. This also indicate that the result the paper get from the correlation between Dow and Tweets are not general cases. After all, Dow is a represent of the whole industry. 
+	
+	2. Result (This paper is extremely refined.. There is introduction and there is result…   )
+
+	The process picture of this paper is a guide line to us. 
+	There are some tips to warn us to carefully process the tweets contents. Better to pick up the explicit statement about mood and remove the "http" …
+	
+	The paper also give some brief introduction about the OpinionFinder and GPOMS. This is not the part we care about for sure. what we care about is this:
+	"To enable the comparison of the OF and the GPOMS time series we normalize deviation within a sliding window of k days before and after the particular date. For example, the z-score of time series X_t, denoted Z_(X_t ) "  
+	
+	If we want to find out some appropriate tool in the future and want to figure out whether they have some relation towards each other, this is the method we will used.  
+	
+	The paper then gave out the result from the OF and the GPOMS and some explanation, which we don't care. But.. But… Hold … Hold.. 
+	"To quantitatively determines the relations between GPOMS's mood dimensions and the OF lexicon and the six dimensions of GPOMS using multiple regression. Y_OF=α+∑129_i^n▒〖β_i X_i 〗+ε_t  "
+	Although this is a very traditional regression that been used countless times. I just don't why I feel exciting about it (probably because this is the first time I read some that I understand and I care about..)
+	 
+	Following the parts that I am not that happy with, probably because I have no idea about the algorithms of machine learning that they were talking about. This part has to be done!
+	Two way of finding correlation: 
+		1. Bivariate Granger Causality
+		"Granger causality analysis rests on the assumption that if a variable X causes Y then changes in X will systematically occur before changes in Y."
+		"Correlation however does not prove causation" ?? What is this means? So, we will not know who is the causation of the other one? 
+		Dt reflects a daily chages in stock market value. They compare the variance explaned by two linear models 
+		
+		"The first model use n lagged values of Dt for prediction. 
+		The second model uses n lagged value of both Dt and the GPOMS plus the OF mood time series denoted."
+		This is the part confused me the most, are they using historical data to predicate the future price? The second one is They use the historical data and the mood data to predict the future price? I think so.. 
+		
+		Anyway, they can reject the null hypothesis (I have some idea, but I need more). At least, this is good to know, this means there is a relationship!
+		However, the result only apply to GPOMS, the result as followed. And, which annoy me, they didn't dig out any explanation (and this isn't the part annoy me the most). 
+		
+		They gave some data explain and then they move on.  
+		
+		
+		2. Non-Linear models, the what what fuzzy what …  
+		They start with a sentence which annoys me the most.
+		"The relation between public mood and stock market values is almost certainly non-linear" Did you prove it? How could you say this?? Did you know there are groups of people make big money based on some linear models?? 
+		Anyway, the point here is that we need to learn what kind of methods they adopt and how do they do it. So back to the paper. 
+		
+		SOFNN: Self-organizing Fuzzy Neural Network. Non-linear models for motion-based stock prediction. Their SOFNN is a five layer hybrid neural network with the ability to self-organize its own neurons in the learning process. (I sincerely start doubt about they just showing off their model from here. Or SOFNN is just a basic algorithm and they build something upon it, which they are unwilling to tell everybody else?)
+		
+		Actually, this is the part I care the most and it is also the part the give the less details about. No equations, no instruction, etc.  The rest of the paper just give the result of their algorithm. Even though there are some interest methods they have adopt, like add different emotions into the regression to see whether it could up hive the accuracy of the prediction. Anyway, I still think I should record a little bit of their experiment. 
+		
+		Base line is the Dow itself. Then they add on different mood variable to the learning process. Through permutation, almost like a black box testing, they have got some result, which is beautiful. But still, they have picked a very special period. 
+		
+		The forecasting accuracy is measured in terms of the average mean absolute percentage error and the direction accuracy (up or down).  Of course, there is statistical significance test. 
+		
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Here is what we want to do at the first place 
+"before every big event (new product releasing, financial statement) of certain companies, like apple, people will have different react towards events. 
+Say every event will affect the company's stock price, however, after time passing, the price will stay at a stable level which is the true result from the formal event. 
+But, due to the different reaction of people, the price of the company's stock will have a unstable period. Say, since iPhone 4 was released, which is a outstanding product, people have high expectation toward iPhone 4s. After iPhone 4s was released, though ti is a good product, it failed to full fill the anticipation of "change the world again". Thus, before the product releasing, the price of the stock will go uphill and after the event, the price will steadily drop back, till its true price. 
+So, what I have in mind is that we could at least figure out before the event, what is the reaction of people? good or bad? Could this reaction under estimate or over estimate the price of the stock. Find out the correlation of the price and the reaction of people. 
+Then probably we could dig a little bit into it, say whether we could somehow scale it. "
+
+Actually very similar to this paper. The major different is that they pick Dow, a reflection of the market as a whole. We pick particular event, like Apple releasing new product. 
+
+Things need to be prepared: 
+	1. Collecting the events. There are some issue here. Traditionally event study is to collect the similar events throughout historical data and find out the resemblance among those events. However, There are countless similar events in the past many years, but the Tweeter data we have is limited to 2008 to 2010. Thus, there are actually very limit events we could study about. 
+	2. Collecting the stock market data. This actually is the easy one. Go to Yahoo Finance, they are all there. 
+	3. Prepare the model and the algorithm. This is the thing that we need to learn from this paper. And so many static knowledge need to be picked up… 
+	4. The opinion finder and the GPOMS are there, we need to know how to play with it. 
+	5. Find something to easily calculate the correlation of the mood and the price. 
+	6. What is Granger causality analysis and what is Fuzzy?? Have they already involved with the machine learning part or they are not there yet? 
+
+Pick event (which also means pick the time interval) 
+↓
+Find the stock price during that time and get the mood score from OF or GPOMS (I think we should start with OF)
+↓
+See whether there are some correlations. (Machine learning has already involved in this step??)
+↓
+
+Machine learning break in and predict. 
