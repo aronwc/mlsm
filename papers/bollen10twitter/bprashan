@@ -1,17 +1,44 @@
-####Overview####
+Overview: Write a short paragraph summarizing the content of the paper.
+The paper is set to prove the idea that involving certain sentiments analyzed out of an active social network such as twitter , and using them in combination to existing fuzzy network algorithms used to predict the stock market, could help in the prediction.
 
-####Algorithm ####
+Algorithm: Describe in more detail the primary algorithm proposed or applied in the paper.
+THe algorithm involves, collecting two sentiment analysis tools, Opinion Finder and Google-Profile of Mood Stages every day during the process of the data collection. They try to use these values and predict the Dow Jones Industrial average on a daily basis, to the extent of positive or negative movements.
+The OF gives a single parameter result of positive or negative.
+The GPOMS gives a six parameter result of the mood of that specific day. 
+They then pick a already existing Self Organizing Fuzzy Neural Network and use a combination of the 6 existing mood predictions. 
+They train the algorithm over 10 months and test it for a period of 19 day with 15 working days to predict the DJIA closing directions on 7 combinations from the chosen 7 mood predictions. 
 
-####Hypothesis####
+Hypothesis: 
+They try to show that involving sentiment analyzed from twitter can help improve prediction rates in the stock market movements.
 
-####Data####
+Data: Describe the data used in the experiments
+Twitter data, from Feb 28 - Dec 19th.  (~10 million tweets, from 2.7M users)
+Analyzed using Opinion Finder.(An existing software)
+Google Profile of Mood Stages.(6 parameters of mood)
 
-#### Experiment####
+Experiments: Briefly describe how are the experiments are organized.
+ The Nov 4th presidential election and thanks giving point were looked into as they seemed to have spike in data.
+They fit the dta got from OF and GPOMS into a liner and non liner model to check which one could best be used to predict the DJIA values between Dec 1- Dec 19th for closing directions.
+The training data was all of the data from Feb to Dec 1st.
 
-####Results####
+They drew graphs to see how similar they were and look into specific peak points. 
+They noted the results for both the liner and non liner models that they generated the data for.
 
-####Assumption####
+Results: Describe the results and their significance.
 
-####Synthesis####
+In case of the liner model where thee at a is normalized and fit into z scores, the calm sentiment's movement was best fit to predict the stock market.
+In case of the non liner model, using the fuzzy algorithm, addition of a combination of metrics helped the score, whereas the others did not help much.
 
-####Related Papers####
+Assumptions: List some of the important assumptions the authors make in their work.
+Of all the twitter data pointing to ~10m tweets, they fail to mention how many of them were used to generate the sentiment. There seemed to be no classification or avoiding content that seemed not fit for the sentiment analysis.
+It happened once. Will it happen again? If they tested it for a second time period, it might have helped validate some of their findings. 
+The time period of data collection was a rather extreme period. The training data involved a triggering incident and then the test period was a couple of incidents with following actions.
+ 
+Synthesis: Are there claims you disagree with? What would you do differently? What would you do next?
+A repeat of the experiment at a different time could have helped consolidate the finding.
+The paper had just two points that went for them.
+when there were peaks, they used real time information to speculate the difference. 
+The model could not have an answer inside itself.  Probably shows a poor model with few features.
+The training period to testing period seemed did not seem to be promotional.
+The time period seemed more like two semesters that had to end in Decemeber, rather than a calculated experiment. 
+
