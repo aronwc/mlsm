@@ -8,7 +8,7 @@ They analyzed research data by using OpinionFinder and Google-Proﬁle of Mood S
 The main hypothesis is a common sense, that the sentiment of people will affect what they act, for  this paper it specify the financial  investment part.
 
 ####Data####
-    A collection of public tweets recorded from February 28 to December 19th, 2008 (9,853,498 tweets posted by approximately 2.7M users) with a tweet identifier and tweets had been modified by removing the stop words and punctuation. At last only the tweets which contain the sentiment elements will be used.
+A collection of public tweets recorded from February 28 to December 19th, 2008 (9,853,498 tweets posted by approximately 2.7M users) with a tweet identifier and tweets had been modified by removing the stop words and punctuation. At last only the tweets which contain the sentiment elements will be used.
 
 #### Experiment####
 First, use president election and thanksgiving data to test whether they can capture the moods among the tweets, then compared correlation between OF lexicon and the six dimensions of GPMOS by using multiple regressions; at last they try to investigate permutations of DJIA, the GPOMS and SOFNN model.
