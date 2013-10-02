@@ -43,5 +43,11 @@ Although they avoid bias by randomizing message recipient selection and holding 
 
 Related paper
 -------------
+* [A 61-million-person experiment in social influence and political mobilization](http://web.ebscohost.com/ehost/pdfviewer/pdfviewer?sid=0535c66c-531d-426f-9fbc-7db8b1f1f448%40sessionmgr11&vid=2&hid=26)      
+Here they report results from a randomized controlled trial of political mobilization messages delivered to 61 million Facebook users during the 2010 US congressional elections. The results show that the messages directly influenced political self-expression, information seeking and realworld voting behaviour of millions of people.      
+      
+* [Social Media and Firm Equity Value](http://wweb.uta.edu/faculty/luoxm/Home/social%20media%20isr.pdf)      
+This study scrutinizes the predictive relationships between social media and ﬁrm equity value, the relative effects of social media metrics compared with conventional online behavioral metrics, and the dynamics of these relationships. The results derived from vector autoregressive models suggest that social media-based metrics (Web blogs and consumer ratings) are signiﬁcant leading indicators of ﬁrm equity value.      
 
-
+* [Time allocation in social networks: correlation between social structure and human communication dynamics](http://arxiv.org/pdf/1305.3865.pdf)      
+Using a large database of 20 million users of mobile phone calls they show evidence this effect is not homogeneous in the social network but in fact, there is a large correlation between this effect and the social topological structure around a given individual.
