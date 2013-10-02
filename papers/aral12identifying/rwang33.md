@@ -5,7 +5,8 @@ susceptibility in networks while avoiding the biases inherent in traditional est
 
 Algorithm
 ---------
-
+The authors developed a hazard model to be their statistical approach. Survival models provide information about
+how quickly peers respond (rather than simply whether they respond) and also correct for censoring of peer responses that may occur beyond the experiment’s observation window.
 
 Hypothesis
 ----------
@@ -30,7 +31,8 @@ Results
 
 Assumptions
 -----------
-
+* Highly influential individuals tend not to be susceptible, highly susceptible individuals tend not to be influential, and almost no one is both highly influential and highly susceptible to influence.      
+* 
 
 Synthesis
 ---------
