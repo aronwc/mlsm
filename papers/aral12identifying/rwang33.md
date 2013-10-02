@@ -38,6 +38,7 @@ Assumptions
 
 Synthesis
 ---------
+Although they avoid bias by randomizing message recipient selection and holding message content constant, recipient selection and message content may be important aspects of influence and should therefore be estimated in future experiments. In the future, our research should focus on examining how the codistribution of influence, susceptibility, and dyadic induction in networks affects the diffusion of behaviors, the development of social contagions, and the effects of policies intended to promote or contain behavior change.
 
 
 Related paper
