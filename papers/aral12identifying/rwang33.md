@@ -13,7 +13,7 @@ Hypothesis
 
 Data
 ----
-
+A representative sample of 1.3 million Facebook users
 
 Experiments
 -----------
