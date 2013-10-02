@@ -22,17 +22,19 @@ They conducted a randomized experiment to measure influence and susceptibility t
 
 Results
 -------
--- Men are more influential than women    
--- Women influence men more than they influence other women     
--- Older people (30+ years) are more influential and less susceptible to influence than younger people    
--- Married people are the least susceptible to influence in the decision to adopt the product they studied    
--- Influence and susceptibility trade off, meaning people who were more influential tended not to be susceptible to influence and people who were susceptible tended not to be influential      
--- Some people are clearly more influential than others and are themselves connected to other highly influential people, giving them the potential to be "super-spreaders"
+* Men are more influential than women    
+* Women influence men more than they influence other women     
+* Older people (30+ years) are more influential and less susceptible to influence than younger people    
+* Married people are the least susceptible to influence in the decision to adopt the product they studied    
+* Influence and susceptibility trade off, meaning people who were more influential tended not to be susceptible to influence and people who were susceptible tended not to be influential      
+* Some people are clearly more influential than others and are themselves connected to other highly influential people, giving them the potential to be "super-spreaders"
 
 Assumptions
 -----------
 * Highly influential individuals tend not to be susceptible, highly susceptible individuals tend not to be influential, and almost no one is both highly influential and highly susceptible to influence.      
-* 
+* The “influentials” and “susceptibles” hypotheses are orthogonal claims.
+* There are more people with high influence scores than high susceptibility scores. Targeting should focus on the attributes of current adopters  rather than attributes of their peers. 
+* Influentials cluster in the network.
 
 Synthesis
 ---------
