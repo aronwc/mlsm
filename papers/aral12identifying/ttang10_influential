@@ -1,2 +1,11 @@
 Overview:
-This paper used vivo randomized experiments to identify the roles influential and suspceptible plays in social network. They got some comparative and synthesized results involving gender, age and assortativity patterns with as few biases as possible.
+This paper used vivo randomized experiments to identify the roles influence and suspceptibility plays in social network. They got some comparative and synthesized results involving gender, age and assortativity patterns with as few biases as possible.
+
+Algorithm:
+Hazards model: they extended hazards model to detect spontaneous adoption and influence driven adoption.
+
+Hypothesis:
+The result of recipient's adoption in a social network results from not only the influence of peers, but also the suspectibility of ego. And the influences and suspectibilities of different groups of people are different.
+
+Data:
+Data came from a period over 44 days during which 7730 product adopters sent 41,686 automated notifications to randomly chosen targets among their 1.3 million friends. This resulted in 976 unique peer adoptions, or a 13% increase in demand for the product relative to the number of initial adopters.
