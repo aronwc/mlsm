@@ -36,7 +36,7 @@ Assumptions:
 
 
 Synthesis:
-Although the authors claim that bias, which is created by homophily or assortativity, is eliminated by randomizing the receipt of influence-mediating message, it is still tricky for me to understand. Nontheless, how could the bias be eliminated, since all the recipients are the selected user’s friends. It is highly possible that they became friends because of homophily or assortativity. In other words,they possibly are interested in the same actor or have similar taste of movies. In my perspective, it is unconvincing to eliminate the bias created by homophily or assortativity only by randomizing the receipt of influence-mediating message in the selected user’s social circle.
+Although the authors claim that bias, which is created by homophily or assortativity, is eliminated by randomizing the receipt of influence-mediating message, it is still tricky for me to understand. Nevertheless, how could the bias be eliminated, since all the recipients are the selected user’s friends. It is highly possible that they became friends because of homophily or assortativity. In other words,they possibly are interested in the same actor or have similar taste of movies. In my perspective, it is unconvincing to eliminate the bias created by homophily or assortativity only by randomizing the receipt of influence-mediating message in the selected user’s social circle.
 
 Related papers:
 1. Dijkstra, Jan Kornelis.; Cillessen, Antonius H. N. ; Borch, Casey. (2013). Popularity and adolescent friendship networks: Selection and influence dynamics. Developmental Psychology Jul, 2013 Vol 49(7) Pages:2-1252
