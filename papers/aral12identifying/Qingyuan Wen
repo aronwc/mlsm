@@ -1,0 +1,32 @@
+Overview
+The authors present a method that uses in vivo randomized experimentation to identify influence and susceptibility in networks while avoiding the biases inherent in traditional estimates of social contagion.
+
+Algorithm
+Their statistical approach used hazard modeling, which is the standard technique for estimating social contagion in economics, marketing, and sociology.
+
+Hypothesis
+“influentials” hypothesis—the idea that influential individuals catalyze the diffusion of opinions, behaviors, innovations, and products in society.
+
+Data
+A representative sample of 1.3 million Facebook users
+The experiment was conducted over 44 days during which 7730 product adopters sent 41,686 automated notifications to randomly chosen targets among their 1.3 million friends.
+
+Experiments
+They made a randomized experiment to measure influence and susceptibility to influence in the product adoption decisions of a representative sample of 1.3 million Facebook users. The experiment involved the random manipulation of influence-mediating messages sent from a commercial Facebook application.
+
+Results
+1.	Younger users are more susceptible to influence than older users.
+2.	Men are more influential than women.
+3.	Women influence men more than they influence other women.
+4.	Married individuals are the least susceptible to influence 
+
+Assumptions
+Users who adopted and used the product are only affected by product adopters who sent notifications to them.
+
+Synthesis
+I think the relationship should be taken into consideration. Because, the closer between friends the higher possibility they will believe each other. So, the future work should focus on the relationship background behind the Facebook. It may be graded by the times of connecting between two targets.  
+
+Related paper
+Jianshu Weng, Ee-Peng Lim, Jing Jiang, Qi He. TwitterRank: finding topic-sensitive influential twitterers. This paper focuses on the problem of identifying influential users of micro-blogging services.
+
+Maksim Kitsak, Lazaros K. Gallos, Shlomo Havlin, Fredrik Liljeros, Lev Muchnik, H. Eugene Stanley & Hernán A. Makse. Identification of influential spreaders in complex networks. They find that the most efficient spreaders are those located within the core of the network as identified by the k-shell decomposition analysis, and that when multiple spreaders are considered simultaneously the distance between them becomes the crucial parameter that determines the extent of the spreading.
