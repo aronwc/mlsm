@@ -28,14 +28,21 @@ Results:
 
 
 Assumptions:
-1) Selection bias is avoided by randomizing whether and to whom influence-mediating messages are sent
+1) Selection bias is avoided by randomizing whether and to whom influence-mediating messages are sent.
 2) Bias created by homophily or assortativity in networks is eliminated by randomizing the receipt of influence-mediating messages.
-3) The unobserved confounding factors is controlled, because randomly chosen peers are equally likely to be exposed to external stimuli that affect adoption
-4) The automatically generated messages include identical information, eliminating heterogeneity in message content and valence, which are known to affect responses to social influence
+3) The unobserved confounding factors is controlled, because randomly chosen peers are equally likely to be exposed to external stimuli that affect adoption.
+4) The automatically generated messages include identical information, eliminating heterogeneity in message content and valence, which are known to affect responses to social influence.
 
 
 
 Synthesis:
+Although the authors claim that bias, which is created by homophily or assortativity, is eliminated by randomizing the receipt of influence-mediating message, it is still tricky for me to understand. Nontheless, how could the bias be eliminated, since all the recipients are the selected user’s friends. It is highly possible that they became friends because of homophily or assortativity. In other words,they possibly are interested in the same actor or have similar taste of movies. In my perspective, it is unconvincing to eliminate the bias created by homophily or assortativity only by randomizing the receipt of influence-mediating message in the selected user’s social circle.
 
 Related papers:
+1. Dijkstra, Jan Kornelis.; Cillessen, Antonius H. N. ; Borch, Casey. (2013). Popularity and adolescent friendship networks: Selection and influence dynamics. Developmental Psychology Jul, 2013 Vol 49(7) Pages:2-1252
+This study examined the dynamics of popularity in adolescent friendship networks across 3 years in middle school. Longitudinal social network modeling was used to identify selection and influence in the similarity of popularity among friends. It was argued that lower status adolescents strive to enhance their status through befriending higher status adolescents, whereas higher status adolescents strive to maintain their status by keeping lower status adolescents at a distance.
+
+2. Bidart, Claire.; Cacciuttolo, Patrice. (2013). Combining qualitative, quantitative and structural dimensions in a longitudinal perspective. The case of network influence. Quality & Quantity: International Journal of Methodology Aug, 2013  Vol 47(5) Pages:5-2515
+This article aims to highlight this specific potential of integrating qualitative, qantitative and structural dimensions in an iterative process of data construction and analysis. The methodological argument is empirically illustrated with a focus on the thematic of influence of the network upon life orientations. It shows influence comes mainly from strong central ties but also from some peripheral isolated mates. The structural evolution reveals a general trend of dissociation of their ties the ones from the others when people are entering adult life, which makes influence from the network become more and more diversified.
+
 
