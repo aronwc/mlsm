@@ -1,0 +1,53 @@
+Overview:
+They present a method that based on large-scale in vivo randomized experimentation has the potential to identify 
+influence and susceptibility in networks while avoiding the biases inherent in traditional estimates of social contagion.
+
+Algorithm:
+They used hazard modeling as statistical approach and extended existing techniques to distinguish spontaneous adoption 
+and influence-driven adoption.
+
+Hypothesis:
+Influence, susceptibility to influence, or a combination of the two drives social contagion.
+
+Data:
+The experiment was conducted over 44 days during which 7730 product adopters sent 41,686 automated notifications to 
+randomly chosen targets among their 1.3 million friends.
+
+Experiments:
+·They used a commercial Facebook application to deliver the information and got the peer’s treatment status by modeling 
+time to peer adoption.
+·They estimated the average treatment effects of notifications by aggregating many individual experiments in which 
+messages were randomized within the local networks of the original adopting users.
+·They specify the hazards model to estimate the moderating effects.
+
+Results:
+·On average, susceptibility decreases with age.
+·Men are more influential than women.
+·Women influence men more than they influence other women.
+·Married individuals are the most influential.
+·Influential individuals are less susceptible to influence than noninfluential individuals, and they cluster in the network while susceptible individuals do not.
+
+Assumptions:
+·Highly influential individuals tend not to be susceptible, highly susceptible individuals tend not to be influential, and almost no one is both highly influential and highly susceptible to influence.
+·The “influentials” and “susceptibles” hypotheses are orthogonal claims.
+·There are more people with high influence scores than high susceptibility scores.
+·Influentials cluster in the network.
+
+Synthesis:
+The methods for influence identification are generalizable and can be used to measure influence and susceptibility in 
+the diffusion of other products and behaviors in a variety of settings. However, the work has limitations, such as 
+recipient selection and message content should be estimated in the future experiments. The unclear things can be 
+examined in future research while we have seen the potential of the methods based on large-scale in vivo randomized 
+experiments from their results.
+
+Related papers: 
+1.Aral, S. (2011). Commentary—Identifying Social Influence: A Comment on Opinion Leadership and Social Contagion in New 
+Product Diffusion. Marketing Science, 30(2), 217-223.
+They suggest five broad directions for future research on social influence and opinion leadership that could, if 
+appropriately addressed, dramatically improve how they conceptualize and manage social contagions in a variety of 
+domains.
+2. Fang, X., Hu, P. J. H., Li, Z. L., & Tsai, W. (2013). Predicting adoption probabilities in social networks. Informati
+on Systems Research, 24(1), 128-145.
+Using data from two large-scale social networks, they demonstrate the effectiveness of the proposed method. The 
+empirical results also suggest that cascade methods primarily using social influence to predict adoption probabilities 
+offer limited predictive power and that confounding factors are critical to adoption probability predictions.
