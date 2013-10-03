@@ -1,9 +1,12 @@
 Overview:
-This paper talks about the author trying to present a method that uses in vivo randomized experimentation to find influence and susceptibility in networks. And they take some measures to avoid the biases inherent in traditional estimates of social contagion.  
+This paper talks about the author trying to present a method that uses in vivo randomized experimentation to find 
+influence and susceptibility in networks. And they take some measures to avoid the biases inherent in traditional 
+estimates of social contagion.  
 
 Algorithm:
 Random choose who receive the message.
-Use a continuous time single failure proportional hazards model and extend existing technology to distinguish spontaneous adoption and influence driven adoption. 
+Use a continuous time single failure proportional hazards model and extend existing technology to distinguish 
+pontaneous adoption and influence driven adoption. 
 
 Hypothesis:
 Influential individuals catalyze the diffusion of opinions, behaviors, innovations, and products in society.
@@ -14,7 +17,9 @@ Run over 44 days during which 7730 product adopters sent 41686 automated notific
 976 unique peer adoptions.
 
 Experiment:
-They got data from a commercial Facebook application that lets users to share their opinion about movies and other related to movie. When a user uses the product, it would automatically send message to random receivers among his friend to try to attract them. Then use hazard model to deal with the data and identify the influence and susceptibility in network. 
+They got data from a commercial Facebook application that lets users to share their opinion about movies and other 
+related to movie. When a user uses the product, it would automatically send message to random receivers among his 
+friend to try to attract them. Then use hazard model to deal with the data and identify the influence and susceptibility in network. 
 
 Result:
 1.	Susceptibility decrease with age.
@@ -31,7 +36,13 @@ Assumptions:
 1.	By using a randomized experiment we could avoid several known sources of bias. 
 
 Synthesis:
-As the author mentioned in the end of the paper, there still have some limitations. I think further experiment should be done by how the different content would influence the influence. People are more likely to be influenced by something they are interested, or sometimes even they hated. For example, in the early of this year, there’s a horrible movie in my country. After watching it many people told their friends that “It’s the most terrible movie I’ve ever seen, it’s so silly, you must try it”. The score of this movie is 0 out of 5. However, this movie got pretty good income even no one like it. That is a typically example that how important the content is. Although it is very hard to control the content, companies could benefit a lot if they could handle it. 
+As the author mentioned in the end of the paper, there still have some limitations. I think further experiment should 
+be done by how the different content would influence the influence. People are more likely to be influenced by something
+they are interested, or sometimes even they hated. For example, in the early of this year, there’s a horrible movie in 
+my country. After watching it many people told their friends that “It’s the most terrible movie I’ve ever seen, it’s so
+silly, you must try it”. The score of this movie is 0 out of 5. However, this movie got pretty good income even no one 
+like it. That is a typically example that how important the content is. Although it is very hard to control the content,
+companies could benefit a lot if they could handle it. 
 
 Related Papers:
 	
