@@ -10,7 +10,7 @@ how quickly peers respond (rather than simply whether they respond) and also cor
 
 Hypothesis
 ----------
-
+Influential individuals catalyze the diffusion of opinions, behaviors, innovations, and products in society. 
 
 Data
 ----
