@@ -15,3 +15,14 @@ First, they took experiments on groups of different age and different degree of 
 
 Results:
 They found that younger users are more susceptible to influence than older users, men are more influential than women, women influence men more than they influence other women, and married individuals are the least susceptible to influence in the decision to adopt the product offered. Analysis of influence and susceptibility together with network structure revealed that influential individuals are less susceptible to influence than noninfluential individuals and that they cluster in the network while susceptible individuals do not, which suggests that influential people with influential friends may be instrumental in the spread of this product in the network.
+
+Assumptions:
+The selection of recipient and randomized content of messages won't generate a bias;
+Influence and susceptibility are generalized characteristics of individuals.
+
+Synthesis:
+I am wondering whether influence and susceptibility are two independent factors contributing to social inluence. We better design and make experiments on influence and susceptibility respectively and together. If they are, we make the experiments in this paper. Otherwise, we may choose other factors that potentially affect the social influence on product adoption.
+
+Related papers:
+Bond, R., Fariss, C., Jones, J., Kramer, A., Marlow, C., Settle, J. and Fowler, J. 2012. A 61-million-person experiment in social influence and political mobilizatio: they made a randomized controlled trial of political mobilization messages delivered to 61 million Facebook users during the 2010 US congressional elections. They found their messages affect not only the online recipient but also friends of them in real life.
+N.A. Christakis, J.H. Fowler, Social Contagion Theory: Examining Dynamic Social Networks and Human Behavior, ArXiv e-prints, 2011: they 
