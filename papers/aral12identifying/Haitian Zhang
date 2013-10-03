@@ -1,0 +1,42 @@
+Overview:
+This paper talks about the author trying to present a method that uses in vivo randomized experimentation to find influence and susceptibility in networks. And they take some measures to avoid the biases inherent in traditional estimates of social contagion.  
+
+Algorithm:
+Random choose who receive the message.
+Use a continuous time single failure proportional hazards model and extend existing technology to distinguish spontaneous adoption and influence driven adoption. 
+
+Hypothesis:
+Influential individuals catalyze the diffusion of opinions, behaviors, innovations, and products in society.
+
+Data:
+1.3 million Facebook users. 
+Run over 44 days during which 7730 product adopters sent 41686 automated notifications to randomly chosen targets. 
+976 unique peer adoptions.
+
+Experiment:
+They got data from a commercial Facebook application that lets users to share their opinion about movies and other related to movie. When a user uses the product, it would automatically send message to random receivers among his friend to try to attract them. Then use hazard model to deal with the data and identify the influence and susceptibility in network. 
+
+Result:
+1.	Susceptibility decrease with age.
+2.	Older people (>30) have more influential than younger people (<18).
+3.	Men are 49% more influential than women while women are 12% less susceptible to influence.  
+4.	Single individuals are 113% more and married are 140% more influential than those who are in a relationship or report their relationship status as “It’s complicated”. And people who are engaged to be married are 53% more susceptible to influence than single people. 
+5.	Women are 46% more influence over men than over other women. 
+6.	Individuals in equally committed relationships relative to their peers are dramatically more influential
+7.	One would be either highly influential or highly susceptible.
+8.	There’s more people tend to influence others than been influenced. 
+9.	Influential people with influential friends may be helpful to spread the products. 
+
+Assumptions:
+1.	By using a randomized experiment we could avoid several known sources of bias. 
+
+Synthesis:
+As the author mentioned in the end of the paper, there still have some limitations. I think further experiment should be done by how the different content would influence the influence. People are more likely to be influenced by something they are interested, or sometimes even they hated. For example, in the early of this year, there’s a horrible movie in my country. After watching it many people told their friends that “It’s the most terrible movie I’ve ever seen, it’s so silly, you must try it”. The score of this movie is 0 out of 5. However, this movie got pretty good income even no one like it. That is a typically example that how important the content is. Although it is very hard to control the content, companies could benefit a lot if they could handle it. 
+
+Related Papers:
+	
+1.	A 61-million-person experiment in social influence and political mobilization. Robert M. Bond, Christopher J. Fariss, Jason J. Jones, Adam D. I. Kramer, Cameron Marlow, Jaime E. Settle & James H. Fowler
+The author did a randomized controlled trial of political mobilization message delivered to 61 million Facebook users during the 2010 congressional election. And this paper claims that the messages directly influenced political self-expression, information seeking and real-world voting behavior of millions of people. And the most important, the message also influence receivers’ friends. 
+2.	Evaluating viral marketing: isolating the key criteria Danilo Cruz Chris Fill
+This paper does not give any result how the key factors would influence the viral marketing. Instead, it gives a framework that which of the key criteria should be considered that influence the viral marketing and to do further research on. 
+
