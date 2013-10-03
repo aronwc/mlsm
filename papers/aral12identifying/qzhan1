@@ -1,0 +1,41 @@
+Overview:
+This paper presents a method that uses in vivo randomized experimentation to identify influence and susceptibility in networks while avoiding the biases inherent in traditional estimates of social contagion.
+
+Algorithm:
+1) This paper used hazard modeling, which is the standard technique for estimating social contagion in economics, marketing, and sociology.
+2) This paper extended existing techniques to distinguish two types of peer adoption: (i) spontaneous adoption, which occurs in the absence of influence, and (ii) influence- driven adoption, which occurs in response to persuasive messages.
+
+
+Hypothesis:
+1.	Influential individuals catalyze the diffusion of opinions, behaviors, innovations, and products in society. 
+2.	Susceptibility, not influence, is the key trait that drives social contagions.
+
+
+Data:
+The experiment was conducted over 44 days during which 7730 product adopters sent 41,686 automated notifications to randomly chosen tar- gets among their 1.3 million friends. This resulted in 976 unique peer adoptions, or a 13% in- crease in demand for the product relative to the number of initial adopters.
+
+
+Experiments:
+The experiment involved the random manipulation of influence-mediating messages sent from a commercial Facebook application that lets users share information and opinions about movies, actors, directors, and the film industry. As users adopted and used the product, automated notifications of their activities were delivered to randomly selected peers in their local social networks. Then, estimates of influence and susceptibility were obtained by modeling time to peer adoption as a function of the peer’s treatment status—whether influence-mediating messages had been received, and if so, how many. Finally, the paper presents a hazard model to estimate the moderating effects of an individual i’s attributes on the influence exerted by i on peer j.
+
+
+Results:
+1)	Highly influential individuals tend not to be susceptible, highly susceptible individuals tend not to be influential, and almost no one is both highly influential and highly susceptible to influence.
+2)	Both influential individuals and noninfluential individuals have approximately the same distribution of susceptibility to influence among their peers; hence, being influential is not simply a consequence of having susceptible peers.
+3)	There are more people with high influence scores than high susceptibility scores.
+ 4)  Influentials cluster in the network while susceptible individuals do not, which suggests that influential people with influential friends may be instrumental in the spread of this product in the network.
+5)	More specific result is that younger users are more susceptible to influence than older users, men are more influential than women, women influence men more than they influence other women, and married individuals are the least susceptible to influence in the decision to adopt the product offered.
+
+
+Assumptions:
+1. Selection bias is avoided by randomizing whether and to whom influence-mediating messages are sent
+2. Bias created by homophily or assortativity in networks is eliminated by randomizing the receipt of influence-mediating messages.
+3. The unobserved confounding factors is controlled, because randomly chosen peers are equally likely to be exposed to external stimuli that affect adoption
+4. The automatically generated messages include identical information, eliminating heterogeneity in message content and valence, which are known to affect responses to social influence
+
+
+
+Synthesis:
+
+Related papers:
+
