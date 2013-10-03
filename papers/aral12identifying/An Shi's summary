@@ -1,0 +1,87 @@
+Overview
+
+·         This paper carried out a randomized experimentation to identify influence and susceptibility in networks.
+
+Algorithm
+
+·         The paper mainly use hazard modeling, a statistical model to study the data of the experiments.
+
+·         They extended the hazard modeling to distinguish spontaneous adoption and influence-driven adoption.
+
+·         There’s no machine learning involved in this paper.
+
+Hypothesis
+
+·         The authors did not mention hypothesis for this study, but according to the experiment they carried out, the hypothesis should be that influential and susceptible members in social networks act differently among different ages, genders and relation status.
+
+·         There’s another hypothesis for previous work is the “influentials” hypothesis, that influential individuals catalyze the diffusion of opinions, behaviors, innovations, and products in society, so they are the key of the social network. In this paper, the author did not try to prove this, so this might not be the hypothesis for this work.
+
+Data
+
+·         The data are from a sample of 1.3 million Facebook users.
+
+·         It was conducted over 44 days during which 7730 product adopters sent 41,686 automated notifications to randomly chosen targets among the 1.3 million friends.
+
+·         An addtion of 976 unique peer adoptions, which is 13% of the initial adopters was observed.
+
+·         For the distributions of influence and susceptibility in network experiment, a sample of 12 million users with 85 million relationships was used to calculate the individual influence and susceptibility scores.
+
+Experiments
+
+Three experiments was carried out in the paper.
+
+·         They studied influence and susceptibility, to see the difference among different groups of people, in terms of age, gender, relation status.
+
+·         They studied dyadic relationships between influencers and potential susceptibles, to see if influence depends on characteristics of the relationship between a given pair.
+
+·         They studied the joint distribution of influence and susceptibility in a network, to see the correlation of influence and susceptibility among people and the assortativity of influence and susceptibility among people and their peers.
+
+Results
+
+For each experiment, there’s several results.
+
+First experiment:
+
+·         Susceptibility goes down as age increases.
+
+·         Men are more influential than women, while women are less susceptible to influence than men.
+
+·         Single and married people are the most influential, while susceptibility increases with increasing relationship commitment until the point of marriage.
+
+Second experiment:
+
+·         People are more influential towards those with the same age.
+
+·         Women are more influential over men than over women.
+
+·         People are more influential towards those with the same committed relationships.
+
+Third experiment:
+
+·         People are not both highly influential and susceptible to influence.
+
+·         Both influential and noninfluential people have almost equal distribution of susceptibility to influence among their peers.
+
+·         There are more people with high influence scores than high susceptibility scores.
+
+·         Influentials cluster in the network, while susceptibility does not.
+
+Assumptions
+
+·         There is no clear assumption in the paper, one big assumption is that randomized experiment can avoid selection bias and bias created by homophily or assortativity in networks, can control unobserved confounding factors and generate identical messages.
+
+Synthesis
+
+·         We discussed a paper before, which studies the online referral system of a retailer. That paper only counts the first one who bought the product following the link. However, this paper does not have a clear timeline like that. Those people who use the application may not due to the recommendation from the most recent one, nor due to the total number of the recommendations, but due to a previous recommendation, but take some time before sitting down and install the applicaiton. So the paper does not consider or rule out this kind of situation.
+
+·         The author does not talk about why they make four age groups like that, say under 18, 18-23, 23-31 and over 31, there might be different results if one make different groups. And there is a large part of people of “It’s complecated”, if they can make it clear, they may shift the results completely.
+
+·         The sample size of 7730 product adopters sent 41,686 automated notifications, and 976 unique peer adoptions does not seem big enough to draw a strong conclusion. If there’s a chance, I would suggest to enlarge the sample size and try more different products to see the results.
+
+Related papers
+
+·         S. Aral, L. Muchnik, A. Sundararajan, Proc. Natl. Acad. Sci. U.S.A. 106, 21544 (2009). Distinguishing influence-based contagion from homophily-driven diffusion in dynamic networks. This paper developed a dynamic matched sample estimation framework to distinguish inﬂuence and homophily effects in dynamic networks and applied the framework to a real network.
+·         S. Currarini, M. O. Jackson, P. Pin, Proc. Natl. Acad. Sci. U.S.A. 107, 4857 (2010). Identifying the roles of race-based choice and chance in high school friendship network formation. . The paper developed a technique for distinguishing two primary sources of homophily: biases in the preferences of individuals over the types of their friends and biases in the chances that people meet individuals of other types. And they use this technique to analyze racial patterns in friendship networks in a set of American high schools from the Add Health dataset.
+ 
+ 
+ 
