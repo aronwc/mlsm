@@ -6,3 +6,4 @@ Add a link to the github repository of your project.
 - Sean Wallace: [Secrets to Stack Exchange](https://github.com/SeanWallace/CS595_Project)
 - Ruoyu Wang, Chuang Xie: [Compare of Different Methods For Sen5ment Analysis](https://github.com/DanDanBiu/Machine-Learning-and-Social-Media)
 - QI Zhan, JI QI:[Gender identification](https://github.com/kiki4vivi/Project)
+- Lola Priego: [Financial Predictor](https://github.com/lolapriego/financial_predictor)
