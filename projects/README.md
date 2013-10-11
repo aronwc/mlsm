@@ -7,3 +7,4 @@ Add a link to the github repository of your project.
 - Ruoyu Wang, Chuang Xie: [Compare of Different Methods For Sen5ment Analysis](https://github.com/DanDanBiu/Machine-Learning-and-Social-Media)
 - QI Zhan, JI QI:[Gender identification](https://github.com/kiki4vivi/Project)
 - Lola Priego: [Financial Predictor](https://github.com/lolapriego/financial_predictor)
+- Matthew Heston: [Predicting Pull Request Acceptance](https://github.com/matthewheston/mlsm_project)
