@@ -5,7 +5,7 @@
 - Naïve Bayes (NB) and Maximum Entropy (MaxEnt) are used for classification.
 - They tag all the tweets by six important features, objective, subjective, formal, informal, personal, impersonal. Then extract all the tweets that got certain feature which imply it will contribute to the SA.
 - They also analyzed the frequency of words or bigram phases.
-- 
+
 ####Hypothesis####
 - The most important hypothesis of this paper is they think the valuable information will be extracted in time with their method when certain mass emergency emerges.
 
