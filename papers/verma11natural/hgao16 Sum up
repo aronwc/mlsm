@@ -1,0 +1,44 @@
+Sir please notice this is a summary for the link you emailed to us, which I particular interest in. 
+From <http://sellthenews.tumblr.com/post/21067996377/noitdoesnot> 
+
+Summary of The junk science behind the twitter hedge fund
+
+The summary of this paper is aiming at deep realization of the limits of the previous paper, since these mistakes could actually helped us to do our project better. 
+
+The blogger points out several problem with the paper.
+	1. accounting mistakes. I personal think the blogger understate this error. However, it is still some problem with it from the paper. 
+	2. The paper somehow using the result of the election to guiding the machining learning process. 
+	3. Blogger point out the accuracy of the system is 'confirmed' by looking at some extra data.   
+
+Maybe by criticizing the Granger Causality, the blogger meant to point out the accounting mistakes by the author. 
+In the paper, the author want to use "null hypothesis" to rule out the hypothesis: Twitter based signal has no forecasting ability on Dow. 
+" commit the statistical sin of performing many such tests (49 of them), and then attributing statistical significance to those that have a small p-value (they display the p-values in boldface if they are less than 0.10, attach two stars to those less than 0.05, etc.). If one were to perform ten million such tests, and the null hypothesis were true (i.e. if Twitter did not predict DJIA in any way), one would expect to have one million resultant p-values less than 0.1, printed in boldface in one’s enormous table. Similarly, one would expect to have one million p-values between 0.317 and 0.417, a hundred thousand between 0.8349 and 0.8449, etc. The presence of many small p-values in this scenario is simply due to chance ‘bad luck’ under the null hypothesis."
+This paragraph is the evidence to criticize the author want to use the Granger Causality to prove they(tweets and Dow) have a correlations hip. I am now fully understand the reasoning here, but it seems the blogger want to point out there were not enough test to verify the result. 
+However, I personally think there is no reason even to test whether there is a correlation between these two things. Of course there is a correlation, especially during that special period. 
+Stocks, per say, are assumed to be an information indicator for the companies they represented for. For example, if the company just going through a tough division, this particular thing would be reflected on the stock almost for sure. The only problem probably would be under different market assumption, the pattern of the correlation would be different. 
+Especially during the election, all the things related to market is waiting for the result, since it directly related the business strategies companies would make. And it almost for sure people's mood towards the election would have influence on the election. 
+
+The actually problem here would be the basic understanding of the nature of the stock. Here the paper used Dow 30, which reflects the industry as a whole and only the top 30 companies. If the assumption it that stocks could reflect any information at any time, the Dow could definitely reflect the information of election. 
+But, different pieces of event tend to overlap on each other and result in a single result. Just like election, one can hardly just depend on one single test about tweets moods and stock prices to point that the market price change is a solely result from tweet mood rather than all the events happen around the election as a whole. 
+And this event the paper pick is too special… I could only think to buy their fund during next election.. Hope they have some new theory now. 
+
+So, what we should keep in mind is that we should help the computer to rule out the noise besides the tweets and the price. I will state more details in further experiment.   
+
+Funny thing about the author to criticize the paper, the author somehow conclude the paper's result could be random luck instead of an accurate result.  
+Forecasting model:
+	1. "The forecast accuracy is reported with far too many significant figures" 
+	2. "The accuracy figure is biased upward"
+	3. "The model accuracy seems high compared to the granger causality"
+All these three seems to aim at the statically errors of this paper, I'm not fully understand and there are definitely some make up on static things on going. But there are a few things we need to considered when we doing our project. 
+"The reported 86.7 % accuracy is themaximal accuracy achieved for the 8 models"
+"As an analogy, imagine if the 8 models listed in Table III truly had no predictive ability, and thus a forecast accuracy of 50%. You can view them as fair coins. The probability that a single fair coin would land heads 13 or more times out of 15 is 0.37%. This probability is so small it makes us doubt the assumption that the models in Table III are really non-predictive. However, if one were to flip 8 fair coins, the probability that at least one of them would land heads 13 or more times out of 15 is 2.9%. While this is still small, it is less damning of the assumption of non-predictive models."
+This is basically saying, we should take more test.. But how we are going to perform more test? 
+And I think this paragraph also aim at the same thing bottom down
+"Furthermore, because the daily movements of the DJIA are ‘high frequency’ (autocorrelation would be ‘arbed out’), a gap such as this could cause the signal to appear ‘out of sync’. For example, let P and C stand for ‘panic’ and ‘calm’ in the Twitter ‘Calm’ signal, and let + and - mean up and down days for the DJIA. Imagine the following stream of days, where the DJIA moves exactly as suggested by the ‘Calm’ signal two (market) days prior.7
+Calm:  P  P  C  C  P  C  P  P  C ...
+DJIA:   ...  -  -  +  +  -  +  - ...
+" What it says is since the Dow is a high frequency market, there are great chance the corresponding between mood and price is a coincidence. 
+
+So, the very first thing we need to consider in mind is how to define a "class event" which could contain as many independent events as possible which have a particular thing in common-- users' tweets mood. 
+
+I don't know whether I skip too much information in this article (I hope not). But there are actually very few information could actually helped us with our project.  
