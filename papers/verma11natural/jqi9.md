@@ -28,8 +28,10 @@ They use mean accuracy over 10 fold cross-validation to measure performance and 
 
 ####Related Paper####
 - Machine Learning Applied to Object Recognition in Robot Search and Rescue Systems    Helen Flynn, Keble College University of Oxford
+
 Practical tech, robot can adopt to more complex environment than human in emergency rescue.
 
 - Classifying Text Messages for Emergency Response   
 Cornelia Caragea, Hyun-Woo Kim, Prasenjit Mitra, and John Yen
+
 Also provide the priority handle, which can identify what is really emergency.
