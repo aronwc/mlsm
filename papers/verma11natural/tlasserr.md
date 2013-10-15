@@ -1,6 +1,6 @@
 ####Overview####
 
-This paper describes an approach for automatically indentifying messages on Twitter which contribute to situational awareness (SA) of an event. It also try to identify new features to ameliorate the SA classifier.
+This paper describes an approach for automatically indentifying messages on Twitter which contribute to situational awareness (SA) of an event. It also tries to identify new features to ameliorate the SA classifier.
 
 ####Algorithms####
 
@@ -14,7 +14,7 @@ This paper describes an approach for automatically indentifying messages on Twit
 ####Hypothesis####
 
 - Tweets demonstrating situation awareness can be identified with machine learning techniques.
-- The add of linguistic features improve classification of SA tweets over standard-derivable features.
+- The add of linguistic features improves classification of SA tweets over standard-derivable features.
 
 ####Data####
 
