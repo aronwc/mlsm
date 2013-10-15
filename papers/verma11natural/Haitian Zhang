@@ -1,0 +1,56 @@
+Overview:
+This paper gives an approach for automatically identifying messages that contribute to situational awareness. They achieved 
+over 80% accuracy on categorizing.
+
+Algorithms:
+Naïve Bayes and Maximum Entropy are used in classification.
+Classify the data into 4 dimensions. Whether situational awareness or not, objective or not, personal or not, formal or not. 
+Using unigrams, bigrams, POS, objective, formal, impersonal as classification features. 
+Cross validations in split of 90% and 10%.
+
+Hypothesis:
+Tweets that contribute to situational awareness are likely to be written in a style that is objective, impersonal, and formal.
+
+Data:
+Roughly 500 tweets during 4 emergency events. RR09, RR10, OK fire, Haiti earthquake. 
+Data are both human annotated and using ML method to classification. 
+All of them are from individual.
+Select 1000 tweets from 3 dataset and mix it into a new dataset. 
+
+Experiment:
+1.	Classify the data due to 4 dimensions. 
+2.	After classification, list the data distribution and see the relationship with those 4 different kinds of 
+attributes.
+3.	Combine different features and see the classification accuracy under the 2 classification methods by using 
+unigrams as the baseline. 
+4.	Evaluate the classification performed across the dataset.
+
+Result:
+1.	Situational awareness tweets are more likely to be objective, impersonal and formal. 
+2.	By using the single feature among objective, formal and impersonal could increase the accuracy of the classification. 
+Combine them together would get the highest average accuracy among all the dataset. 
+3.	Classifier could achieve good accuracy when using into a dataset of same sort of disaster. 
+
+Assumption:
+1.	People would post information about the disaster on the social network site when they are in the disaster area. 
+2.	The information in the tweets would inflect the real situation about the disaster area. 
+
+Synthesis:
+I think if we use this method to lead the rescue, it would base on a bias. They would ignore those area that were s
+eriously destroyed and people have no mood to send tweets or the network itself were died. And also, I think the 
+dataset of this research is a little too small, it may not reflect the real situation. For the future research, I think 
+we could concentrate more about how the classifier works in the different kinds of disaster or the different locations 
+that the disaster happens. 
+
+Related paper:
+Hughes A L, Palen L. Twitter adoption and use in mass convergence and emergency events[J]. International Journal of 
+Emergency Management, 2009, 6(3): 248-260.
+This paper is the pervious of this paper. They suggest that Twitter messages sent during these types of events contain
+more displays of information broadcasting and brokerage, and they observe that general Twitter use seems to have evolved 
+over time to offer more of an information sharing purpose.
+
+Vieweg S, Hughes A L, Starbird K, et al. Microblogging during two natural hazards events: what twitter may contribute to 
+situational awareness[C]//Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. ACM, 2010: 1079-1088.
+This paper is also a previous work. It focuses on finding the features that may contribute to the situation awareness. 
+This paper is also a previous work. It focuses on finding the features that may contribute to the situation awareness. 
+
