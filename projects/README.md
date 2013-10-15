@@ -9,3 +9,4 @@ Add a link to the github repository of your project.
 - Lola Priego: [Financial Predictor](https://github.com/lolapriego/financial_predictor)
 - Matthew Heston: [Predicting Pull Request Acceptance](https://github.com/matthewheston/mlsm_project)
 - Thibault Lasserre: [Information Outbreaks] (https://github.com/thilasserre/mlsm-project)
+- An Shi, Hao Gao: [Events vs Stock] (https://github.com/anshipku/Events_vs_Stock)
