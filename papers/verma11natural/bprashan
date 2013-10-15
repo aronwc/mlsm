@@ -1,0 +1,35 @@
+Overview: 
+The paper intends to identify situation awareness in mass data available during disasters or any other communal situation.
+
+Algorithm: 
+They use Naïve Bayes (NB) and Maximum Entropy (MaxEnt) to classify their data models.
+They divide the set of tweets as personal/impersonal , subjective/objective , formal/informal .
+They use these as features in the SA classifier, as features along with their baseline hand classified results. 
+ 
+Hypothesis: List the hypotheses the authors test in the paper (note that these are not always explicitly stated).
+The hypotheses of this paper is that a machine learning algorithm , can be used to detect situation awareness tweets from large volumes of data, on the fly. 
+The idea seems to stem from the requirement of identifying individuals and their location based on personal blogs and tweets, at times of disaster. 
+
+Data: Describe the data used in the experiments
+Twitter data from 4 disaster events that have a set of identified words. 
+All data collected are from individuals and not organizations. 
+Each disaster was tracked in a specific time period, when the disaster occurred. 
+2 red river floods, one fire  and Haiti earthquake. are the 4 disaster events.
+ 
+Experiments: Briefly describe how are the experiments are organized.
+They first, hand annotate the selected tweets for subjectivity, formality and personal nature of the tweets. They draw up the results. 
+Then classify these using the two known machine learning classifying algorithms. 
+They try to add a few of these already existing functionalities to the classifiers and check for improvements in results. 
+
+Results: Describe the results and their significance.
+They find that adding personality sometimes improves the ability to find situation awareness of tweets. Combining all features along with speech analysis in the model, seems to help the identification to a better extent. 
+
+
+Assumptions: List some of the important assumptions the authors make in their work.
+not an assumption, but they note it in part. When they try to extend this to a different disaster, it seems to mostly fail. 
+In such a case, in what way is this analysis helping? 
+ 
+
+Synthesis: Are there claims you disagree with? What would you do differently? What would you do next?
+I like what they have done here. 4 disasters, two similar. One international. Then they cross verify. 
+As a next step, I would have tried to see how much help identifying geo tags would have helped.! it might have broken the purpose of identifying the location with such abstract data. but still, it might have been a yardstick.  
