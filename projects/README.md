@@ -10,3 +10,4 @@ Add a link to the github repository of your project.
 - Matthew Heston: [Predicting Pull Request Acceptance](https://github.com/matthewheston/mlsm_project)
 - Thibault Lasserre: [Information Outbreaks] (https://github.com/thilasserre/mlsm-project)
 - An Shi, Hao Gao: [Events vs Stock] (https://github.com/anshipku/Events_vs_Stock)
+- Junze Han, Bavan Prashant : [twitter activity spread pattern analysis](https://github.com/brprashant/classifyTwitterActivity)
