@@ -1,0 +1,11 @@
+Overview:
+This paper focus on extracting useful information and classify them from social media during disaster period. And their work shows great precision and recall on different categories of tweets on different dataset.
+
+Algorithm: 
+They utilized state-of-the-art machine learning techniques to classify messages into set of fine-grained classes and to extract short self-contained structured information. They also used some classification methods such as unigram, bigram, POS (part of speech).
+
+Hypothesis: 
+People are able to get helpful information through extracting the social media when disasters happen. And there are some syntactical features to class those tweets into different categories.
+
+Data:
+The dataset consists of 206,764 unique tweets posted during the Joplin 2011 tornado that struck Joplin, Missouri in the late afternoon of Sunday, May 22, 2011. T. These tweets came from monitering on the Twitter Streaming API using the hashtag #joplin a few hours after the tornado hit. This monitoring process continued until the number of tweets about the tornado became particularly sparse.
