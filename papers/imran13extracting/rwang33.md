@@ -22,6 +22,8 @@ The filter will select the tweets whose answers are "Yes"s to above two question
 These selected tweets will be the training data.      
 
 ###Classification
+####Classifying Messages By Type
+
 
 
 
