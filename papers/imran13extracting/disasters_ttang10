@@ -1,0 +1,27 @@
+Overview:
+This paper focus on extracting useful information and classify them from social media during disaster period. And their work shows great precision and recall on different categories of tweets on different dataset.
+
+Algorithm: 
+They utilized state-of-the-art machine learning techniques to classify messages into set of fine-grained classes and to extract short self-contained structured information. They also used some classification methods such as unigram, bigram, POS (part of speech).
+
+Hypothesis: 
+People are able to get helpful information through extracting the social media when disasters happen. And there are some syntactical features to class those tweets into different categories.
+
+Data:
+The dataset consists of 206,764 unique tweets posted during the Joplin 2011 tornado that struck Joplin, Missouri in the late afternoon of Sunday, May 22, 2011. T. These tweets came from monitering on the Twitter Streaming API using the hashtag #joplin a few hours after the tornado hit. This monitoring process continued until the number of tweets about the tornado became particularly sparse.
+
+Experiments:
+In this paper, they presented a system to automatically extract information nuggets from microblogging messages during disaster times. The system utilized state-of-the-art machine learning techniques to classify messages into set of fine-grained classes and to extract short self-contained structured information that could be leveraged for complex data analysis and integration beyond plain text. The system was tested on a real-world disaster-related dataset consisting of hundreds of thousands of microblogging messages. The training data for their machine learning techniques was generated using crowdsourcing and our techniques were then evaluated on the same dataset.
+
+Results:
+The results of the experiments showed that indeed machine learning could be utilized to extract structured information nuggets from unstructured text-based microblogging messages with good precision and recall. Althoug the accuracy varies from category to category.
+
+Assumptions:
+They assume that from each tweet, only one possible piece of information (of certain)type was extracted from the tweet. They also made an assumption that all informative messages share some common syntactical features.
+
+Synthesis:
+This is a stringent paper which presented a well-proven methodology of extraction and classification of social media during disasters. There are still some points to give a deeper thought. Instead train and test on the same dataset, they may try more datasets on different kinds of disaster. Also, they could improve the method via dealing with tweets in multiple categories.
+
+Related Papers:
+Anderson, C. (2012) Japan Earthquake Social Media Coverage: Disaster By The Numbers: he researched the information on Mashable and tried to look into the volume of data stream during the disaster and the hot topics.
+Mathioudakis, M. and N, Koudas. (2010) Twittermonitor: trend detection over the twitter stream.: they presented a moniter on twitter stream to detect emerging topics on twitter in real time and provided meaningful analytics that synthesized an accurate description of each topic.
