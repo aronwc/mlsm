@@ -9,3 +9,10 @@ People are able to get helpful information through extracting the social media w
 
 Data:
 The dataset consists of 206,764 unique tweets posted during the Joplin 2011 tornado that struck Joplin, Missouri in the late afternoon of Sunday, May 22, 2011. T. These tweets came from monitering on the Twitter Streaming API using the hashtag #joplin a few hours after the tornado hit. This monitoring process continued until the number of tweets about the tornado became particularly sparse.
+
+Experiments:
+In this paper, they presented a system to automatically extract information nuggets from microblogging messages during disaster times. The system utilized state-of-the-art machine learning techniques to classify messages into set of fine-grained classes and to extract short self-contained structured information that could be leveraged for complex data analysis and integration beyond plain text. The system was tested on a real-world disaster-related dataset consisting of hundreds of thousands of microblogging messages. The training data for their machine learning techniques was generated using crowdsourcing and our techniques were then evaluated on the same dataset.
+
+Results:
+The results of the experiments showed that indeed machine learning could be utilized to extract structured information nuggets from unstructured text-based microblogging messages with good precision and recall. Althoug the accuracy varies from category to category.
+
