@@ -15,7 +15,12 @@ The dataset consists of tweets posted during the Joplin 2011 tornado that struck
 
 #Experiments
 ##Filtering
-*
+* Is the tweet disaster-related?
+* Does the tweet contributes to situational awareness?
+The filter will select the tweets whose answers are "Yes"s to above two questions.      
+These selected tweets will be the training data.      
+      
+##Classification
 
 
 #Results
