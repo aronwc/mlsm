@@ -42,7 +42,13 @@ Features:
 
 
 #Results
+Extraction Evaluation:      
+* Training 2/3 Joplin and testing 1/3 Joplin get recall of 0.78 and precision of 0.9
+* Training 2/3 Sandy and testing 1/3 Sandy get recall of 0.41 and precision of 0.79
+* Training Joplin and testing Sandy get recall of 0.11 and precision of 0.78
+* Training Joplin plus 10% Sandy and testing 90% Sandy get recall of 0.21 and precision of 0.81
 
+The results of our experiments show that indeed machine learning can be utilized to extract structured information nuggets from unstructured text-based microblogging messages with good precision and recall.
 
 
 #Assumptions
