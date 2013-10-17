@@ -2,7 +2,7 @@
 They describe automatic methods for extracting information from microblog posts and focus on extracting valuable “information nuggets”, brief, self-contained information items relevant to disaster response.
 
 #Algorithm
-* hehe 
+They differentiate the tweets into two categories: Personal Only and Informative. Their designed filter is used to only select informative messages. After filtering, they use these tweets to train the classfiers manually. At last they use the well-trained classfiers to extract information automaticly.
 
 
 #Hypothesis
@@ -14,7 +14,8 @@ The dataset consists of tweets posted during the Joplin 2011 tornado that struck
 
 
 #Experiments
-
+##Filtering
+*
 
 
 #Results
