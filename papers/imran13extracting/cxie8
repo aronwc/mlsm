@@ -1,0 +1,55 @@
+Overview:
+In this paper, they design a system for automatically detecting and extracting information nuggets from disaster-related 
+messages and the system output consists of information nuggets, brief, self-contained pieces of information most likely 
+to augment situational awareness.
+
+Algorithm:
+Their system utilizes state-of-the-art machine learning techniques to classify messages into set of fine-grained classes 
+and to extract self-contained structured information that can be leveraged for complex data analysis and integration 
+beyond plain text.
+
+Hypothesis:
+Twitter can be helpful for disaster-affected communities and professional emergency responders to process the informatio
+n during crises.
+
+Data:
+The dataset consists of tweets posted during the Joplin 2011 tornado that struck Joplin, Missouri in the late afternoon 
+of Sunday, May 22, 2011. 206,764 unique tweets were selected by monitoring the Twitter Streaming API using the hashtag 
+#joplin a few hours after the tornado hit.
+
+Experiments:
+·manual classification and extraction with crowdsourcing
+1. filtering informative messages
+2. classifying messages by type
+3. classifying messages by sub-type and extracting information nuggets
+·automatic classification and extraction with machine learning
+1.use a set of multi-label classifiers to automatically classify a tweet into one or more of the classes identified in 
+the previous section
+2. solve three classification problems and get information extraction
+
+Results:
+Indeed machine learning can be utilized to extract structured information nuggets from unstructured text-based microblog
+ging messages with good precision and recall.
+
+Assumption:
+They can gain insight on how dataset tailored the techniques should be by testing the techniques on different disaster
+-related datasets.
+
+Synthesis:
+I still have doubt about the accuracy of the automatic system. Because they use a previous dataset, in which the unreal 
+messages may have been cleaned up. When  a disaster is happening, there must be a lot of unreal messages that the 
+Twitter system cannot clean up immediately. Therefore, if the automatic system begins to work while the disaster is 
+happening, it may not do the information extraction perfectly.
+
+Related papers:
+1. Kireyev, K., Palen, L., & Anderson, K. (2009, December). Applications of topics models to analysis of disaster
+-related twitter data. In NIPS Workshop on Applications for Topic Models: Text and Beyond (Vol. 1).
+They use Topics models to analysis the disaster-related Twitter data. They experiment with Topics-based clustering and 
+visualization, corpus selection, term weighting, as well as a new techniques called dynamic corpus refinement.
+
+2. Toriumi, F., Sakaki, T., Shinoda, K., Kazama, K., Kurihara, S., & Noda, I. (2013, May). Information sharing on 
+Twitter during the 2011 catastrophic earthquake. In Proceedings of the 22nd international conference on World Wide Web 
+companion (pp. 1025-1028). International World Wide Web Conferences Steering Committee.
+They collected data before and during the Great East Japan Earthquake, then concluded that social media users changed 
+their behavior to widely diffuse important information and decreased non-emergency tweets to avoid interrupting critical 
+information.
