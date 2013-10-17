@@ -30,9 +30,15 @@ for each of the four types, workers classified a message by sub-type. In additio
 
 #####Automatic Classification
 Features:
+* Binary - hashtags, URL, emotions, etc.
+* Scalar - tweet length
+* Text feature - Unigram, bigram, POS tags, Verbnet, etc.
 
-
-
+###Extraction
+* Caution and Advice Nuggets
+* Casualty and Damage Nuggets
+* Donation and Offer Nuggets
+* Information Source Nuggets
 
 
 #Results
