@@ -2,11 +2,11 @@
 They describe automatic methods for extracting information from microblog posts and focus on extracting valuable “information nuggets”, brief, self-contained information items relevant to disaster response.
 
 #Algorithm
-
+* hehe 
 
 
 #Hypothesis
-
+Given the importance of on-topic tweets for time-critical situational awareness, disaster-affected communities and professional responders may benefit from using an automatic system to extract relevant information from the Twitter.
 
 
 #Data
