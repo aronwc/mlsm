@@ -52,7 +52,7 @@ The results of our experiments show that indeed machine learning can be utilized
 
 
 #Assumptions
-
+They assume that testing their techniques on different disaster-related datasets maybe gain insight on how dataset tailored our techniques should be. 
 
 
 #Synthesis
