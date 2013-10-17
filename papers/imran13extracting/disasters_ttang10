@@ -16,3 +16,12 @@ In this paper, they presented a system to automatically extract information nugg
 Results:
 The results of the experiments showed that indeed machine learning could be utilized to extract structured information nuggets from unstructured text-based microblogging messages with good precision and recall. Althoug the accuracy varies from category to category.
 
+Assumptions:
+They assume that from each tweet, only one possible piece of information (of certain)type was extracted from the tweet. They also made an assumption that all informative messages share some common syntactical features.
+
+Synthesis:
+This is a stringent paper which presented a well-proven methodology of extraction and classification of social media during disasters. There are still some points to give a deeper thought. Instead train and test on the same dataset, they may try more datasets on different kinds of disaster. Also, they could improve the method via dealing with tweets in multiple categories.
+
+Related Papers:
+Anderson, C. (2012) Japan Earthquake Social Media Coverage: Disaster By The Numbers: he researched the information on Mashable and tried to look into the volume of data stream during the disaster and the hot topics.
+Mathioudakis, M. and N, Koudas. (2010) Twittermonitor: trend detection over the twitter stream.: they presented a moniter on twitter stream to detect emerging topics on twitter in real time and provided meaningful analytics that synthesized an accurate description of each topic.
