@@ -22,14 +22,14 @@ The filter will select the tweets whose answers are "Yes"s to above two question
 These selected tweets will be the training data.      
 
 ###Classification
-*Classifying Messages By Type:
+* Classifying Messages By Type:
 1,233 messages were examined and each was assigned an appropriate label from five categories - Caution and advice/ Casualties and damage/ Donations of money, goods or services/ People missing, found, or seen/ Information source. They created 62 gold standard messages for this task, equally distributed among the categories.
 
-*Classifying Messages By Sub-Type and Extracting Information Nuggets:
+* Classifying Messages By Sub-Type and Extracting Information Nuggets:
 for each of the four types, workers classified a message by sub-type. In addition, they were also asked to extract a sub-string from the message that made them come to this conclusion.
 
-*Automatic Classification
-**Features:
+* Automatic Classification
+** Features:
 
 
 
