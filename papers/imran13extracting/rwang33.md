@@ -56,7 +56,15 @@ The results of our experiments show that indeed machine learning can be utilized
 
 
 #Synthesis
-
+* Machine learning software can be provided as a service such as Google Prediction API.
+* Can we provide crisis-related tweet classification as a service? Maybe we can collect tweets automaticly, reuse ontologies or default training set.
 
 
 #Related papers
+[Chatter on The Red: What Hazards Threat Reveals about the Social Life of Microblogged Information](https://www.cs.colorado.edu/~palen/chatter_on_the_red.pdf)      
+      
+This paper considers a subset of the computer-mediated communication (CMC) that took place during the flooding of the Red River Valley in the US and Canada in March and April 2009. They identified mechanisms of information production, distribution, and organization. They examine the social life of microblogged information, identifying generative, synthetic, derivative and innovative properties that sustain the broader system of interaction.      
+      
+[“Respectfully Yours in Safety and Service”: Emergency Management & Social Media Evangelism](http://www.iscram.org/ISCRAM2010/Papers/152-Latonero_etal.pdf)      
+      
+In this paper they consider how emergency response organizations utilize available social media technologies to communicate with the public in emergencies and to potentially collect valuable information using the public as sources of information on the ground.
