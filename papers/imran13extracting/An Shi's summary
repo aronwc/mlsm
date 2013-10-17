@@ -1,0 +1,75 @@
+Overview
+
+·         This Paper developed a system to automatically extract information nuggets from microblogging messages during disaster times.
+
+Algorithm
+
+·         The authors use CrowdFlower to label the training data set, a small part of which is the gold standard data.
+
+·         They use these labeled data set to train different classifiers.
+
+·         They also use different packages and trained classifier to extract useful information nuggets from Twitter.
+
+Hypothesis
+
+·         This is no clear hypothesis in this paper, but according what they are doing in this paper, one hypothesis may be that machine learning can be utilized to extract structured information nuggets from unstructured text-based microblogging messages with good precision and recall.
+
+Data
+
+·         The Twitter data used was published during the Joplin 2011 tornado that struck Joplin, Missouri in May 22, 2011.
+
+·         206,764 unique tweets were selected by Twitter Streaming API.
+
+·         A total number of 4,406 tweets sample selectly random from the Joplin dataset was set to be labeled by CrowdFlower workers.
+
+Experiments
+
+There should be basically three types of experiments: (1) Label the tweets by CrowdFlower workers and assess the quality; (2) Train the classifiers; (3) Extract useful information.
+
+1. Label the tweets and assess the quality
+
+·         Filter informative messages.
+
+·         Classify messages by type.
+
+·         Classify messages by sub-type and extracting information nuggets.
+
+·         Assess the quality of the classification in different aspects.
+
+2. Train the classifiers
+
+·         Filter informative messages.
+
+·         Identify eye-witness tweets.
+
+·         Classify informative tweets into caution, donation, casualty or information source.
+
+3. Extract useful information
+
+·         Useful information was extracted from caution, donation, casualty or information source tweets.
+
+Results
+
+·         All the tweets was successfully classified and the inter annotator agreement value shows moderate to high level of agreement among workers on an assessable unit.
+
+·         The classifiers were successfully built and they have high AUC and precition.
+
+·         Useful information can be extracted from the tweets, some of them with high hit ratio while others not.
+
+Assumptions
+
+·         There are no obvious assumption, one may be that the CrowdFlower results are reliable and can be trusted.
+
+Synthesis
+
+·         One thing that I think can be changed is the filtering of informative messages, since the authors are only interested in the informative messages, there’s no need to classify whether it is a personal messsage or other type. We can just group them into non-informative.
+
+·         Another experiment can be done is that get some tweets from real event other than the Joplin 2011 tornado, like those in other papers, and test the classifiers and information extractor to see how is the system doing. It will be very important whether it can be expanded to other type of disaster or not.
+
+Related papers
+
+·         Vieweg, S., A.L. Hughes, K. Starbird, and L. Palen. (2010) Microblogging during two natural hazards events: what twitter may contribute to situational awareness. In Proceedings of the 28th international conference on Human factors in computing systems, 1079-1088. The authors studied what twitter can do to provide situational awareness information during two natural hazards events. It is similiar to this paper.  
+
+·         Kongthon, A., Haruechaiyasak, C., Pailai, J. and S. Kongyoung. (2012) The Role of Twitter During a Natural Disaster: Case Study of 2011 Thai Floods. 2012 PICMET, Technology Management for Emerging Technologies. The authors developed classifiers to analyze tweets from the Thailand floods in 2011.
+
+ 
