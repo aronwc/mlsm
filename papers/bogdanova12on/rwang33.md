@@ -3,7 +3,10 @@ In this paper, they have suggested a list of high-level features, including sent
 
 
 #Algorithm
-
+They formulate the problem of detecting pedophiles
+in social media as the task of binary text categoriza
+tion: given a text (a set of chat lines), the aim is to
+predict whether it is a case of cyberpedophilia or not.
 
 
 #Hypothesis
