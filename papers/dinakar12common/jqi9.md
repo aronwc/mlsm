@@ -1,5 +1,5 @@
 ####Overview####
-    This paper is talking about a serious social problem, cyber bully, it doesn’t just about machine learning algorithm, it likes a general scientific article, there are a lot of sociology definitions and details introduced by authors, and not only designing detect algorithms but also giving several solutions for the problem.
+This paper is talking about a serious social problem, cyber bully, it doesn’t just about machine learning algorithm, it likes a general scientific article, there are a lot of sociology definitions and details introduced by authors, and not only designing detect algorithms but also giving several solutions for the problem.
 ####Algorithm####
 For detect cyber bully: 
 1)	Statistical Machine Learning Techniques: they choose three types of supervised learning algorithms in addition to Naive Bayes from the toolkit, a rule-based learner, a tree-based learner, and support-vector machines.
