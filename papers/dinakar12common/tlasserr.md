@@ -27,24 +27,24 @@ Two datasets are used:
 
 - E1: binary classifier were trained on each the three datasets for each of the three labels: sexuality, race and culture, and intelligence to predict if a given instance belonged to a label or not. The three datasets were combined to form a new dataset for the purpose of training a multiclass classifier using the aforementioned methods. The labels assigned by the models are compared against the labels that were assigned to the instances during annotation.
 - E2: Similarity metrics are generated for each instances with canonical concepts “girls” and “boys” to evaluate common sense reasoning models.
-- E3:  Evaluation of reflective use interface
+- E3:  Evaluation of reflective user interface
 
 ####Results####
 
--  E1 shows that multiclass classifiers underperformed compared to binary classifiers. In terms of accuracy, JRip was the best, although the kappa values were best with SVM. SVM’s high kappa values suggest better reliability for all labels. Naive Bayes classifiers for all labels perform much better than J48.
+- E1 shows that multiclass classifiers underperformed compared to binary classifiers. In terms of accuracy, JRip was the best, although the kappa values were best with SVM. SVM’s high kappa values suggest better reliability for all labels. Naive Bayes classifiers for all labels perform much better than J48.
 - E2 : about 72% of accuracy.
 - E3 shows that static help could be used as n intermediate step to provide and-users with support.
 
-####Assumptions#### 
+####Assumptions####
 
 - Computation detection of cyberbullying must address both the explicit and direct forms of abuse, as well as the subtler, indirect ways of insulting an individual.
--  Specific features can be used to predict the label or the subject (sexuality, race and culture, and intelligence).
--  It is specificity and uniqueness that matter the most for effective interaction analysis.
+- Specific features can be used to predict the label or the subject (sexuality, race and culture, and intelligence).
+- It is specificity and uniqueness that matter the most for effective interaction analysis.
 
 ####Synthesis####
 
 - The use of the Open Mind Common Sense Knowledge Base can be helpful but can it really detect irony? Irony can be misclassified. 
--  I think it will be difficult to classify comparisons as bullying or not. It depends of the context. 
+- I think it will be difficult to classify comparisons as bullying or not. It depends of the context. 
 - Some people are more sensitive to bullying than others. Some will not be affected by this.
 
 ####Related Papers####
