@@ -3,10 +3,8 @@
 
 ####Algorithm ####
 - A number of natural language processing techniques are used for cyberbullying detection
- - Machine learning technique:
-  - Naïve Bayes, rule-based learner, tree-based learner, SVM
- - The open mind common sense knowledge base:
-  - ConceptNet
+ - Machine learning technique: Naïve Bayes, rule-based learner, tree-based learner, SVM
+ - The open mind common sense knowledge base: ConceptNet
  - AnalogySpace inference technique
  - Blending knowledge combination technique
 
