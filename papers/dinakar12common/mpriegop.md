@@ -53,6 +53,7 @@ For common sense models:
 - Small dataset, much more of 1500 Youtube comments could have been picked up from that web site making the research and their assumptions stronger.
 - I would have implemented this in a large-scale user community, without selecting previously the comments. 
 - Maybe it could have been a good idea merging the two models, common sense and machine learning somehow. This imply a steady research but it could have been very interesting.
+- Some results does not look like very good, like common sense models
 
 # Solution
 For the cyberbullying detected they proposed some kind of strategies for solving this issue:
@@ -66,4 +67,7 @@ For the cyberbullying detected they proposed some kind of strategies for solving
 After performing some experiments with Fakebook they assumes that targeted help is more appropiate.
 
 # Related papers
-
+- Ptaszynski, M., Dybala, P., Matsuba, T., Masui, F., Rzepka, R., & Araki, K. (2010). [Machine learning and affect analysis against cyber-bullying.](http://s3.amazonaws.com/academia.edu.documents/30944499/AISB_Cyberbullying.pdf?AWSAccessKeyId=AKIAIR6FSIMDFXPEERSA&Expires=1382463307&Signature=FOK5ogpR%2BLzjyZutP%2FAPIvNHOjg%3D&response-content-disposition=inline) the 36th AISB, 7-16.
+  - This research looks like more realistic and concise, it does not digress that much. They focus on using machine learning methods to detect cyberbullying. Results were not ideal but encouraging. They used other features like vulgarities and mimetic expressions, ironic expressions.
+- McGhee, I., Bayzick, J., Kontostathis, A., Edwards, L., McBride, A., & Jakubowski, E. (2011). [Learning to identify Internet sexual predation.](http://mesharpe.metapress.com/media/h8phxpuqvlhh19vhhl5x/contributions/m/2/0/8/m208w2x7624v623n.pdf) International Journal of Electronic Commerce, 15(3), 103-122.
+  - They performed machine learning algortihms to detect sexual predation and found out that neither decision trees nor instance-based learning algorithms were able to significantly improve upon the 68 percent accuracy that they were able to achieve with rule-based methods. So, they reached to results similar to our paper.
