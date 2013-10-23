@@ -1,0 +1,13 @@
+Overview
+This paper used machine learning method to extract high-level and low level-features from chat context and trained a model to automaticaly monitor cyberpedophilia.
+
+Algorithms:
+high-level features: including sentiment and emotion based ones;
+low-level features: big-of-words, term bigrams, term trigrams, character-bigrams, character-trgrams;
+Naive Bayes;
+Support Vector Machine.
+
+Hypothesis:
+Due to the instability of online sexual predators, sentiments and emotions in texts could be a good clue to detect online sexual predation.
+Pedophiles’ personality tends to be with feelings of inferiority, isolation, loneliness, low self-esteem and emotional immaturity.
+
