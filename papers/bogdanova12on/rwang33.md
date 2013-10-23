@@ -37,5 +37,19 @@ predict whether it is a case of cyberpedophilia or not.
 
 #Related papers
       
+[SENTIWORDNET 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining](http://www.esuli.it/wp-content/uploads/2011/07/LREC10.pdf)        
+            
+In this work they present SENTIWORDNET 3.0, a lexical resource explicitly devised for supporting sentiment classiﬁcation and opinion mining applications.          
+            
+[Using Lexical Chains for Text Summarization](http://acl.ldc.upenn.edu/W/W97/W97-0703.pdf)         
+                
+They investigate one technique to produce a summary of an original text without requiring its full semantic interpretation, but instead relying on a model of the topic progresston in the text derived from lexical chains. They present a new algorithm to compute lexical chains in a text, merging several robust knowledge sources the WordNet thesaurus, a part-of-speech tagger and shallow parser for the identification of nominal groups, and a segmentation algorithm dernved from (Hearst, 1994).                
+                      
+[Modelling Fixated Discourse in Chats with Cyberpedophiles](http://aclweb.org/anthology/W/W12/W12-0413.pdf)            
+                     
+In this paper they compute sexrelated lexical chains spanning over the conversation. Their study shows a considerable variation in the length of sex-related lexical chains according to the nature of the corpus, which supports our belief that this could be a valuable feature in an automated pedophile detection system.
+
+
+
 
 
