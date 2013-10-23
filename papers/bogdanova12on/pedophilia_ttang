@@ -11,3 +11,23 @@ Hypothesis:
 Due to the instability of online sexual predators, sentiments and emotions in texts could be a good clue to detect online sexual predation.
 Pedophiles’ personality tends to be with feelings of inferiority, isolation, loneliness, low self-esteem and emotional immaturity.
 
+Data:
+They downloaded the cybersex chat logs available at www.oocities.org/urgrl21f/. The archive contains 34 one-on-one cybersex logs. They had separated lines of different authors, thereby obtaining 68 files.
+They had also used the subset the of NPS chat corpus and extracted chat lines only for those adult authors who had more than 30 lines written. Finally the dataset consisted of 65 authors. From each dataset we had left 20 files for testing.
+
+Experiments:
+They used Naive Bayes classifer to distinguish predators from not predators. Then they made use of sentNetWord and features borrowed from McGhee. They use these high-level features as well as low-level features to train Naive Bayes Classifers and analyzed the results from different classifications.
+
+Results:
+The Naive Bayes classification based on high-level features achieved 90% and 94% accuracy when using NPS chat corpus and the cybersex chat logs as a negative dataset respectively, whereas low-level features achieve only 42%-72% and 48%-58% accuracy on the same data.
+
+Assumptions:
+The chat content between onlie predators and faked-child has the same features with the real ones.
+Chat pattern on this website is also applicable on other social media websites.
+
+Synthesis:
+This paper showed a feasible way to detect online sexual predators and the reuslts gave a very high accuracy on Naive Bayes classifier based on high-level features. But they only had datasets from two differnt website and tested them separately. Although the number of accuracies are beyond 90%, will it achieve the same accuracy for a new dataset from another website?
+
+Related Papers:
+McGhee, Jennifer Bayzick, April Kontostathis, Lynne Edwards, Alexandra McBride and Emma Jakubowski. Learning to identify Internet sexual predation: they described a progress on an ongoing project that integrated both communication theories and computer science algorithms to create a program that could detect the occurrence of sexual predation in an online social setting.
+Peersman, C., Vaassen, F., Van Asch, V., Daelemans, W.: Conversation Level Constraints on Pedophile Detection in Chat Rooms: they presented a new approach for detecting online pedophiles in chat rooms that combines the results of predictions on the level of the individual post, the level of the user and the level of the entire conversation, and described the results of this three-stage system in the PAN 2012 competition. Also, they described a resampling and a filtering strategy to circumvent issues regarding the unbalanced dataset. Finally, they described the creation of a dictionary of words and expressions relating to predators’ grooming stages, which they used to identify which posts in the predators’ conversations were most distinctive for their grooming behavior.
