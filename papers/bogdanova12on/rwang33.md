@@ -17,22 +17,25 @@ predict whether it is a case of cyberpedophilia or not.
 * We have extracted chat lines only for those adult authors who had more than 30 lines written. Finally the dataset consisted of 65 authors. From each dataset we have left 20 files for testing.
 
 #Experiments
-
-
+1. To make the experimental data more balanced, we have created 5 subsets of PJ corpus, each of which contained chat lines from 60 randomly selected predators.
+2. In order to prevent the classification algorithm from learning to distinguish this author from pedophiles, they used the author, which half of the chat sessions belong to him, for training, and the rest for testing.
+3. For comparison purposes, they trained naive Bayes classifiers using word level unigrams, bigrams and trigrams. They also trained naive Bayes classifiers using character level bigrams and trigrams.
 
 #Results
-
-
+* The high-level features outperform all the low-level ones in both the cybersex logs and the NPS chat datasets and achieve 94% and 90% accuracy on these datasets respectively.
+* Except for the character bigrams, all low-level features considered indeed work worse in case of cybersex logs.
+* Low-level features do not work as good as we expected in case of the NPS chat dataset: bag of words provides only 61% accuracy.
+* The high-level features yield a lower accuracy (90% accuracy) on the PJ-NPS dataset than in the case of PJ-cybersex logs (94% accuracy).
 
 #Assumptions
 
 
 
 #Synthesis
-
-
+* From this paper, I think we can further investigate the misclassified data. The feature extraction they have implemented does not use any word sense disambiguation. We can employ word sense disambiguation techniques during the feature extraction phase.
+* Since high-level features and low-level features have different merit and demerit, we can try to merge low-level and highlevel features in order to see if this could improve the results.
 
 #Related papers
-
+      
 
 
