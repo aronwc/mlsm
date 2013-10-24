@@ -1,0 +1,48 @@
+Overview
+·         This Paper created and combined a list of high-level features to detect pedophiles with natural language processing techniques and got results with high accuracy.
+
+Algorithm
+·         The authors creates and borrowed a list of high value features to carry out the experiment. Those features includes emotional markers, features borrowed from McGhee et al. (2011), features helpful to detect neuroticism level, features derived from pedophile’s psychological profile and some others.
+
+·         They used SentiWordNet (Baccianella et al., 2010) to extract positive and negative words.
+
+·         They trained naive Bayes classifiers using high-level features, word level unigrams, bigrams, trigrams, character level bigrams and trigrams.
+
+Hypothesis
+·         Features of the emotional markers, such as feelings of inferiority, isolation, loneliness, low self-esteem and emotional immaturity could be used to detect pedophiles since they always have a certain degree of emotional instability.
+
+Data
+·         The positive data are extracted from website www.pervertedjustice.com, leaving only the chat lines written by predators.
+
+·         The negative data are part from cybersex chat logs www.oocities.org/urgrl21f/. They were able to obtain 68 files.
+
+·         The other part of negative data are the subset of NPS chat corpus (Forsythand and Martell, 2007), which consisted of 65 authors with at least 30 lines written.
+
+Experiments
+·         The naive Bayes classifiers was trained by using high-level features, word level unigrams, bigrams, trigrams, character level bigrams and trigrams.
+
+Results
+·         The high-level features are better than all the low-level ones in both the cybersex logs and the NPS chat data sets in terms of 94% and 90% accuracy on these datasets.
+
+·         All low-level features except for the character bigrams shows higher accuracy when using NPS chat corpus than cybersex chat logs, since the cybersex one share the same vocabulary with the Perverted Justice data, while the NPS data generally is not sex-related.
+
+·         The low-level features of NPS data does not give high accuracy as expected.
+
+Assumptions
+·         The data from Perverted Justice, which are created by chatting between predators and volunteers pretended to be juveniles, can be considered as representatives of the real world online chats between pedophiles and young people.
+
+Synthesis
+·         Through the accuracy for the high-level features are high enough, one experiment the authors can easily do is to combine the high-level features with one or some of the low level features to see if they can get higher accuracy. The low level features cannot give a high accuracy themselves, but they may increase the accuracy of the combined ones if the right feature(s) are chosen.
+
+·         A better negative data set can be chats between adult and young people, and chats among young people, theses chats are just ordinary everyday chats between them. It is better than the NPS data set since it is even closer to the positive data set, since these chats may use words that similar to the positive data set in some part, so it increases the difficulty of classifying them, which is also more import to do.
+
+Related papers
+·         Nick Pendar. Toward spotting the pedophile: Telling victim from predator in text chats. In Proceedings of the International Conference on Semantic Computing, pages 235–241, Irvine, California, 2007. The author separated the chats written by pedophiles from those written by volunteers and used a kNN classifier based on word n-grams to distinguish between them. The same idea was also used by this paper.
+
+·         India McGhee, Jennifer Bayzick, April Kontostathis, Lynne Edwards, Alexandra McBride and Emma Jakubowski. Learning to identify Internet sexual predation. International Journal on Electronic Commerce 2011. The authors evaluated and categorized the strategies used by online sexual predators in their attempts to develop relationships with children using the Internet. Some of the features was borrowed by this paper.
+
+·         Claudia Peersman, Walter Daelemans, and Leona Van Vaerenbergh. Predicting age and gender in online social networks. In Proceedings of the 3rd Workshop on Search and Mining User-Generated Contents, 2011. The author analyzed and categorized text to predict age and gender on chats from Netlog.
+
+ 
+
+ 
