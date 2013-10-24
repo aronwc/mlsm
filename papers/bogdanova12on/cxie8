@@ -1,0 +1,65 @@
+Overview:
+They have suggested a list of high-level features, including sentiment and emotion based ones, for experiments on 
+detecting pedophiles in social media with a binary classification by analyzing a corpus of predators’ chats from perverted
+-justice data and two negative datasets of different nature: cybersex chat logs and NPS chat corpus.
+
+Algorithm:
+Naïve Bayes Classifier(to distinguish between predators and not predators)
+
+Hypothesis:
+·The list of features they suggest could be used to discriminate pedophiles from non-pedophiles.
+·Low-level features could provide better results on NPS data than cybersex logs.
+
+Data:
+·5 subsets of chat logs from the perverted-justice website, each of which contained chat lines from 60 randomly selected 
+predators(here they considered only the chat lines written by predators since victim is not real)
+·34 one-on-one cybersex logs available at www.oocities.org/urgrl21f/ (here they separated lines of different authors and 
+obtained 68 files)
+·subset of NPS chat corpus(here they extracted chat lines only for those adult authors who had more than 30 lines written 
+and got 65 authors)
+·from each dataset they left 20 files for testing
+
+Experiments:
+·They created 5 subsets of PJ data to make the experimental data more balanced
+·They used the author who wrote half of the chat sessions for training and the rest for testing
+·They experimented with several baseline systems using low-level features based on n-grams at the word and character level
+·They used Naïve Bayes classification applied to PJ-cybersex logs, PJ-NPS dataset
+
+Results:
+·The high-level features outperform all the low-level ones in both the cybersex logs and the NPS chat dataset and achieve 
+94% and 90% accuracy on these datasets respectively, whereas low-level features achieve only 48-58% and 42-72% accuracy on 
+the same data
+·The high-level features yield a lower accuracy(90% accuracy) on PJ-NPS dataset than in case of PJ-cybersex logs(94% 
+accuracy)
+·All low-level features provide better results than on the NPS data than the cybersex logs except for the character 
+bigrams
+·In case of NPS chat dataset, bag of words only provides 61% accuracy and character trigrams provide the highest accuracy 
+of 72% among the low-level features, which is still much lower than the high-level ones’ accuracy of 90%
+
+Assumptions:
+·Distinguishing cyberpedophiles is a harder task in case of cybersex logs than in case of the NPS data
+·The NPS logs misclassified with the high-level features are more similar to cyberdopephiles training data than the 
+training data of the NPS corpus
+
+Synthesis:
+Some points I think might be investigated for further research as follow
+·to extract words with word sense disambiguation techniques
+·to see whether merging low-level and high-level features could improve the accuracy 
+·to explore the impact of each high-level features in order to see if simplification of the features
+·to explore the minimum amount of training data needed
+·to test the accuracy of these high-level features by using other datasets
+
+Related papers:
+1. Morris, C. (2013). Identifying Online Sexual Predators by SVM Classification with Lexical and Behavioral Features.
+They present a method for picking out sexual predators from a collection of online chats, and for identifying messages 
+which are suggestive of predatory behavior. They found that while the lexical features and postprocessing were mutually 
+helpful, their behavioral features failed to add significant discriminative power. However, a classifier trained on these 
+features alone performed well above baseline.
+
+2. Panchenko, A., Beaufort, R., Naets, H., & Fairon, C. (2013). Towards detection of child sexual abuse media: categorizat
+ion of the associated filenames. In Advances in Information Retrieval (pp. 776-779). Springer Berlin Heidelberg.
+They present a system for filename categorization, which is trained to identify suspicious files on P2P networks. In their 
+initial experiments, they used regular pornography data as a substitution of child pornography. Their system separates 
+filenames of pornographic media from the others with an accuracy that reaches 91–97%.
+
+
