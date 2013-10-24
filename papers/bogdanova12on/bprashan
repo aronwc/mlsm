@@ -1,0 +1,30 @@
+Overview: Write a short paragraph summarizing the content of the paper.
+This paper tries to identify chat threads of emotionally unstable pedophiles, or online sexual predators. It tries to identify a certain set of feature set based on several other similar other research papers based on the same source data. 
+
+Algorithm: Describe in more detail the primary algorithm proposed or applied in the paper.
+Naive Bayes classification algorithm on several data set/features.
+
+Hypothesis: List the hypotheses the authors test in the paper (note that these are not always explicitly stated).
+In the problem of identifying pedophiles, choosing to look for sexually active words or the identify the age of a person, might generally fail, and instead, going behind the emotionally weak personality behind of the pedophile helps.
+
+Data: Describe the data used in the experiments
+Chat threads from Perverted Justice .com , Chat threads from NPS and Chat threads from Geocits for explicit, mutually accepted adult to adult communication.
+They identify single and multiple predators, with about 60 lines of chat content.
+
+Experiments: Briefly describe how are the experiments are organized.
+They pick words built features in multiple papers, and rationalize their choices.
+They run the Naive Bayes model on all of the data sets and feature lists. 
+
+Results: Describe the results and their significance.
+Higher level emotional analysis do work in identify a predator/ pedophile. 
+But low level details, that try to classify based on the offensive list bigrams etc. do not work as well in picking predators.At best ~60 percent success. 
+
+Assumptions: List some of the important assumptions the authors make in their work.
+Though the test bed was from known perverted justice website, I am not sure, how many of those chosen for the test were dealing with people with different emotional background. 
+They d discuss pedophiles to be of 5 kinds, and in this paper try to find only 2. 
+I am not sure how successful they were in identifying all known emotions with respect to a pedophile. They play with a limited data set of known predators. they expect PJ to cover all emotions. I doubt that claim.
+ 
+Synthesis: Are there claims you disagree with? What would you do differently? What would you do next?
+They have poured in a lot of effort in analyzing and identifying the data set and feature set used for the classification. But, the feature set they described could have been better explained as to which set of the line they fall under. As to where they draw the line between a higher level of identification and lower level of classification.
+The use of kNN classification, could have been better explained in the paper. 
+I might run the analysis on a few other algorithms as well. They do claim that this works best.But with the data, running the tests, might have helped the case too. 
