@@ -25,13 +25,27 @@ each feature had at least 15,000 datapoints, and most had over 50,000.
 User results were clustered and corrlations between the Facebook features and personality
 results were explored. The authors used a t-test and MWW-test to test the significance
 of their results. They used miltivariate linear regression in experiments to test prediction
-of individuals personalities. The best accuracy for prediction of personality traits was
-for extraversion and neuroticism, with r-squared of .33 and .26.
+of individuals personalities.
 
 #### Result
 At a significance level of p < 1%, all correlations were found to be statistically significant.
+The best accuracy for prediction of personality traits was for extraversion and neuroticism, with r-squared
+of .33 and .26.
 
+#### Assumptions
+While they still had a lot of data points for each feature, they didn't really discuss which
+features had significantly more or less data points. I wondered if there was something about
+the personality traits and these features that was a confounding factor for which people
+made this data available.
 
 #### Synthesis
+The authors mention at the end of their paper the use of lower level features for this task.
+I think there would be value in seeing if using which groups certain types of people belong to,
+if they "like" the same types of things, etc., and if that can be used to more accurately predict
+personality types.
 
 #### Related Papers
+- Quercia, Daniele, et al. "Our Twitter profiles, our selves: Predicting personality with Twitter." Privacy, security, risk and trust (passat), 2011 ieee third international conference on and 2011 ieee third international conference on social computing (socialcom). IEEE, 2011.
+  - Uses Twitter data to predict similar personality measures.
+-  Ortigosa, Alvaro, Rosa M. Carro, and José Ignacio Quiroga. "Predicting User Personality by Mining Social Interactions in Facebook." Journal of Computer and System Sciences (2013).
+  - Examines user interactions with machine learning techniques to predict personality types.
