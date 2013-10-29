@@ -27,7 +27,7 @@ Multivariate linear regression with 10-fold cross validation is used to predict 
 - The users completed a standard Five Factor Model questionnaire.
 - Many Facebook users have incomplete profile information but there are at least 15,000 data points per feature and over 50,000 data points for most of the features.
 
-####Experimental####
+####Experimentals####
 
 - E1 correlate openness with number of user’s likes, group associations and status updates.
 - E2 correlates conscientiousness with number of likes, group membeship and uploaded photos.
@@ -46,7 +46,7 @@ Multivariate linear regression with 10-fold cross validation is used to predict 
 - E5 shows that neuroticism is positively related with the number of Facebook likes and slightly positively related with number of groups. Neuroticism is positively related with friends until 200 and after reaching this peak it decreases.
 - E7 shows that the best accuracy is achieved for extraversion and neuroticism, the lowest accuracy is obtained for agreeableness.
 
-####Assumptions#### 
+####Assumptions####
 
 People’s personality can be judged by the others based on their Facebook profiles, because it reflects the actual personality of its owner.
 
