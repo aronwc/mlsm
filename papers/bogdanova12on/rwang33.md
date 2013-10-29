@@ -8,8 +8,7 @@ tion: given a text (a set of chat lines), the aim is to
 predict whether it is a case of cyberpedophilia or not.
 
 #Hypothesis
-
-
+The list of features they suggest could be used to help the detection of sexual predation. 
 
 #Data
 * For our study, we have extracted chat logs from the perverted-justice website.
@@ -28,7 +27,9 @@ predict whether it is a case of cyberpedophilia or not.
 * The high-level features yield a lower accuracy (90% accuracy) on the PJ-NPS dataset than in the case of PJ-cybersex logs (94% accuracy).
 
 #Assumptions
-
+* Distinguishing cyberpedophiles is a harder task in case of cybersex logs than in case of the NPS data
+* The NPS logs misclassified with the high-level features are more similar to cyberdopephiles training data than the 
+training data of the NPS corpus
 
 
 #Synthesis
