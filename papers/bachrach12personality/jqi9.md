@@ -23,11 +23,7 @@
 -They should use it to combine with current reference system, not substitute them, different personality may cause same interests. 
 
 ####Related Paper####
--Who interacts on the Web?: The intersection of users’ personality and social
-
-3
-
-media use
+-Who interacts on the Web?: The intersection of users’ personality and social media use
 Teresa Correa, Amber Willard Hinsley, Homero Gil de Zúñiga 
 This paper mainly talked about what kind of person would like to interact with others on web, it is a good view for the paper above that not all the people would like to interact with people on web, it means that maybe their test data pool is not sufficient to analyze personality, they may all belong to a big group called “people like on line interactions”.
 
