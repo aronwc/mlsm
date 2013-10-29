@@ -2,7 +2,7 @@
 They correlate the properties of the Facebook profile and user's personality to see if with the first one you can predict the second one.
 
 # Algorithm
-- They took the results of a phychological test Facebook application, based on the big five personality model, called myPersonality.
+- They took the results of a psychological test Facebook application, based on the big five personality model, called myPersonality.
 - Examine profile features from two categories,  user’s actions and the actions of a user and their friends. 
   - Number of Facebook friends
   - Number of associations with groups
@@ -39,8 +39,8 @@ They correlate the properties of the Facebook profile and user's personality to 
 
 # Assumptions
 - Because of a 58% of women completed the application test, they spend more time on Facebook and that they are more interested in getting feedback on their personality. 58% is not a big deal.
-- 'One way to help alleviate these is to seek support from friends' Generally big phychological assumptions when they gave explanations to plot results.
-- The personality test were correctly answered by users and it is a reliable psychology model.
+- 'One way to help alleviate these is to seek support from friends' Generally big psychological assumptions when they gave explanations to plot results.
+- The personality test were correctly answered by users and it is a reliable psychological model.
 
 # Synthesis
 - It was difficult to find assumptions to this research. For example, they counted on a large dataset.
@@ -50,4 +50,9 @@ They correlate the properties of the Facebook profile and user's personality to 
 - Good points when they talked about future research.
 
 # Related papers
--
+- Quercia, D., Lambiotte, R., Stillwell, D., Kosinski, M., & Crowcroft, J. (2012, February). [The personality of popular facebook users.](http://dl.acm.org/citation.cfm?id=2145346) (pp. 955-964). In Proceedings of the ACM 2012 conference on Computer Supported Cooperative Work ACM.
+  - This paper is only based on one Fb feature (number of contacts), but make a deep research. It seems to make less assumptions with the psychological model.
+  - They got to predict the Extraversion.
+- Garcia, D., & Sikström, S. (2013). [The Dark Side of Facebook: Semantic Representations of Status Updates Predict the Dark Triad of Personality.](http://www.lunduniversity.lu.se/o.o.i.s?id=12683&postid=4053868) Personality and Individual Differences (PAID).
+  - Small dataset, 304 users.
+  - The focused on Psychopathy, Narcissism, Machiavellianism, Neuroticism and Extraversion. They reached to results for Neuroticism similar to these research's results.
