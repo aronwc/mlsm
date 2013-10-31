@@ -2,7 +2,7 @@ Overview
 - This paper is currently pursuing methods for “author profiling” in which various aspects of the author’s identity might be identified from a text, without necessarily having a corpus of documents from the same individual. 
 
 Algorithm
-- A key component of such an identity profile is personality; this paper addresses distinguishing high from low neuroticism and extraversion in authors of informal text. We consider four different sets of lexical features for this task: a standard function word list, conjunctive phrases, modality indicators, and appraisal adjectives and modifiers. SMO, a support vector machine learner, was used to learn linear separators for the high and low classes in each of the two tasks.
+- A key component of such an identity profile is personality; this paper addresses distinguishing high from low neuroticism and extraversion in authors of informal text. This paper considers four different sets of lexical features for this task: a standard function word list, conjunctive phrases, modality indicators, and appraisal adjectives and modifiers. SMO, a support vector machine learner, was used to learn linear separators for the high and low classes in each of the two tasks.
 
 Hypothesis
 -	The ways people spoke were related to their physical and mental health problems. With increasing computer advances, strides were made in attempting to capture psychological themes or people’s underlying emotional states that might be reflected in the words they used.
