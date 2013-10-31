@@ -1,6 +1,8 @@
 ####Overview####
 This paper proposes an algorithm to estimate the geographical coordinates of a tweet based on evidence from the message text and user profile.
 
+![image](image.png)
+
 ####Algorithm####
 A number of indicators are used to locate a tweet, including:
 - They use [DBPedia](http://dbpedia.org) to map words in the text to places with known geocoordinates (e.g., Fedex Field)

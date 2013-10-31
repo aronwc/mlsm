@@ -111,7 +111,29 @@ clf.fit(X, y)  # fit on all data
 top_indices = clf.coef_[0].argsort()[::-1] # sort in decreasing order
 # reverse the alphabet to map from idx->word
 vocab_r = dict((idx, word) for word, idx in vec.vocabulary_.iteritems())
-print 'female words\n:', '\n'.join(['%s=%.3f' % (vocab_r[idx], clf.coef_[0][idx]) for idx in top_indices[:10]])
+print 'female words:\n', '\n'.join(['%s=%.3f' % (vocab_r[idx], clf.coef_[0][idx]) for idx in top_indices[:20]])
 top_indices = clf.coef_[0].argsort() # sort in increasing order
-print '\n\nmale words:\n', '\n'.join(['%s=%.3f' % (vocab_r[idx], clf.coef_[0][idx]) for idx in top_indices[:10]])
+print '\n\nmale words:\n', '\n'.join(['%s=%.3f' % (vocab_r[idx], clf.coef_[0][idx]) for idx in top_indices[:20]])
+
+# <codecell>
+
+# Use PCA to reduce the dimensionality of X to only 2 dimensions,
+# then compute cross-validation accuracy of resulting data X2.
+from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
+X2 = pca.fit_transform(X.toarray())
+print 'first document with reduced representation'
+print X2[0]
+dim1 = pca.components_[0]
+print 'first PCA dimension (eigenvector):', dim1
+top_indices = dim1.argsort()[::-1]
+print 'top words of first dimension:\n', '\n'.join(['%s=%.3f' % (vocab_r[idx], dim1[idx]) for idx in top_indices[:20]])
+dim2 = pca.components_[1]
+print 'second PCA dimension (eigenvector):', dim2
+top_indices = dim2.argsort()[::-1]
+print 'top words of second dimension:\n', '\n'.join(['%s=%.3f' % (vocab_r[idx], dim2[idx]) for idx in top_indices[:20]])
+print 'avg accuracy using only 2 dimensions=%.3f' % np.average(cross_validation.cross_val_score(clf, X2, y, cv=5, scoring='accuracy'))
+
+# <codecell>
+
 

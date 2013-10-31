@@ -1,0 +1,47 @@
+Overview:
+In this paper the author suggested a list of high-level features including sentiment and emotion based ones that could
+help detecting online sexual predation. 
+
+Algorithm:
+Naïve Bayes Classifier to distinguish between predators and not predators. 
+By using sentiWordNet to extract positive and negative words.
+Baseline system was using low-level features.
+
+Hypothesis:
+Emotion-based features could help the detection of sexual predation. 
+They could obtain higher accuracy for the NPS chat by using all but character bi-grams. 
+
+Data:
+Chat logs from the perverted-justice website.
+Cybersex chat logs and the NPS chat corpus as the negative dataset. 
+The dataset consisted of 65 authors finally. 
+
+Experiments:
+They used Naïve Bayes classifier to distinguish between predators and not predators.
+They used SentiWordNet to extract positive and negative words. 
+To make the data balance, they created 5 subsets of PJ corpus and each contained chat lines from 60 randomly selected 
+predators.  
+They used only one author for training because his chatting line contain almost half of the chat sessions in cybersex 
+logs. 
+They used low-level features as the baseline and tested the high-level features. 
+
+Results:
+High-level features achieve much higher accuracy than low-level features in different dataset. 
+All low-level features considered work worse in case of cybersex logs except for character bigrams.
+Low-level features do not work as well as we expected in case of the NPS chat dataset.
+The high-level features have a better performance in the PJ-cybersex logs than PJ-NPS dataset. 
+
+Synthesis:
+I think this is a very useful research. From detecting pedophile’s chat, we could prevent the potential criminal. But 
+I think one of the biggest problem is are those chat logs always available? Is it legal to monitor people’s chatting 
+without notify him? People would never say something illegal when they are told that they are current monitored. 
+However, it’s still very useful in detecting the children porn or website. 
+
+Related papers:
+1.	Peersman C, Vaassen F, Van Asch V, et al. Conversation Level Constraints on Pedophile Detection in Chat Rooms[C]//CLEF (Online Working Notes/Labs/Workshop). 2012.
+They combined the results of predictions on the level of the individual post, the level of the user and the level of 
+the entire conversation, and describe the results of his three-stage system in the PAN 2012 competition as a new 
+approach for detecting online pedophiles in chat rooms. 
+2.	Panchenko A, Beaufort R, Naets H, et al. Towards detection of child sexual abuse media: categorization of the associated filenames[M]//Advances in Information Retrieval. Springer Berlin Heidelberg, 2013: 776-779.
+In this paper they worked on automatic pedophile content identification. They categorized pornographic media by 
+filename and reached accuracy by 91%-97%.  

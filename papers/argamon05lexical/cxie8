@@ -1,0 +1,55 @@
+Overview:
+They address distinguishing high from low neuroticism and extraversion in authors of informal text, using four different 
+sets of lexical features and SMO learning algorithm.
+
+Algorithm:
+·functional lexical features for stylistic classification: a standard function word list, conjunctive phrases, modality 
+indicators, appraisal adjectives and modifiers
+·SMO, a support vector machine learner, with a linear kernel
+
+Hypothesis:
+They can detect author’s personality from the informal text written by four different sets of lexical features.
+
+Data:
+The corpus used was from essays written by students at the University of Texas at Austin between 1997 and 2003
+Two types of essay:
+·steam-of-consciousness, 1157 documents
+·deep self-analysis, 1106 documents
+
+Experiments:
+·All documents in each corpus were processed into numeric feature vectors using various combinations of the four feature 
+sets.
+·Weka’s implementation of the SMO learning algorithm with a linear kernel was used for learning classification models. 
+Throughout, 10-fold cross-validation was used throughout to estimate out-of-training classification accuracy.
+·They take the top features indicating each class and find all sibling oppositions.
+
+Results:
+·Appraisal use is the best predictor from neuroticism, and that function words work best for extraversion.
+·None of the functional feature sets do as well as function words, they even reduce accuracy overall to chance levels 
+when added to function words.
+
+Assumptions:
+The results confirm the utility of functional lexical features for psychological profiling (for Neuroticism), while 
+pointing towards the need for future refinement in the feature sets and possibly the learning algorithms used (to 
+improve overall accuracy, and interpretability for Extraversion).	
+
+Synthesis:
+Current and future work including developing more and more extensive taxonomies for functional lexical features, as well 
+as developing shallow parsing techniques for extracting phrases and using them in classification. I think they need to 
+modify a possible interaction between gender, age and personality due to a generally existing development of personality
+.
+
+Related papers:
+1. Mairesse, F., Walker, M. A., Mehl, M. R., & Moore, R. K. (2007). Using Linguistic Cues for the Automatic Recognition 
+of Personality in Conversation and Text. J. Artif. Intell. Res.(JAIR), 30, 457-500.
+They analyze the effect of different feature sets on accuracy. Results show that for some traits, any type of statistica
+l model performs significantly better than the baseline, but ranking models perform best overall. They also present an 
+experiment suggesting that ranking models are more accurate than multi-class classifiers for modeling personality.
+
+2. Oberlander, J., & Nowson, S. (2006, July). Whose thumb is it anyway?: classifying author personality from weblog text
+. In Proceedings of the COLING/ACL on Main conference poster sessions (pp. 627-634). Association for Computational 
+Linguistics.
+They report initial results on the relatively novel task of automatic classification of author personality. Using a 
+corpus of personal weblogs, or 'blogs', they investigate the accuracy that can be achieved when classifying authors on 
+four important personality traits. They explore both binary and multiple classification, using differing sets of n-gram 
+features. Results are promising for all four traits examined.

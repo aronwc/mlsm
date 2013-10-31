@@ -1696,7 +1696,7 @@ init_mathjax();
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[126]:
+In&nbsp;[64]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># In this example, I walk through how to use sklearn to classify users into male or female</span>
@@ -1734,7 +1734,7 @@ In&nbsp;[126]:
 <div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
-read 7525 users
+read 7681 users
 example: (u&apos;conservative chick&apos;, u&quot;i&apos;m that evil conservative obama warned you about...               pro-palin #conservative, #pro-life,&quot;)
 
 </pre>
@@ -1748,7 +1748,7 @@ example: (u&apos;conservative chick&apos;, u&quot;i&apos;m that evil conservativ
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[125]:
+In&nbsp;[65]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Now, we need to label them as male or female. </span>
@@ -1796,7 +1796,7 @@ got 473 males and 473 females
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[53]:
+In&nbsp;[66]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># sort male, female users</span>
@@ -1818,9 +1818,9 @@ In&nbsp;[53]:
 <div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
-499 males
+1637 males
 (u&apos;daniel john sobieski&apos;, u&quot;editorial writer, investor&apos;s business daily, #reagan #conservative, somewhere to the right of attila the hun #catholic #prolife #tcot #teaparty #nra&quot;)
-242 females
+780 females
 (u&apos;jessica cranor &apos;, u&apos;lame, nerdy, brilliant, fantastic&apos;)
 
 </pre>
@@ -1834,7 +1834,7 @@ In&nbsp;[53]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[73]:
+In&nbsp;[67]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Make target vector. Female=1, Male=0</span>
@@ -1869,7 +1869,7 @@ first description= editorial writer, investor&apos;s business daily, #reagan #co
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[87]:
+In&nbsp;[68]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Convert descriptions into feature vectors.</span>
@@ -1893,27 +1893,27 @@ In&nbsp;[87]:
 <pre>
 editorial writer, investor&apos;s business daily, #reagan #conservative, somewhere to the right of attila the hun #catholic #prolife #tcot #teaparty #nra 
 is transformed into the sparse vector
-  (0, 284)	1
-  (0, 492)	1
-  (0, 542)	1
-  (0, 700)	1
-  (0, 787)	1
-  (0, 980)	1
-  (0, 1529)	1
-  (0, 1626)	1
-  (0, 2180)	1
-  (0, 2213)	1
-  (0, 2479)	1
-  (0, 2562)	1
-  (0, 2650)	1
-  (0, 2882)	1
-  (0, 3027)	1
-  (0, 3036)	1
-  (0, 3067)	2
-  (0, 3113)	1
-  (0, 3430)	1
-the word THE is mapped to index 3067
-there are 3488 unique words
+  (0, 662)	1
+  (0, 1142)	1
+  (0, 1274)	1
+  (0, 1633)	1
+  (0, 1846)	1
+  (0, 2248)	1
+  (0, 3396)	1
+  (0, 3625)	1
+  (0, 4803)	1
+  (0, 4880)	1
+  (0, 5480)	1
+  (0, 5663)	1
+  (0, 5863)	1
+  (0, 6330)	1
+  (0, 6663)	1
+  (0, 6693)	1
+  (0, 6757)	2
+  (0, 6851)	1
+  (0, 7522)	1
+the word THE is mapped to index 6757
+there are 7662 unique features
 
 </pre>
 </div>
@@ -1926,7 +1926,7 @@ there are 3488 unique words
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[98]:
+In&nbsp;[69]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Compute cross validation accuracy</span>
@@ -1946,7 +1946,7 @@ In&nbsp;[98]:
 <div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
-avg accuracy=0.749
+avg accuracy=0.807
 
 </pre>
 </div>
@@ -1959,7 +1959,7 @@ avg accuracy=0.749
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[86]:
+In&nbsp;[70]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Try Naive Bayes</span>
@@ -1978,7 +1978,7 @@ In&nbsp;[86]:
 <div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
-avg accuracy=0.671
+avg accuracy=0.752
 
 </pre>
 </div>
@@ -1991,7 +1991,7 @@ avg accuracy=0.671
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[99]:
+In&nbsp;[71]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Try adding bigrams</span>
@@ -2015,9 +2015,9 @@ In&nbsp;[99]:
 <div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
-there are 10570 unique features
-ten feature examples: [u&apos;loving faithful&apos;, u&apos;web manager&apos;, u&apos;your password&apos;, u&apos;yellow&apos;, u&apos;four&apos;, u&apos;fight against&apos;, u&apos;politically conservatarian&apos;, u&apos;looking&apos;, u&apos;america stop&apos;, u&apos;wake up&apos;]
-avg accuracy with bigrams=0.749
+there are 27322 unique features
+ten feature examples: [u&apos;16 33&apos;, u&apos;my hobbies&apos;, u&apos;loving faithful&apos;, u&apos;member aft&apos;, u&apos;twitter thing&apos;, u&apos;whizzy_walexzy&apos;, u&apos;rush daily&apos;, u&apos;lom&apos;, u&apos;se it&apos;, u&apos;expect the&apos;]
+avg accuracy with bigrams=0.815
 
 </pre>
 </div>
@@ -2030,7 +2030,7 @@ avg accuracy with bigrams=0.749
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[123]:
+In&nbsp;[72]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="c"># Print top feature weights for female</span>
@@ -2039,9 +2039,9 @@ In&nbsp;[123]:
 <span class="n">top_indices</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># sort in decreasing order</span>
 <span class="c"># reverse the alphabet to map from idx-&gt;word</span>
 <span class="n">vocab_r</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">idx</span><span class="p">,</span> <span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">vec</span><span class="o">.</span><span class="n">vocabulary_</span><span class="o">.</span><span class="n">iteritems</span><span class="p">())</span>
-<span class="k">print</span> <span class="s">&#39;female words</span><span class="se">\n</span><span class="s">:&#39;</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">=</span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">vocab_r</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">idx</span><span class="p">])</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">top_indices</span><span class="p">[:</span><span class="mi">10</span><span class="p">]])</span>
+<span class="k">print</span> <span class="s">&#39;female words:</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">=</span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">vocab_r</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">idx</span><span class="p">])</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">top_indices</span><span class="p">[:</span><span class="mi">20</span><span class="p">]])</span>
 <span class="n">top_indices</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()</span> <span class="c"># sort in increasing order</span>
-<span class="k">print</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">male words:</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">=</span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">vocab_r</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">idx</span><span class="p">])</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">top_indices</span><span class="p">[:</span><span class="mi">10</span><span class="p">]])</span>
+<span class="k">print</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">male words:</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">=</span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">vocab_r</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">idx</span><span class="p">])</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">top_indices</span><span class="p">[:</span><span class="mi">20</span><span class="p">]])</span>
 </pre></div>
 
 </div>
@@ -2054,34 +2054,159 @@ In&nbsp;[123]:
 <div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
-female words
-: christian=1.392
-life=1.010
-mom=0.830
-is=0.771
-wife=0.754
-mother=0.704
-grandmother=0.655
-sup=0.639
-politics=0.634
-follow=0.563
+female words:
+mom=2.050
+mother=1.767
+christian=1.034
+wife=0.976
+grandmother=0.962
+girl=0.959
+lover=0.863
+fighter=0.848
+kind=0.736
+loving=0.722
+guns and=0.710
+one=0.697
+children=0.695
+lover of=0.693
+woman=0.671
+loves=0.659
+just don=0.643
+communications=0.643
+indian=0.642
+ayeeee=0.642
 
 
 male words:
-veteran=-0.893
-sports=-0.873
-father=-0.798
-husband=-0.728
-writer=-0.635
-of the=-0.603
-conservative christian=-0.602
-make=-0.592
-political=-0.554
-your=-0.547
+father=-1.423
+sports=-1.182
+husband=-1.146
+of the=-0.873
+veteran=-0.869
+love jesus=-0.806
+radio=-0.726
+dad=-0.704
+man=-0.703
+boy=-0.691
+jesus wife=-0.687
+consurvative love=-0.687
+consurvative=-0.687
+army=-0.644
+editor=-0.641
+guy=-0.639
+liberty=-0.638
+my wife=-0.614
+your=-0.606
+entrepreneur=-0.585
 
 </pre>
 </div>
 </div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[73]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Use PCA to reduce the dimensionality of X to only 2 dimensions,</span>
+<span class="c"># then compute cross-validation accuracy of resulting data X2.</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">X2</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
+<span class="k">print</span> <span class="s">&#39;first document with reduced representation&#39;</span>
+<span class="k">print</span> <span class="n">X2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">dim1</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">components_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span> <span class="s">&#39;first PCA dimension (eigenvector):&#39;</span><span class="p">,</span> <span class="n">dim1</span>
+<span class="n">top_indices</span> <span class="o">=</span> <span class="n">dim1</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span> <span class="s">&#39;top words of first dimension:</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">=</span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">vocab_r</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">dim1</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">top_indices</span><span class="p">[:</span><span class="mi">20</span><span class="p">]])</span>
+<span class="n">dim2</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">components_</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span> <span class="s">&#39;second PCA dimension (eigenvector):&#39;</span><span class="p">,</span> <span class="n">dim2</span>
+<span class="n">top_indices</span> <span class="o">=</span> <span class="n">dim2</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span> <span class="s">&#39;top words of second dimension:</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">=</span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">vocab_r</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">dim2</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">top_indices</span><span class="p">[:</span><span class="mi">20</span><span class="p">]])</span>
+<span class="k">print</span> <span class="s">&#39;avg accuracy using only 2 dimensions=</span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">cross_validation</span><span class="o">.</span><span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X2</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s">&#39;accuracy&#39;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+first document with reduced representation
+[ 3.31207804 -3.67943496]
+first PCA dimension (eigenvector): [ 0.00066414  0.00066414 -0.00033876 ...,  0.00021401  0.00021401
+  0.00021401]
+top words of first dimension:
+the=0.683
+of=0.443
+and=0.244
+to=0.217
+in=0.139
+of the=0.109
+is=0.082
+to the=0.075
+on=0.063
+nra=0.062
+right=0.061
+conservative=0.060
+the right=0.060
+editorial=0.058
+teaparty=0.057
+daily=0.057
+tcot teaparty=0.057
+prolife tcot=0.056
+right of=0.056
+prolife=0.056
+second PCA dimension (eigenvector): [-0.00038728 -0.00038728 -0.00027458 ...,  0.00030366  0.00030366
+  0.00030366]
+top words of second dimension:
+and=0.729
+in=0.166
+my=0.147
+love=0.090
+is=0.074
+country=0.065
+for=0.063
+it=0.056
+am=0.055
+wife=0.050
+mother=0.043
+at=0.041
+that=0.039
+politics=0.039
+god=0.039
+as=0.036
+all=0.033
+with=0.031
+good=0.031
+we=0.030
+avg accuracy using only 2 dimensions=0.680
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[73]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre>
+</pre></div>
 
 </div>
 </div>
