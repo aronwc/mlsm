@@ -1,0 +1,29 @@
+Overview
+•	This Paper developed a method for classifying texts by personality type (neuroticism and extraversion) of the author, using functional lexical features and machine learning. 
+Algorithm
+•	The authors used different sets of lexical features for this task: a standard function word list, conjunctive phrases, modality indicators, and appraisal adjectives and modifiers.
+•	Weka’s SMO learning algorithm with a linear kernel was used for learning classification models in each experiment.
+•	10-fold cross-validation accuracy was calculated to show the quality of the classification.
+Hypothesis
+•	People’s personality type, especially high or low neuroticism or extraversion can be classified by their way of writing and choice of different lexicons.
+Data
+•	The data was from essays written by students at the University of Texas at Austin between 1997 and 2003.
+•	Each student wrote a stream-of-consciousness essay and an essay of deep self-analysis, and in total these data sets comprised 1157 and 1106 documents, respectively.
+•	Students were given the NEO-FFI Five-Factor Personality Inventory. Scores from the Neuroticism and Extraversion factors were used to define two binary classification tasks: Students with scores in the top third of each dimension were classed as High in that dimension, and those with scores in the bottom third classed as Low.
+•	Combining the documents and scores gave the authors the training data set.
+Experiments
+•	A classifier was trained to classify the high or low neuroticism level based on the features discussed above.
+•	A classifier was trained to classify the high or low extraversion level based on the features discussed above.
+Results
+•	The most useful feature set to distinguish neuroticism level was Appraisal.
+•	High neuroticism always comes with negative appraisal, whereas Low neuroticism comes with positive appraisal.
+•	The functional feature sets do not do well as function words, and they even reduce accuracy overall to chance levels when added to function words.
+Assumptions
+•	The central assumption of language psychology is that the words people use reflect who they are.
+Synthesis
+•	It was not clear whether the authors tried to classify the level of neuroticism and extraversion based different combinations of the five features. A single feature may not give very good accuracy, but a combination of them may do well.
+•	Other features of the authors (in this case, the students), such as age, gender, level of education, etc. may also contribute to the difference of neuroticism and extraversion. If the data set contains this kind of information, the authors of the paper can try to include these features in the classification. Or they can choose similar students’ essays to do the classification in order to exclude these factors.
+Related papers
+•	Shlomo Argamon and Shlomo Levitan. Measuring the usefulness of function words for authorship attribution. In Proceedings of the 2005 ACH/ALLC Conference, Victoria, BC, Canada, June 2005. This paper the usefulness of function words in finding the author of a given text or article.
+•	Michael A. K. Halliday. Introduction to Functional Grammar. Edward Arnold, second edition, 1994. Christian Matthiessen. Lexico-grammatical cartography: English systems. International Language Sciences Publishers, 1995. These two books describes the principles of Systemic Functional Grammar, which the base of this paper.
+•	R. R. McCrae and Jr. P. T. Costa. Toward a new generation of personality theories: Theoretical contexts for the five-factor model. In J. S.Wiggins, editor, The five-factor model of personality: Theoretical perspectives, pages 51–87. Guilford, New York, 1996. This book describes the five factor model of personality, in which neuroticism and extraversion are two of the five.
