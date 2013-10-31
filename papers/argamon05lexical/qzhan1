@@ -16,7 +16,7 @@ Experiment
 -This paper applies here a methodology for constructing a lexicon using attribute-value taxonomies based on principles of Systemic Functional Grammar (SFG), which we find to be useful for this purpose. In particular, SFG explicitly recognizes and represents non-denotational meaning as part of the general grammar, which makes it particularly applicable to stylistic problems. In each experiment Weka’s implementation of the SMO learning algorithm with a linear kernel was used for learning classification models. Throughout, 10-fold cross- validation was used throughout to estimate out-of-training classification accuracy.
 
 Result
--We find that appraisal use is the best predictor for neuroticism, and that function words work best for extraversion. Further, examination of the specifically most important features yields insight into how neuroticism and extraversion differentially affect language use.
+-This paper discovers that appraisal use is the best predictor for neuroticism, and that function words work best for extraversion. Further, examination of the specifically most important features yields insight into how neuroticism and extraversion differentially affect language use.
 
 Assumption
 - The words people use reflect who they are.
