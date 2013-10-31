@@ -1,0 +1,32 @@
+Overview
+- This paper is currently pursuing methods for “author profiling” in which various aspects of the author’s identity might be identified from a text, without necessarily having a corpus of documents from the same individual. 
+
+Algorithm
+- A key component of such an identity profile is personality; this paper addresses distinguishing high from low neuroticism and extraversion in authors of informal text. We consider four different sets of lexical features for this task: a standard function word list, conjunctive phrases, modality indicators, and appraisal adjectives and modifiers. SMO, a support vector machine learner, was used to learn linear separators for the high and low classes in each of the two tasks.
+
+Hypothesis
+-	The ways people spoke were related to their physical and mental health problems. With increasing computer advances, strides were made in attempting to capture psychological themes or people’s underlying emotional states that might be reflected in the words they used.
+- Computational stylistics views the full meaning of a text as much more than just the topic it describes or represents. Style is indicated by features representing the author’s choice of one mode of expression from a set of equivalent modes for a given content. At the surface level, this may be expressed by a wide variety of possible features of a text: choice of particular words, syntactic structures, discourse strategy, or all of the above and more.
+
+
+Data
+-The corpus used for this experiment was derived from essays written by students at the University of Texas at Austin between 1997 and 2003. As part of their course responsibilities, subjects (undergraduate students) wrote (inter alia) a stream-of-consciousness essay and an essay of deep self-analysis; in toto these data sets comprised 1157 and 1106 documents, respectively. Subjects were also given the NEO-FFI Five-Factor Personality Inventory. Scores from the Neuroticism and Extraversion factors were used to define two binary classification task: Subjects with scores in the top third of each dimension were classed as High in that dimension, and those with scores in the bottom third classed as Low.
+
+Experiment
+-This paper applies here a methodology for constructing a lexicon using attribute-value taxonomies based on principles of Systemic Functional Grammar (SFG), which we find to be useful for this purpose. In particular, SFG explicitly recognizes and represents non-denotational meaning as part of the general grammar, which makes it particularly applicable to stylistic problems. In each experiment Weka’s implementation of the SMO learning algorithm with a linear kernel was used for learning classification models. Throughout, 10-fold cross- validation was used throughout to estimate out-of-training classification accuracy.
+
+Result
+-We find that appraisal use is the best predictor for neuroticism, and that function words work best for extraversion. Further, examination of the specifically most important features yields insight into how neuroticism and extraversion differentially affect language use.
+
+Assumption
+- The words people use reflect who they are.
+
+Synthesis
+-This is a well-defined paper with detailed analysis, which sheds light into the identification of the author’s personality. We could scrutinize more features for the future study. Meanwhile, we can add more vocabulary into the feature in order to improve the accuracies of features. Furthermore, it would be interesting to compare the results of English speaker with non-English speaker using the same methodology. 
+
+Related Paper
+1. Minor, Kyle S.; Baillie, Lauren E.; Dahir, Amanda M. (2008) Clarifying the Linguistic Signature: Measuring Personality From Natural Speech. Journal of Personality Assessment Nov/Dec2008, Vol. 90 Issue 6, p559-563-563.
+This paper examined the viability of measuring personality using computerized lexical analysis of natural speech. Two well-validated models of personality were measured, one involving trait positive affectivity (PA) and negative affectivity (NA) dimensions and the other involving a separate behavioral inhibition motivational system (BIS) and a behavioral activation motivational system (BAS). Individuals with high levels of trait PA and sensitive BAS expressed high levels of positive emotion in their natural speech, whereas individuals with high levels of trait NA and sensitive BIS tended to express high levels of negative emotion. The personality variables accounted for almost a quarter of the variance in emotional expressivity.
+
+2. Roivainen, Eka. (2013) Frequency of the use of english personality adjectives: Implications for personality theory. Journal of Research in Personality Aug, 2013 Vol 47(4) Pages:-420.
+According to the lexical hypothesis, the degree of representation of an attribute in language correlates with the general importance of that attribute in everyday transactions. The present study investigated the frequency of the use of 432 personality adjectives that Saucier and Goldberg (1996) employed as the base of their five-factor theory of personality. Google hits for bigrams consisting of a personality adjective + person varied from 51 (uninquisitive person) to 4.2 million (reasonable person). The 92 adjectives that describe agreeableness (factor II) had 29 million hits, while the 40 adjectives describing neuroticism (factor IV) had 6.9 million hits. Historical analysis showed growing popularity for factor II adjectives between 1950 and 2000. These results indicate that the Big Five factors of personality are not of equal importance in everyday personality descriptions.
