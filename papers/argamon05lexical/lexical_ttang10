@@ -13,4 +13,18 @@ Data:
 The corpus used for this experiment was derived from essays written by students at the University of Texas at Austin between 1997 and 2003. A stream-of-consciousness dataset and an dataset of deep self-analysis comprised 1157 and 1106 documents, respectively.
 
 Experiments:
-All documents in each corpus were processed into numeric feature vectors using various combinations of the four feature sets: function Word, Con, Mod, App. They used a SMO implementation from Weka and  examined the most important features for stylistic classification. They took the top features indicating each class and find all sibling oppositions (or simply ‘oppositions’) they gave. Then they compared 10-fold cross-validation accuracy for discriminating High from Low neurotics and extraverts in both the stream-of-consciousness (SoC) and deep self-analysis (DSA) writing tasks.
+All documents in each corpus were processed into numeric feature vectors using various combinations of the four feature sets: function Word, Conjunction, Modality and Appraisal. They used a SMO implementation from Weka and  examined the most important features for stylistic classification. They took the top features indicating each class and find all sibling oppositions (or simply ‘oppositions’) they gave. Then they compared 10-fold cross-validation accuracy for discriminating High from Low neurotics and extraverts in both the stream-of-consciousness (SoC) and deep self-analysis (DSA) writing tasks.
+
+Results:
+For Neuroticism, the results showed clearly the usefulness of such functional lexical features, in particular the Appraisal lexical taxonomy. In the case of Extraversion, results are less clear. None of the functional feature sets did as well as function words, and they even reduced accuracy overall to chance levels when added to function words.
+
+Assumptions:
+The sample of undergraduate student is representative and unbiased.
+The subjects with top third and bottom third scores are proper candidates for the classification.
+
+Synthesis:
+For the extraversion, result is not so illuminating. They could try some features related to norms, completeness, certainty, and even sentiments. To me, most extroverted people tend to use more positive emotional words in context. And the results of SoC dataset are always better than results of DSA dataset. Is there some syntactic or semantic difference resulting to it?
+
+Related Papers:
+S. Argamon, M. Koppel, J. Fine, and A. R. Shimony. Gender, genre, and writing style in formal written texts: it is a former work of Professor Argamon. In this paper, they focused on the differences in writting style between female and male covering a range of genres. They also made use of some syntactic and lexical features.
+Mairesse F., Walker M. A., Mehl M. R., and Moore R. K. Using Linguistic Cues for the Automatic Recognition of Personality in Conversation and Text: they compared different models on different features set on accuracy to analysis the personality traits in both conversation and text. They presented an experiment suggesting that ranking models were more accurate than multi-class classifiers for modelling personality.
