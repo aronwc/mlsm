@@ -1,0 +1,48 @@
+Overview:
+This paper focuses on determining personality type of the author from casual written text. They developed a method for 
+classifying texts by personality type of the author, using functional lexical features and machine learning. 
+
+Algorithm
+Four different sets of lexical features. 
+Using Weka’s SMO learning algorithm with a linear kernel for classification. 
+10-fold cross-validation.
+ 
+Hypothesis
+Four different sets of lexical features would help classify people’s personality. 
+
+Data:
+Essays written by students at the University of Texas at Austin between 1997 and 2003.
+Each undergraduate students wrote a stream-of-consciousness essay and an essay of deep self-analysis and in total it 
+consists 1157 and 1106 documents.
+Students were given the NEO-FFI Five-Factor Personality Inventory. Scores from the Neuroticism and Extraversion factors
+were used to define two binary classification tasks.
+
+Experiments:
+All documents in each corpus were processed into numeric feature vectors using various combinations of Function Word, 
+Conjunction, Modality and Appraisal. 
+They used WEKA’s implementation of SMO learning algorithm with a linear kernel for learning classification models. 
+They used 10-fold cross-validation accuracy for discriminating High from Low neurotics in
+the stream-of-consciousness (SoC) and deep self-analysis (DSA) writing tasks. 
+
+Results:
+Functional lexical features would help the psychological profiling for Neuroticism. 
+The Appraisal lexical taxonomy is especially useful for Neuroticism. 
+The result is not clear in the case of Extraversion. 
+
+Assumptions:
+The words people use reflect who they are. 
+
+Synthesis
+The author only use 2 factors of big five personality traits and he did mention the other 3 in the experiment. To get
+the better identification of people’s different personality, future work could be doing the experiment under the 
+Agreeableness, Conscientiousness and Openness to experience. 
+
+Related papers
+1.	Mairesse, F., Walker, M. A., Mehl, M. R., & Moore, R. K. (2007). Using Linguistic Cues for the Automatic Recognition of Personality in Conversation and Text. J. Artif. Intell. Res.(JAIR), 30, 457-500.
+This article reports experimental results for recognition of all Big Five personality traits, in both conversation 
+and text, utilizing both self and observer ratings of personality. And the results show that for some traits, any type 
+of statistical model performs significantly better than the baseline, but ranking models perform best overall.
+
+2.	Wiebe, J., & Riloff, E. (2005). Creating subjective and objective sentence classifiers from unannotated texts. In Computational Linguistics and Intelligent Text Processing (pp. 486-497). Springer Berlin Heidelberg.
+In this paper the author tried to develop subjectivity classifiers using only unannotated texts for training.
+
