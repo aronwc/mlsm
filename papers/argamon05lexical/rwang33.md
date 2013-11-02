@@ -20,8 +20,8 @@ Personality can be classified from the informal text written by four different s
 * They take the top features indicating each class and find all sibling oppositions.
 
 #Results
-
-
+1. In both cases the most useful feature set for this task was Appraisal, with accuracies of 58.2% (SoC) and 58.0% (DSA).
+2. None of the functional feature sets do as well as function words, and they even reduce accuracy overall to chance levels when added to function words. We interpret this to mean that extraversion is expressed in aspects of meaning different from Conjunction, Modality, or Appraisal.
 
 #Assumptions
 
