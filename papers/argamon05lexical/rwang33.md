@@ -31,4 +31,7 @@ From my point of view, the extention of this paper can be developing shallow par
 
 #Related papers
 * [Measuring the Usefulness of Function Words for Authorship Attribution](http://tomcat-stable.hcmc.uvic.ca:8080/ach/site/xhtml.xq?id=162)      
-erty
+Their results argue for the importance of using larger data sets for evaluating the relative utility of different attribution feature sets or techniques. As in their case of comparing frequent words with frequent collocations, changing the scale of the data set may affect the relative power of different techniques, thus leading to different conclusions. They suggest that the authorship attribution community should now work towards developing a large suite of corpora and testbed tasks, to allow more rigorous and standardized comparisons of alternative approaches.
+                          
+* [Mining E-mail Authorship](http://rybkaforum.net/mwf/rybkaattach/82/256182/DeVel_TM.pdf)      
+In this paper they report an investigation into the learning of authorship identication or categorisation for the case of e-mail documents. They use various e-mail document features such as structural characteristics and linguistic evidence together with the Support Vector Machine as the learning algorithm. Experiments on a number of e-mail documents give promising results with some e-mail document features and author categories giving better categorisation performance results.
