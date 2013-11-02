@@ -24,11 +24,11 @@ Personality can be classified from the informal text written by four different s
 * None of the functional feature sets do as well as function words, and they even reduce accuracy overall to chance levels when added to function words. We interpret this to mean that extraversion is expressed in aspects of meaning different from Conjunction, Modality, or Appraisal.
 
 #Assumptions
-
-
+A central assumption of language psychology is that the words people use reflect who they are.
 
 #Synthesis
-
-
+From my point of view, the extention of this paper can be developing shallow parsing techniques for extracting phrases and using them in classification. 
 
 #Related papers
+* [Measuring the Usefulness of Function Words for Authorship Attribution](http://tomcat-stable.hcmc.uvic.ca:8080/ach/site/xhtml.xq?id=162)      
+erty
