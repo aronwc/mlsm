@@ -15,8 +15,9 @@ Personality can be classified from the informal text written by four different s
 * They were also given the NEO-FFI Five-Factor Personality Inventory.
 
 #Experiments
-
-
+* All documents in each corpus were processed into numeric feature vectors using various combinations of the four feature sets.
+* Weka’s implementation of the SMO learning algorithm with a linear kernel was used for learning classification models. Throughout, 10-fold cross-validation was used throughout to estimate out-of-training classification accuracy.
+* They take the top features indicating each class and find all sibling oppositions.
 
 #Results
 
