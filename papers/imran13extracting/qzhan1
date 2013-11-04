@@ -1,0 +1,34 @@
+Overview
+In this paper, authors describe automatic methods for extracting information from microblog posts during disaster times, specifically focusing on extracting valuable “information nuggets”, brief, self-contained information items relevant to disaster response, by means of leveraging machine learning methods for classifying posts and information extraction. 
+
+Algorithm
+A set of multi-label classifiers were trained to automatically classify a tweet into one or more of the classes identified before. Naïve Bayesian classifiers were used as implemented in Weka. To this end, a number of binary, scalar, and text features were employed. For location and time references, the Stanford Named Entity Recognizer was used. For the Caution/Advice part, the Stanford Part of Speech Tagger was used to tag the tweet. For the damaged object, the Wordnet classes (Synsets) were identified that cover all the damaged objects that manually extracted. 
+
+Hypothesis
+The information from the tweets is reliable if everybody says the same thing.
+
+Data
+The dataset consists of tweets posted during the Joplin 2011 tornado that struck Joplin, Missouri in the late afternoon of Sunday, May 22, 2011. The dataset was originally constructed by researchers at the University of Colorado at Boulder.
+The 206,764 unique tweets were selected by monitoring the Twitter Streaming API using the hashtag #joplin a few hours after the tornado hit. This monitoring process continued until the number of tweets about the tornado became particularly sparse.
+
+
+Experiments
+The system that this paper provided utilizes state-of-the-art machine learning techniques to classify messages into set of fine-grained classes and to extract short self-contained structured information that can be leveraged for complex data analysis and integration beyond plain text. The system was tested on a real-world disaster-related dataset consisting of hundreds of thousands of microblogging messages. The training data for the machine learning techniques was generated using crowdsourcing and the techniques were then evaluated on the same dataset.
+
+
+Results
+The results of the experiments show that indeed machine learning can be utilized to extract structured information nuggets from unstructured text-based microblogging messages with good precision and recall.
+
+Assumptions
+The labeling process is reliable by manual process.
+
+Synthesis
+This paper only attempted to generalize the result to other disaster-related case, but only provided one case to study. It is unconvincing that only limited dataset is studied. We should study more disaster-related case in the future to confirm the results that the paper suggested. 
+
+Related papers
+1. TAYLOR, ANNA RICHARDSON. (2013). BIG DATA AND CREATIVITY KILL OR CURE?. Creative Review Oct2013, Vol. 33 Issue 10, p46-50-50
+The article explores the concept of big data, including social media, mobile phone usage and user data, which reveals consumers' habits and preferences. Particular focus is given to how this information is impacting the fields of design and advertising. Additional topics discussed include how data was used in production of the television series "House of Cards," and how big data influences the creative process.
+ 
+2. Metayer, Estelle.; Sarrazin, Hugo. (2012). How 'social intelligence' can guide decisions. McKinsey Quarterly 2012, Issue 4, p81-89-89
+The articl examines the use of social media in strategic planning and decision making by corporations. It is forecast that the use of social media will become a significant element in the gathering and analysis of business intelligence, requiring familiarity with social media among senior executives and directors of corporations. The ability of social media to generate real time information to be used in business planning is examined. The use of social media to locate expertise and to track data is discussed. Data mining of social media information is discussed.
+
