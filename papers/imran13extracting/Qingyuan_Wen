@@ -1,0 +1,33 @@
+Overview
+This paper is talking about detecting online sexual predators and suggested a list of  high-level features, including sentiment and emotion based ones, for detection of online sexual predation.
+
+Algorithm
+The authors borrowed several features from MCGhee et. al:
+Percentage of approach words 
+Percentage of relationship words
+Percentage of family words
+Percentage of communicative desensitization words
+Percentage of words expressing sharing information
+
+Hypothesis
+Analysis of pedophiles’ personality characterizes them with feeling of inferiority, isolation, loneliness, low self-esteem and emotional immaturity. In general, pedophiles are less emotionally stable than mentally healthy people.
+Data
+Two negative datasets in our experiments: cybersex chat logs and the NPS chat corpus. 
+They download the cybersex chat logs available at www.oocities .org/urgrl21f/.
+Their dataset is imbalanced, the majority of the chat logs are from PJ. To make the experimental data more balanced, we have created 5 subsets of PJ corpus, each of which contained chat lines from 60 randomly selected predators.
+
+Experiments
+To distinguish between predators and not predators they used a Naïve Bayes classifier, already successfully utilized for analyzing chats by previous research.
+
+Results
+The high-level features outperform all the low-level ones in both the cybersex logs and the NPS chat datasets and achieve 94% and 90% accuracy on these datasets respectively. Excepting for the character bigrams, all low-level features considered indeed work worse in case of cybersex logs than NPS data.
+
+Assumptions
+The authors assumed that the chat is serious and without joking.
+
+Synthesis
+It is the first time that I meet this topic which makes me interesting. The future works should focus on predicting predators with shorter chat. That must be very useful for protecting youngers from online sexual predators.
+
+Related papers
+1.	Thomas J. Holt1,Kristie R. Blevins2 , Natasha Burkert3: Considering the Pedophile Subculture Online. This study will explore the subcultural norms and enculturation of the pedophile community using a qualitative analysis of five Web forums run by and for pedophiles.
+2.	Pendar, N. Toward Spotting the Pedophile Telling victim from predator in text chats. This paper presents the results of a pilot study on using automatic text categorization techniques in identifying online sexual predators.
