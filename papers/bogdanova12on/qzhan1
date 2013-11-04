@@ -1,0 +1,39 @@
+Overview
+- In this paper, authors have suggested a list of high-level features, including sentiment and emotion based ones, for detection of online sexual predation by analyzing a corpus of
+predators’ chats with natural language processing (NLP) techniques. Meanwhile, authors have considered such low-level features as character bigrams and trigrams and word unigrams, bigrams and trigrams. 
+
+Algorithm
+- The authors have also borrowed several features from
+McGhee et al: Percentage of approach words, Percentage of relationship words, Percentage of family words, Percentage of communicative desensitization words, percentage of words expressing sharing information. Also, authors consider features reported to be helpful to detect
+neuroticism level by Argamon et al. Furthermore, the study of Egan et al. (Egan et al., 2011) has revealed several recurrent themes that appear in PJ chats.
+
+Hypothesis
+- In general, pedophiles are less emotionally stable than mentally healthy people.  The characteristics of feelings of inferiority, isolation, loneliness, low self-esteem and emotional immaturity contribute to identify pedophiles.
+
+Data
+- One dataset have been extracted chat logs from the www.perverted-justice.com, which are considered to be written by predators.
+- One negative dataset is from the cybersex chat logs available at www.oocities.org/urgrl21f/, which contains 34 one-on-one cybersex logs, consisting of 68 files.
+- Another negative dataset is the subset the of NPS chat corpus , which have been extracted chat lines only for those adult authors who had more than 30 lines written, finally consisting of 65 authors. 
+
+Experiments
+- Authors use a Naive Bayes classifier to distinguish between predators and not predators, using SentiWordNet to extract positive and negative words. The features borrowed from McGhee et al. (2011), were detected with the list of words authors made available for us. Imperative sentences were detected as affirmative sentences starting with verbs. Emoticons were captured with simple regular
+expressions.
+
+Results
+- The average accuracy in this case varies between 48% and 58%. Surprisingly, low-level features do not work as good as we expected in case of the NPS chat dataset: bag of words provides only 61% accuracy. Among other low-level features, character trigrams provide the highest accuracy of 72%, which is still much lower than the one of the high-level features(90%). The high-level features yield a lower accuracy (90% accuracy) on the PJ-NPS dataset than in the case of PJ-cybersex logs (94% accuracy). 
+
+Assumptions
+- The data from Perverted Justice is reliable and closer to real online world.
+
+Synthesis
+- It is amazing that the using high-level features can achieve such high accuracy. The high accuracy also confirms the psychological hypothesis that the words people speak reflect the personality of people.
+
+Related papers
+1. Wolak, Janis. (2010). Online "predators" and their victims: Myths, realities, and implications for prevention and treatment. Psychology of Violence Aug, 2010 
+Vol 1(S) Pages:35
+ 
+The publicity about online "predators" who prey on naive children using trickery and violence is largely inaccurate. Internet sex crimes involving adults and juveniles more often fit a model of statutory rape--adult offenders who meet, develop relationships with, and openly seduce underage teenagers--than a model of forcible sexual assault or pedophilic child molesting. 
+
+2. Schachter, Ken.(2008). MySpace, States Agree on Predator Shields. Red Herring 1/14/2008, p5-5-5
+
+The article reports on the deal signed by MySpace with U.S. states aimed at thwarting sexual predators in the U.S. Under the deal, MySpace will make profiles of teens aged 14-17 private by default and will work to set up an e-mail registry that will allow parents block their children from gaining access to MySpace or another social-networking site. The opinion of Jeremiah Owyang of Forrester Research on the move is presented. The deal will put pressure on Facebook and other social-networking sites to adopt more stringent controls as well.
