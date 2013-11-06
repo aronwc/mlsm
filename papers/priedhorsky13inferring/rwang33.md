@@ -16,6 +16,18 @@ They propose a scalable, content-based approach to estimate the location of twee
 3. For the language (ln) and time zone (tz) fields, they  form n-grams by simply removing whitespace and punctuation and converting to lowercase.
 
 #Experiments
+##Training duration      
+The length of time from which to select training tweets. They used all selected tweets for training, except only the first tweet from a given user is retained, toavoid over-weighting frequent tweeters.
+      
+##Test duration      
+The length of time from which to select test tweets. In all experiments, they tested on a random sample of 2,000 tweets selected from one day. They excluded users with a tweet in the training set from testing, in order to avoid tainting the test set.
+      
+##Gap      
+The length of time between the end of training data and the beginning of test data.      
+      
+##Stride      
+The length of time from the beginning of one training set to the beginning of the next. This was fixed at 6 days unless otherwise noted.
+
 
 
 #Results
