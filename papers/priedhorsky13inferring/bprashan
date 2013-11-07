@@ -1,0 +1,57 @@
+Overview: 
+The paper tries to build on existing knowledge of location analysis based on content, to fit a GMM model to the problem. They fit the model, and offer variations, and run the data through various tests to discuss the results.
+
+Algorithm: 
+from the data, they retrieve a set of n-grams  and fit it to a GMM model of co-ordinates of locations possible.
+They further try try to improve accuracy, precision and calibration in the process by adding features to the model.
+Weighting by quality included features discussed in section 4.2 . They carry forward GMM-Qpr-Convar-Sum-Prod.
+Weighting by error involved in the training set and include it in the model by including a power of the error found. they traverse between 0.5 to 10 and decide on an exponential value of 4.
+Weighing by optimization. They try the model using quantities in 4.2 and just one ngram from a feature.
+
+Hypothesis: 
+They try to identify concrete quantitate methods to infer locations of individuals in a social network by fitting them to a global co-ordinate model, in a precise and calibrated manner. 
+They identify, quantify and calibrate the model and allow for variations in every step. 
+
+Data: 
+Twitter data.
+From streaming API.
+For on year from Jan 2012 - Jan 2013.
+It is expected to be a percentage of all the data available in the API>
+They have at their disposal ~13 million geotagged tweets from the time period. Amounting to 0.8 to 1.6 % of 1 % of all tweets from that time. 
+They run various tests by training the model from day to day on current data, for various tests. 
+>50 tests were run on the data set. 
+They strip information from the user profile, geo location of tweet etc. 
+They also calibrate the language available from the data.
+
+Experiments: 
+Its almost as explained in the algorithm
+They run varioutins of the training data based on when they train the data and when they use the data in the model.
+All variations are scheduled and run in the available data to check for results. 
+
+Results: 
+There are quantifiable parameters one can use using a GMM model to geographically locate a  node in a social network.
+The tests based on the parameters considered has a rather successfulresult in analyzing geo locations. 
+Some factors improve and some factors not necessarily so in the process of location.
+Some interesting points
+
+The GMM model is time in sensitive. 
+The parameters involved in accuracy , precition and calibration have major effects in the model and results. 
+Geo location from a user profile, is not necessarily helping in the training and analysis as it is any way close to being inferred from other parameters.
+Training duration looses value after a particular time in helping the cause.
+The n gram list is best when kept lower. 
+
+Assumptions: 
+This paper is more about the discussion of the possible results the authors seemed to have arrived by processing the data they had recieved. 
+It seems open to more calibration. So, any assumption around the results, can be further probed. Which is good.
+But ones around the choice of model, are explained. 
+Choice of the network, I would gues is because of the availablity. 
+Doing this process on a differently working social network, could be interesting. 
+I wonder if the training set would make and the time insensitivity will up hold.
+I would attribute the time insensitivity more to the nature of twitter than to the model.
+
+Synthesis:
+
+How extensible outside of the realm of geo location is this valuable? 
+Not to undermine the geo location problem, but once the geo location is found, will this data still be needed, and if so how can it be pre analyses or involved in the process.
+Would including image processing and its data into the model be a possible idea?
+If this is extended to generic text being fit into a model built around a medical subset, would it help in reaching out to blogs/nodes who need help!? 
