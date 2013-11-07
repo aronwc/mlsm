@@ -1,0 +1,44 @@
+Overview
+•	This Paper developed a method to estimate the location of a tweet by analyzing the user’s message text, user description, and user location, language and time zone fields, and represent the location by a gaussian mixture model all over the globe.
+Algorithm
+•	The authors first fit a gaussian mixture model(GMM) to the true origin points of the tweets in the training set that contain that those n-grams who appears more than the threshold.
+•	To predict the location of a new tweet with user information, the author did a weighted summation of those GMM of n-grams which appear in this tweet. Three methods were used to set the GMM weights: quality properties, error and optimization. It generates a total of 11 different methods:
+1.	GMM-Err-SAE10
+2.	GMM-Err-SAE4
+3.	GMM-Opt-ID
+4.	GMM-Err-SAE2
+5.	GMM-Qpr-Covar-Sum-Prod
+6.	Gaussian-Opt-ID
+7.	GMM-Opt-Both
+8.	GMM-Opt-Attr
+9.	GMM-One
+10.	GMM-Qpr-AIC
+11.	GMM-All-Tweets
+•	Three types of metrics were used to evaluate the results: accuracy(CAE, SAE, MCAE, and MSAE), precision(PRA and MPRA) and calibration(OC).
+•	The experiments were carried out by varying the training duration, test duration, training-testing gap and training stride.
+Hypothesis
+•	Twitter user’s location can be estimated by their tweets and user information.
+Data
+•	The Twitter data were collected by using Twitter Streaming API, an approximately continuous 1% sample of all global tweets from January 25, 2012 to January 23, 2013 were finally obtained.
+•	Between 0.8% and 1.6% of all the data, depending on time frame, contained a geotag, yielding a total of approximately 13 million geotagged tweets.
+•	Each tweet was tokenized to five parts: message text, user description, and user location, language and time zone fields.
+Experiments
+•	First, a gaussian mixture model(GMM) for each n-grams who appears more than the threhold was fitted, using the true origin points of the tweets in the training set.
+•	Then the model was tested by predicting the location of a new tweet with user information, using the method mentioned above, the GMM weights were determined by different methods and all of them are compared by MCAE, MSAE, MPRA50, OC50, OC90.
+Results
+•	Considering accuracy (MCAE), GMM-Err-SAE10 has the best performance, the baselines GMM-One and GMM-All-Tweets performed poorly. These results suggest that a weighting scheme directly related to performance, rather than the simpler quality properties, is important.
+•	Considering precision (MPRA50), GMM-Err-SAE10 still gives the best performance.
+•	Calibration shows that GMM-Err-SAE10 is a little overconfident for OC50, while GMM-Err-SAE4 is calibrated very well at this level. Some algorithms with poor accuracy are quite well calibrated at the OC90 level.
+•	A relatively small number of difficult tweets contribute most of the error.
+•	MCAE decreases when training duration increases, but it quickly plateaus after two days.
+•	MCAE increases when the threshold for number of times of n-grams appears in the training data increases.
+•	MCAE increases when training-testing gap increases, but the first few points are not linear.
+•	Questions like which field provides more information and what n-grams weighted most are also answered in the last part of the paper.
+Assumptions
+•	There’s no obvious assumption in this paper.
+Synthesis
+•	A better gold training sample can be made by manually checking some part of the tweets to see if it is the same as the geographic coordinates, choose only those are consistent. By doing this, tweets like “I miss my hometown Chicago” tweeted by a person in New York City with geographic coordinate may cause less confusion.
+•	Another experiment that I think is important is to train n-grams using today’s data and predict the geolocation of yesterday’s tweets, as a cross-validation to see how it works and if there’s a true time-dependent effect, instead of just a bias.
+Related papers
+•	J. Eisenstein et al. A latent variable model for geographic lexical variation. In Proc. Empirical Methods in Natural Language Processing, 2010. The author developed a  cascading topic model that produces region-specific topics and used these topics to infer the locations of Twitter users. 
+•	S. Roller et al. Supervised text-based geolocation using language models on an adaptive grid. In Proc. Empirical Methods in Natural Language Processing and Computational Natural Language Learning (EMNLP-CoNLL), 2012. They developed a method using k-d trees to predict the geolocation of tweets.
