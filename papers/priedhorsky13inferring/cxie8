@@ -1,0 +1,25 @@
+Overview:
+They propose a scalable, content-based approach to estimate the location of tweets using a novel yet simple variant of gaussian mixture models.
+
+Algorithm:
+•For each n-gram that appears more than a threshold number of times in the training data, fit a GMM to the true origin points of the tweets in the training set that contain that n-gram. This n-gram/GMM mapping forms the trained location model.
+•To locate a test tweet, collect the GMMs from the location model which correspond to n-grams in the test tweet. The weighted sum of these GMMs—itself a GMM—is the geographic density function which forms the estimate of the test tweet’s location.
+
+Hypothesis:
+•Given an item, the method can estimate its geographic true origin 
+
+Data:
+•An approximately continuous 1% sample of all global tweets from January 25, 2012 to January 23, 2013. Between 0.8% to 1.6% of these, depending on timeframe, contained a geotap, yielding a total of approximately 13 million geotapped tweets
+
+Experiments:
+Each experiment is implemented using a Python script.
+The test schedule has four parameters:
+•Training duration
+•Test duration
+•Gap
+•Stride
+They tested specific algorithms:
+•Weighting by quality properties
+•Weighting by error
+•Weighting by optimization
+•Baseline weighting algorithms
