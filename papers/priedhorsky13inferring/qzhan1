@@ -1,0 +1,28 @@
+Overview:
+The authors propose a scalable, content-based approach to estimate the location of tweets using a novel yet simple variant of gaussian mixture models. Further, because real-world applications depend on quantified uncertainty of such estimates, this paper propose novel metrics of accuracy, precision, and calibration, and authors evaluate our approach accordingly.
+
+Algorithm:
+The authors introduce a family of algorithms, which includes GMM-Err-SAE10, optimization-based algorithm (GMM-Opt-ID) ,property-based algorithm(GMM-Qpr-Covar-Sum-Prod), and  baseline weighting algorithms the (GMM-One and GMM-All-Tweets).
+
+Hypothesis:
+Examining the geographic distribution of n-grams can suggest
+appropriate inference models. The two clusters, along with scattered locations elsewhere, suggest that a multi-modal distribution consisting oftwo-dimensional gaussians may be a reasonable fit.
+
+Data:
+We used the Twitter Streaming API to collect an approximately continuous 1% sample of all global tweets from January 25, 2012 to January 23, 2013. Between 0.8% and 1.6% of these, depending on timeframe, contained a geotag (i.e., specific geographic coordinates marking the true origin of the tweet, derived from GPS or other automated means), yielding a total of approximately 13 million geotagged tweets.
+
+Experiments:
+1. For each n-gram that appears more than a threshold number of times in the training data, fit a GMM to the true origin points of the tweets in the training set that contain that n-gram. This n-gram/GMM mapping forms the trained location model. To locate a test tweet, collect the GMMs from the location model which correspond to n-grams in the test tweet. The weighted sum of these GMMs — itself a GMM — is the geographic density function which forms the estimate of the test tweet’s location.
+2. Weighting by quality properties
+3. Weighting by error
+4. Weighting by optimization
+5. Baseline weighting algorithms
+
+Results:
+
+Assumptions:
+
+Synthesis:
+
+Related Papers:
+
