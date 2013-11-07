@@ -6,13 +6,40 @@ GMM-Opt-ID
 Gaussian-Opt-ID
 GMM-Qpr-Covar-Sum-Prod
 GMM-Err-SAE4
+GMM-Err-SAE10
+GMM-Err-SAE2
+GMM-Opt-Both
+GMM-Opt-Attr
+GMM-One
+GMM-Qpr-AIC
+GMM-All-Tweets
+GMM-Err-SAE16
+GMM-Err-SAE6
 
 Hypothesis:
-The novel, simple, and scalable GMM-based approach produces well-calibrated estimates.
+A multi-modal distribution consisting of two-dimensional gaussians may be a reasonable fit for geographic distribution of n-grams.
 There is subtle effect of temporal gaps between training and testing set.
-The user location string and time zone fields provide the strongest signals, tweet text and user language are weaker but important to offer an estimate for all test tweets, and user description has essentially no location value.
 
 Data:
 They made use of twitter API and collected  an approximately continuous 1% sample of all global tweets from January 25, 2012 to January 23, 2013. These yielded a total of approximately 13 million geotagged tweets. They tokenized the message text (tx), user description (ds), and user location (lo) fields, which were free-text, into bigrams by splitting on Unicode character category and script boundaries and then further subdividing bigrams which appear to be Japanese using the TinySegmenter algorithm. For the language (ln) and time zone (tz) fields, which were selected from a set of options, they formed n-grams by simply removing whitespace and punctuation and converting to lowercase.
 
 Experiments:
+1. For each n-gram that appeared more than a threshold number of times in the training data, fittted a GMM to the true origin points of the tweets in the training set that contained that n-gram. This n-gram/GMM mapping formed the trained location model.
+2. To locate a test tweet, collect the GMMs from the location model which corresponded to n-grams in the test tweet. The weighted sum of these GMMs — itself a GMM — was the geographic density function which forms the estimate of the test tweet’s location.
+3. Try weighting each GMM with quality properties, error, and optimization respectively. 
+4. Consider GMM-All-Tweets, which
+fitted a single GMM to all tweets in the training set and returned that GMM for all locate operations, and GMM-One, which weighted all n-gram mixtures equally, as two baseline.
+
+Results:
+The novel, simple, and scalable GMM-based approach produceed well-calibrated estimates with a global mean accuracy error of roughly 1,800 km and precision of 900,000 square kilometers (or better), which is competitive with more complex approaches on the dimensions available in prior work.
+About 30,000 tweets were sufficient for high-quality models, and that performance could be further improved with more training data at a cost of increased time and memory. Models were improved by including rare n-grams, even those occurring just 3 times.
+The models were nearly independent of time, performing just 6% worse with a gap of 4 months.
+The user location string and time zone fields provided the strongest signals, tweet text and user language were weaker but important to offer an estimate for all test tweets, and user description had essentially no location value. Mentioning toponyms, especially at the city scale, provided a strong signal, as did using languages with a small geographic footprint.
+
+Synthesis:
+The paper suggested that location inference was surprisingly time-invariant. However, from the Figure 6, we could find a significant positive correlated relationship between delay and error rise. Maybe we could tested it on more data and tested with more groups of distinct gaps between traing and testing data, then compared the results.
+
+Related Papers:
+J. Gelernter and N. Mushegian. Geo-parsing messages from microtext: they investigated the feasibility of applying Named Entity Recognizers to extract locations from microblogs, at the level of both geo-location and point-of-interest. Their experimental results show that such tools once retrained on microblog data had great potential to detect the where information, even at the granularity of point-of-interest.
+
+G. Valkanas and D. Gunopulos. Location extraction from social networks with commodity software and online data: they tackled the problem of extracting location information, usually referred to as geocoding, from additional user-provided content. They relied on software instead of sophiscated and complex software to implement the experiments. They discussed the particularities of geocoding in online social networks and present a simple, lightweight, yet efficient approach for location extraction in such a setting. They finally evaluated the approach experimentally on a large corpus of Twitter users.
