@@ -1,33 +1,42 @@
 Overview
-This paper is talking about detecting online sexual predators and suggested a list of  high-level features, including sentiment and emotion based ones, for detection of online sexual predation.
+In this paper, they describe automatic methods for extracting information from microblog posts. Specifically, they focus on extracting valuable “information nuggets”, brief, self-contained information items relevant to disaster response.
 
 Algorithm
-The authors borrowed several features from MCGhee et. al:
-Percentage of approach words 
-Percentage of relationship words
-Percentage of family words
-Percentage of communicative desensitization words
-Percentage of words expressing sharing information
+They use the binary features to classify the data sets.
+For caution tweets, the following information was extracted: 1) Location references; 2) Time references; 3) Caution/Advice; 4) Source; 5) Type of Caution.
+For Casualty tweets, the following was extracted: 1)Location references; 2)Time references; 3)Number of Casualties; 4) Damaged Object; 5)Source; 6) Type of Casualty/Damage.
 
 Hypothesis
-Analysis of pedophiles’ personality characterizes them with feeling of inferiority, isolation, loneliness, low self-esteem and emotional immaturity. In general, pedophiles are less emotionally stable than mentally healthy people.
+The Joplin dataset are reliable.
+
 Data
-Two negative datasets in our experiments: cybersex chat logs and the NPS chat corpus. 
-They download the cybersex chat logs available at www.oocities .org/urgrl21f/.
-Their dataset is imbalanced, the majority of the chat logs are from PJ. To make the experimental data more balanced, we have created 5 subsets of PJ corpus, each of which contained chat lines from 60 randomly selected predators.
+The dataset consists of tweets posted during the Joplin 2011 tornado that struck Joplin, Missouri in the late afternoon of Sunday, May 22, 2011. The dataset was originally constructed by researchers at the University of Colorado at Boulder5. The 206,764 unique tweets were selected by monitoring the Twitter Streaming API using the hashtag #joplin a few hours after the tornado hit.
 
 Experiments
-To distinguish between predators and not predators they used a Naïve Bayes classifier, already successfully utilized for analyzing chats by previous research.
+1.	Manual classification and extraction with crowdsourcing
+  1.	Filtering information messages
+  2.	Classifying messages by type
+  3.	Classifying messages by sub-type and extracting information nuggets
+2.	Automatic classification and extracting with machine learning
+  Classification
+    1.	Filtering informative tweets
+    2.	Identifying Eye-Witness tweets
+  Information Extraction
+    1.	Caution and advice nuggets
+    2.	Casualty and damage nuggets
+    3.	Donation and offer nuggets
+    4.	Information source nuggets
 
 Results
-The high-level features outperform all the low-level ones in both the cybersex logs and the NPS chat datasets and achieve 94% and 90% accuracy on these datasets respectively. Excepting for the character bigrams, all low-level features considered indeed work worse in case of cybersex logs than NPS data.
+All the tweets can be successfully classified and the information can also be extracted from the tweets.
 
 Assumptions
-The authors assumed that the chat is serious and without joking.
+They assumed that all the methods cited by authors are reliable.
 
 Synthesis
-It is the first time that I meet this topic which makes me interesting. The future works should focus on predicting predators with shorter chat. That must be very useful for protecting youngers from online sexual predators.
+I think the author proved a useful method to classify and extract information nuggets from microblogging messages during disaster time. Some other points can be explored deeper, such as how to cooperate with the local government to control the spread of the disaster.
 
-Related papers
-1.	Thomas J. Holt1,Kristie R. Blevins2 , Natasha Burkert3: Considering the Pedophile Subculture Online. This study will explore the subcultural norms and enculturation of the pedophile community using a qualitative analysis of five Web forums run by and for pedophiles.
-2.	Pendar, N. Toward Spotting the Pedophile Telling victim from predator in text chats. This paper presents the results of a pilot study on using automatic text categorization techniques in identifying online sexual predators.
+Related paper
+Mark Craven and Johan Kumlien, Constructing Biological Knowledge Bases by Extracting Information from Text Sources, They describe two learning methods that we have applied to this task -- a statistical text classification method, and a relational learning method -- and our initial experiments in learning such information-extraction routines.
+
+P. S. Jacobs, Lisa F. Rau, SCISOR: extracting information from on-line news, The future of natural language text processing is examined in the SCISOR prototype. Drawing on artificial intelligence techniques, and applying them to financial news items, this powerful tool illustrates some of the future benefits of natural language analysis through a combination of bottom-up and top-down processing.
