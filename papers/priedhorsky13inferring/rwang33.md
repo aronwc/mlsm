@@ -16,14 +16,20 @@ They propose a scalable, content-based approach to estimate the location of twee
 3. For the language (ln) and time zone (tz) fields, they  form n-grams by simply removing whitespace and punctuation and converting to lowercase.
 
 #Experiments
-
-
+1. For each n-gram that appears more than a threshold number of times in the training data, fit a GMM to the true origin points of the tweets in the training set that contain that n-gram.
+2. To locate a test tweet, collect the GMMs from the location model which corresponded to n-grams in the test tweet. The weighted sum of these GMMs — itself a GMM — was the geographic density function which forms the estimate of the test tweet’s location.
+3. Weighting by quality properties
+4. Weighting by error
+5. Weighting by optimization
+6. Baseline weighting algorithms
 
 #Results
+1. Considering accuracy (MCAE), GMM-Err-SAE10 is 10% better than the best optimization-based algorithm (GMM-OptID) and 26% better than the best property-based algorithm (GMM-Qpr-Covar-Sum-Prod),  These results suggest that a weighting scheme directly related to performance, rather than the simpler quality properties.
+2. 
 
 
 #Assumptions
-
+It's jard to find a clear assumption.
 
 #Synthesis
 
