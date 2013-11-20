@@ -35,3 +35,8 @@ It's jard to find a clear assumption.
 I think in the future, incorporating priors such as population density and to compare to human location assessments is a quite good way to improve the algorithm. Also, exploring non-gaussian and nonparametric density estimators and improved weighting algorithms can take advantage of a broader set of location clues.
 
 #Related papers
+* [You are where you tweet: A content-based approach to geo-locating Twitter users](http://infolab.cse.tamu.edu/static/papers/cikm1184c-cheng.pdf)      
+They propose and evaluate a probabilistic framework for estimating a Twitter user's city-level location based purely on the content of the user's tweets, even in the absence of any other geopatial cues.
+      
+* [Employing EM and Pool-Based Active Learning for Text Classification](http://www-connex.lip6.fr/~amini/RelatedWorks/McC98.pdf)
+This paper shows how a text classifier's need for labeled training documents can be reduced by taking advantage of a large pool of unlabeled documents.
