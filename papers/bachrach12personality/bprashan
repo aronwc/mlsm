@@ -1,0 +1,64 @@
+Overview: Write a short paragraph summarizing the content of the paper.
+The paper tires to find co-relations between human personalities, and their Facebook profiles.They use a Big five Personality model, to asses the personality, and find how Facebook usage details map to the results.
+
+Algorithm: Describe in more detail the primary algorithm proposed or applied in the paper.
+They use a total of 180,000 Facebook profile users’s details and find out their profile information.
+This leads them people with certain feature value. 
+Then they divdd the entire set of users into 10 equally disjoint parts and average up the scores each user has in the big five personality model.
+They plot scatter plots to study results.
+As a final step, they try to see statistic validity of the data.
+They do this by rerunning the tests in two methods. 
+1) Removing the null variable.
+2) curve fitting the model, to check if there is any value to it.
+
+Hypothesis: List the hypotheses the authors test in the paper (note that these are not always explicitly stated).
+That Facebook, being a online social network, is inherently exposing one’s personality. 
+
+Data: Describe the data used in the experiments
+They have collected 180,000 users profile information.
+They collect the available information from their profile falling under the categories of 
+Friends (number of Facebook friends), 
+Groups (number of associated groups),
+Photos(number of uploads by user), 
+Likes(number of Facebook ‘Likes’) !!! They do not explain what like as such. you can like many possible things of a user or node in  Facebook!
+Statuses(number of status updates)
+Tags(number of times others tagged user in photos)
+
+To collect and to map it to their personality,
+They deploy a myPersonality app that will collect users acceptance as well as get a five question big five model to asses the personality of the user.
+This was deployed in 2007.
+
+Experiments: Briefly describe how are the experiments are organized.
+The experiment was to collect the data and plot scatter maps as described in the algorithm. 
+And to analyze the co-relations.
+There was not much to run other than  keep the app going, and collecting data without fail.
+
+Results: Describe the results and their significance.
+
+Openness is co-related with likes/ group association  & status updates.
+Conscientiousness is co-related to likes and group membership negatively. But positively to uploaded photos.
+Extraversion is related to number of statuses!  Number of friends wise, <30 friends tends to have amore extraverts in the group. Even having more than 50th percentile of the friends tends to have more extraverts.
+Agreeableness is negatively co related to number of likes. 
+Neuroticism is positively correlated to numb rod likes and groups. Number of friends have a varied correlation based on which percentile they fall under.
+
+They split the features to to groups of percentile and find different levels of co-relation in most of them. 
+
+
+Assumptions: List some of the important assumptions the authors make in their work.
+I would say, they have shown the mapping to the big five model to Facebook usage. But there is no really explanation, as to why this is a fail safe. 
+They try to offer a perspective and reason. But they do not give an idea of why it has to be so and no other way.
+There is no boundary condition testing in the analysis. 
+For example, they explain there as a possible reason that having a specific religious status, might not make a person likable to the other side of the neighboring religions.
+This is a thought perspective. There is no really evidence of it discussed in the paper.
+  
+Synthesis: Are there claims you disagree with? What would you do differently? What would you do next?
+This looks like a good paper for analyzing trends internal to Facebook. 
+As mentioned in the assumptions and overview, I feel this is a data analysis paper that finds out how the big five model, probably represents itself on Facebook. But there is no concrete evidence to prove that this is a concrete co-relation in most cases. 
+
+Data collection gets slightly dirty with privacy issue. Considering this ia good data set, I might want to try to push and improve the data collection in a gradual manner, to see how much more experiments could be done. 
+
+They do mention that they have been trailing this on Facebook and can not mention much about the null values obtained in the process.Only 5000 profiles have all the information available. To bring down a 180,000 profile data set to just 5000 complete data set, makes it a rather small sample after all. Not that 500 is small, but its not as big as 180,000.
+
+Also, building a few experiments to prove the co-relation, by either analyzing the variable inside the fathers selected and splitting them so, would be a good next step.
+
+Also, continuously modeling this , and analyzing the age of the Users, could help get a good Facebook report on human population. 
