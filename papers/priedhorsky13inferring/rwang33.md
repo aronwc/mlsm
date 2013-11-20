@@ -25,13 +25,13 @@ They propose a scalable, content-based approach to estimate the location of twee
 
 #Results
 1. Considering accuracy (MCAE), GMM-Err-SAE10 is 10% better than the best optimization-based algorithm (GMM-OptID) and 26% better than the best property-based algorithm (GMM-Qpr-Covar-Sum-Prod),  These results suggest that a weighting scheme directly related to performance, rather than the simpler quality properties.
-2. 
-
+2. Turning to precision (MPRA50), GMM-ErrSAE10 performs better.
+3. GMMErr-SAE10 is somewhat overconfident at coverage level 0.5, GMM-Err-SAE4 is calibrated very well at this level and has better calibration at coverage 0.9.
 
 #Assumptions
 It's jard to find a clear assumption.
 
 #Synthesis
-
+I think in the future, incorporating priors such as population density and to compare to human location assessments is a quite good way to improve the algorithm. Also, exploring non-gaussian and nonparametric density estimators and improved weighting algorithms can take advantage of a broader set of location clues.
 
 #Related papers
