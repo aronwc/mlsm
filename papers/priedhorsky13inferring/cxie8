@@ -1,15 +1,21 @@
 Overview:
-They propose a scalable, content-based approach to estimate the location of tweets using a novel yet simple variant of gaussian mixture models.
+They propose a scalable, content-based approach to estimate the location of tweets using a novel yet simple variant of 
+gaussian mixture models.
 
 Algorithm:
-•For each n-gram that appears more than a threshold number of times in the training data, fit a GMM to the true origin points of the tweets in the training set that contain that n-gram. This n-gram/GMM mapping forms the trained location model.
-•To locate a test tweet, collect the GMMs from the location model which correspond to n-grams in the test tweet. The weighted sum of these GMMs—itself a GMM—is the geographic density function which forms the estimate of the test tweet’s location.
+•For each n-gram that appears more than a threshold number of times in the training data, fit a GMM to the true origin 
+points of the tweets in the training set that contain that n-gram. This n-gram/GMM mapping forms the trained location 
+model.
+•To locate a test tweet, collect the GMMs from the location model which correspond to n-grams in the test tweet. The 
+weighted sum of these GMMs—itself a GMM—is the geographic density function which forms the estimate of the test tweet’s 
+location.
 
 Hypothesis:
 •Given an item, the method can estimate its geographic true origin 
 
 Data:
-•An approximately continuous 1% sample of all global tweets from January 25, 2012 to January 23, 2013. Between 0.8% to 1.6% of these, depending on timeframe, contained a geotap, yielding a total of approximately 13 million geotapped tweets
+•An approximately continuous 1% sample of all global tweets from January 25, 2012 to January 23, 2013. Between 0.8% to 1
+.6% of these, depending on timeframe, contained a geotap, yielding a total of approximately 13 million geotapped tweets
 
 Experiments:
 Each experiment is implemented using a Python script.
@@ -25,22 +31,40 @@ They tested specific algorithms:
 •Baseline weighting algorithms
 
 Results:
-• Considering accuracy (MCAE), GMM-Err-SAE10 is 10% better than the best optimization-based algorithm(GMM-Opt-ID), and 26% better than the best property-based algorithm(GMM-Qpr-Covar-Sum-Prod); the baselines GMM-One and GMM-All-Tweets performed poorly. 
+• Considering accuracy (MCAE), GMM-Err-SAE10 is 10% better than the best optimization-based algorithm(GMM-Opt-ID), and 26% 
+better than the best property-based algorithm(GMM-Qpr-Covar-Sum-Prod); the baselines GMM-One and GMM-All-Tweets performed 
+poorly. 
 • Turning to precision (MPRA50), GMM-Err-SAE10 is 50% better than GMM-Opt-ID, and 38% better than GMM-Qpr-Covar-Sum-Prod.
-• Some algorithms with poor accuracy are quite well calibrated at the 0.9 coverage level(Gaussian-Opt-ID) or both levels(GMM-All-Tweets).
-• While Gaussian-Opt-ID is only 4% worse than GMM-Err-SAE4 on MSAE, the relative difference is nearly 6 times greater in MCAE.
+• Some algorithms with poor accuracy are quite well calibrated at the 0.9 coverage level(Gaussian-Opt-ID) or both levels
+(GMM-All-Tweets).
+• While Gaussian-Opt-ID is only 4% worse than GMM-Err-SAE4 on MSAE, the relative difference is nearly 6 times greater in 
+MCAE.
 
 Assumptions:
-·Some other algorithms are more consistent between the two metrics, so SAE may be appropriate in some cases, but caution should be used, particularly when comparing different types of algorithms.
-·The calibration results imply that algorithms should be evaluated at multiple coverage levels, and in particular Gaussian may not quite the right distribution to fit.
+·Some other algorithms are more consistent between the two metrics, so SAE may be appropriate in some cases, but caution 
+should be used, particularly when comparing different types of algorithms.
+·The calibration results imply that algorithms should be evaluated at multiple coverage levels, and in particular Gaussian 
+may not quite the right distribution to fit.
 
 Synthesis
-·The researchers can focus on GMM-Err-SAE4, with its simplicity, superior calibration, and second-best accuracy and precision.
+·The researchers can focus on GMM-Err-SAE4, with its simplicity, superior calibration, and second-best accuracy and 
+precision.
 ·Different algorithms may perform poorly on different types of test tweets, this can be explored further.
 
 Related papers:
-1.Valkanas, G., & Gunopulos, D. (2012, December). Location extraction from social networks with commodity software and online data. In Data Mining Workshops (ICDMW), 2012 IEEE 12th International Conference on (pp. 827-834). IEEE.
-Instead of using sophisticated and complex algorithms, which are common in online map services but require heavy development and tuning, they rely on software and data which are available online and public ally accessible. They discuss the particularities of geocoding in online social networks and present a simple, lightweight, yet efficient approach for location extraction in such a setting. They finally evaluate our approach experimentally on a large corpus of Twitter users.
+1.Valkanas, G., & Gunopulos, D. (2012, December). Location extraction from social networks with commodity software and 
+online data. In Data Mining Workshops (ICDMW), 2012 IEEE 12th International Conference on (pp. 827-834). IEEE.
+Instead of using sophisticated and complex algorithms, which are common in online map services but require heavy developme
+nt and tuning, they rely on software and data which are available online and public ally accessible. They discuss the 
+particularities of geocoding in online social networks and present a simple, lightweight, yet efficient approach for 
+location extraction in such a setting. They finally evaluate our approach experimentally on a large corpus of Twitter 
+users.
 
-2. Kinsella, S., Murdock, V., & O'Hare, N. (2011, October). I'm eating a sandwich in Glasgow: modeling locations with tweets. In Proceedings of the 3rd international workshop on Search and mining user-generated contents (pp. 61-68). ACM.
-In this paper they create language models of locations using coordinates extracted from geotagged Twitter data. They model locations at varying levels of granularity, from the zip code to the country level. They measure the accuracy of these models by the degree to which they can predict the location of an individual tweet, and further by the accuracy with which they can predict the location of a user. They find that we can meet the performance of the industry standard tool for predicting both the tweet and the user at the country, state and city levels, and far exceed its performance at the hyper-local level, achieving a three- to ten-fold increase in accuracy at the zip code level.
+2. Kinsella, S., Murdock, V., & O'Hare, N. (2011, October). I'm eating a sandwich in Glasgow: modeling locations with 
+tweets. In Proceedings of the 3rd international workshop on Search and mining user-generated contents (pp. 61-68). ACM.
+In this paper they create language models of locations using coordinates extracted from geotagged Twitter data. They model 
+locations at varying levels of granularity, from the zip code to the country level. They measure the accuracy of these 
+models by the degree to which they can predict the location of an individual tweet, and further by the accuracy with which 
+they can predict the location of a user. They find that we can meet the performance of the industry standard tool for 
+predicting both the tweet and the user at the country, state and city levels, and far exceed its performance at the hyper
+-local level, achieving a three- to ten-fold increase in accuracy at the zip code level.
