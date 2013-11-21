@@ -19,10 +19,12 @@ Experiments:
 5. Baseline weighting algorithms
 
 Results:
+Toponyms offer the strongest signal; fully 83% of the n-gram weight in well-located tweets is due to toponyms, including 49% on city names. In contrast, n-grams used for poorly-located tweets tended to be non-toponyms (57%). Notably, languages with geographically compact user bases, such as Dutch, also provided strong signals even for non-toponyms
 
 Assumptions:
 
 Synthesis:
+Maybe we can try more language to compare the accurracy of different language in the same algorithm. I think it is very interesting.
 
 Related Papers:
 
