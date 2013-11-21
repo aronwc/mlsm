@@ -1,0 +1,64 @@
+Overview: Write a short paragraph summarizing the content of the paper.
+This is a paper analyzing the dynamics of Viral marketing. They closely monitor a viral marketing technique by an online vendor, and try to deduce the possible metrics.
+
+Algorithm: Describe in more detail the primary algorithm proposed or applied in the paper.
+The group behind the paper used an online vendors viral marketing data and rationalized the data to make analytical sense of it.
+many experiments were conducted on the data and the interpretation.
+For every product at the vendors site, they user was given an orin to recommend the product to other. 
+Every time they choose to recommend,the receivers of the email, get an online link and using the link, avails them a 10% discount. 
+Considering every person/email id as a node there is an underlying social graph.
+Every time the recommendation receiving person uses it to purchase, a buy bit is triggered as long as it happens within second days of the recommendation.
+The list of items for which the recommendation program was run were : Books, DVD, Music and Videos. 
+There are more features or descriptive data of every kind available in detailed  experiments. 
+But with the set up of the graph, they watch and collect the propagation statistics and purchases that occur. Analysis on the data, help them come to conclusion on a general viral or word of mouth propagation models.
+
+Hypothesis: List the hypotheses the authors test in the paper (note that these are not always explicitly stated).
+Data obtained by monitoring a marketing initiative of recommending via email, could give a good insight on viral marketing.
+
+Data: Describe the data used in the experiments
+15,63=46,121 recommendations  made in a graph made with 3,943,984 nodes. 
+Collection period is between June 2001 to May 2003.[Pretty long period of time.]
+They make a detailed network statistics using the following details
+Product , product price, Sender ID , receiver ID, The send data, a buy bit(any positive buy in 7 days) , 
+
+Experiments: Briefly describe how are the experiments are organized.
+There are many experiments run on the data set. By experiments, i would say analysis conducted.Some of them are like the follows. 
+Identifying cascades :  To track casual recommendation , they track only purchases resulting from a recommendation. i.e. purchases after a recommendation as received by a node. Late recommendations or purchases are not counted. So are no multiple purchases by a node or recommendations received after the first buy. There by , only recommendations that have affected a node, and the following actions in the graph are noted. 
+Probability of buying vs number of recommendation drawing graphs between incoming recommendations and probability of buying. The probability of buying is just a calculated number for every recommendation to purchase. 
+Success of subsequent recommendation :
+This is and extensions of the results of the previous graph. 
+Success of recommendation :
+The graph between number of outgoing recommendation from a single node to the number of purchases it results in. 
+Timing of recommendation : 
+Graph between time of buy vs purchases.. Since the data collected is only for 7 days, they club everything after 7 days to one solid number. 
+Mostly, ends up being in the the top three sales numbers.
+
+A more detailed analysis on this, was to dividing the recommendation, purchases and purchase with discount(result of recommendation) with hours of day,gives for general population information.
+
+Dividing them with respect to the topics or product classes makes for interesting pointers. 
+They extend this to books, by diving them by category of books.
+
+
+Results: Describe the results and their significance.
+Viral marketing, in general, is not the norm, but a rare event. Rarer than a vendor would be happy about. In this case, with the discounts involved, it did not seem to show any revenue based success for the user, in the first seven days. 
+Probability of a purchase increases till a pout and reaches a threshold point. (But this was only for the first buy.)
+Spamming does not help. But then knowing the sharing limit will help. (Interesting discussion if there is some thought on this.)
+Recommendations work better in the initial time, but the Fig 8. shows that as in the case of any other economic chart, the long tail, makes any such discount will not necessarily help in sustained growth in revenue. 
+Section 5. discusses a good analysis of how sections of books behave differently for recommendation. 
+Fig 9. discusses they imd of day results. (Discount availing recommendation susceptible people operate in the afternoon! Working hours lead to more rumours?)
+
+Assumptions: List some of the important assumptions the authors make in their work.
+Nothing to complain. 
+But then, there could always be interesting nitpicking on such large analysis. 
+
+Synthesis: Are there claims you disagree with? What would you do differently? What would you do next?
+Just because of the size of the analysis, there could always be a lot of improvements and extensions. 
+They draw comparisons to network epidemic models such as needle sharing and  sexual contact. I would be slightly doubtful as the network being analyzed is a better fit for a marketing campaign that does not involve the same set of risk or awareness to the model. 
+As an excercise, this paper is a lot of good points. Trying to see paroles in other network models would help for a general standards being drawn.
+
+ 
+Related Papers: List 2-3 papers that are most similar to this paper. For each, briefly list how this paper is different.
+
+The paper described in section 5 of the paper, the reverse small world paper, reference number 9 . and incidentally the small world work problem by milligram and Travers makes for good reading. 
+That is mostly because of the set up of the network and graph model they base the analysis on.
+Involving location data in the analysis makes for more interestingness in todays world.  
