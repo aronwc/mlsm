@@ -20,8 +20,8 @@ There are 206,764 unique tweets selecting during the Joplin 2011 tornado that st
 Experimentals
 
 Manual classification and extraction with crowdsourcing: 1.Filtering informative messages 2.Classifying messages by type 3.Classifying messages by sub-type and extracting information nuggets
-Then, Filtering Informative Tweets
-Identifying Eye-Witness Tweets
+Then, Filtering Informative Tweets,
+Identifying Eye-Witness Tweets,
 Classify informative tweets into one of the following four categories: Caution/Advice; Donation; Casualty/Damage; and Information Source.
 
 Results
