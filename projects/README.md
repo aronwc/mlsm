@@ -12,3 +12,4 @@ Add a link to the github repository of your project.
 - An Shi, Hao Gao: [Events vs Stock] (https://github.com/anshipku/Events_vs_Stock)
 - Junze Han, Bavan Prashant : [twitter activity spread pattern analysis](https://github.com/brprashant/classifyTwitterActivity)
 - Tonghe Zhan, Qingyuan Wen : [predicting the price fluctuation of cellphone on Amazon by twitter](      https://github.com/tonghezhan/Tonghe-Qingyuan)
+- Elise Thrasher: [Movie Review Project](https://github.com/ethrashe/CS595-Movie-Review-Project)
