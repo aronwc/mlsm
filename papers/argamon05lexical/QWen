@@ -1,0 +1,36 @@
+Overview
+This paper addresses distinguishing high from low neuroticism and extraversion in authors of informal text. They find that appraisal use is the best predictor for neuroticism, and that function words work best for extraversion.  
+
+Algorithm
+Lexical Stylistic Feature
+1.	Function Words
+2.	Systemic Functional Grammar
+3.	Cohesion
+4.	Assessment
+5.	Appraisal
+They empirically evaluated the use of functional lexical features for stylistic classification by applying them as well as standard function words to stylistic text classification.
+SMO learning algorithm with a linear kernel was used for learning classification models.
+
+Hypothesis
+Those four lexical features can detect authors’ personality.
+
+Data
+The corpus used for this experiment was derived from essays written by students at the University of Texas at Austin between 1997 and 2003. As part of their course responsibilities, subjects (undergraduate students) wrote (inter alia) a stream-of-consciousness essay and an essay of deep self-analysis; into these data sets comprised 1157 and 1106 documents, respectively.	
+
+Experiments
+The tasks of the corpus were to use textual features to determine whether each author and High or Low neuroticism or extraversion.
+Throughout, 10-fold cross-validation was used throughout to estimate out-of-training classification accuracy.
+
+Results
+The fact that Appraisal features gave the highest accuracy indicates (unsurprisingly) that a key difference between High and Low neurotics is in how they engage with and assess objects and people in their environment.
+Most opposition that appears for only of the writing tasks reflects the genera preference of High neurotics for negative appraisal and Low neurotics for positive appraisal.
+
+Assumptions
+A central assumption of language psychology is that the words people use reflect who they are.
+
+Synthesis
+Current and future work includes developing more and more extensive taxonomies for functional lexical features, as well as developing shallow parsing techniques for extracting phrases and using them in classification.
+
+Related Papers
+1.	Kajarekar S, Ferrer L, Venkataraman A, et al. Speaker recognition using prosodic and lexical features[C]//Automatic Speech Recognition and Understanding, 2003. ASRU'03. 2003 IEEE Workshop on. IEEE, 2003: 19-24. This paper shows that certain longer-term stylistic features provide powerful complementary information to both frame-level cepstral features and to each other.
+2.	Pedersen T. Machine learning with lexical features: The duluth approach to senseval-2[C]//The Proceedings of the Second International Workshop on Evaluating Word Sense Disambiguation Systems. Association for Computational Linguistics, 2001: 139-142. This paper describes the sixteen Duluth entries in the Senseval-2 comparative exercise among word sense disambiguation systems.
