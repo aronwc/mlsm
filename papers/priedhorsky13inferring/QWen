@@ -1,0 +1,37 @@
+Overview
+This paper shows that toponyms and languages with small geographic footprint provide the most useful location signals.
+
+Algorithm
+They use an inference method based on Gaussian mixture models (GMMs), and other domains are increasingly turning to social Internet data to inform policy and intervention strategies.
+Here are the specific algorithms they test:
+1.	Weighting by quality properties
+2.	Weighting by error
+3.	Weighting by optimization
+4.	Baseline weighting algorithms
+
+Hypothesis
+Examining the geographic distribution of n-grams can suggest appropriate inference models.
+
+Data
+They used the Twitter Streaming API to collect an approximately continuous 1% sample of all global tweets from January 25, 2012 to January 23, 2013. Between 0.8% and 1.6% of these, depending on timeframe, contained a geotag, yielding a total of approximately 13 million geotagged tweets.
+
+Experiments
+Each experiment is implemented using a Python script which generates a test schedule with four parameters:
+1.	Training duration
+2.	Test duration
+3.	Gap
+4.	stride
+
+Results
+They tested each of their algorithms with one day of training data and no gap, all fields except user description, and minimum n-gram instances set to 3. 
+Indeed, toponyms offer the strongest signal; fully 83% of the n-gram weight in well-located tweets is due to toponyms, including 49% on city names. In contrast, n-grams used for poorly-located tweets tended to be non-toponyms (57%). Notably, languages with geographically compact user bases also provided strong signals even for non-toponyms.
+
+Assumptions
+
+Synthesis
+It’s amazing to read this paper. It provides a specific method to give a ‘geotag’ to any tweets, which is really helpful to other works are related to the tweets. 
+In my opinion, the future work of this project is to combine the result with other’s work which is need more geographic information to improve their work.
+
+Related Papers
+1.	Reynolds D A. Gaussian Mixture Models[J]. 2009. This paper describe the GMMs.
+2.	Davis Jr C A, Pappa G L, de Oliveira D R R, et al. Inferring the location of twitter messages based on user relationships[J]. Transactions in GIS, 2011, 15(6): 735-751. This paper is to infer the location of as many users as possible, in order to increase the number of tweets that can be used in spatial analyses of social phenomena.
